@@ -1,0 +1,334 @@
+<title>El Molouk — Home (Desktop + Mobile)</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --ink:#2A2018;--ink-soft:#5B4E3F;--terra:#B05733;--terra-deep:#9C4E30;--terra-press:#833F26;
+    --forest:#1E2A22;--forest-tile:#24322A;--olive:#56613C;--gold:#B08D57;--sand:#F2E9DB;--ivory:#FBF7EF;--line:#E4D8C5;--white:#fff;--wa:#25D366;
+    --bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4;
+    /* flat, low-chroma placeholder tones (no gradients) */
+    --ph-flesh:#C48A64;--ph-field:#8A9670;--ph-crate:#C0AE8E;--ph-cure:#B39A79;
+    --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+    --font-sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    --font-mono:ui-monospace,'SF Mono',Consolas,monospace;
+    --sh-1:0 1px 1px rgba(42,32,24,.04);--sh-soft:0 4px 18px -10px rgba(42,32,24,.22);
+  }
+  @media (prefers-color-scheme: dark){:root{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}}
+  :root[data-theme="dark"]{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}
+  :root[data-theme="light"]{--bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .board{max-width:1240px;margin:0 auto;padding:clamp(18px,3.5vw,46px) clamp(14px,3.5vw,36px)}
+  .board-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft)}
+  .board-title{font-family:var(--font-display);font-weight:600;font-size:clamp(1.7rem,4.5vw,2.6rem);letter-spacing:-.015em;margin:.3em 0 .3em}
+  .board-note{color:var(--fg-soft);max-width:70ch;font-size:.95rem}
+  .board-note b{color:var(--fg)}
+  .framelabel{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;color:var(--fg-soft);text-transform:uppercase;letter-spacing:.1em;margin:34px 0 12px}
+  .framelabel::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .frame{background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden;box-shadow:var(--sh-soft)}
+  .frame-bar{display:flex;align-items:center;gap:7px;padding:9px 13px;border-bottom:1px solid var(--hair);background:var(--bg2)}
+  .frame-bar i{width:9px;height:9px;border-radius:50%;background:var(--hair)}
+  .frame-bar span{margin-left:8px;font-family:var(--font-mono);font-size:11px;color:var(--fg-soft)}
+  .frame-scroll{overflow-x:auto}
+  .device{container-type:inline-width;background:var(--ivory);color:var(--ink)}
+  .d-desktop{min-width:1080px}
+  .d-mobile{width:392px;margin:0 auto}
+
+  /* ===== shared bits ===== */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1;border:1px solid transparent;border-radius:8px;padding:13px 22px;background:var(--terra-deep);color:#fff;cursor:pointer;text-decoration:none;transition:background .16s}
+  .btn:hover{background:var(--terra)}
+  .btn:active{background:var(--terra-press)}
+  .btn:focus-visible{outline:2px solid var(--terra-deep);outline-offset:2px}
+  .btn--out{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn--out:hover{background:rgba(42,32,24,.05)}
+  .btn--wa{background:var(--wa);color:#08331b}
+  .btn--link{background:none;color:var(--terra-deep);padding:12px 2px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--gold)}
+  .btn--sm{padding:10px 16px;font-size:13.5px}
+  .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--terra-deep);font-weight:600}
+  .kicker.on-dark{color:var(--gold)}
+
+  /* quiet, flat placeholders (no gradients) */
+  .ph{position:relative;border-radius:10px;overflow:hidden;display:flex;align-items:flex-end;min-height:120px;background:var(--ph-crate);border:1px solid rgba(42,32,24,.10)}
+  .ph::before{content:"";position:absolute;top:calc(50% - 14px);left:50%;transform:translate(-50%,-50%);width:30px;height:30px;opacity:.4;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23ffffff'%20stroke-width='1.4'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Crect%20x='3'%20y='5'%20width='18'%20height='14'%20rx='2'/%3E%3Ccircle%20cx='8.5'%20cy='10'%20r='1.5'/%3E%3Cpath%20d='M21%2015l-5-5L5%2019'/%3E%3C/svg%3E")}
+  .ph.flesh{background:var(--ph-flesh)}.ph.field{background:var(--ph-field)}.ph.crate{background:var(--ph-crate)}.ph.cure{background:var(--ph-cure)}
+  .ph__t{position:absolute;top:9px;left:9px;font-family:var(--font-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(26,20,16,.42);border-radius:4px;padding:2px 6px}
+  .ph__d{position:relative;font-family:var(--font-mono);font-size:9.5px;line-height:1.45;color:#F7F0E4;background:rgba(26,20,16,.5);padding:8px 10px;width:100%}
+  .pill{font-family:var(--font-mono);font-size:9px;color:var(--terra-deep)}
+
+  /* header */
+  .hdr{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 30px}
+  .brand{font-family:var(--font-display);font-weight:600;letter-spacing:.15em;text-transform:uppercase;font-size:15px;display:flex;align-items:center;gap:8px}
+  .brand i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .nav{display:none;gap:24px;font-size:13.5px;color:var(--ink-soft)}
+  .hdr-r{display:flex;align-items:center;gap:12px}
+  .lang{display:none;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+  .menu{display:inline-flex;flex-direction:column;gap:4px}.menu i{width:20px;height:2px;background:var(--ink);border-radius:2px}
+
+  /* hero */
+  .hero{padding:22px 30px 48px;display:grid;gap:30px}
+  .hero-h1{font-family:var(--font-display);font-weight:600;letter-spacing:-.022em;line-height:1.02;font-size:35px;margin:16px 0 16px;text-wrap:balance;max-width:15ch}
+  .hero-sub{color:var(--ink-soft);font-size:16px;max-width:46ch}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:24px 0 20px}
+  .hero-trust{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+  .hero-trust b{color:var(--ink)}
+  .cert-mini{display:inline-flex;gap:6px;flex-wrap:wrap}
+  .cert-mini span{border:1px solid var(--line);border-radius:5px;padding:3px 8px;background:transparent}
+  .hero-img{min-height:280px}
+
+  /* generic section */
+  .sec{padding:44px 30px}
+  .sec.sand{background:var(--sand)} .sec.forest{background:var(--forest);color:var(--ivory)}
+  .sec-title{font-family:var(--font-display);font-weight:600;font-size:1.9rem;letter-spacing:-.015em;margin:14px 0 8px;text-wrap:balance}
+  .sec-sub{color:var(--ink-soft);font-size:15px;max-width:56ch}
+  .forest .sec-sub{color:rgba(246,238,225,.75)}
+
+  /* products — LIGHT card family */
+  .prodrow{display:grid;gap:18px;margin-top:28px}
+  .prod{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .prod .ph{border-radius:0;border-left:0;border-right:0;border-top:0;min-height:158px}
+  .prod-b{padding:18px 18px 18px}
+  .prod-b h4{font-family:var(--font-display);font-weight:600;font-size:1.3rem;margin:0 0 5px}
+  .prod-b p{margin:0 0 12px;font-size:13.5px;color:var(--ink-soft)}
+
+  /* why — DARK tile family (no numbered markers) */
+  .why{display:grid;gap:16px;margin-top:28px}
+  .why-item{background:var(--forest-tile);border:1px solid rgba(246,238,225,.08);border-radius:12px;padding:22px 20px}
+  .why-item b{display:block;font-family:var(--font-display);font-size:1.2rem;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
+  .why-item small{color:rgba(246,238,225,.66);font-size:13px;line-height:1.55}
+
+  /* stat band — calm, hairline dividers, no gold grid */
+  .stats{display:grid;grid-template-columns:1fr 1fr;background:var(--forest);border-top:1px solid rgba(246,238,225,.12);border-bottom:1px solid rgba(246,238,225,.12)}
+  .stat{color:var(--ivory);padding:30px 26px;border-top:1px solid rgba(246,238,225,.09)}
+  .stat:nth-child(odd){border-right:1px solid rgba(246,238,225,.09)}
+  .stat b{display:block;font-family:var(--font-display);font-weight:600;font-size:2.1rem;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.01em}
+  .stat small{display:block;font-size:12px;color:rgba(246,238,225,.66);margin-top:8px}
+
+  /* timeline */
+  .time{display:grid;gap:16px;margin-top:28px}
+  .step{display:flex;gap:14px;align-items:flex-start}
+  .step .ph{min-height:60px;width:84px;flex:none}
+  .step .ph::before{display:none}
+  .step .dot{display:none}
+  .step b{font-size:13.5px;display:block}.step small{font-size:12px;color:var(--ink-soft)}
+
+  /* season calendar */
+  .cal{display:grid;grid-template-columns:repeat(12,1fr);gap:5px;margin-top:24px;min-width:520px}
+  .cal-cell{text-align:center;font-family:var(--font-mono);font-size:10px;padding:9px 2px;border-radius:5px;background:var(--white);border:1px solid var(--line);color:var(--ink-soft)}
+  .cal-cell.on{background:transparent;color:var(--terra-deep);border-color:var(--terra-deep);font-weight:600}
+  .cal-cell.peak{background:var(--terra-deep);color:#fff;border-color:var(--terra-deep)}
+  .cal-wrap{overflow-x:auto}
+
+  /* cta block */
+  .ctablock{background:var(--forest);color:var(--ivory);border-radius:12px;padding:36px;display:grid;gap:20px}
+  .ctablock h3{font-family:var(--font-display);font-weight:600;font-size:1.8rem;margin:0;max-width:20ch;letter-spacing:-.015em}
+  .ctablock p{margin:0;color:rgba(246,238,225,.78);font-size:14.5px;max-width:46ch}
+
+  /* footer */
+  .ftr{background:var(--forest);color:var(--ivory);padding:34px 30px;display:grid;gap:24px}
+  .ftr h5{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+  .ftr a,.ftr p{color:rgba(246,238,225,.78);font-size:13px;text-decoration:none;margin:0 0 8px;display:block}
+  .ftr .brand{color:var(--ivory);margin-bottom:12px}
+
+  /* sticky mobile bar */
+  .mbar{position:sticky;bottom:0;display:flex;gap:8px;padding:11px 14px;background:rgba(251,247,239,.94);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
+  .mbar .btn{flex:1}
+
+  @container (min-width:820px){
+    .nav{display:flex}.lang{display:inline-block}.menu{display:none}
+    .hdr{padding:22px 52px}
+    .hero{grid-template-columns:1.05fr .95fr;align-items:center;padding:36px 52px 64px;gap:44px}
+    .hero-h1{font-size:56px}
+    .hero-img{min-height:420px}
+    .sec{padding:64px 52px}
+    .sec-title{font-size:2.3rem}
+    .prodrow{grid-template-columns:repeat(3,1fr)}
+    .why{grid-template-columns:repeat(3,1fr);gap:18px}
+    .stats{grid-template-columns:repeat(4,1fr)}
+    .stat{border-right:1px solid rgba(246,238,225,.09)}
+    .stat:last-child{border-right:0}
+    .time{grid-template-columns:repeat(6,1fr)}
+    .step{flex-direction:column}.step .ph{width:100%;min-height:76px}
+    .ctablock{grid-template-columns:1.4fr auto;align-items:center}
+    .ftr{grid-template-columns:1.4fr 1fr 1fr 1fr}
+    .mbar{display:none}
+    .hero-img{order:2}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="board">
+  <div class="board-eyebrow">El Molouk · الملوك للتصدير — Phase 4 · Home · Rev 1</div>
+  <h1 class="board-title">Home — desktop &amp; mobile</h1>
+  <p class="board-note"><b>Revised per review:</b> gradients removed for flat premium surfaces, card families differentiated (light product cards vs dark "why" tiles), shadows pulled back, a calmer stat band, a desaturated CTA, numbered markers dropped, and more whitespace carrying the hierarchy. Images remain labelled placeholders; certs/stats are <span class="pill">[[confirm]]</span>.</p>
+
+  <!-- ===================== DESKTOP ===================== -->
+  <div class="framelabel">Desktop — enhancement</div>
+  <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>elmolouk.com/en</span></div>
+    <div class="frame-scroll"><div class="device d-desktop">
+
+      <header class="hdr">
+        <div class="brand"><i></i>El&nbsp;Molouk</div>
+        <nav class="nav"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav>
+        <div class="hdr-r"><span class="lang">EN ▾</span><a class="btn btn--sm">Request a Quote</a></div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <span class="kicker">Egyptian Orange-Fleshed Sweet Potatoes</span>
+          <h2 class="hero-h1">The Kings of Egyptian sweet potatoes.</h2>
+          <p class="hero-sub">Beauregard-grade, Class I, cured for depth of sweetness — grown on our own farms and shipped to Europe under a monitored cold chain, year-round.</p>
+          <div class="hero-cta"><a class="btn">Request a Quote</a><a class="btn btn--out">Download Spec Sheet</a></div>
+          <div class="hero-trust"><span class="cert-mini"><span>GLOBALG.A.P</span><span>BRCGS</span><span>GRASP</span></span><span>·</span><span><b>Germany's #1</b> origin · 2025</span></div>
+        </div>
+        <div>
+          <div class="ph flesh hero-img"><span class="ph__t">Placeholder · hero</span><span class="ph__d">Cut-to-reveal Beauregard — halved, glowing orange flesh vs earthy skin. Directional natural side-light, matte wood, negative space top. Replace with real macro.</span></div>
+        </div>
+      </section>
+
+      <section class="sec" style="padding-top:0;padding-bottom:8px">
+        <p class="sec-sub" style="max-width:64ch;font-size:16px;color:var(--ink)">A premium Egyptian agricultural exporter built to meet European buyer expectations — certified, consistent, and easy to verify.</p>
+      </section>
+
+      <section class="sec sand">
+        <span class="kicker">Our produce</span>
+        <h3 class="sec-title">One crop, done exceptionally.</h3>
+        <p class="sec-sub">Two orange-fleshed varieties, graded to EU Class I and available across the season.</p>
+        <div class="prodrow">
+          <div class="prod"><div class="ph flesh"><span class="ph__d">Beauregard macro</span></div><div class="prod-b"><h4>Beauregard</h4><p>Deep-orange flesh, copper-pink skin. Sweet, moist — the EU workhorse.</p><a class="btn btn--link">View specifications →</a></div></div>
+          <div class="prod"><div class="ph cure"><span class="ph__d">Bellevue macro</span></div><div class="prod-b"><h4>Bellevue</h4><p>Orange flesh, copper skin. Uniform calibre, excellent shelf life.</p><a class="btn btn--link">View specifications →</a></div></div>
+          <div class="prod"><div class="ph crate"><span class="ph__d">Packed cartons</span></div><div class="prod-b"><h4>Packaging</h4><p>6 kg cartons, 10 kg boxes, bulk bins, retail pre-pack &amp; private label.</p><a class="btn btn--link">See packaging →</a></div></div>
+        </div>
+      </section>
+
+      <section class="sec forest">
+        <span class="kicker on-dark">Why El Molouk</span>
+        <h3 class="sec-title">Grower-to-port control, proven.</h3>
+        <div class="why">
+          <div class="why-item"><b>Own farms &amp; packhouse</b><small>Full control from soil to carton — the consistency EU programmes require.</small></div>
+          <div class="why-item"><b>Certified &amp; audited</b><small>GLOBALG.A.P., BRCGS/IFS, GRASP <span class="pill">[[confirm]]</span> — verifiable, not claimed.</small></div>
+          <div class="why-item"><b>Year-round supply</b><small>Aug–Mar harvest, extended by curing &amp; cold storage.</small></div>
+          <div class="why-item"><b>Cold chain &amp; traceability</b><small>Data-logger monitored, lot-level traceable, held at 12–14 °C.</small></div>
+          <div class="why-item"><b>Container scale</b><small>40′ reefers, FOB/CFR/CIF, from Damietta &amp; Alexandria.</small></div>
+          <div class="why-item"><b>Best value vs USA / Spain</b><small>Competitive landed cost at comparable Class-I quality.</small></div>
+        </div>
+      </section>
+
+      <div class="stats">
+        <div class="stat"><b>30,000<span style="font-size:1rem">t</span></b><small>per season <span class="pill">[[confirm]]</span></small></div>
+        <div class="stat"><b>5,000<span style="font-size:1rem">ha</span></b><small>own &amp; contracted</small></div>
+        <div class="stat"><b>30+</b><small>export markets</small></div>
+        <div class="stat"><b>2011</b><small>exporting since</small></div>
+      </div>
+
+      <section class="sec">
+        <span class="kicker">From field to container</span>
+        <h3 class="sec-title">Every step under one roof.</h3>
+        <div class="time">
+          <div class="step"><div class="ph field"><span class="ph__d">Field</span></div><div><b>Harvest</b><small>Own farms</small></div></div>
+          <div class="step"><div class="ph cure"><span class="ph__d">Curing</span></div><div><b>Cure</b><small>Deepens sweetness</small></div></div>
+          <div class="step"><div class="ph crate"><span class="ph__d">Sorting</span></div><div><b>Grade</b><small>Optical sort</small></div></div>
+          <div class="step"><div class="ph crate"><span class="ph__d">Packing</span></div><div><b>Pack</b><small>Retail / bulk</small></div></div>
+          <div class="step"><div class="ph cure"><span class="ph__d">Cold store</span></div><div><b>Store</b><small>12–14 °C</small></div></div>
+          <div class="step"><div class="ph crate"><span class="ph__d">Loading</span></div><div><b>Ship</b><small>40′ reefer</small></div></div>
+        </div>
+      </section>
+
+      <section class="sec sand">
+        <span class="kicker">Availability</span>
+        <h3 class="sec-title">Reliable supply, all year.</h3>
+        <div class="cal-wrap"><div class="cal">
+          <div class="cal-cell">J</div><div class="cal-cell">F</div><div class="cal-cell on">M</div><div class="cal-cell on">A</div><div class="cal-cell on">M</div><div class="cal-cell">J</div><div class="cal-cell">J</div><div class="cal-cell peak">A</div><div class="cal-cell peak">S</div><div class="cal-cell peak">O</div><div class="cal-cell peak">N</div><div class="cal-cell peak">D</div>
+        </div></div>
+        <p class="sec-sub" style="margin-top:14px"><span style="color:var(--terra-deep);font-weight:600">■</span> Peak harvest · <span style="color:var(--terra-deep)">□</span> Cold-store supply — extendable to near year-round.</p>
+      </section>
+
+      <section class="sec">
+        <div class="ctablock">
+          <div><h3>Become a distribution partner.</h3><p>Tell us your destination port and volume — we'll reply within 4 hours with a quote and spec sheet.</p></div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn">Request a Quote</a><a class="btn btn--wa">WhatsApp us</a></div>
+        </div>
+      </section>
+
+      <footer class="ftr">
+        <div><div class="brand"><i></i>El&nbsp;Molouk</div><p>Premium Egyptian orange-fleshed sweet potatoes for European buyers.</p><p><span class="pill">[[confirm address]]</span></p></div>
+        <div><h5>Export</h5><a>Sweet Potatoes</a><a>Quality &amp; Certifications</a><a>Request a Quote</a></div>
+        <div><h5>Logistics</h5><a>Damietta / Alexandria</a><a>FOB · CFR · CIF</a><a>WhatsApp</a></div>
+        <div><h5>Languages</h5><a>EN · DE · NL · FR · ES · IT</a></div>
+      </footer>
+
+    </div></div>
+  </div>
+
+  <!-- ===================== MOBILE ===================== -->
+  <div class="framelabel">Mobile — primary</div>
+  <div class="frame" style="max-width:430px"><div class="frame-bar"><i></i><i></i><i></i><span>elmolouk.com/en</span></div>
+    <div class="device d-mobile">
+
+      <header class="hdr">
+        <div class="brand"><i></i>El&nbsp;Molouk</div>
+        <span class="menu"><i></i><i></i><i></i></span>
+      </header>
+
+      <section class="hero">
+        <div>
+          <span class="kicker">Orange-Fleshed · Egypt</span>
+          <h2 class="hero-h1">The Kings of Egyptian sweet potatoes.</h2>
+        </div>
+        <div class="ph flesh hero-img"><span class="ph__t">Placeholder</span><span class="ph__d">Cut-to-reveal macro, glowing flesh, side-light.</span></div>
+        <div>
+          <p class="hero-sub">Beauregard-grade, Class I, cured — shipped to Europe year-round.</p>
+          <div class="hero-cta" style="flex-direction:column;align-items:stretch"><a class="btn">Request a Quote</a><a class="btn btn--out">Download Spec Sheet</a></div>
+          <div class="hero-trust"><span class="cert-mini"><span>GLOBALG.A.P</span><span>BRCGS</span></span> · <b>Germany's #1</b> · 2025</div>
+        </div>
+      </section>
+
+      <section class="sec sand" style="padding:34px 22px">
+        <span class="kicker">Our produce</span>
+        <h3 class="sec-title">One crop, done exceptionally.</h3>
+        <div class="prodrow">
+          <div class="prod"><div class="ph flesh"><span class="ph__d">Beauregard</span></div><div class="prod-b"><h4>Beauregard</h4><p>Deep-orange flesh, copper skin. The EU workhorse.</p><a class="btn btn--link">View specs →</a></div></div>
+          <div class="prod"><div class="ph cure"><span class="ph__d">Bellevue</span></div><div class="prod-b"><h4>Bellevue</h4><p>Uniform calibre, excellent shelf life.</p><a class="btn btn--link">View specs →</a></div></div>
+        </div>
+      </section>
+
+      <section class="sec forest" style="padding:34px 22px">
+        <span class="kicker on-dark">Why El Molouk</span>
+        <h3 class="sec-title">Grower-to-port control.</h3>
+        <div class="why">
+          <div class="why-item"><b>Own farms &amp; packhouse</b><small>Soil to carton — consistent quality.</small></div>
+          <div class="why-item"><b>Certified &amp; audited</b><small>GLOBALG.A.P., BRCGS <span class="pill">[[confirm]]</span>.</small></div>
+          <div class="why-item"><b>Year-round supply</b><small>Harvest + cold storage.</small></div>
+        </div>
+      </section>
+
+      <div class="stats">
+        <div class="stat"><b>30,000t</b><small>per season <span class="pill">[[confirm]]</span></small></div>
+        <div class="stat"><b>5,000ha</b><small>own &amp; contracted</small></div>
+        <div class="stat"><b>30+</b><small>markets</small></div>
+        <div class="stat"><b>2011</b><small>since</small></div>
+      </div>
+
+      <section class="sec" style="padding:34px 22px">
+        <span class="kicker">From field to container</span>
+        <h3 class="sec-title">Every step under one roof.</h3>
+        <div class="time">
+          <div class="step"><div class="ph field"><span class="ph__d">Field</span></div><div><b>Harvest</b><small>Own farms</small></div></div>
+          <div class="step"><div class="ph cure"><span class="ph__d">Curing</span></div><div><b>Cure</b><small>Deepens sweetness</small></div></div>
+          <div class="step"><div class="ph crate"><span class="ph__d">Loading</span></div><div><b>Ship</b><small>40′ reefer</small></div></div>
+        </div>
+      </section>
+
+      <section class="sec" style="padding:28px 22px">
+        <div class="ctablock"><div><h3>Become a distribution partner.</h3><p>Port + volume → a quote within 4 hours.</p></div><a class="btn" style="width:100%">Request a Quote</a></div>
+      </section>
+
+      <footer class="ftr" style="padding:30px 22px;grid-template-columns:1fr 1fr">
+        <div style="grid-column:1/-1"><div class="brand"><i></i>El&nbsp;Molouk</div><p>Premium Egyptian sweet potatoes for European buyers.</p></div>
+        <div><h5>Export</h5><a>Sweet Potatoes</a><a>Quality</a></div>
+        <div><h5>Contact</h5><a>WhatsApp</a><a>Request a Quote</a></div>
+      </footer>
+
+      <div class="mbar"><a class="btn">Request a Quote</a><a class="btn btn--wa" style="flex:none;padding-left:16px;padding-right:16px">WhatsApp</a></div>
+    </div>
+  </div>
+
+  <p class="board-note" style="margin-top:34px"><b>Awaiting re-approval of Home.</b> Once approved, next is the RFQ page (I'll carry the same flat-surface / reduced-shadow / desaturated-CTA treatment across all pages and the design system).</p>
+</div>

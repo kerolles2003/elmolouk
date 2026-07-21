@@ -1,0 +1,452 @@
+<title>El Molouk — Homepage Hero Concepts</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+
+  :root{
+    /* Brand — Nile Harvest (fixed across themes; comps look identical in light/dark) */
+    --ink:#2A2018; --ink-soft:#5B4E3F; --terra:#C25B2C; --terra-deep:#A5471F;
+    --forest:#1E2A22; --olive:#56613C; --gold:#B08D57;
+    --sand:#F2E9DB; --ivory:#FBF7EF; --line:#E4D8C5; --white:#fff; --wa:#25D366;
+
+    /* Board chrome — theme-aware */
+    --bg:#E9E3D7; --bg2:#DED6C7; --fg:#2A2018; --fg-soft:#6B5D4B;
+    --hair:#CEC4B1; --card:#FBF9F4; --accent:#A5471F;
+
+    --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+    --font-sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    --font-mono:ui-monospace,'SF Mono','Cascadia Code',Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#15110D; --bg2:#1D1710; --fg:#EFE7D9; --fg-soft:#B3A793; --hair:#342A20; --card:#1B1611; --accent:#D5814E; }
+  }
+  :root[data-theme="dark"]{ --bg:#15110D; --bg2:#1D1710; --fg:#EFE7D9; --fg-soft:#B3A793; --hair:#342A20; --card:#1B1611; --accent:#D5814E; }
+  :root[data-theme="light"]{ --bg:#E9E3D7; --bg2:#DED6C7; --fg:#2A2018; --fg-soft:#6B5D4B; --hair:#CEC4B1; --card:#FBF9F4; --accent:#A5471F; }
+
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-sans);line-height:1.55;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:1180px;margin:0 auto;padding:clamp(20px,4vw,56px) clamp(16px,4vw,40px)}
+
+  /* ---------- Board header ---------- */
+  .eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--fg-soft)}
+  .board-title{font-family:var(--font-display);font-weight:600;letter-spacing:-.01em;line-height:1.02;
+    text-wrap:balance;font-size:clamp(2rem,5.5vw,3.4rem);margin:.35em 0 .3em}
+  .lede{max-width:64ch;color:var(--fg-soft);font-size:clamp(.95rem,1.6vw,1.075rem)}
+  .lede b{color:var(--fg);font-weight:600}
+  .swatches{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .sw{display:flex;align-items:center;gap:8px;font-size:11px;font-family:var(--font-mono);
+    color:var(--fg-soft);background:var(--card);border:1px solid var(--hair);border-radius:999px;padding:5px 11px 5px 6px}
+  .sw i{width:15px;height:15px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+  .rule{height:1px;background:var(--hair);border:0;margin:clamp(28px,5vw,52px) 0}
+
+  /* ---------- Concept block ---------- */
+  .concept{margin-top:clamp(30px,5vw,56px);animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+  .concept-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px;margin-bottom:20px}
+  .tag{font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:.1em;
+    color:var(--white);background:var(--terra-deep);border-radius:6px;padding:4px 9px}
+  .concept-name{font-family:var(--font-display);font-weight:600;font-size:clamp(1.4rem,3vw,1.9rem);letter-spacing:-.01em}
+  .concept-mood{color:var(--fg-soft);font-size:.95rem}
+  .concept-font{margin-left:auto;font-family:var(--font-mono);font-size:11px;color:var(--fg-soft);
+    border:1px dashed var(--hair);border-radius:6px;padding:4px 9px}
+
+  .frames{display:grid;grid-template-columns:1fr;gap:20px}
+  @media (min-width:900px){ .frames{grid-template-columns:minmax(0,1fr) 372px} }
+  .frame{background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden;
+    box-shadow:0 1px 2px rgba(42,32,24,.06),0 18px 40px -28px rgba(42,32,24,.5)}
+  .frame-bar{display:flex;align-items:center;gap:7px;padding:9px 12px;border-bottom:1px solid var(--hair);background:var(--bg2)}
+  .frame-bar i{width:9px;height:9px;border-radius:50%;background:var(--hair)}
+  .frame-bar span{margin-left:8px;font-family:var(--font-mono);font-size:11px;color:var(--fg-soft);letter-spacing:.03em}
+  .frame-scroll{overflow-x:auto}
+  .viewport{min-width:860px}         /* desktop canvas */
+  .frame--mobile .viewport{min-width:0}
+
+  /* ================= MOCKUP PRIMITIVES ================= */
+  .mk{font-family:var(--font-sans);color:var(--ink)}
+  .mk-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 26px}
+  .mk-brand{font-family:var(--font-display);font-weight:600;letter-spacing:.16em;font-size:14px;text-transform:uppercase;display:flex;align-items:center;gap:7px}
+  .mk-brand i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .mk-links{display:flex;gap:18px;font-size:12.5px;color:inherit;opacity:.82}
+  .mk-links span{white-space:nowrap}
+  .mk-quote{font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:8px;background:var(--terra-deep);color:#fff;white-space:nowrap}
+  .mk-quote--ghost{background:transparent;color:inherit;border:1px solid currentColor;opacity:.9}
+  .mk-menu{display:inline-flex;flex-direction:column;gap:4px}
+  .mk-menu i{width:20px;height:2px;background:currentColor;border-radius:2px}
+
+  .mk-kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    display:inline-flex;align-items:center;gap:9px;color:var(--terra-deep);font-weight:600}
+  .mk-kicker::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .mk-sub{color:var(--ink-soft);font-size:14.5px;max-width:42ch}
+
+  .mk-btn{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:14px;border-radius:9px;
+    padding:12px 20px;background:var(--terra-deep);color:#fff}
+  .mk-btn--out{background:transparent;color:inherit;border:1px solid currentColor}
+  .mk-btn--wa{background:var(--wa);color:#08331b}
+  .mk-btn--link{background:none;padding:12px 2px;color:inherit;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--gold)}
+  .mk-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+  .mk-trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font-family:var(--font-mono);
+    font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+  .mk-trust b{color:var(--ink);font-weight:700}
+  .mk-cert{display:inline-flex;gap:6px;flex-wrap:wrap}
+  .mk-cert span{border:1px solid var(--line);border-radius:5px;padding:3px 8px;background:rgba(255,255,255,.5)}
+  .mk-chips{display:flex;flex-wrap:wrap;gap:8px}
+  .mk-chip{font-size:11.5px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(242,233,219,.9);color:var(--ink);border:1px solid rgba(176,141,87,.4)}
+  .mk-confirm{font-family:var(--font-mono);font-size:9.5px;color:var(--terra-deep);opacity:.85}
+
+  /* placeholder image blocks */
+  .mk-img{position:relative;border-radius:12px;overflow:hidden;min-height:120px;display:flex;align-items:flex-end;
+    background:#8a7a5c}
+  .mk-img.flesh{background:radial-gradient(120% 120% at 62% 34%,#F0A85C 0%,#D9702F 34%,#B24E22 60%,#6E3418 100%)}
+  .mk-img.field{background:linear-gradient(158deg,#9FAE7C 0%,#6B7A48 46%,#3C4628 100%)}
+  .mk-img.crate{background:linear-gradient(158deg,#C7B694 0%,#9A845F 55%,#5E4E36 100%)}
+  .mk-img.dark{background:linear-gradient(158deg,#3a5140 0%,#233024 60%,#161f18 100%)}
+  .mk-img__tag{font-family:var(--font-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+    color:#fff;background:rgba(26,20,16,.62);border:1px solid rgba(255,255,255,.22);border-radius:5px;padding:2px 7px;position:absolute;top:10px;left:10px}
+  .mk-img__desc{font-family:var(--font-mono);font-size:10.5px;line-height:1.45;color:#F6EEE1;
+    background:linear-gradient(0deg,rgba(20,14,10,.82),rgba(20,14,10,.5));padding:10px 12px;width:100%}
+  .mk-frame{box-shadow:inset 0 0 0 1px rgba(176,141,87,.55)}
+  .mk-cap{font-family:var(--font-mono);font-size:10px;color:var(--ink-soft);margin-top:7px}
+
+  /* ---- Concept A : Premium Editorial ---- */
+  .heroA{background:var(--ivory)}
+  .heroA .mk-links,.heroA .mk-brand{color:var(--ink)}
+  .heroA .mk-quote--ghost{color:var(--terra-deep)}
+  .a-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;padding:22px 26px 44px;align-items:center}
+  .a-h1{font-family:var(--font-display);font-weight:600;letter-spacing:-.02em;line-height:1.02;
+    font-size:44px;margin:16px 0 14px;text-wrap:balance}
+  .a-stack{display:flex;flex-direction:column;gap:18px}
+  .a-img{min-height:330px}
+
+  /* ---- Concept B : Modern Agricultural ---- */
+  .heroB{position:relative;color:#fff}
+  .heroB .b-bg{position:absolute;inset:0}
+  .heroB .b-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,26,17,.72),rgba(20,26,17,.25) 55%,rgba(20,26,17,.05))}
+  .heroB .mk-nav{position:relative}
+  .heroB .mk-links,.heroB .mk-brand{color:#fff}
+  .b-inner{position:relative;padding:20px 26px 40px;display:flex;flex-direction:column;min-height:430px}
+  .b-body{margin-top:auto;max-width:33rem}
+  .b-h1{font-family:var(--font-sans);font-weight:800;letter-spacing:-.02em;line-height:1.02;font-size:44px;margin:0 0 14px;text-wrap:balance}
+  .heroB .mk-sub{color:rgba(255,255,255,.86)}
+  .b-desc{position:absolute;right:16px;bottom:16px;max-width:270px}
+
+  /* ---- Concept C : B2B Corporate ---- */
+  .heroC{background:var(--forest);color:var(--ivory)}
+  .heroC .mk-links,.heroC .mk-brand{color:var(--ivory)}
+  .c-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:30px;padding:20px 26px 26px;align-items:center}
+  .c-kicker{color:var(--gold)}
+  .c-kicker::before{background:var(--gold)}
+  .c-h1{font-family:var(--font-sans);font-weight:700;letter-spacing:-.015em;line-height:1.05;font-size:36px;margin:14px 0 12px;text-wrap:balance}
+  .heroC .mk-sub{color:rgba(246,238,225,.82)}
+  .c-spec{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}
+  .c-spec span{font-family:var(--font-mono);font-size:10.5px;color:var(--ivory);border:1px solid rgba(176,141,87,.45);border-radius:5px;padding:4px 8px}
+  .heroC .mk-cert span{background:rgba(255,255,255,.05);border-color:rgba(176,141,87,.4);color:var(--ivory)}
+  .c-img{min-height:250px}
+  .c-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(176,141,87,.28);
+    border-top:1px solid rgba(176,141,87,.28)}
+  .c-stat{background:var(--forest);padding:16px 22px}
+  .c-stat b{display:block;font-family:var(--font-display);font-size:24px;font-weight:600;color:var(--gold);font-variant-numeric:tabular-nums}
+  .c-stat small{font-size:11px;color:rgba(246,238,225,.7)}
+
+  /* ---------- Mobile phone frame ---------- */
+  .phone{max-width:360px;margin:0 auto}
+  .phone .mk-nav{padding:14px 16px}
+  .phone .mk-links{display:none}
+  .p-body{padding:6px 16px 20px;display:flex;flex-direction:column;gap:14px}
+  .p-h1{margin:6px 0 2px;letter-spacing:-.02em;line-height:1.05;text-wrap:balance}
+  .p-h1.serif{font-family:var(--font-display);font-weight:600;font-size:30px}
+  .p-h1.sans{font-family:var(--font-sans);font-weight:800;font-size:29px}
+  .p-h1.sansC{font-family:var(--font-sans);font-weight:700;font-size:26px}
+  .p-img{min-height:180px}
+  .p-cta{display:flex;flex-direction:column;gap:10px}
+  .p-cta .mk-btn{justify-content:center}
+  .pA{background:var(--ivory)} .pC{background:var(--forest)}
+  .pC .p-body{color:var(--ivory)} .pC .mk-brand,.pC .mk-menu i{color:var(--ivory)}
+  .pC .mk-sub{color:rgba(246,238,225,.82)}
+  .pB-hero{position:relative;color:#fff}
+  .pB-hero .b-bg::after{background:linear-gradient(0deg,rgba(20,26,17,.85),rgba(20,26,17,.15) 60%)}
+  .pB-hero .p-h1{position:relative;padding:0 16px 14px}
+  .pB-over{position:relative;margin-top:auto}
+
+  /* ---------- Spec panel ---------- */
+  .spec{margin-top:18px;border:1px solid var(--hair);border-radius:12px;background:var(--card);overflow:hidden}
+  .spec-row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:11px 18px;border-top:1px solid var(--hair)}
+  .spec-row:first-child{border-top:0}
+  .spec-row dt{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-soft);margin:0}
+  .spec-row dd{margin:0;font-size:13.5px;color:var(--fg)}
+  @media (max-width:560px){ .spec-row{grid-template-columns:1fr;gap:3px} }
+
+  .foot{margin-top:44px;padding-top:20px;border-top:1px solid var(--hair);color:var(--fg-soft);font-size:13px;max-width:70ch}
+  .foot b{color:var(--fg)}
+
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){ .concept{animation:none} }
+</style>
+
+<div class="wrap mk-reset">
+  <header>
+    <div class="eyebrow">El Molouk · الملوك للتصدير — Phase 4 · Design</div>
+    <h1 class="board-title">Homepage hero — three directions</h1>
+    <p class="lede">Three creative directions on one approved brand system (<b>Nile Harvest</b>). <b>Mobile is the primary design</b>; desktop is the enhancement. Every image is a labelled placeholder carrying its intended final shot. Display/body faces are <b>approximated with system fonts</b> here (the sandbox blocks web-font CDNs) — production uses Fraunces + Inter. <b>Pick one direction</b> to take into full component design.</p>
+    <div class="swatches" aria-hidden="true">
+      <span class="sw"><i style="background:#2A2018"></i>ink</span>
+      <span class="sw"><i style="background:#C25B2C"></i>terracotta</span>
+      <span class="sw"><i style="background:#1E2A22"></i>forest</span>
+      <span class="sw"><i style="background:#56613C"></i>olive</span>
+      <span class="sw"><i style="background:#B08D57"></i>gold</span>
+      <span class="sw"><i style="background:#F2E9DB"></i>sand</span>
+      <span class="sw"><i style="background:#FBF7EF"></i>ivory</span>
+    </div>
+  </header>
+
+  <hr class="rule">
+
+  <!-- ================= CONCEPT A ================= -->
+  <section class="concept" style="animation-delay:.02s">
+    <div class="concept-head">
+      <span class="tag">A</span>
+      <span class="concept-name">Premium Editorial</span>
+      <span class="concept-mood">— quiet luxury; type &amp; whitespace lead</span>
+      <span class="concept-font">Fraunces display · Inter</span>
+    </div>
+    <div class="frames">
+      <div class="frame frame--desktop">
+        <div class="frame-bar"><i></i><i></i><i></i><span>Desktop — enhancement</span></div>
+        <div class="frame-scroll"><div class="viewport">
+          <div class="mk heroA">
+            <div class="mk-nav">
+              <div class="mk-brand"><i></i>El&nbsp;Molouk</div>
+              <nav class="mk-links"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav>
+              <span class="mk-quote mk-quote--ghost">Request a Quote</span>
+            </div>
+            <div class="a-grid">
+              <div>
+                <span class="mk-kicker">Egyptian Orange-Fleshed Sweet Potatoes</span>
+                <h3 class="a-h1">The Kings of Egyptian sweet potatoes.</h3>
+                <div class="a-stack">
+                  <p class="mk-sub">Beauregard-grade, Class I, cured for depth of sweetness — grown on our own farms and shipped to Europe year-round.</p>
+                  <div class="mk-cta">
+                    <span class="mk-btn">Request a Quote</span>
+                    <span class="mk-btn mk-btn--link">Download spec sheet →</span>
+                  </div>
+                  <div class="mk-trust">
+                    <span class="mk-cert"><span>GLOBALG.A.P</span><span>BRCGS</span><span>GRASP</span></span>
+                    <span>·</span><span><b>Germany's #1</b> sweet-potato origin · 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="mk-img flesh mk-frame a-img">
+                  <span class="mk-img__tag">Placeholder · hero</span>
+                  <span class="mk-img__desc">Cut-to-reveal Beauregard — halved, glowing orange flesh against earthy skin. Directional natural side-light, matte wood, negative space at top. Replace with real company macro.</span>
+                </div>
+                <p class="mk-cap">◳ portrait 4:5 · headline may overlap the negative space</p>
+              </div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="frame frame--mobile">
+        <div class="frame-bar"><i></i><i></i><i></i><span>Mobile — primary</span></div>
+        <div class="mk phone pA">
+          <div class="mk-nav">
+            <div class="mk-brand"><i></i>El&nbsp;Molouk</div>
+            <span class="mk-menu"><i></i><i></i><i></i></span>
+          </div>
+          <div class="p-body">
+            <span class="mk-kicker">Orange-Fleshed · Egypt</span>
+            <h3 class="p-h1 serif">The Kings of Egyptian sweet potatoes.</h3>
+            <div class="mk-img flesh mk-frame p-img">
+              <span class="mk-img__tag">Placeholder</span>
+              <span class="mk-img__desc">Cut-to-reveal macro, glowing flesh, side-light.</span>
+            </div>
+            <p class="mk-sub">Beauregard-grade, Class I, cured — shipped to Europe year-round.</p>
+            <div class="p-cta">
+              <span class="mk-btn">Request a Quote</span>
+              <span class="mk-btn mk-btn--out">Download spec sheet</span>
+            </div>
+            <div class="mk-trust"><span class="mk-cert"><span>GLOBALG.A.P</span><span>BRCGS</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dl class="spec">
+      <div class="spec-row"><dt>Hero layout</dt><dd>Asymmetric editorial split (≈55/45). Headline and CTA breathe in the left column; the cut-to-reveal image anchors the right. Maximum whitespace.</dd></div>
+      <div class="spec-row"><dt>Typography</dt><dd>Fraunces serif at large display scale, tight leading, balanced wrap; Inter for the tracked small-caps kicker and body. Type is the hero device.</dd></div>
+      <div class="spec-row"><dt>Image</dt><dd>One refined macro — the halved tuber — with negative space the headline can overlap. Thin gold frame line.</dd></div>
+      <div class="spec-row"><dt>CTA</dt><dd>Primary "Request a Quote" (terracotta) beside a quiet "Download spec sheet →" text link. Understated but unmistakable.</dd></div>
+      <div class="spec-row"><dt>Colour</dt><dd>Ivory dominant, ink text, terracotta reserved for the single CTA, gold hairlines only.</dd></div>
+      <div class="spec-row"><dt>Trust</dt><dd>A restrained small-caps certification line + the "Germany's #1 origin, 2025" stat as an elegant kicker.</dd></div>
+      <div class="spec-row"><dt>Mood</dt><dd>Quiet luxury — a premium export house that lets the product and the whitespace speak.</dd></div>
+    </dl>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= CONCEPT B ================= -->
+  <section class="concept" style="animation-delay:.04s">
+    <div class="concept-head">
+      <span class="tag">B</span>
+      <span class="concept-name">Modern Agricultural</span>
+      <span class="concept-mood">— fresh, honest, product-first</span>
+      <span class="concept-font">Hanken Grotesk / Inter · bold</span>
+    </div>
+    <div class="frames">
+      <div class="frame frame--desktop">
+        <div class="frame-bar"><i></i><i></i><i></i><span>Desktop — enhancement</span></div>
+        <div class="frame-scroll"><div class="viewport">
+          <div class="mk heroB">
+            <div class="b-bg mk-img field">
+              <span class="mk-img__tag">Placeholder · full-bleed</span>
+            </div>
+            <div class="b-inner">
+              <div class="mk-nav">
+                <div class="mk-brand"><i></i>El&nbsp;Molouk</div>
+                <nav class="mk-links"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav>
+                <span class="mk-quote">Request a Quote</span>
+              </div>
+              <div class="b-body">
+                <h3 class="b-h1">Fresh from Egyptian soil. Ready for Europe.</h3>
+                <p class="mk-sub">Own farms, own packhouse, cold chain intact — orange-fleshed sweet potatoes your buyers can rely on, every week of the year.</p>
+                <div class="mk-cta" style="margin:18px 0 16px">
+                  <span class="mk-btn">Request a Quote</span>
+                  <span class="mk-btn mk-btn--wa">WhatsApp us</span>
+                </div>
+                <div class="mk-chips">
+                  <span class="mk-chip">GLOBALG.A.P <em class="mk-confirm">[[confirm]]</em></span>
+                  <span class="mk-chip">Year-round supply</span>
+                  <span class="mk-chip">Own farms &amp; packhouse</span>
+                </div>
+              </div>
+              <div class="mk-img__desc b-desc">Wide daylight scene — hands lifting orange-fleshed tubers from Egyptian soil, crates in soft focus behind. Warm natural light. Replace with real farm photography.</div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="frame frame--mobile">
+        <div class="frame-bar"><i></i><i></i><i></i><span>Mobile — primary</span></div>
+        <div class="mk phone">
+          <div class="pB-hero mk-img field" style="display:flex;flex-direction:column;min-height:300px">
+            <div class="b-bg"></div>
+            <div class="mk-nav" style="position:relative;color:#fff">
+              <div class="mk-brand" style="color:#fff"><i></i>El&nbsp;Molouk</div>
+              <span class="mk-menu" style="color:#fff"><i></i><i></i><i></i></span>
+            </div>
+            <div class="pB-over">
+              <h3 class="p-h1 sans" style="position:relative;padding:0 16px 16px;color:#fff">Fresh from Egyptian soil. Ready for Europe.</h3>
+            </div>
+          </div>
+          <div class="p-body">
+            <p class="mk-sub">Own farms, own packhouse, cold chain intact — reliable supply, all year.</p>
+            <div class="p-cta">
+              <span class="mk-btn">Request a Quote</span>
+              <span class="mk-btn mk-btn--wa">WhatsApp us</span>
+            </div>
+            <div class="mk-chips">
+              <span class="mk-chip">GLOBALG.A.P</span><span class="mk-chip">Year-round</span><span class="mk-chip">Own farms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dl class="spec">
+      <div class="spec-row"><dt>Hero layout</dt><dd>Full-bleed photography with an overlaid content block, bottom-left; navigation floats transparent over the image.</dd></div>
+      <div class="spec-row"><dt>Typography</dt><dd>Bold humanist sans (Hanken Grotesk / Inter) headline — confident, bright, plain-spoken. The all-sans counterpoint to A.</dd></div>
+      <div class="spec-row"><dt>Image</dt><dd>Image <em>is</em> the hero: a wide daylight farm-and-product scene fills the frame, product foreground and in focus.</dd></div>
+      <div class="spec-row"><dt>CTA</dt><dd>Primary "Request a Quote" + WhatsApp green, side by side directly under the headline over a soft scrim.</dd></div>
+      <div class="spec-row"><dt>Colour</dt><dd>Photography leads; terracotta CTA + olive/sand chips; ivory text on a soft dark scrim for legibility.</dd></div>
+      <div class="spec-row"><dt>Trust</dt><dd>Light pill chips — certifications, "year-round", "own farms &amp; packhouse" — fast to scan.</dd></div>
+      <div class="spec-row"><dt>Mood</dt><dd>Fresh, honest, natural — the farm brought straight to the buyer. Highest emotional pull; leans hardest on real photography.</dd></div>
+    </dl>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ================= CONCEPT C ================= -->
+  <section class="concept" style="animation-delay:.06s">
+    <div class="concept-head">
+      <span class="tag">C</span>
+      <span class="concept-name">B2B Corporate</span>
+      <span class="concept-mood">— reliable, procurement-first, trust-dense</span>
+      <span class="concept-font">Inter · structured</span>
+    </div>
+    <div class="frames">
+      <div class="frame frame--desktop">
+        <div class="frame-bar"><i></i><i></i><i></i><span>Desktop — enhancement</span></div>
+        <div class="frame-scroll"><div class="viewport">
+          <div class="mk heroC">
+            <div class="mk-nav">
+              <div class="mk-brand"><i></i>El&nbsp;Molouk</div>
+              <nav class="mk-links"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav>
+              <span class="mk-quote">Request a Quote</span>
+            </div>
+            <div class="c-grid">
+              <div>
+                <span class="mk-kicker c-kicker">Bulk Export · EU Importers</span>
+                <h3 class="c-h1">Egyptian orange-fleshed sweet potatoes, at container scale.</h3>
+                <div class="c-spec">
+                  <span>Beauregard · Class I</span><span>FOB Damietta / CIF EU</span><span>40′ reefer</span><span>Aug–Mar +</span>
+                </div>
+                <div class="mk-cta">
+                  <span class="mk-btn">Request a Quote</span>
+                  <span class="mk-btn mk-btn--out">Download Spec Sheet</span>
+                </div>
+                <div class="mk-cert" style="margin-top:16px"><span>GLOBALG.A.P</span><span>BRCGS / IFS</span><span>ISO 22000</span><span>Phytosanitary</span></div>
+              </div>
+              <div>
+                <div class="mk-img crate mk-frame c-img">
+                  <span class="mk-img__tag">Placeholder · framed</span>
+                  <span class="mk-img__desc">Graded tubers in export cartons on a pallet, packhouse behind; or a 40′ reefer at loading. Clean, catalogue-like, even light. Replace with real logistics photo.</span>
+                </div>
+              </div>
+            </div>
+            <div class="c-stats">
+              <div class="c-stat"><b>30,000<small style="font-size:14px">t</small></b><small>per season <em class="mk-confirm">[[confirm]]</em></small></div>
+              <div class="c-stat"><b>5,000<small style="font-size:14px">ha</small></b><small>own &amp; contracted</small></div>
+              <div class="c-stat"><b>30+</b><small>export markets</small></div>
+              <div class="c-stat"><b>2011</b><small>exporting since</small></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="frame frame--mobile">
+        <div class="frame-bar"><i></i><i></i><i></i><span>Mobile — primary</span></div>
+        <div class="mk phone pC">
+          <div class="mk-nav">
+            <div class="mk-brand"><i></i>El&nbsp;Molouk</div>
+            <span class="mk-menu"><i></i><i></i><i></i></span>
+          </div>
+          <div class="p-body">
+            <span class="mk-kicker c-kicker">Bulk Export · EU Importers</span>
+            <h3 class="p-h1 sansC">Egyptian sweet potatoes, at container scale.</h3>
+            <div class="c-spec"><span>Beauregard</span><span>CIF EU</span><span>40′ reefer</span></div>
+            <div class="p-cta">
+              <span class="mk-btn">Request a Quote</span>
+              <span class="mk-btn mk-btn--out">Download Spec Sheet</span>
+            </div>
+            <div class="c-stats" style="grid-template-columns:1fr 1fr;border-radius:10px;overflow:hidden">
+              <div class="c-stat"><b>30,000t</b><small>per season</small></div>
+              <div class="c-stat"><b>30+</b><small>markets</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dl class="spec">
+      <div class="spec-row"><dt>Hero layout</dt><dd>Structured two-column on a dark forest ground, with a 4-metric stat band locked to the bottom of the hero — proof above the fold.</dd></div>
+      <div class="spec-row"><dt>Typography</dt><dd>Medium-weight Inter, tighter scale, inline spec chips — engineered and businesslike.</dd></div>
+      <div class="spec-row"><dt>Image</dt><dd>Framed product/container shot in a bordered card — controlled and catalogue-like, not emotive.</dd></div>
+      <div class="spec-row"><dt>CTA</dt><dd>Primary "Request a Quote" + outline "Download Spec Sheet". A message-match H1 mirrors the ad keyword for Quality Score.</dd></div>
+      <div class="spec-row"><dt>Colour</dt><dd>Forest ground, ivory text, terracotta CTA, gold hairline detailing — the highest contrast of the three.</dd></div>
+      <div class="spec-row"><dt>Trust</dt><dd>Certification badge row + the stat band (tonnes, hectares, markets, since) — trust density is the whole point.</dd></div>
+      <div class="spec-row"><dt>Mood</dt><dd>Reliable, procurement-first — reads as a serious, audited export operation. Best raw fit for a Google-Ads RFQ page.</dd></div>
+    </dl>
+  </section>
+
+  <p class="foot">These are <b>non-production visual comps</b> (static HTML) for direction-setting — not the Next.js build, and not final pixels. Placeholder blocks stand in for real photography and each names its intended shot. Fonts are approximated; certifications and stats shown are <b>[[confirm]]</b> placeholders. <b>Next step:</b> select A, B, or C (or a blend) — then I build the shared component system and full desktop + mobile pages on the chosen direction.</p>
+</div>

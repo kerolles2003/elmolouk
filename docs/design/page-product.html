@@ -1,0 +1,269 @@
+<title>El Molouk — Sweet Potatoes (Desktop + Mobile)</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --ink:#2A2018;--ink-soft:#5B4E3F;--terra:#C25B2C;--terra-deep:#A5471F;--terra-press:#8A3A16;
+    --forest:#1E2A22;--olive:#56613C;--gold:#B08D57;--sand:#F2E9DB;--ivory:#FBF7EF;--line:#E4D8C5;--white:#fff;--wa:#25D366;
+    --bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4;
+    --font-display:'Fraunces',Georgia,'Times New Roman',serif;--font-sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--font-mono:ui-monospace,'SF Mono',Consolas,monospace;
+    --sh-1:0 1px 2px rgba(42,32,24,.06);--sh-2:0 10px 30px -14px rgba(42,32,24,.4);
+  }
+  @media (prefers-color-scheme:dark){:root{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}}
+  :root[data-theme="dark"]{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}
+  :root[data-theme="light"]{--bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .board{max-width:1240px;margin:0 auto;padding:clamp(18px,3.5vw,46px) clamp(14px,3.5vw,36px)}
+  .board-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft)}
+  .board-title{font-family:var(--font-display);font-weight:600;font-size:clamp(1.7rem,4.5vw,2.6rem);letter-spacing:-.015em;margin:.3em 0 .3em}
+  .board-note{color:var(--fg-soft);max-width:70ch;font-size:.95rem}.board-note b{color:var(--fg)}
+  .framelabel{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;color:var(--fg-soft);text-transform:uppercase;letter-spacing:.1em;margin:34px 0 12px}
+  .framelabel::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .frame{background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden;box-shadow:var(--sh-2)}
+  .frame-bar{display:flex;align-items:center;gap:7px;padding:9px 13px;border-bottom:1px solid var(--hair);background:var(--bg2)}
+  .frame-bar i{width:9px;height:9px;border-radius:50%;background:var(--hair)}.frame-bar span{margin-left:8px;font-family:var(--font-mono);font-size:11px;color:var(--fg-soft)}
+  .frame-scroll{overflow-x:auto}
+  .device{container-type:inline-width;background:var(--ivory);color:var(--ink)}
+  .d-desktop{min-width:1080px}.d-mobile{width:392px;margin:0 auto}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;line-height:1;border:1px solid transparent;border-radius:8px;padding:13px 22px;background:var(--terra-deep);color:#fff;cursor:pointer;text-decoration:none;transition:background .16s,box-shadow .16s}
+  .btn:hover{background:var(--terra);box-shadow:var(--sh-2)}.btn:active{background:var(--terra-press)}.btn:focus-visible{outline:2px solid var(--terra-deep);outline-offset:2px}
+  .btn--out{background:transparent;color:var(--ink);border-color:var(--ink)}.btn--out:hover{background:rgba(42,32,24,.05);box-shadow:none}
+  .btn--wa{background:var(--wa);color:#08331b}.btn--link{background:none;color:var(--terra-deep);padding:12px 2px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--gold)}
+  .btn--sm{padding:10px 16px;font-size:13.5px}
+  .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-deep);font-weight:600;display:inline-flex;align-items:center;gap:9px}
+  .kicker::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .ph{position:relative;border-radius:10px;overflow:hidden;display:flex;align-items:flex-end;min-height:120px;box-shadow:inset 0 0 0 1px rgba(176,141,87,.4)}
+  .ph.flesh{background:radial-gradient(120% 120% at 62% 34%,#F0A85C,#D9702F 34%,#B24E22 60%,#6E3418)}
+  .ph.cure{background:linear-gradient(158deg,#caa46b,#9c6b3f 60%,#5e3d21)}.ph.crate{background:linear-gradient(158deg,#C7B694,#9A845F 55%,#5E4E36)}
+  .ph__t{position:absolute;top:8px;left:8px;font-family:var(--font-mono);font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(26,20,16,.6);border:1px solid rgba(255,255,255,.2);border-radius:4px;padding:2px 6px}
+  .ph__d{font-family:var(--font-mono);font-size:9.5px;line-height:1.4;color:#F6EEE1;background:linear-gradient(0deg,rgba(20,14,10,.8),rgba(20,14,10,.25));padding:8px 10px;width:100%}
+  .pill{font-family:var(--font-mono);font-size:9px;color:var(--terra-deep)}
+
+  .hdr{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 28px}
+  .brand{font-family:var(--font-display);font-weight:600;letter-spacing:.15em;text-transform:uppercase;font-size:15px;display:flex;align-items:center;gap:8px}
+  .brand i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .nav{display:none;gap:22px;font-size:13.5px;color:var(--ink-soft)}
+  .hdr-r{display:flex;align-items:center;gap:12px}.lang{display:none;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+  .menu{display:inline-flex;flex-direction:column;gap:4px}.menu i{width:20px;height:2px;background:var(--ink);border-radius:2px}
+
+  .crumb{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);padding:6px 28px 0}
+  .phero{padding:12px 28px 30px;display:grid;gap:22px}
+  .phero-h1{font-family:var(--font-display);font-weight:600;font-size:34px;letter-spacing:-.02em;line-height:1.04;margin:12px 0 12px;text-wrap:balance}
+  .phero-sub{color:var(--ink-soft);font-size:15px;max-width:46ch}
+  .phero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+  .phero-img{min-height:240px}
+
+  .layout{display:grid;gap:22px;padding:0 28px 34px}
+  .main{display:grid;gap:34px;min-width:0}
+  .block h3{font-family:var(--font-display);font-weight:600;font-size:1.5rem;letter-spacing:-.01em;margin:0 0 4px}
+  .block p.lead{color:var(--ink-soft);font-size:14.5px;margin:0 0 14px;max-width:60ch}
+
+  .spec{width:100%;border-collapse:collapse;font-size:13.5px;min-width:420px}
+  .spec th,.spec td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+  .spec thead th{background:var(--forest);color:var(--ivory);font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+  .spec tbody tr:nth-child(even){background:var(--sand)}.spec td:not(:first-child){font-variant-numeric:tabular-nums}
+  .scrollx{overflow-x:auto}
+
+  .packs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .pack{background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .pack h4{font-family:var(--font-display);font-weight:600;font-size:1rem;margin:0 0 8px}
+  .pack dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:5px 10px;font-size:12px}
+  .pack dt{color:var(--ink-soft)}.pack dd{margin:0;text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+
+  .cal{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;min-width:480px}
+  .cal-cell{text-align:center;font-family:var(--font-mono);font-size:10px;padding:8px 2px;border-radius:6px;background:var(--white);border:1px solid var(--line);color:var(--ink-soft)}
+  .cal-cell.on{background:var(--terra-deep);color:#fff;border-color:var(--terra-deep)}.cal-cell.peak{background:var(--terra);color:#fff;border-color:var(--terra)}
+
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .fact{border:1px solid var(--line);border-radius:9px;padding:12px 14px;background:var(--white)}
+  .fact b{display:block;font-size:12px;color:var(--ink-soft);font-weight:500}.fact span{font-family:var(--font-display);font-size:1.15rem;font-weight:600;font-variant-numeric:tabular-nums}
+
+  .faq{border-top:1px solid var(--line)}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{cursor:pointer;padding:13px 2px;font-weight:600;font-size:14px;list-style:none;display:flex;justify-content:space-between;gap:10px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--terra-deep);font-size:18px}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:0 0 14px;font-size:13.5px;color:var(--ink-soft);max-width:66ch}
+
+  .rail{align-self:start}
+  .rfq{background:var(--white);border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh-2);overflow:hidden}
+  .rfq-h{padding:16px 18px;background:var(--forest);color:var(--ivory)}
+  .rfq-h b{font-family:var(--font-display);font-size:1.15rem;font-weight:600;display:block}
+  .rfq-h small{font-size:12px;color:rgba(246,238,225,.75)}
+  .rfq-b{padding:16px 18px;display:grid;gap:11px}
+  .field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:600}.req{color:var(--terra-deep)}
+  .inp{font-family:var(--font-sans);font-size:14px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--white);width:100%}
+  .inp:focus{outline:none;border-color:var(--terra-deep);box-shadow:0 0 0 3px rgba(165,71,31,.16)}
+  .rfq-trust{font-size:11px;color:var(--ink-soft);display:flex;gap:7px;align-items:center;border-top:1px solid var(--line);padding-top:10px}
+  .rfq-trust i{width:8px;height:8px;border-radius:50%;background:var(--wa)}
+
+  .certrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .certrow span{border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:12px;background:var(--white)}
+  .ftr{background:var(--forest);color:var(--ivory);padding:28px;font-size:13px;color:rgba(246,238,225,.8);margin-top:20px}
+  .mbar{position:sticky;bottom:0;display:flex;gap:8px;padding:10px 14px;background:rgba(251,247,239,.95);border-top:1px solid var(--line)}.mbar .btn{flex:1}
+
+  @container (min-width:820px){
+    .nav{display:flex}.lang{display:inline-block}.menu{display:none}
+    .hdr{padding:18px 46px}.crumb{padding:8px 46px 0}
+    .phero{grid-template-columns:1.05fr .95fr;align-items:center;padding:14px 46px 40px}
+    .phero-h1{font-size:46px}.phero-img{min-height:360px}
+    .layout{grid-template-columns:1fr 330px;padding:0 46px 46px}
+    .rail{position:sticky;top:18px}
+    .packs{grid-template-columns:repeat(4,1fr)}
+    .facts{grid-template-columns:repeat(4,1fr)}
+    .mbar{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="board">
+  <div class="board-eyebrow">El Molouk · Phase 4 · Page 2 of 5</div>
+  <h1 class="board-title">Sweet Potatoes — desktop &amp; mobile</h1>
+  <p class="board-note">The procurement spec kit: varieties, calibre grading, packaging, container loading, season, cold-chain facts, comparison and FAQ — with a <b>sticky RFQ rail</b> on desktop and a sticky bar on mobile so the quote is always one tap away. Basic specs are ungated; the detailed PDF is gated. <span class="pill">[[confirm]]</span> marks values the client must supply.</p>
+
+  <!-- DESKTOP -->
+  <div class="framelabel">Desktop — enhancement</div>
+  <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>elmolouk.com/en/sweet-potatoes</span></div>
+    <div class="frame-scroll"><div class="device d-desktop">
+      <header class="hdr"><div class="brand"><i></i>El&nbsp;Molouk</div><nav class="nav"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav><div class="hdr-r"><span class="lang">EN ▾</span><a class="btn btn--sm">Request a Quote</a></div></header>
+      <div class="crumb">Home / Sweet Potatoes</div>
+      <section class="phero">
+        <div>
+          <span class="kicker">Orange-Fleshed · Beauregard &amp; Bellevue</span>
+          <h2 class="phero-h1">Egyptian orange-fleshed sweet potatoes.</h2>
+          <p class="phero-sub">Class I, cured to deepen sweetness, calibrated to European retail specs and shipped under a monitored cold chain. Full specifications below — or request a quote for your port and volume.</p>
+          <div class="phero-cta"><a class="btn">Request a Quote</a><a class="btn btn--out">Download Spec Sheet (PDF)</a></div>
+        </div>
+        <div class="ph flesh phero-img"><span class="ph__t">Placeholder · hero</span><span class="ph__d">Halved Beauregard, glowing orange flesh, soil-flecked skin; side-light on matte wood. Replace with real macro.</span></div>
+      </section>
+
+      <div class="layout">
+        <div class="main">
+          <div class="block"><h3>Varieties</h3><p class="lead">Two orange-fleshed varieties, both deep-flesh and retail-ready.</p>
+            <div class="scrollx"><table class="spec"><thead><tr><th>Variety</th><th>Flesh</th><th>Skin</th><th>Profile</th></tr></thead><tbody>
+              <tr><td>Beauregard</td><td>Deep orange</td><td>Copper-pink</td><td>Sweet, moist — EU workhorse</td></tr>
+              <tr><td>Bellevue</td><td>Orange</td><td>Copper</td><td>Uniform calibre, long shelf life</td></tr>
+            </tbody></table></div>
+          </div>
+
+          <div class="block"><h3>Calibre &amp; grading — Class I</h3><p class="lead">Uniform sizing by weight; Class I is our minimum grade.</p>
+            <div class="scrollx"><table class="spec"><thead><tr><th>Calibre</th><th>Weight</th><th>Carton</th><th>Pieces / carton</th></tr></thead><tbody>
+              <tr><td>S</td><td>&lt; 150 g</td><td>6 kg</td><td>40–50</td></tr>
+              <tr><td>M</td><td>150–300 g</td><td>6 kg</td><td>20–40</td></tr>
+              <tr><td>L1</td><td>300–450 g</td><td>10 kg</td><td>22–33</td></tr>
+              <tr><td>L2</td><td>450–600 g</td><td>10 kg</td><td>16–22</td></tr>
+              <tr><td>XL</td><td>600–900 g</td><td>Bulk bin</td><td>—</td></tr>
+              <tr><td>G</td><td>900–1500 g</td><td>Bulk bin</td><td>—</td></tr>
+            </tbody></table></div>
+          </div>
+
+          <div class="block"><h3>Packaging</h3><p class="lead">Retail-ready to bulk, with private-label capability.</p>
+            <div class="packs">
+              <div class="pack"><h4>6 kg carton</h4><dl><dt>Net</dt><dd>6 kg</dd><dt>/ pallet</dt><dd>120</dd><dt>/ 40′</dt><dd>~1,200</dd></dl></div>
+              <div class="pack"><h4>10 kg box</h4><dl><dt>Net</dt><dd>10 kg</dd><dt>/ pallet</dt><dd>80</dd><dt>/ 40′</dt><dd>~800</dd></dl></div>
+              <div class="pack"><h4>Bulk bin</h4><dl><dt>Net</dt><dd>~550 kg</dd><dt>/ 40′</dt><dd>20</dd><dt>Use</dt><dd>Processor</dd></dl></div>
+              <div class="pack"><h4>Retail pre-pack</h4><dl><dt>Punnet</dt><dd>500 g–1 kg</dd><dt>Label</dt><dd>Private</dd><dt>Use</dt><dd>Retail</dd></dl></div>
+            </div>
+          </div>
+
+          <div class="block"><h3>Container loading</h3>
+            <div class="scrollx"><table class="spec"><thead><tr><th>Container</th><th>Pallets</th><th>Cases (6 kg)</th><th>Net weight</th></tr></thead><tbody>
+              <tr><td>20′ reefer</td><td>10</td><td>~600</td><td>~10 t</td></tr>
+              <tr><td>40′ reefer</td><td>20</td><td>~1,200</td><td>~24 t</td></tr>
+            </tbody></table></div>
+          </div>
+
+          <div class="block"><h3>Season &amp; availability</h3><p class="lead">Peak harvest Aug–Dec; cold storage extends supply to near year-round.</p>
+            <div class="scrollx"><div class="cal">
+              <div class="cal-cell">J</div><div class="cal-cell">F</div><div class="cal-cell on">M</div><div class="cal-cell on">A</div><div class="cal-cell on">M</div><div class="cal-cell">J</div><div class="cal-cell">J</div><div class="cal-cell peak">A</div><div class="cal-cell peak">S</div><div class="cal-cell peak">O</div><div class="cal-cell peak">N</div><div class="cal-cell peak">D</div>
+            </div></div>
+          </div>
+
+          <div class="block"><h3>Post-harvest &amp; cold chain</h3>
+            <div class="facts">
+              <div class="fact"><b>Curing</b><span>4–7 days</span></div>
+              <div class="fact"><b>Storage</b><span>12–14 °C</span></div>
+              <div class="fact"><b>Humidity</b><span>85–90%</span></div>
+              <div class="fact"><b>Shelf life</b><span>4–6 mo</span></div>
+              <div class="fact"><b>Chilling injury</b><span>&gt; 10 °C</span></div>
+              <div class="fact"><b>Monitoring</b><span>Data-logger</span></div>
+              <div class="fact"><b>MRL</b><span>EU 396/2005</span></div>
+              <div class="fact"><b>Traceability</b><span>Lot-level</span></div>
+            </div>
+          </div>
+
+          <div class="block"><h3>Egypt vs USA vs Spain</h3>
+            <div class="scrollx"><table class="spec"><thead><tr><th>Origin</th><th>Flesh</th><th>Shelf life</th><th>Value</th></tr></thead><tbody>
+              <tr><td>Egypt (El Molouk)</td><td>Deep orange</td><td>4–6 mo</td><td>Best value</td></tr>
+              <tr><td>USA</td><td>Deep orange</td><td>4–6 mo</td><td>Premium price</td></tr>
+              <tr><td>Spain</td><td>Orange</td><td>3–5 mo</td><td>Higher freight in-EU</td></tr>
+            </tbody></table></div>
+          </div>
+
+          <div class="block"><h3>Certifications</h3>
+            <div class="certrow"><span>GLOBALG.A.P <span class="pill">[[confirm]]</span></span><span>BRCGS / IFS <span class="pill">[[confirm]]</span></span><span>GRASP <span class="pill">[[confirm]]</span></span><span>ISO 22000 <span class="pill">[[confirm]]</span></span><span>Phytosanitary</span></div>
+          </div>
+
+          <div class="block"><h3>Frequently asked</h3>
+            <div class="faq">
+              <details open><summary>What is your MOQ?</summary><p>One 40′ reefer (~24 t) per order for spot; programme volumes negotiated by season. <span class="pill">[[confirm]]</span></p></details>
+              <details><summary>Which Incoterms do you handle?</summary><p>FOB Damietta/Alexandria, CFR and CIF to major EU ports. DAP by arrangement. <span class="pill">[[confirm]]</span></p></details>
+              <details><summary>Do you offer private label?</summary><p>Yes — retail punnets and cartons under your brand, subject to volume. <span class="pill">[[confirm]]</span></p></details>
+              <details><summary>Lead time?</summary><p>Typically X days from PO to loading in season. <span class="pill">[[confirm]]</span></p></details>
+            </div>
+          </div>
+        </div>
+
+        <aside class="rail">
+          <div class="rfq">
+            <div class="rfq-h"><b>Request a quote</b><small>Reply within 4 h, Sun–Fri</small></div>
+            <div class="rfq-b">
+              <div class="field"><label>Destination port <span class="req">*</span></label><input class="inp" placeholder="Rotterdam"></div>
+              <div class="field"><label>Volume <span class="req">*</span></label><input class="inp" placeholder="2 × 40′ / month"></div>
+              <div class="field"><label>Company e-mail <span class="req">*</span></label><input class="inp" type="email" placeholder="you@company.com"></div>
+              <a class="btn" style="width:100%">Get my export quote</a>
+              <div class="rfq-trust"><i></i>GLOBALG.A.P · BRCGS <span class="pill">[[confirm]]</span> · or WhatsApp</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <footer class="ftr">El&nbsp;Molouk — Premium Egyptian orange-fleshed sweet potatoes · Damietta / Alexandria · EN·DE·NL·FR·ES·IT · <span class="pill">[[confirm contact]]</span></footer>
+    </div></div>
+  </div>
+
+  <!-- MOBILE -->
+  <div class="framelabel">Mobile — primary</div>
+  <div class="frame" style="max-width:430px"><div class="frame-bar"><i></i><i></i><i></i><span>/en/sweet-potatoes</span></div>
+    <div class="device d-mobile">
+      <header class="hdr"><div class="brand"><i></i>El&nbsp;Molouk</div><span class="menu"><i></i><i></i><i></i></span></header>
+      <div class="crumb">Home / Sweet Potatoes</div>
+      <section class="phero">
+        <span class="kicker">Beauregard &amp; Bellevue</span>
+        <h2 class="phero-h1">Egyptian orange-fleshed sweet potatoes.</h2>
+        <div class="ph flesh phero-img"><span class="ph__t">Placeholder</span><span class="ph__d">Halved Beauregard macro, side-light.</span></div>
+        <p class="phero-sub">Class I, cured, calibrated to EU retail specs.</p>
+        <div class="phero-cta" style="flex-direction:column"><a class="btn">Request a Quote</a><a class="btn btn--out">Spec Sheet (PDF)</a></div>
+      </section>
+      <div class="layout" style="grid-template-columns:1fr;padding:0 20px 20px">
+        <div class="main">
+          <div class="block"><h3>Calibre — Class I</h3>
+            <div class="scrollx"><table class="spec"><thead><tr><th>Calibre</th><th>Weight</th><th>Carton</th></tr></thead><tbody>
+              <tr><td>S</td><td>&lt;150 g</td><td>6 kg</td></tr><tr><td>M</td><td>150–300 g</td><td>6 kg</td></tr><tr><td>L1</td><td>300–450 g</td><td>10 kg</td></tr><tr><td>L2</td><td>450–600 g</td><td>10 kg</td></tr><tr><td>XL</td><td>600–900 g</td><td>Bin</td></tr>
+            </tbody></table></div>
+          </div>
+          <div class="block"><h3>Packaging</h3>
+            <div class="packs"><div class="pack"><h4>6 kg carton</h4><dl><dt>/40′</dt><dd>~1,200</dd></dl></div><div class="pack"><h4>10 kg box</h4><dl><dt>/40′</dt><dd>~800</dd></dl></div></div>
+          </div>
+          <div class="block"><h3>Cold chain</h3>
+            <div class="facts"><div class="fact"><b>Storage</b><span>12–14 °C</span></div><div class="fact"><b>Shelf life</b><span>4–6 mo</span></div></div>
+          </div>
+          <div class="block"><h3>FAQ</h3><div class="faq"><details open><summary>MOQ?</summary><p>One 40′ reefer for spot. <span class="pill">[[confirm]]</span></p></details><details><summary>Incoterms?</summary><p>FOB / CFR / CIF. <span class="pill">[[confirm]]</span></p></details></div></div>
+        </div>
+      </div>
+      <div class="mbar"><a class="btn">Request a Quote</a><a class="btn btn--wa" style="flex:none;padding:13px 16px">WhatsApp</a></div>
+    </div>
+  </div>
+
+  <p class="board-note" style="margin-top:34px"><b>Remaining:</b> Quality, RFQ landing, Contact — then I stop for approval.</p>
+</div>

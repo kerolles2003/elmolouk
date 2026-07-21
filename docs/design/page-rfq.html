@@ -1,0 +1,203 @@
+<title>El Molouk — RFQ Landing (Desktop + Mobile)</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --ink:#2A2018;--ink-soft:#5B4E3F;--terra:#B05733;--terra-deep:#9C4E30;--terra-press:#833F26;
+    --forest:#1E2A22;--forest-tile:#24332A;--olive:#56613C;--gold:#B08D57;--sand:#F2E9DB;--ivory:#FBF7EF;--line:#E4D8C5;--white:#fff;--wa:#25D366;
+    --ph-flesh:#C48A64;--ph-field:#8A9670;--ph-crate:#C0AE8E;--ph-cure:#B39A79;
+    --bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4;
+    --font-display:'Fraunces',Georgia,'Times New Roman',serif;--font-sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--font-mono:ui-monospace,'SF Mono',Consolas,monospace;
+    --sh-1:0 1px 1px rgba(42,32,24,.04);--sh-2:0 6px 22px -14px rgba(42,32,24,.26);
+  }
+  @media (prefers-color-scheme:dark){:root{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}}
+  :root[data-theme="dark"]{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}
+  :root[data-theme="light"]{--bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .board{max-width:1240px;margin:0 auto;padding:clamp(18px,3.5vw,46px) clamp(14px,3.5vw,36px)}
+  .board-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft)}
+  .board-title{font-family:var(--font-display);font-weight:600;font-size:clamp(1.7rem,4.5vw,2.6rem);letter-spacing:-.015em;margin:.3em 0 .3em}
+  .board-note{color:var(--fg-soft);max-width:72ch;font-size:.95rem}.board-note b{color:var(--fg)}
+  .framelabel{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;color:var(--fg-soft);text-transform:uppercase;letter-spacing:.1em;margin:34px 0 12px}
+  .framelabel::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .frame{background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden;box-shadow:var(--sh-2)}
+  .frame-bar{display:flex;align-items:center;gap:7px;padding:9px 13px;border-bottom:1px solid var(--hair);background:var(--bg2)}
+  .frame-bar i{width:9px;height:9px;border-radius:50%;background:var(--hair)}.frame-bar span{margin-left:8px;font-family:var(--font-mono);font-size:11px;color:var(--fg-soft)}
+  .frame-tag{margin-left:auto;font-family:var(--font-mono);font-size:10px;color:var(--terra-deep);border:1px solid var(--hair);border-radius:5px;padding:2px 7px}
+  .frame-scroll{overflow-x:auto}
+  .device{container-type:inline-width;background:var(--ivory);color:var(--ink)}
+  .d-desktop{min-width:1080px}.d-mobile{width:392px;margin:0 auto}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;line-height:1;border:1px solid transparent;border-radius:8px;padding:13px 22px;background:var(--terra-deep);color:#fff;cursor:pointer;text-decoration:none;transition:background .16s,box-shadow .16s}
+  .btn:hover{background:var(--terra)}.btn:active{background:var(--terra-press)}.btn:focus-visible{outline:2px solid var(--terra-deep);outline-offset:2px}
+  .btn--wa{background:var(--wa);color:#08331b}
+  .btn--big{padding:15px 26px;font-size:16px}
+  .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-deep);font-weight:600;display:inline-flex;align-items:center;gap:9px}
+  .kicker::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .ph{position:relative;border-radius:10px;overflow:hidden;display:flex;align-items:flex-end;min-height:120px;background:var(--ph-crate);border:1px solid rgba(42,32,24,.10)}
+  .ph::before{content:"";position:absolute;top:calc(50% - 14px);left:50%;transform:translate(-50%,-50%);width:30px;height:30px;opacity:.4;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23ffffff'%20stroke-width='1.4'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Crect%20x='3'%20y='5'%20width='18'%20height='14'%20rx='2'/%3E%3Ccircle%20cx='8.5'%20cy='10'%20r='1.5'/%3E%3Cpath%20d='M21%2015l-5-5L5%2019'/%3E%3C/svg%3E")}
+  .ph.flesh{background:var(--ph-flesh)}.ph.crate{background:var(--ph-crate)}
+  .ph__d{position:relative;font-family:var(--font-mono);font-size:9.5px;line-height:1.4;color:#F7F0E4;background:rgba(26,20,16,.5);padding:8px 10px;width:100%}
+  .pill{font-family:var(--font-mono);font-size:9px;color:var(--terra-deep)}
+
+  /* stripped header — brand + contact only, NO nav */
+  .lp-hdr{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 30px;border-bottom:1px solid var(--line)}
+  .brand{font-family:var(--font-display);font-weight:600;letter-spacing:.15em;text-transform:uppercase;font-size:15px;display:flex;align-items:center;gap:8px}
+  .brand i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .lp-hdr small{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft)}
+
+  .lp-hero{display:grid;gap:26px;padding:34px 30px}
+  .lp-h1{font-family:var(--font-display);font-weight:600;font-size:38px;letter-spacing:-.02em;line-height:1.04;margin:14px 0 12px;text-wrap:balance}
+  .lp-sub{color:var(--ink-soft);font-size:15.5px;max-width:48ch}
+  .lp-specline{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0}
+  .lp-specline span{font-family:var(--font-mono);font-size:11px;border:1px solid var(--line);border-radius:5px;padding:5px 9px;background:var(--white);color:var(--ink-soft)}
+  .lp-proof{display:grid;gap:10px;margin-top:18px}
+  .lp-proof li{list-style:none;display:flex;gap:10px;align-items:flex-start;font-size:14px}
+  .lp-proof b{color:var(--terra-deep);font-family:var(--font-mono);font-size:13px}
+  .lp-trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .lp-trust span{border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:12px;background:var(--white)}
+
+  /* form card */
+  .card{background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-2);overflow:hidden}
+  .card-h{padding:18px 20px;background:var(--forest);color:var(--ivory)}
+  .card-h b{font-family:var(--font-display);font-size:1.3rem;font-weight:600;display:block}
+  .card-h small{font-size:12px;color:rgba(246,238,225,.78)}
+  .card-b{padding:18px 20px;display:grid;gap:12px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:600}.req{color:var(--terra-deep)}
+  .inp{font-family:var(--font-sans);font-size:14px;border:1px solid var(--line);border-radius:8px;padding:11px 12px;background:var(--white);width:100%}
+  .inp:focus{outline:none;border-color:var(--terra-deep);box-shadow:0 0 0 3px rgba(165,71,31,.16)}
+  .card-alt{display:flex;align-items:center;gap:8px;justify-content:center;font-size:12.5px;color:var(--ink-soft)}
+  .card-foot{font-size:11px;color:var(--ink-soft);display:flex;gap:7px;align-items:center;border-top:1px solid var(--line);padding-top:11px}
+  .card-foot i{width:8px;height:8px;border-radius:50%;background:var(--wa)}
+
+  .band{color:var(--ivory);display:grid;grid-template-columns:1fr 1fr;background:var(--forest);border-top:1px solid rgba(246,238,225,.12);border-bottom:1px solid rgba(246,238,225,.12)}
+  .band .cell{background:var(--forest);padding:28px 24px;border-top:1px solid rgba(246,238,225,.09)}
+  .band .cell:nth-child(odd){border-right:1px solid rgba(246,238,225,.09)}
+  .band b{display:block;font-family:var(--font-display);font-weight:600;font-size:2rem;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1}
+  .band small{display:block;font-size:11.5px;color:rgba(246,238,225,.66);margin-top:7px}
+
+  .snap{padding:30px;display:grid;gap:16px}
+  .snap h3{font-family:var(--font-display);font-weight:600;font-size:1.4rem;margin:0}
+  .spec{width:100%;border-collapse:collapse;font-size:13px;min-width:380px}
+  .spec th,.spec td{text-align:left;padding:9px 13px;border-bottom:1px solid var(--line)}
+  .spec thead th{background:var(--forest);color:var(--ivory);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
+  .spec tbody tr:nth-child(even){background:var(--sand)}.scrollx{overflow-x:auto}
+  .final{background:var(--sand);padding:30px;text-align:center;display:grid;gap:14px;justify-items:center}
+  .final h3{font-family:var(--font-display);font-weight:600;font-size:1.5rem;margin:0;max-width:24ch}
+  .lp-ftr{padding:18px 30px;font-size:11.5px;color:var(--ink-soft);text-align:center}
+  .mbar{position:sticky;bottom:0;display:flex;gap:8px;padding:10px 14px;background:rgba(251,247,239,.95);border-top:1px solid var(--line)}.mbar .btn{flex:1}
+
+  @container (min-width:820px){
+    .lp-hero{grid-template-columns:1.05fr .95fr;align-items:start;padding:44px 46px}
+    .lp-h1{font-size:46px}
+    .band{grid-template-columns:repeat(4,1fr)}
+    .band .cell{border-right:1px solid rgba(246,238,225,.09)}.band .cell:last-child{border-right:0}
+    .snap{padding:44px 46px}
+    .mbar{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="board">
+  <div class="board-eyebrow">El Molouk · Phase 4 · Page 3 of 5</div>
+  <h1 class="board-title">RFQ landing (/rfq) — desktop &amp; mobile</h1>
+  <p class="board-note">The dedicated <b>Google-Ads destination</b>: <b>no nav</b> (nothing leaks the click), one goal, a <b>message-match H1</b> that mirrors the ad keyword, the form <b>above the fold</b>, concrete trust (stat band + certs), and a short proof section. Marked <b>noindex</b> so it never competes with the SEO site. Same editorial language; conversion-tuned.</p>
+
+  <!-- DESKTOP -->
+  <div class="framelabel">Desktop — enhancement</div>
+  <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>elmolouk.com/rfq?utm=ads</span><span class="frame-tag">noindex</span></div>
+    <div class="frame-scroll"><div class="device d-desktop">
+      <header class="lp-hdr"><div class="brand"><i></i>El&nbsp;Molouk</div><small>Certified exporter · Reply within 4 h · WhatsApp +20 ••• <span class="pill">[[confirm]]</span></small></header>
+
+      <section class="lp-hero">
+        <div>
+          <span class="kicker">Bulk Export · EU Importers</span>
+          <h2 class="lp-h1">Buy Egyptian orange-fleshed sweet potatoes — bulk export to Europe.</h2>
+          <p class="lp-sub">Beauregard &amp; Bellevue, Class I, cured and cold-chain monitored. Container-scale supply from Egypt's #1 sweet-potato origin.</p>
+          <div class="lp-specline"><span>Beauregard · Class I</span><span>FOB Damietta / CIF EU</span><span>40′ reefer · ~24 t</span><span>Year-round</span></div>
+          <ul class="lp-proof">
+            <li><b>✓</b><span><b>Certified &amp; audited</b> — GLOBALG.A.P., BRCGS/IFS, GRASP <span class="pill">[[confirm]]</span></span></li>
+            <li><b>✓</b><span><b>Own farms &amp; packhouse</b> — grower-to-port control, lot-level traceability</span></li>
+            <li><b>✓</b><span><b>Reply within 4 hours</b> with a quote and full spec sheet</span></li>
+          </ul>
+          <div class="lp-trust"><span>GLOBALG.A.P <span class="pill">[[confirm]]</span></span><span>BRCGS / IFS <span class="pill">[[confirm]]</span></span><span>30,000 t / season <span class="pill">[[confirm]]</span></span><span>30+ markets</span></div>
+        </div>
+
+        <form class="card" onsubmit="return false">
+          <div class="card-h"><b>Request your quote</b><small>2 minutes · no obligation</small></div>
+          <div class="card-b">
+            <div class="field"><label>Product</label><select class="inp"><option>Orange-fleshed sweet potato — Beauregard</option><option>Bellevue</option></select></div>
+            <div class="row2">
+              <div class="field"><label>Destination port <span class="req">*</span></label><input class="inp" placeholder="Rotterdam"></div>
+              <div class="field"><label>Volume <span class="req">*</span></label><input class="inp" placeholder="2 × 40′ / mo"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label>Incoterm</label><select class="inp"><option>CIF</option><option>CFR</option><option>FOB</option><option>DAP</option></select></div>
+              <div class="field"><label>Company e-mail <span class="req">*</span></label><input class="inp" type="email" placeholder="you@company.com"></div>
+            </div>
+            <a class="btn btn--big" style="width:100%">Get my export quote</a>
+            <div class="card-alt">or <a class="btn btn--wa" style="padding:8px 14px;font-size:13px">Chat on WhatsApp</a></div>
+            <div class="card-foot"><i></i>We reply within 4 hours · your details stay private</div>
+          </div>
+        </form>
+      </section>
+
+      <div class="band">
+        <div class="cell"><b>30,000<span style="font-size:.9rem">t</span></b><small>per season <span class="pill">[[confirm]]</span></small></div>
+        <div class="cell"><b>5,000<span style="font-size:.9rem">ha</span></b><small>own &amp; contracted</small></div>
+        <div class="cell"><b>30+</b><small>export markets</small></div>
+        <div class="cell"><b>&lt;4 h</b><small>quote turnaround</small></div>
+      </div>
+
+      <section class="snap">
+        <h3>At a glance</h3>
+        <div class="scrollx"><table class="spec"><thead><tr><th>Calibre</th><th>Weight</th><th>Carton</th><th>Per 40′</th></tr></thead><tbody>
+          <tr><td>M</td><td>150–300 g</td><td>6 kg</td><td>~1,200</td></tr>
+          <tr><td>L1</td><td>300–450 g</td><td>10 kg</td><td>~800</td></tr>
+          <tr><td>Bulk</td><td>—</td><td>~550 kg bin</td><td>20</td></tr>
+        </tbody></table></div>
+      </section>
+
+      <section class="final">
+        <h3>Ready to price your first container?</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center"><a class="btn btn--big">Request a Quote</a><a class="btn btn--wa btn--big">WhatsApp us</a></div>
+      </section>
+      <footer class="lp-ftr">El&nbsp;Molouk · الملوك للتصدير — Egyptian orange-fleshed sweet potato exporter · <span class="pill">[[confirm legal + address]]</span></footer>
+    </div></div>
+  </div>
+
+  <!-- MOBILE -->
+  <div class="framelabel">Mobile — primary (most Ads traffic)</div>
+  <div class="frame" style="max-width:430px"><div class="frame-bar"><i></i><i></i><i></i><span>/rfq</span><span class="frame-tag">noindex</span></div>
+    <div class="device d-mobile">
+      <header class="lp-hdr" style="padding:14px 18px"><div class="brand"><i></i>El&nbsp;Molouk</div><small>Reply &lt; 4 h</small></header>
+      <section class="lp-hero" style="padding:26px 18px">
+        <div>
+          <span class="kicker">Bulk Export · EU</span>
+          <h2 class="lp-h1" style="font-size:30px">Buy Egyptian sweet potatoes — bulk export to Europe.</h2>
+          <p class="lp-sub">Beauregard, Class I, cured &amp; cold-chain monitored. Container scale.</p>
+          <div class="lp-specline"><span>Class I</span><span>CIF EU</span><span>40′ reefer</span></div>
+        </div>
+        <form class="card" onsubmit="return false">
+          <div class="card-h"><b>Request your quote</b><small>2 minutes · no obligation</small></div>
+          <div class="card-b">
+            <div class="field"><label>Destination port <span class="req">*</span></label><input class="inp" placeholder="Rotterdam"></div>
+            <div class="field"><label>Volume <span class="req">*</span></label><input class="inp" placeholder="2 × 40′ / mo"></div>
+            <div class="field"><label>Company e-mail <span class="req">*</span></label><input class="inp" type="email" placeholder="you@company.com"></div>
+            <a class="btn btn--big" style="width:100%">Get my export quote</a>
+            <div class="card-alt">or <a class="btn btn--wa" style="padding:8px 14px;font-size:13px">WhatsApp</a></div>
+            <div class="card-foot"><i></i>We reply within 4 hours</div>
+          </div>
+        </form>
+      </section>
+      <div class="band" style="grid-template-columns:1fr 1fr">
+        <div class="cell"><b>30,000t</b><small>per season <span class="pill">[[confirm]]</span></small></div>
+        <div class="cell"><b>&lt;4 h</b><small>quote turnaround</small></div>
+      </div>
+      <section class="snap" style="padding:24px 18px"><h3>At a glance</h3><div class="scrollx"><table class="spec"><thead><tr><th>Calibre</th><th>Weight</th><th>Per 40′</th></tr></thead><tbody><tr><td>M</td><td>150–300 g</td><td>~1,200</td></tr><tr><td>L1</td><td>300–450 g</td><td>~800</td></tr></tbody></table></div></section>
+      <div class="mbar"><a class="btn">Request a Quote</a><a class="btn btn--wa" style="flex:none;padding:13px 16px">WhatsApp</a></div>
+    </div>
+  </div>
+
+  <p class="board-note" style="margin-top:34px"><b>Last:</b> Quality &amp; Contact — then I stop for your approval.</p>
+</div>

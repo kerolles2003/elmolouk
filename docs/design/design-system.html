@@ -1,0 +1,484 @@
+<title>El Molouk — Design System</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+
+  :root{
+    /* Brand — Nile Harvest (fixed) */
+    --ink:#2A2018; --ink-soft:#5B4E3F; --terra:#C25B2C; --terra-deep:#A5471F; --terra-press:#8A3A16;
+    --forest:#1E2A22; --forest-2:#243328; --olive:#56613C; --gold:#B08D57;
+    --sand:#F2E9DB; --ivory:#FBF7EF; --line:#E4D8C5; --white:#fff; --wa:#25D366;
+    --danger:#B23A2E;
+
+    /* Documentation chrome — theme-aware */
+    --bg:#E9E3D7; --bg2:#DED6C7; --fg:#2A2018; --fg-soft:#6B5D4B; --hair:#CEC4B1; --card:#FBF9F4; --accent:#A5471F;
+
+    --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+    --font-sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    --font-mono:ui-monospace,'SF Mono','Cascadia Code',Consolas,monospace;
+
+    --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-6:24px; --sp-8:32px; --sp-12:48px; --sp-16:64px; --sp-24:96px;
+    --r-sm:4px; --r-md:8px; --r-lg:12px;
+    --sh-1:0 1px 2px rgba(42,32,24,.06); --sh-2:0 8px 24px -12px rgba(42,32,24,.22);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#15110D; --bg2:#1D1710; --fg:#EFE7D9; --fg-soft:#B3A793; --hair:#342A20; --card:#1B1611; --accent:#D5814E; }
+  }
+  :root[data-theme="dark"]{ --bg:#15110D; --bg2:#1D1710; --fg:#EFE7D9; --fg-soft:#B3A793; --hair:#342A20; --card:#1B1611; --accent:#D5814E; }
+  :root[data-theme="light"]{ --bg:#E9E3D7; --bg2:#DED6C7; --fg:#2A2018; --fg-soft:#6B5D4B; --hair:#CEC4B1; --card:#FBF9F4; --accent:#A5471F; }
+
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .ds-wrap{max-width:1120px;margin:0 auto;padding:clamp(20px,4vw,52px) clamp(16px,4vw,40px)}
+  .ds-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft)}
+  .ds-title{font-family:var(--font-display);font-weight:600;letter-spacing:-.015em;line-height:1.02;font-size:clamp(2rem,5.5vw,3.3rem);margin:.32em 0 .28em;text-wrap:balance}
+  .ds-lede{max-width:66ch;color:var(--fg-soft);font-size:clamp(.95rem,1.6vw,1.06rem)}
+  .ds-lede b{color:var(--fg);font-weight:600}
+
+  .ds-h2{font-family:var(--font-display);font-weight:600;font-size:1.7rem;letter-spacing:-.01em;margin:0 0 4px}
+  .ds-secnum{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+  .ds-sec{margin-top:clamp(34px,6vw,64px);scroll-margin-top:20px}
+  .ds-sec-head{border-top:1px solid var(--hair);padding-top:18px;margin-bottom:22px}
+  .ds-note{color:var(--fg-soft);font-size:.9rem;max-width:70ch;margin:.4em 0 0}
+
+  /* doc grid + component "canvas" */
+  .ds-grid{display:grid;gap:16px}
+  .ds-card{background:var(--card);border:1px solid var(--hair);border-radius:var(--r-lg);overflow:hidden}
+  .ds-card-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:11px 16px;border-bottom:1px solid var(--hair);background:var(--bg2)}
+  .ds-card-h b{font-size:13px;font-weight:600}
+  .ds-card-h span{font-family:var(--font-mono);font-size:11px;color:var(--fg-soft)}
+  .canvas{background:var(--ivory);color:var(--ink);padding:24px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+  .canvas.dark{background:var(--forest);color:var(--ivory)}
+  .canvas.pad0{padding:0}
+  .canvas.col{flex-direction:column;align-items:stretch}
+  .ds-scroll{overflow-x:auto}
+
+  /* ---------- Foundations: colour ---------- */
+  .sw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .sw{border:1px solid var(--hair);border-radius:var(--r-md);overflow:hidden;background:var(--card)}
+  .sw-chip{height:66px}
+  .sw-meta{padding:8px 10px}
+  .sw-meta b{display:block;font-size:12.5px}
+  .sw-meta code{font-family:var(--font-mono);font-size:11px;color:var(--fg-soft)}
+  .sw-meta small{display:block;font-size:10.5px;color:var(--fg-soft);margin-top:2px}
+
+  /* ---------- Foundations: type ---------- */
+  .type-row{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:baseline;padding:12px 0;border-top:1px dashed var(--hair)}
+  .type-row:first-child{border-top:0}
+  .type-meta{font-family:var(--font-mono);font-size:11px;color:var(--fg-soft);line-height:1.5}
+  .type-spec{color:var(--ink)}
+  .t-display{font-family:var(--font-display);font-weight:600;font-size:3.4rem;line-height:1;letter-spacing:-.02em}
+  .t-h1{font-family:var(--font-display);font-weight:600;font-size:2.6rem;line-height:1.04;letter-spacing:-.018em}
+  .t-h2{font-family:var(--font-display);font-weight:600;font-size:2rem;line-height:1.08;letter-spacing:-.01em}
+  .t-h3{font-family:var(--font-display);font-weight:600;font-size:1.55rem;line-height:1.15}
+  .t-lead{font-family:var(--font-sans);font-weight:400;font-size:1.25rem;color:var(--ink-soft)}
+  .t-body{font-family:var(--font-sans);font-size:1rem}
+  .t-label{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--terra-deep);font-weight:600}
+
+  /* ---------- Foundations: spacing ---------- */
+  .space-row{display:flex;align-items:center;gap:14px;padding:5px 0}
+  .space-bar{height:16px;background:linear-gradient(90deg,var(--terra),var(--gold));border-radius:3px}
+  .space-row code{font-family:var(--font-mono);font-size:11px;color:var(--fg-soft);width:90px}
+
+  /* =========================================================
+     COMPONENTS  (prefix c-)  — the hybrid A×C language
+     ========================================================= */
+
+  /* buttons */
+  .c-btn{--_bg:var(--terra-deep);--_fg:#fff;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:var(--font-sans);font-weight:600;font-size:15px;line-height:1;border:1px solid transparent;border-radius:var(--r-md);
+    padding:13px 22px;background:var(--_bg);color:var(--_fg);cursor:pointer;text-decoration:none;
+    transition:background .16s ease,box-shadow .16s ease,transform .06s ease}
+  .c-btn:hover{background:var(--terra);box-shadow:var(--sh-2)}
+  .c-btn:active{background:var(--terra-press);transform:translateY(1px)}
+  .c-btn:focus-visible{outline:2px solid var(--terra-deep);outline-offset:2px}
+  .c-btn[disabled]{opacity:.45;cursor:not-allowed;box-shadow:none;transform:none}
+  .c-btn--out{--_bg:transparent;--_fg:var(--ink);border-color:var(--ink)}
+  .c-btn--out:hover{--_bg:rgba(42,32,24,.05);background:rgba(42,32,24,.05);box-shadow:none}
+  .c-btn--out:active{background:rgba(42,32,24,.1)}
+  .c-btn--ghost{--_bg:transparent;--_fg:var(--terra-deep);padding-left:6px;padding-right:6px}
+  .c-btn--ghost:hover{background:transparent;box-shadow:none;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--gold)}
+  .c-btn--wa{--_bg:var(--wa);--_fg:#08331b}
+  .c-btn--wa:hover{background:#1fbd5b}
+  .c-btn--wa:active{background:#149447}
+  .canvas.dark .c-btn--out{--_fg:var(--ivory);border-color:rgba(246,238,225,.5)}
+  .canvas.dark .c-btn--out:hover{background:rgba(246,238,225,.08)}
+
+  .state-set{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .state-pill{position:relative}
+  .state-pill::after{content:attr(data-state);position:absolute;left:50%;top:-16px;transform:translateX(-50%);
+    font-family:var(--font-mono);font-size:9.5px;color:var(--fg-soft);text-transform:uppercase;letter-spacing:.1em}
+  .is-hover{background:var(--terra)!important;box-shadow:var(--sh-2)}
+  .is-active{background:var(--terra-press)!important;transform:translateY(1px)}
+  .is-focus{outline:2px solid var(--terra-deep);outline-offset:2px}
+
+  /* form fields */
+  .c-field{display:flex;flex-direction:column;gap:6px;min-width:210px;flex:1}
+  .c-field label{font-size:12.5px;font-weight:600;color:var(--ink)}
+  .c-field .req{color:var(--terra-deep)}
+  .c-input,.c-select,.c-textarea{font-family:var(--font-sans);font-size:14.5px;color:var(--ink);background:var(--white);
+    border:1px solid var(--line);border-radius:var(--r-md);padding:11px 13px;width:100%;transition:border-color .15s,box-shadow .15s}
+  .c-input::placeholder{color:#a99b86}
+  .c-input:focus,.c-select:focus,.c-textarea:focus{outline:none;border-color:var(--terra-deep);box-shadow:0 0 0 3px rgba(165,71,31,.16)}
+  .c-textarea{min-height:76px;resize:vertical}
+  .c-field.err .c-input{border-color:var(--danger);box-shadow:0 0 0 3px rgba(178,58,46,.14)}
+  .c-help{font-size:11.5px;color:var(--fg-soft)}
+  .c-help.err{color:var(--danger)}
+
+  /* section header */
+  .c-sec-head{max-width:52ch}
+  .c-kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-deep);font-weight:600;display:inline-flex;align-items:center;gap:9px}
+  .c-kicker::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .c-sec-title{font-family:var(--font-display);font-weight:600;font-size:2rem;letter-spacing:-.01em;line-height:1.08;margin:12px 0 8px;text-wrap:balance}
+  .c-sec-sub{color:var(--ink-soft);font-size:15px}
+
+  /* image placeholder */
+  .c-ph{position:relative;border-radius:var(--r-md);overflow:hidden;display:flex;align-items:flex-end;min-height:120px;box-shadow:inset 0 0 0 1px rgba(176,141,87,.4)}
+  .c-ph.flesh{background:radial-gradient(120% 120% at 62% 34%,#F0A85C,#D9702F 34%,#B24E22 60%,#6E3418)}
+  .c-ph.field{background:linear-gradient(158deg,#9FAE7C,#6B7A48 46%,#3C4628)}
+  .c-ph.crate{background:linear-gradient(158deg,#C7B694,#9A845F 55%,#5E4E36)}
+  .c-ph.cure{background:linear-gradient(158deg,#caa46b,#9c6b3f 60%,#5e3d21)}
+  .c-ph__t{position:absolute;top:8px;left:8px;font-family:var(--font-mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(26,20,16,.6);border:1px solid rgba(255,255,255,.2);border-radius:4px;padding:2px 6px}
+  .c-ph__d{font-family:var(--font-mono);font-size:10px;line-height:1.4;color:#F6EEE1;background:linear-gradient(0deg,rgba(20,14,10,.82),rgba(20,14,10,.35));padding:8px 10px;width:100%}
+
+  /* product card */
+  .c-prod{width:250px;background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-1);transition:box-shadow .18s,transform .18s}
+  .c-prod:hover{box-shadow:var(--sh-2);transform:translateY(-3px)}
+  .c-prod .c-ph{border-radius:0;min-height:150px}
+  .c-prod-b{padding:14px 16px 16px}
+  .c-prod-b h4{font-family:var(--font-display);font-weight:600;font-size:1.15rem;margin:0 0 3px}
+  .c-prod-b p{margin:0 0 10px;font-size:13px;color:var(--ink-soft)}
+
+  /* packaging card */
+  .c-pack{width:230px;background:var(--sand);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px}
+  .c-pack h4{font-family:var(--font-display);font-weight:600;font-size:1.05rem;margin:0 0 10px}
+  .c-pack dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:12.5px}
+  .c-pack dt{color:var(--ink-soft)} .c-pack dd{margin:0;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+
+  /* spec table */
+  .c-spec{width:100%;border-collapse:collapse;font-size:13.5px;min-width:440px}
+  .c-spec caption{text-align:left;font-family:var(--font-display);font-weight:600;font-size:1.15rem;padding-bottom:10px}
+  .c-spec th,.c-spec td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+  .c-spec thead th{background:var(--forest);color:var(--ivory);font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+  .c-spec tbody tr:nth-child(even){background:var(--sand)}
+  .c-spec td:not(:first-child){font-variant-numeric:tabular-nums}
+
+  /* certification badge + strip */
+  .c-cert{display:inline-flex;align-items:center;gap:9px;background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);padding:9px 13px}
+  .c-cert i{width:26px;height:26px;border-radius:6px;background:linear-gradient(135deg,var(--olive),var(--forest));display:grid;place-items:center;color:var(--ivory);font-size:11px;font-weight:700;font-family:var(--font-mono)}
+  .c-cert b{font-size:12.5px;display:block;line-height:1.2}
+  .c-cert small{font-family:var(--font-mono);font-size:9px;color:var(--terra-deep)}
+  .c-strip{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+  /* stat band */
+  .c-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(176,141,87,.3);border:1px solid rgba(176,141,87,.3);border-radius:var(--r-lg);overflow:hidden;width:100%}
+  .c-stat{background:var(--forest);color:var(--ivory);padding:22px 20px}
+  .c-stat b{display:block;font-family:var(--font-display);font-weight:600;font-size:2rem;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1}
+  .c-stat small{display:block;font-size:12px;color:rgba(246,238,225,.72);margin-top:6px}
+
+  /* country card */
+  .c-country{width:200px;background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px 16px}
+  .c-country .flag{width:100%;height:8px;border-radius:99px;margin-bottom:10px}
+  .c-country b{font-family:var(--font-display);font-size:1.05rem}
+  .c-country dl{margin:8px 0 0;font-size:12px;color:var(--ink-soft);display:grid;grid-template-columns:auto 1fr;gap:3px 8px}
+  .c-country dd{margin:0;text-align:right;font-weight:600;color:var(--ink)}
+
+  /* gallery */
+  .c-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:100%}
+  .c-gal .c-ph{min-height:96px}
+
+  /* timeline / process */
+  .c-time{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;width:100%;position:relative}
+  .c-step{position:relative}
+  .c-step .dot{width:12px;height:12px;border-radius:50%;background:var(--terra-deep);border:2px solid var(--ivory);box-shadow:0 0 0 1px var(--line);margin-bottom:10px}
+  .c-step .c-ph{min-height:76px;margin-bottom:8px}
+  .c-step b{font-size:12.5px;display:block}
+  .c-step small{font-size:11px;color:var(--ink-soft)}
+  .c-time::before{content:"";position:absolute;left:6px;right:6px;top:5px;height:2px;background:linear-gradient(90deg,var(--gold),var(--line))}
+
+  /* CTA block */
+  .c-ctablock{width:100%;background:var(--forest);color:var(--ivory);border-radius:var(--r-lg);padding:34px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+  .c-ctablock h3{font-family:var(--font-display);font-weight:600;font-size:1.7rem;margin:0 0 6px;max-width:20ch}
+  .c-ctablock p{margin:0;color:rgba(246,238,225,.78);font-size:14px;max-width:44ch}
+
+  /* header / nav */
+  .c-nav{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 22px;background:var(--ivory);border:1px solid var(--line);border-radius:var(--r-md)}
+  .c-brand{font-family:var(--font-display);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:15px;display:flex;align-items:center;gap:8px}
+  .c-brand i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .c-links{display:flex;gap:20px;font-size:13.5px;color:var(--ink-soft)}
+  .c-nav-r{display:flex;align-items:center;gap:14px}
+  .c-lang{font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+  .c-menu{display:inline-flex;flex-direction:column;gap:4px}
+  .c-menu i{width:20px;height:2px;background:var(--ink);border-radius:2px}
+
+  /* footer */
+  .c-foot{width:100%;background:var(--forest);color:var(--ivory);border-radius:var(--r-lg);padding:30px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+  .c-foot h5{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+  .c-foot a,.c-foot p{color:rgba(246,238,225,.8);font-size:13px;text-decoration:none;margin:0 0 7px;display:block}
+  .c-foot .c-brand{color:var(--ivory);margin-bottom:12px}
+
+  /* RFQ form */
+  .c-rfq{width:100%;max-width:460px;background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-2);overflow:hidden}
+  .c-rfq-h{padding:18px 20px;border-bottom:1px solid var(--line);background:var(--sand)}
+  .c-rfq-h b{font-family:var(--font-display);font-size:1.2rem;font-weight:600;display:block}
+  .c-rfq-h small{font-size:12px;color:var(--ink-soft)}
+  .c-rfq-b{padding:18px 20px;display:flex;flex-direction:column;gap:14px}
+  .c-rfq-row{display:flex;gap:12px;flex-wrap:wrap}
+  .c-rfq-trust{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:12px}
+  .c-rfq-trust .dotgreen{width:8px;height:8px;border-radius:50%;background:var(--wa)}
+
+  .respo{width:100%}
+  .respo table{width:100%;border-collapse:collapse;font-size:13px;min-width:460px}
+  .respo th,.respo td{border:1px solid var(--hair);padding:9px 12px;text-align:left}
+  .respo th{background:var(--bg2);font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--fg-soft)}
+  .respo code{font-family:var(--font-mono);font-size:12px}
+
+  .ds-foot{margin-top:48px;padding-top:20px;border-top:1px solid var(--hair);color:var(--fg-soft);font-size:13px;max-width:72ch}
+  .ds-foot b{color:var(--fg)}
+  .pill{display:inline-block;font-family:var(--font-mono);font-size:10px;color:var(--terra-deep);border:1px solid var(--line);border-radius:5px;padding:2px 6px;background:var(--card)}
+  @media (max-width:720px){
+    .c-links{display:none} .c-stats{grid-template-columns:1fr 1fr} .c-time{grid-template-columns:1fr 1fr 1fr}
+    .c-gal{grid-template-columns:1fr 1fr} .c-foot{grid-template-columns:1fr 1fr}
+    .c-time::before{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="ds-wrap">
+  <header>
+    <div class="ds-eyebrow">El Molouk · الملوك للتصدير — Phase 4 · Design</div>
+    <h1 class="ds-title">Design system &amp; components</h1>
+    <p class="ds-lede">The reusable foundation for every page — <b>Premium Editorial × Professional Export Company</b>. Concept A's calm, serif-led language carrying Concept C's trust devices (stat band, certification row, spec tables, RFQ). <b>Less, but better:</b> premium comes from spacing, type, proportion and consistency — not decoration. Faces approximated (Fraunces + Inter in production); images are labelled placeholders.</p>
+  </header>
+
+  <!-- 01 COLOUR -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">01 · FOUNDATION</div><h2 class="ds-h2">Colour tokens</h2>
+      <p class="ds-note">Ratio on any screen ≈ 60% neutral / 30% ink or forest / 10% terracotta / &lt;5% gold. Terracotta never carries body text; interactive elements use <code>terracotta-deep</code> for AA.</p></div>
+    <div class="sw-grid">
+      <div class="sw"><div class="sw-chip" style="background:#2A2018"></div><div class="sw-meta"><b>Ink</b><code>#2A2018</code><small>Body text · anchor · 14.9:1 on ivory</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#5B4E3F"></div><div class="sw-meta"><b>Ink Soft</b><code>#5B4E3F</code><small>Secondary text</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#C25B2C"></div><div class="sw-meta"><b>Terracotta</b><code>#C25B2C</code><small>Accent · headings/UI (not body)</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#A5471F"></div><div class="sw-meta"><b>Terracotta Deep</b><code>#A5471F</code><small>Buttons/links · 5.9:1 + white</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#1E2A22"></div><div class="sw-meta"><b>Forest</b><code>#1E2A22</code><small>Dark ground · stat band · footer</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#56613C"></div><div class="sw-meta"><b>Olive</b><code>#56613C</code><small>Freshness accent · 6.2:1 on ivory</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#B08D57"></div><div class="sw-meta"><b>Gold</b><code>#B08D57</code><small>Hairline / detail &lt;5%</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#F2E9DB"></div><div class="sw-meta"><b>Sand</b><code>#F2E9DB</code><small>Section background</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#FBF7EF;box-shadow:inset 0 0 0 1px #E4D8C5"></div><div class="sw-meta"><b>Ivory</b><code>#FBF7EF</code><small>Base background</small></div></div>
+      <div class="sw"><div class="sw-chip" style="background:#25D366"></div><div class="sw-meta"><b>WhatsApp</b><code>#25D366</code><small>WhatsApp CTA only</small></div></div>
+    </div>
+  </section>
+
+  <!-- 02 TYPE -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">02 · FOUNDATION</div><h2 class="ds-h2">Typography</h2>
+      <p class="ds-note">Fraunces (display) + Inter (body/UI). Major-third scale (1.25). Test every heading/label at longest German string — wrap, never truncate.</p></div>
+    <div class="ds-card"><div class="canvas col" style="gap:0">
+      <div class="type-row"><div class="type-meta">Display<br>3.815rem<br>Fraunces 600</div><div class="type-spec t-display">Grown like royalty.</div></div>
+      <div class="type-row"><div class="type-meta">H1<br>3.052rem</div><div class="type-spec t-h1">The Kings of Egyptian sweet potatoes</div></div>
+      <div class="type-row"><div class="type-meta">H2<br>2.441rem</div><div class="type-spec t-h2">Certified, cured, container-ready</div></div>
+      <div class="type-row"><div class="type-meta">H3<br>1.953rem</div><div class="type-spec t-h3">Beauregard &amp; Bellevue varieties</div></div>
+      <div class="type-row"><div class="type-meta">Lead<br>1.25rem · Inter</div><div class="type-spec t-lead">Own farms, own packhouse, cold chain intact — reliable supply, every week of the year.</div></div>
+      <div class="type-row"><div class="type-meta">Body<br>1rem · Inter</div><div class="type-spec t-body">Egyptian orange-fleshed sweet potatoes, graded to EU Class I, cured to deepen sweetness and shipped under a monitored cold chain to European ports.</div></div>
+      <div class="type-row"><div class="type-meta">Label<br>.75rem · mono</div><div class="type-spec t-label">Orange-Fleshed · Egypt</div></div>
+    </div></div>
+  </section>
+
+  <!-- 03 SPACING + RADIUS -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">03 · FOUNDATION</div><h2 class="ds-h2">Spacing, radius &amp; elevation</h2>
+      <p class="ds-note">8-pt grid. Radius stays restrained (crisp reads premium). Shadows are soft and low; prefer hairline borders.</p></div>
+    <div class="ds-grid" style="grid-template-columns:1fr 1fr">
+      <div class="ds-card"><div class="ds-card-h"><b>Spacing scale</b><span>8-pt</span></div><div class="canvas col">
+        <div class="space-row"><code>--sp-1 · 4</code><div class="space-bar" style="width:4px"></div></div>
+        <div class="space-row"><code>--sp-2 · 8</code><div class="space-bar" style="width:8px"></div></div>
+        <div class="space-row"><code>--sp-3 · 12</code><div class="space-bar" style="width:12px"></div></div>
+        <div class="space-row"><code>--sp-4 · 16</code><div class="space-bar" style="width:16px"></div></div>
+        <div class="space-row"><code>--sp-6 · 24</code><div class="space-bar" style="width:24px"></div></div>
+        <div class="space-row"><code>--sp-8 · 32</code><div class="space-bar" style="width:32px"></div></div>
+        <div class="space-row"><code>--sp-12 · 48</code><div class="space-bar" style="width:48px"></div></div>
+        <div class="space-row"><code>--sp-16 · 64</code><div class="space-bar" style="width:64px"></div></div>
+        <div class="space-row"><code>--sp-24 · 96</code><div class="space-bar" style="width:96px"></div></div>
+      </div></div>
+      <div class="ds-card"><div class="ds-card-h"><b>Radius &amp; elevation</b><span>r-sm/md/lg</span></div><div class="canvas">
+        <div style="width:88px;height:60px;background:var(--white);border:1px solid var(--line);border-radius:4px;display:grid;place-items:center;font-family:var(--font-mono);font-size:10px">4px</div>
+        <div style="width:88px;height:60px;background:var(--white);border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;font-family:var(--font-mono);font-size:10px">8px</div>
+        <div style="width:88px;height:60px;background:var(--white);border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;font-family:var(--font-mono);font-size:10px">12px</div>
+        <div style="width:120px;height:60px;background:var(--white);border-radius:12px;box-shadow:var(--sh-1);display:grid;place-items:center;font-family:var(--font-mono);font-size:10px">shadow-1</div>
+        <div style="width:120px;height:60px;background:var(--white);border-radius:12px;box-shadow:var(--sh-2);display:grid;place-items:center;font-family:var(--font-mono);font-size:10px">shadow-2</div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- 04 BUTTONS -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">04 · COMPONENT</div><h2 class="ds-h2">Buttons &amp; states</h2>
+      <p class="ds-note">Real interactive buttons below — hover, press and tab to them. The second row pins the states so they're visible without interaction.</p></div>
+    <div class="ds-card"><div class="canvas">
+      <button class="c-btn">Request a Quote</button>
+      <button class="c-btn c-btn--out">Download Spec Sheet</button>
+      <button class="c-btn c-btn--wa">WhatsApp us</button>
+      <button class="c-btn c-btn--ghost">View specifications →</button>
+      <button class="c-btn" disabled>Sending…</button>
+    </div>
+    <div class="canvas" style="gap:26px;padding-top:34px">
+      <div class="state-set">
+        <button class="c-btn state-pill" data-state="default">Default</button>
+        <button class="c-btn state-pill is-hover" data-state="hover">Hover</button>
+        <button class="c-btn state-pill is-active" data-state="active">Active</button>
+        <button class="c-btn state-pill is-focus" data-state="focus">Focus</button>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 05 INPUTS -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">05 · COMPONENT</div><h2 class="ds-h2">Inputs, selects &amp; validation</h2>
+      <p class="ds-note">Labels above fields; focus ring in terracotta; inline error messaging. Click a field to see focus.</p></div>
+    <div class="ds-card"><div class="canvas">
+      <div class="c-field"><label for="f1">Company e-mail <span class="req">*</span></label><input class="c-input" id="f1" type="email" placeholder="you@company.com"><span class="c-help">Business e-mail helps us prioritise your quote.</span></div>
+      <div class="c-field"><label for="f2">Destination port <span class="req">*</span></label>
+        <select class="c-select" id="f2"><option>Rotterdam</option><option>Antwerp</option><option>Hamburg</option><option>Other / not sure</option></select></div>
+      <div class="c-field err"><label for="f3">Volume (containers / season) <span class="req">*</span></label><input class="c-input" id="f3" value="—"><span class="c-help err">Please add an estimated volume so we can quote accurately.</span></div>
+      <div class="c-field" style="flex-basis:100%"><label for="f4">Message</label><textarea class="c-textarea" id="f4" placeholder="Programme timing, packaging, private label…"></textarea></div>
+    </div></div>
+  </section>
+
+  <!-- 06 HEADER/FOOTER -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">06 · COMPONENT</div><h2 class="ds-h2">Header &amp; footer</h2></div>
+    <div class="ds-card"><div class="canvas col">
+      <div class="c-nav">
+        <div class="c-brand"><i></i>El&nbsp;Molouk</div>
+        <nav class="c-links"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav>
+        <div class="c-nav-r"><span class="c-lang">EN ▾</span><button class="c-btn" style="padding:10px 16px;font-size:13.5px">Request a Quote</button></div>
+      </div>
+      <div class="c-foot">
+        <div><div class="c-brand"><i></i>El&nbsp;Molouk</div><p>Premium Egyptian orange-fleshed sweet potatoes for European buyers.</p><p><span class="pill">[[confirm address]]</span></p></div>
+        <div><h5>Export</h5><a>Sweet Potatoes</a><a>Quality &amp; Certifications</a><a>Request a Quote</a></div>
+        <div><h5>Logistics</h5><a>Ports: Damietta / Alexandria</a><a>Incoterms: FOB / CFR / CIF</a><a>WhatsApp</a></div>
+        <div><h5>Languages</h5><a>EN · DE · NL</a><a>FR · ES · IT</a></div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 07 CARDS -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">07 · COMPONENT</div><h2 class="ds-h2">Product, packaging &amp; country cards</h2></div>
+    <div class="ds-card"><div class="canvas">
+      <div class="c-prod">
+        <div class="c-ph flesh"><span class="c-ph__t">Placeholder</span><span class="c-ph__d">Beauregard, halved — glowing flesh, side-light.</span></div>
+        <div class="c-prod-b"><h4>Beauregard</h4><p>Deep-orange flesh, copper-pink skin. Sweet, moist, the EU workhorse.</p><button class="c-btn c-btn--ghost">View specifications →</button></div>
+      </div>
+      <div class="c-pack"><h4>6 kg open-top carton</h4><dl><dt>Net weight</dt><dd>6 kg</dd><dt>Per pallet</dt><dd>120</dd><dt>Per 40′ reefer</dt><dd>~1,200</dd><dt>Use</dt><dd>Retail</dd></dl></div>
+      <div class="c-country"><div class="flag" style="background:linear-gradient(90deg,#000 33%,#d00 33% 66%,#ffce00 66%)"></div><b>Germany</b><dl><dt>Port</dt><dd>Hamburg</dd><dt>Transit</dt><dd>7–9 d</dd><dt>Incoterm</dt><dd>CIF</dd></dl></div>
+    </div></div>
+  </section>
+
+  <!-- 08 SPEC TABLE -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">08 · COMPONENT</div><h2 class="ds-h2">Specification table</h2>
+      <p class="ds-note">Procurement-grade (borrowed from Concept C), rendered in the editorial language: forest header, sand zebra, tabular numerals.</p></div>
+    <div class="ds-card"><div class="canvas pad0"><div class="ds-scroll" style="width:100%;padding:24px">
+      <table class="c-spec">
+        <caption>Calibre &amp; grading — Class I</caption>
+        <thead><tr><th>Calibre</th><th>Weight</th><th>Carton</th><th>Pieces / carton</th></tr></thead>
+        <tbody>
+          <tr><td>S</td><td>&lt; 150 g</td><td>6 kg</td><td>40–50</td></tr>
+          <tr><td>M</td><td>150–300 g</td><td>6 kg</td><td>20–40</td></tr>
+          <tr><td>L1</td><td>300–450 g</td><td>10 kg</td><td>22–33</td></tr>
+          <tr><td>L2</td><td>450–600 g</td><td>10 kg</td><td>16–22</td></tr>
+          <tr><td>XL</td><td>600–900 g</td><td>Bulk bin</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div></div></div>
+  </section>
+
+  <!-- 09 TRUST: certs + stats -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">09 · COMPONENT</div><h2 class="ds-h2">Trust — certification strip &amp; stat band</h2>
+      <p class="ds-note">The conversion backbone from Concept C. Certifications shown only when client-verified; placeholders marked <span class="pill">[[confirm]]</span>. Concrete numbers only — no "trusted by thousands".</p></div>
+    <div class="ds-card"><div class="canvas col" style="gap:22px">
+      <div class="c-strip">
+        <span class="c-cert"><i>GG</i><span><b>GLOBALG.A.P.</b><small>[[confirm]]</small></span></span>
+        <span class="c-cert"><i>BR</i><span><b>BRCGS / IFS</b><small>[[confirm]]</small></span></span>
+        <span class="c-cert"><i>GR</i><span><b>GRASP</b><small>[[confirm]]</small></span></span>
+        <span class="c-cert"><i>PH</i><span><b>Phytosanitary</b><small>per shipment</small></span></span>
+      </div>
+      <div class="c-stats">
+        <div class="c-stat"><b>30,000<span style="font-size:1rem">t</span></b><small>per season <span class="pill">[[confirm]]</span></small></div>
+        <div class="c-stat"><b>5,000<span style="font-size:1rem">ha</span></b><small>own &amp; contracted</small></div>
+        <div class="c-stat"><b>30+</b><small>export markets</small></div>
+        <div class="c-stat"><b>2011</b><small>exporting since</small></div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 10 TIMELINE + GALLERY -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">10 · COMPONENT</div><h2 class="ds-h2">Process timeline &amp; gallery</h2>
+      <p class="ds-note">The farm-to-container story (curing highlighted — most competitors skip it). Real supply-chain photography replaces placeholders pre-launch.</p></div>
+    <div class="ds-card"><div class="canvas col" style="gap:26px">
+      <div class="c-time">
+        <div class="c-step"><div class="dot"></div><div class="c-ph field"><span class="c-ph__d">Field</span></div><b>Harvest</b><small>Own farms</small></div>
+        <div class="c-step"><div class="dot"></div><div class="c-ph cure"><span class="c-ph__d">Curing</span></div><b>Cure</b><small>Deepens sweetness</small></div>
+        <div class="c-step"><div class="dot"></div><div class="c-ph crate"><span class="c-ph__d">Sorting</span></div><b>Grade</b><small>Optical sort</small></div>
+        <div class="c-step"><div class="dot"></div><div class="c-ph crate"><span class="c-ph__d">Packing</span></div><b>Pack</b><small>Retail / bulk</small></div>
+        <div class="c-step"><div class="dot"></div><div class="c-ph cure"><span class="c-ph__d">Cold store</span></div><b>Store</b><small>12–14 °C</small></div>
+        <div class="c-step"><div class="dot"></div><div class="c-ph crate"><span class="c-ph__d">Container</span></div><b>Ship</b><small>40′ reefer</small></div>
+      </div>
+      <div class="c-gal">
+        <div class="c-ph flesh"><span class="c-ph__d">Macro flesh</span></div>
+        <div class="c-ph field"><span class="c-ph__d">Farm rows</span></div>
+        <div class="c-ph crate"><span class="c-ph__d">Packed cartons</span></div>
+        <div class="c-ph cure"><span class="c-ph__d">Team / packhouse</span></div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 11 RFQ + CTA -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">11 · COMPONENT</div><h2 class="ds-h2">RFQ form &amp; CTA block</h2>
+      <p class="ds-note">The primary conversion. 5 qualifying fields, value-led button, "reply within 4 h" + certifications beside it. Full behaviour in <code>02-website-plan.md §6</code>.</p></div>
+    <div class="ds-card"><div class="canvas" style="align-items:flex-start;gap:24px">
+      <form class="c-rfq" onsubmit="return false">
+        <div class="c-rfq-h"><b>Request a quote</b><small>We reply within 4 hours, Sun–Fri.</small></div>
+        <div class="c-rfq-b">
+          <div class="c-field"><label for="r0">Product</label><select class="c-select" id="r0"><option>Orange-fleshed sweet potato — Beauregard</option><option>Bellevue</option></select></div>
+          <div class="c-rfq-row">
+            <div class="c-field"><label for="r1">Destination port <span class="req">*</span></label><input class="c-input" id="r1" placeholder="Rotterdam"></div>
+            <div class="c-field"><label for="r2">Volume <span class="req">*</span></label><input class="c-input" id="r2" placeholder="2 × 40′ / month"></div>
+          </div>
+          <div class="c-rfq-row">
+            <div class="c-field"><label for="r3">Incoterm</label><select class="c-select" id="r3"><option>CIF</option><option>CFR</option><option>FOB</option><option>DAP</option></select></div>
+            <div class="c-field"><label for="r4">Company e-mail <span class="req">*</span></label><input class="c-input" id="r4" type="email" placeholder="you@company.com"></div>
+          </div>
+          <button class="c-btn" style="width:100%">Get my export quote</button>
+          <div class="c-rfq-trust"><span class="dotgreen"></span> GLOBALG.A.P. · BRCGS <span class="pill">[[confirm]]</span> · Or chat on WhatsApp</div>
+        </div>
+      </form>
+      <div class="c-ctablock" style="flex:1;min-width:280px">
+        <div><h3>Become a distribution partner</h3><p>Container-scale supply, certified and cold-chain monitored, from Egypt's leading sweet-potato origin.</p></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap"><button class="c-btn">Request a Quote</button><button class="c-btn c-btn--out">WhatsApp</button></div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 12 RESPONSIVE + MOTION -->
+  <section class="ds-sec">
+    <div class="ds-sec-head"><div class="ds-secnum">12 · RULES</div><h2 class="ds-h2">Responsive &amp; motion</h2></div>
+    <div class="ds-grid" style="grid-template-columns:1fr 1fr">
+      <div class="ds-card"><div class="ds-card-h"><b>Breakpoints (mobile-first)</b></div><div class="ds-scroll respo"><table>
+        <tr><th>Token</th><th>Width</th><th>Shift</th></tr>
+        <tr><td><code>base</code></td><td>&lt; 640</td><td>1-col; hamburger nav; stacked CTAs; stat band 2×2; sticky bottom "Request a Quote" bar</td></tr>
+        <tr><td><code>sm/md</code></td><td>640–1024</td><td>2-col grids; inline nav appears; spec tables scroll-x</td></tr>
+        <tr><td><code>lg</code></td><td>&gt; 1024</td><td>Editorial split heroes; 4-col stat band; full timeline row; max container 1200–1280</td></tr>
+      </table></div></div>
+      <div class="ds-card"><div class="ds-card-h"><b>Motion — allowed vs avoid</b></div><div class="canvas col" style="font-size:13.5px;gap:8px">
+        <div><b style="color:var(--olive)">✓ Allowed:</b> fade, reveal-on-scroll, gentle slide, soft hover elevation, image cross-fade. 150–300 ms, ease-out.</div>
+        <div><b style="color:var(--danger)">✗ Avoid:</b> heavy parallax, decorative shapes, long/looping transitions, motion for its own sake.</div>
+        <div style="color:var(--fg-soft)">All motion respects <code>prefers-reduced-motion</code>; performance always wins.</div>
+      </div></div>
+    </div>
+  </section>
+
+  <p class="ds-foot">These are <b>non-production visual comps</b> (static HTML), not the Next.js build. Fonts approximated; every certification/stat is a <span class="pill">[[confirm]]</span> placeholder; every image names its intended shot. <b>Next:</b> I assemble the full <b>desktop + mobile</b> pages — Home, Sweet Potatoes, Quality, RFQ, Contact — from these exact components, then stop for your approval. <b>No development</b> until the designs are approved.</p>
+</div>

@@ -1,0 +1,210 @@
+<title>El Molouk — Quality & Contact (Desktop + Mobile)</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --ink:#2A2018;--ink-soft:#5B4E3F;--terra:#C25B2C;--terra-deep:#A5471F;--terra-press:#8A3A16;
+    --forest:#1E2A22;--olive:#56613C;--gold:#B08D57;--sand:#F2E9DB;--ivory:#FBF7EF;--line:#E4D8C5;--white:#fff;--wa:#25D366;
+    --bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4;
+    --font-display:'Fraunces',Georgia,'Times New Roman',serif;--font-sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--font-mono:ui-monospace,'SF Mono',Consolas,monospace;
+    --sh-1:0 1px 2px rgba(42,32,24,.06);--sh-2:0 12px 34px -14px rgba(42,32,24,.45);
+  }
+  @media (prefers-color-scheme:dark){:root{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}}
+  :root[data-theme="dark"]{--bg:#15110D;--bg2:#1D1710;--fg:#EFE7D9;--fg-soft:#B3A793;--hair:#342A20;--card:#1B1611}
+  :root[data-theme="light"]{--bg:#E9E3D7;--bg2:#DED6C7;--fg:#2A2018;--fg-soft:#6B5D4B;--hair:#CEC4B1;--card:#FBF9F4}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .board{max-width:1240px;margin:0 auto;padding:clamp(18px,3.5vw,46px) clamp(14px,3.5vw,36px)}
+  .board-eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-soft)}
+  .board-title{font-family:var(--font-display);font-weight:600;font-size:clamp(1.7rem,4.5vw,2.6rem);letter-spacing:-.015em;margin:.3em 0 .3em}
+  .board-note{color:var(--fg-soft);max-width:72ch;font-size:.95rem}.board-note b{color:var(--fg)}
+  .framelabel{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;color:var(--fg-soft);text-transform:uppercase;letter-spacing:.1em;margin:32px 0 12px}
+  .framelabel::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .pagelabel{font-family:var(--font-display);font-weight:600;font-size:1.5rem;margin:40px 0 4px;padding-top:20px;border-top:2px solid var(--hair)}
+  .frame{background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden;box-shadow:var(--sh-2)}
+  .frame-bar{display:flex;align-items:center;gap:7px;padding:9px 13px;border-bottom:1px solid var(--hair);background:var(--bg2)}
+  .frame-bar i{width:9px;height:9px;border-radius:50%;background:var(--hair)}.frame-bar span{margin-left:8px;font-family:var(--font-mono);font-size:11px;color:var(--fg-soft)}
+  .frame-scroll{overflow-x:auto}
+  .device{container-type:inline-width;background:var(--ivory);color:var(--ink)}
+  .d-desktop{min-width:1080px}.d-mobile{width:392px;margin:0 auto}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;line-height:1;border:1px solid transparent;border-radius:8px;padding:13px 22px;background:var(--terra-deep);color:#fff;cursor:pointer;text-decoration:none;transition:background .16s,box-shadow .16s}
+  .btn:hover{background:var(--terra);box-shadow:var(--sh-2)}.btn:active{background:var(--terra-press)}.btn:focus-visible{outline:2px solid var(--terra-deep);outline-offset:2px}
+  .btn--out{background:transparent;color:var(--ink);border-color:var(--ink)}.btn--wa{background:var(--wa);color:#08331b}.btn--sm{padding:10px 16px;font-size:13.5px}.btn--link{background:none;color:var(--terra-deep);padding:10px 2px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--gold)}
+  .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--terra-deep);font-weight:600;display:inline-flex;align-items:center;gap:9px}
+  .kicker::before{content:"";width:22px;height:1px;background:var(--gold)}
+  .ph{position:relative;border-radius:10px;overflow:hidden;display:flex;align-items:flex-end;min-height:120px;box-shadow:inset 0 0 0 1px rgba(176,141,87,.4)}
+  .ph.cure{background:linear-gradient(158deg,#caa46b,#9c6b3f 60%,#5e3d21)}.ph.crate{background:linear-gradient(158deg,#C7B694,#9A845F 55%,#5E4E36)}.ph.map{background:linear-gradient(135deg,#6B7A48,#3C4628)}
+  .ph__d{font-family:var(--font-mono);font-size:9.5px;line-height:1.4;color:#F6EEE1;background:linear-gradient(0deg,rgba(20,14,10,.8),rgba(20,14,10,.25));padding:8px 10px;width:100%}
+  .pill{font-family:var(--font-mono);font-size:9px;color:var(--terra-deep)}
+
+  .hdr{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 30px}
+  .brand{font-family:var(--font-display);font-weight:600;letter-spacing:.15em;text-transform:uppercase;font-size:15px;display:flex;align-items:center;gap:8px}
+  .brand i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .nav{display:none;gap:22px;font-size:13.5px;color:var(--ink-soft)}
+  .hdr-r{display:flex;align-items:center;gap:12px}.lang{display:none;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+  .menu{display:inline-flex;flex-direction:column;gap:4px}.menu i{width:20px;height:2px;background:var(--ink);border-radius:2px}
+  .crumb{font-family:var(--font-mono);font-size:11px;color:var(--ink-soft);padding:6px 30px 0}
+
+  .hero{padding:16px 30px 26px;max-width:60ch}
+  .hero h2{font-family:var(--font-display);font-weight:600;font-size:34px;letter-spacing:-.02em;line-height:1.05;margin:12px 0 12px;text-wrap:balance}
+  .hero p{color:var(--ink-soft);font-size:15px;margin:0}
+  .sec{padding:20px 30px 34px}
+  .sec h3{font-family:var(--font-display);font-weight:600;font-size:1.4rem;margin:0 0 4px}
+  .sec .lead{color:var(--ink-soft);font-size:14px;margin:0 0 16px;max-width:60ch}
+
+  /* certification cards */
+  .certs{display:grid;grid-template-columns:1fr;gap:14px}
+  .cert{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+  .cert-badge{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--olive),var(--forest));display:grid;place-items:center;color:var(--ivory);font-family:var(--font-mono);font-weight:700;font-size:13px}
+  .cert b{font-family:var(--font-display);font-size:1.1rem;font-weight:600;display:block}
+  .cert dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:12px}
+  .cert dt{color:var(--ink-soft)}.cert dd{margin:0;font-weight:600}
+  .cert .dl-link{margin-top:10px}
+
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+  .fact{border:1px solid var(--line);border-radius:9px;padding:12px 14px;background:var(--white)}
+  .fact b{display:block;font-size:12px;color:var(--ink-soft);font-weight:500}.fact span{font-family:var(--font-display);font-size:1.1rem;font-weight:600}
+
+  .ctablock{background:var(--forest);color:var(--ivory);border-radius:12px;padding:26px 30px;display:grid;gap:14px;margin:0 30px 24px}
+  .ctablock h3{font-family:var(--font-display);font-weight:600;font-size:1.5rem;margin:0}
+  .ctablock p{margin:0;color:rgba(246,238,225,.78);font-size:14px}
+
+  /* contact */
+  .contact{display:grid;gap:22px;padding:6px 30px 30px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:var(--sh-2);overflow:hidden}
+  .card-h{padding:16px 18px;background:var(--forest);color:var(--ivory)}.card-h b{font-family:var(--font-display);font-size:1.2rem;font-weight:600;display:block}.card-h small{font-size:12px;color:rgba(246,238,225,.78)}
+  .card-b{padding:16px 18px;display:grid;gap:11px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:600}.req{color:var(--terra-deep)}
+  .inp{font-family:var(--font-sans);font-size:14px;border:1px solid var(--line);border-radius:8px;padding:11px 12px;background:var(--white);width:100%}
+  .inp:focus{outline:none;border-color:var(--terra-deep);box-shadow:0 0 0 3px rgba(165,71,31,.16)}
+  .info dl{margin:0;display:grid;gap:14px}
+  .info .r b{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-bottom:2px}
+  .info .r span{font-size:14px;font-weight:600}
+  .info .mapph{margin-top:6px;min-height:140px}
+
+  .ftr{background:var(--forest);color:var(--ivory);padding:26px 30px;font-size:13px;color:rgba(246,238,225,.8)}
+  .mbar{position:sticky;bottom:0;display:flex;gap:8px;padding:10px 14px;background:rgba(251,247,239,.95);border-top:1px solid var(--line)}.mbar .btn{flex:1}
+
+  @container (min-width:820px){
+    .nav{display:flex}.lang{display:inline-block}.menu{display:none}
+    .hdr{padding:18px 46px}.crumb{padding:8px 46px 0}.hero{padding:20px 46px 30px}.sec{padding:24px 46px 40px}
+    .certs{grid-template-columns:1fr 1fr}
+    .facts{grid-template-columns:repeat(4,1fr)}
+    .ctablock{grid-template-columns:1.5fr auto;align-items:center;margin:0 46px 30px}
+    .contact{grid-template-columns:1.1fr .9fr;padding:6px 46px 40px}
+    .mbar{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="board">
+  <div class="board-eyebrow">El Molouk · Phase 4 · Pages 4–5 of 5</div>
+  <h1 class="board-title">Quality &amp; Contact</h1>
+  <p class="board-note">Two lighter pages. <b>Quality</b> is the trust gate — certifications shown only when verified, every one a <span class="pill">[[confirm certification]]</span> placeholder here; never fabricated. <b>Contact</b> leads with the RFQ, backed by named contact, ports, Incoterms and a map. Each shown desktop + mobile.</p>
+
+  <div class="pagelabel">Quality &amp; Certifications</div>
+  <!-- QUALITY DESKTOP -->
+  <div class="framelabel">Desktop</div>
+  <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>elmolouk.com/en/quality</span></div>
+    <div class="frame-scroll"><div class="device d-desktop">
+      <header class="hdr"><div class="brand"><i></i>El&nbsp;Molouk</div><nav class="nav"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav><div class="hdr-r"><span class="lang">EN ▾</span><a class="btn btn--sm">Request a Quote</a></div></header>
+      <div class="crumb">Home / Quality</div>
+      <section class="hero"><span class="kicker">Quality &amp; Certifications</span><h2>Verify us before you buy.</h2><p>Food-safety and farm certifications, traceability, and cold-chain control — documented, not claimed. European buyers can check every credential here.</p></section>
+
+      <section class="sec"><h3>Certifications</h3><p class="lead">Displayed only when client-verified. Each shows scheme number, validity and certifying body, with a downloadable certificate.</p>
+        <div class="certs">
+          <div class="cert"><div class="cert-badge">GG</div><div><b>GLOBALG.A.P. — IFA</b><dl><dt>Number</dt><dd class="pill">[[confirm]]</dd><dt>Valid to</dt><dd class="pill">[[confirm]]</dd><dt>Body</dt><dd class="pill">[[confirm]]</dd></dl><a class="btn btn--link dl-link">Download certificate →</a></div></div>
+          <div class="cert"><div class="cert-badge">BR</div><div><b>BRCGS / IFS Food</b><dl><dt>Grade</dt><dd class="pill">[[confirm]]</dd><dt>Valid to</dt><dd class="pill">[[confirm]]</dd><dt>Body</dt><dd class="pill">[[confirm]]</dd></dl><a class="btn btn--link dl-link">Download certificate →</a></div></div>
+          <div class="cert"><div class="cert-badge">GR</div><div><b>GRASP</b><dl><dt>Assessment</dt><dd class="pill">[[confirm]]</dd><dt>Valid to</dt><dd class="pill">[[confirm]]</dd></dl><a class="btn btn--link dl-link">Download certificate →</a></div></div>
+          <div class="cert"><div class="cert-badge">SM</div><div><b>SMETA / Sedex</b><dl><dt>Pillars</dt><dd class="pill">[[confirm]]</dd><dt>Valid to</dt><dd class="pill">[[confirm]]</dd></dl><a class="btn btn--link dl-link">Download report →</a></div></div>
+        </div>
+      </section>
+
+      <section class="sec" style="background:var(--sand)"><h3>Traceability &amp; cold chain</h3><p class="lead">Lot-level traceability from farm to port, with a monitored cold chain and EU MRL compliance.</p>
+        <div class="facts">
+          <div class="fact"><b>Traceability</b><span>Lot-level</span></div>
+          <div class="fact"><b>Cold chain</b><span>12–14 °C</span></div>
+          <div class="fact"><b>Monitoring</b><span>Data-logger</span></div>
+          <div class="fact"><b>MRL</b><span>EU 396/2005</span></div>
+        </div>
+      </section>
+
+      <section class="sec"><h3>Responsibility</h3><p class="lead">Social compliance (GRASP / SMETA), fair labour, water stewardship and community — the social credentials EU retail programmes increasingly require. <span class="pill">[[confirm details]]</span></p></section>
+
+      <div class="ctablock"><div><h3>Certifications check out?</h3><p>Send your port and volume — a quote and full documentation follow within 4 hours.</p></div><a class="btn">Request a Quote</a></div>
+      <footer class="ftr">El&nbsp;Molouk — Certified Egyptian sweet-potato exporter · <span class="pill">[[confirm]]</span></footer>
+    </div></div>
+  </div>
+  <!-- QUALITY MOBILE -->
+  <div class="framelabel">Mobile</div>
+  <div class="frame" style="max-width:430px"><div class="frame-bar"><i></i><i></i><i></i><span>/en/quality</span></div>
+    <div class="device d-mobile">
+      <header class="hdr" style="padding:14px 18px"><div class="brand"><i></i>El&nbsp;Molouk</div><span class="menu"><i></i><i></i><i></i></span></header>
+      <section class="hero" style="padding:14px 18px 20px"><span class="kicker">Quality</span><h2 style="font-size:28px">Verify us before you buy.</h2><p>Certifications, traceability &amp; cold chain — documented.</p></section>
+      <section class="sec" style="padding:6px 18px 24px"><h3>Certifications</h3><div class="certs">
+        <div class="cert"><div class="cert-badge">GG</div><div><b>GLOBALG.A.P.</b><dl><dt>Number</dt><dd class="pill">[[confirm]]</dd></dl><a class="btn btn--link dl-link">Download →</a></div></div>
+        <div class="cert"><div class="cert-badge">BR</div><div><b>BRCGS / IFS</b><dl><dt>Grade</dt><dd class="pill">[[confirm]]</dd></dl><a class="btn btn--link dl-link">Download →</a></div></div>
+      </div></section>
+      <div class="mbar"><a class="btn">Request a Quote</a><a class="btn btn--wa" style="flex:none;padding:13px 16px">WhatsApp</a></div>
+    </div>
+  </div>
+
+  <div class="pagelabel">Contact</div>
+  <!-- CONTACT DESKTOP -->
+  <div class="framelabel">Desktop</div>
+  <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>elmolouk.com/en/contact</span></div>
+    <div class="frame-scroll"><div class="device d-desktop">
+      <header class="hdr"><div class="brand"><i></i>El&nbsp;Molouk</div><nav class="nav"><span>Sweet Potatoes</span><span>Quality</span><span>About</span><span>Contact</span></nav><div class="hdr-r"><span class="lang">EN ▾</span><a class="btn btn--sm">Request a Quote</a></div></header>
+      <div class="crumb">Home / Contact</div>
+      <section class="hero"><span class="kicker">Contact</span><h2>Let's price your first container.</h2><p>Send an RFQ or reach us on WhatsApp — our export team replies within 4 hours, Sunday to Friday.</p></section>
+      <div class="contact">
+        <form class="card" onsubmit="return false">
+          <div class="card-h"><b>Request a quote</b><small>Reply within 4 hours</small></div>
+          <div class="card-b">
+            <div class="field"><label>Product</label><select class="inp"><option>Orange-fleshed sweet potato — Beauregard</option><option>Bellevue</option></select></div>
+            <div class="row2"><div class="field"><label>Destination port <span class="req">*</span></label><input class="inp" placeholder="Rotterdam"></div><div class="field"><label>Volume <span class="req">*</span></label><input class="inp" placeholder="2 × 40′ / mo"></div></div>
+            <div class="row2"><div class="field"><label>Incoterm</label><select class="inp"><option>CIF</option><option>CFR</option><option>FOB</option></select></div><div class="field"><label>Company e-mail <span class="req">*</span></label><input class="inp" type="email" placeholder="you@company.com"></div></div>
+            <div class="field"><label>Message</label><input class="inp" placeholder="Programme timing, packaging, private label…"></div>
+            <a class="btn" style="width:100%">Get my export quote</a>
+          </div>
+        </form>
+        <div class="info"><dl>
+          <div class="r"><b>Export sales</b><span class="pill">[[confirm named contact]]</span></div>
+          <div class="r"><b>E-mail</b><span class="pill">[[confirm]]</span></div>
+          <div class="r"><b>WhatsApp</b><span>+20 ••• ••• ••• <span class="pill">[[confirm]]</span></span></div>
+          <div class="r"><b>Ports</b><span>Damietta · Alexandria</span></div>
+          <div class="r"><b>Incoterms</b><span>FOB · CFR · CIF · DAP</span></div>
+          <div class="r"><b>Address</b><span class="pill">[[confirm packhouse address]]</span>
+            <div class="ph map mapph"><span class="ph__d">Map — packhouse location, Egypt. [[confirm]]</span></div>
+          </div>
+        </dl></div>
+      </div>
+      <footer class="ftr">El&nbsp;Molouk · الملوك للتصدير — <span class="pill">[[confirm legal + address]]</span></footer>
+    </div></div>
+  </div>
+  <!-- CONTACT MOBILE -->
+  <div class="framelabel">Mobile</div>
+  <div class="frame" style="max-width:430px"><div class="frame-bar"><i></i><i></i><i></i><span>/en/contact</span></div>
+    <div class="device d-mobile">
+      <header class="hdr" style="padding:14px 18px"><div class="brand"><i></i>El&nbsp;Molouk</div><span class="menu"><i></i><i></i><i></i></span></header>
+      <section class="hero" style="padding:14px 18px 18px"><span class="kicker">Contact</span><h2 style="font-size:27px">Let's price your first container.</h2><p>RFQ or WhatsApp — reply within 4 h.</p></section>
+      <div class="contact" style="padding:6px 18px 20px">
+        <form class="card" onsubmit="return false">
+          <div class="card-h"><b>Request a quote</b><small>Reply within 4 hours</small></div>
+          <div class="card-b">
+            <div class="field"><label>Destination port <span class="req">*</span></label><input class="inp" placeholder="Rotterdam"></div>
+            <div class="field"><label>Volume <span class="req">*</span></label><input class="inp" placeholder="2 × 40′ / mo"></div>
+            <div class="field"><label>Company e-mail <span class="req">*</span></label><input class="inp" type="email" placeholder="you@company.com"></div>
+            <a class="btn" style="width:100%">Get my export quote</a>
+          </div>
+        </form>
+        <div class="info"><dl>
+          <div class="r"><b>WhatsApp</b><span>+20 ••• <span class="pill">[[confirm]]</span></span></div>
+          <div class="r"><b>Ports</b><span>Damietta · Alexandria</span></div>
+        </dl></div>
+      </div>
+      <div class="mbar"><a class="btn">Request a Quote</a><a class="btn btn--wa" style="flex:none;padding:13px 16px">WhatsApp</a></div>
+    </div>
+  </div>
+
+  <p class="board-note" style="margin-top:34px"><b>That completes all five pages</b> (Home · Sweet Potatoes · RFQ · Quality · Contact), desktop + mobile, on the approved system. Stopping for your approval — <b>no development</b> until the designs are signed off.</p>
+</div>
