@@ -1,0 +1,1231 @@
+{
+  "metadata": {
+    "titleTemplate": "%s · El Molouk",
+    "ogAlt": {
+      "default": "Het logo van El Molouk Fresh Produce naast een Egyptisch zoeteaardappelveld tijdens de oogst.",
+      "product": "Het logo van El Molouk Fresh Produce naast een exportdoos met gesorteerde oranjevlezige zoete aardappelen.",
+      "quality": "Het logo van El Molouk Fresh Produce naast de packhousevloer met zoete aardappelen gesorteerd in exportkratten."
+    },
+    "home": {
+      "title": "Egyptische zoete aardappelen — export & groothandel",
+      "description": "Egyptische zoete aardappelen met oranje vruchtvlees — Beauregard en Bellevue. Klasse I, gedroogd en met bewaakte koelketen, in exportverpakking voor Europese importeurs.",
+      "keywords": [
+        "Egyptische zoete aardappel exporteur",
+        "oranjevlezige zoete aardappel",
+        "zoete aardappel groothandel",
+        "bulklevering zoete aardappelen",
+        "Beauregard",
+        "Bellevue",
+        "versexporteur Egypte"
+      ]
+    },
+    "sweetPotatoes": {
+      "title": "Zoete aardappelen — rassen, exportverpakking & koelketen",
+      "description": "Beauregard en Bellevue, zoete aardappelen met oranje vruchtvlees: exportverpakking, containerbelading, seizoen en koelketen. Minimale afname 5 ton.",
+      "keywords": [
+        "zoete aardappel rassen",
+        "Beauregard zoete aardappel",
+        "Bellevue zoete aardappel",
+        "exportverpakking zoete aardappel",
+        "sortering zoete aardappel",
+        "containerbelading",
+        "koelketen",
+        "zoete aardappel seizoen Egypte"
+      ]
+    },
+    "quality": {
+      "title": "Kwaliteit & certificeringen",
+      "description": "Voedselveiligheids- en teeltcertificaten, traceerbaarheid en koelketenbeheersing — de referenties van El Molouk voor Europese kopers, verifieerbaar.",
+      "keywords": [
+        "kwaliteitscontrole zoete aardappel",
+        "zoete aardappel Klasse I",
+        "traceerbaarheid",
+        "koelketenbewaking",
+        "curing",
+        "sortering in de packhouse",
+        "exportnormen"
+      ]
+    },
+    "rfq": {
+      "title": "Offerte aanvragen — zoete aardappelen in bulk",
+      "description": "Bulkexport van Egyptische zoete aardappelen. Minimale afname 5 ton — stuur uw bestemmingshaven en volume, offerte binnen 4 uur."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Neem contact op met het exportteam van El Molouk. Vraag een offerte aan of bereik ons via WhatsApp — antwoord binnen 4 uur.",
+      "keywords": [
+        "contact zoete aardappel exporteur",
+        "offerte aanvragen",
+        "Egyptische zoete aardappel leverancier",
+        "exportaanvraag zoete aardappel",
+        "WhatsApp exportdesk"
+      ]
+    }
+  },
+  "nav": {
+    "sweetPotatoes": "Zoete aardappelen",
+    "quality": "Kwaliteit",
+    "contact": "Contact",
+    "requestQuote": "Offerte aanvragen",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "language": "Taal",
+    "skipToContent": "Naar de inhoud"
+  },
+  "common": {
+    "requestQuote": "Offerte aanvragen",
+    "downloadSpecSheet": "Specblad downloaden",
+    "whatsapp": "WhatsApp ons",
+    "whatsappShort": "WhatsApp",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "viewSpecifications": "Specificaties bekijken",
+    "getMyQuote": "Vraag mijn exportofferte aan",
+    "replyWithin": "Wij reageren binnen 4 uur",
+    "placeholderTag": "Tijdelijk",
+    "confirm": "[[confirm]]",
+    "awaitingPhoto": "Foto volgt"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Van de vruchtbare gronden van de Nijldelta naar de mooiste tafels ter wereld.",
+      "titleLead": "Zoete aardappelen…",
+      "titleA": "Een reis die begint op grond die wij met trots erfden,",
+      "titleB": "en eindigt op de tafels van uw klanten.",
+      "storyP1": "Generaties van onze familie bewerken de Nijldelta — het slib, het water en het keren van het seizoen leerden wij van wie hier vóór ons werkte. De grond kwam naar ons als een verantwoordelijkheid, niet als een handel, en wij houden hem bij met wat deze generatie kreeg: onderzochte bodem, gedoseerde irrigatie, gecontroleerde droog- en bewaarcellen.",
+      "storyP2": "Wat wij telen, volgen wij tot het einde. Oogst, sortering, verpakking, koeling, export — één reis, in eigen beheer, zodat de partij nooit van hand wisselt zonder dat hier iemand ervoor instaat. En elke zoete aardappel die wij apart leggen, moet één vraag doorstaan: klopt hij nog wanneer hij bij uw klant aankomt?",
+      "quote": "Er verlaat niets onze handen wat wij niet op onze eigen tafel zouden zetten.",
+      "ctaPrimary": "Offerte aanvragen",
+      "ctaSecondary": "Bekijk ons assortiment",
+      "imageAlt": "Rijen van een zoeteaardappelveld die zich onder een open hemel tot aan de horizon uitstrekken",
+      "stat1Value": "30.000 t",
+      "stat1Label": "geoogst per seizoen",
+      "stat2Value": "Verenigd Koninkrijk & Europa",
+      "stat2Label": "export naar",
+      "journey": [
+        {
+          "caption": "Oogst",
+          "alt": "Vers gerooide zoete aardappelen op de aarde van het veld"
+        },
+        {
+          "caption": "Verpakking",
+          "alt": "Kisten gesorteerde zoete aardappelen vullen de verpakkingshal"
+        },
+        {
+          "caption": "Op tafel",
+          "alt": "Een afgewerkt gerecht met zoete aardappel, klaar om te serveren"
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "Koelketen bewaakt",
+        "Jaarrond leverbaar"
+      ]
+    },
+    "featured": {
+      "eyebrow": "Ons assortiment",
+      "title": "Zoete aardappelen op hun best",
+      "sub": "Twee rassen met oranje vruchtvlees, geteeld op eigen grond en verpakt voor bulkexport.",
+      "weightLabel": "Exportverpakking",
+      "originLabel": "Herkomst",
+      "cta": "Offerte aanvragen",
+      "items": [
+        {
+          "name": "Beauregard",
+          "desc": "Diep oranje vruchtvlees, koperroze schil. Van nature zoet en smeuïg — de Europese favoriet.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Egypte",
+          "image": "flesh"
+        },
+        {
+          "name": "Bellevue",
+          "desc": "Oranje vruchtvlees, koperen schil. Gelijkmatige sortering en uitstekende houdbaarheid.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Egypte",
+          "image": "bellevue"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Waarom El Molouk",
+      "title": "Een teler op wie u kunt bouwen",
+      "sub": "Wij beheersen elke stap, van onze grond tot uw haven.",
+      "items": [
+        {
+          "title": "Onze eigen velden",
+          "desc": "Geteeld en geoogst op land dat we zelf bewerken — constante kwaliteit, in elke kist."
+        },
+        {
+          "title": "Gecertificeerd & geaudit",
+          "desc": "GLOBALG.A.P., BRCGS/IFS en GRASP [[confirm]] — verifieerbaar, niet zomaar beweerd."
+        },
+        {
+          "title": "Jaarrond leverbaar",
+          "desc": "Een oogst van augustus–maart, verlengd door curing en koelopslag."
+        },
+        {
+          "title": "Koelketen intact",
+          "desc": "Met dataloggers bewaakt van packhouse tot reefercontainer, op 12–14 °C."
+        },
+        {
+          "title": "Containerschaal",
+          "desc": "40'-reefers vanaf Damietta, Alexandrië, Safaga of Suez — per zeevracht of wegtransport."
+        },
+        {
+          "title": "Één specificatie",
+          "desc": "Klasse I in elke kist, geprijsd per container — geen verrassingen tussen monster en zending."
+        }
+      ]
+    },
+    "farm": {
+      "eyebrow": "Ons verhaal",
+      "title": "Geworteld in Egyptische grond",
+      "p1": "El Molouk begon met een eenvoudige overtuiging: dat in de Nijldelta enkele van 's werelds beste zoete aardappelen groeien, en dat Europese kopers ze op hun versst verdienen.",
+      "p2": "Vandaag telen, curen, sorteren en verschepen we alles zelf — zodat de zoete aardappel die ons packhouse verlaat, dezelfde is waarvoor uw klanten terugkomen.",
+      "cta": "Bekijk ons kwaliteitsproces",
+      "imageAlt": "Zoete aardappelen, gerooid uit de ruggen van onze eigen percelen in de Nijldelta"
+    },
+    "process": {
+      "eyebrow": "Zo werken we",
+      "title": "Van veld tot container, onder één dak",
+      "sub": "Zes zorgvuldige stappen houden elke knol zoet, gezond en traceerbaar.",
+      "steps": [
+        {
+          "name": "Oogsten",
+          "desc": "Met de hand gerooid op onze eigen velden, op het hoogtepunt van de rijpheid."
+        },
+        {
+          "name": "Curen",
+          "desc": "Rust bij 28–30 °C om de schil te helen en de zoetheid te verdiepen."
+        },
+        {
+          "name": "Sorteren",
+          "desc": "Optisch gesorteerd op gelijkmatige EU-Klasse I-sorteringen."
+        },
+        {
+          "name": "Verpakken",
+          "desc": "In exportdozen van 3, 6 en 10 kg, bij het sluiten voorzien van het partijnummer."
+        },
+        {
+          "name": "Koelopslag",
+          "desc": "Bewaard bij 12–14 °C met dataloggerbewaking."
+        },
+        {
+          "name": "Verschepen",
+          "desc": "Geladen in Damietta, Alexandrië, Safaga of Suez — over zee of over de weg."
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Van nature goed",
+      "title": "Waarom iedereen van zoete aardappelen houdt",
+      "sub": "Een gewas dat zichzelf verkoopt — voedzaam, veelzijdig en vol kleur.",
+      "items": [
+        {
+          "title": "Rijk aan vitamine A",
+          "desc": "Dat dieporanje vruchtvlees zit boordevol bètacaroteen."
+        },
+        {
+          "title": "Van nature zoet",
+          "desc": "Curing brengt een honingzoete smaak naar boven, zonder toevoegingen."
+        },
+        {
+          "title": "Rijk aan vezels",
+          "desc": "Een gezond basisproduct waar uw klanten toch al naar grijpen."
+        },
+        {
+          "title": "Eindeloos veelzijdig",
+          "desc": "Geroosterd, gepureerd, gefrituurd of gebakken — jaarrond een verkoper."
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Van het bedrijf",
+      "title": "De reis, op volgorde",
+      "sub": "Van veld tot schip, in de volgorde waarin het echt gebeurt.",
+      "note": "Gemarkeerde vlakken zijn gereserveerd voor El Molouks eigen opnamen van deze fasen. [[confirm: opnamen van sortering, koelcel, belading en verscheping laten maken]]",
+      "steps": [
+        {
+          "caption": "Op het veld",
+          "alt": "Ruggen met zoete aardappelen in de Nijldelta"
+        },
+        {
+          "caption": "Oogst",
+          "alt": "Vers gerooide zoete aardappelen op de aarde van het veld"
+        },
+        {
+          "caption": "Sortering",
+          "alt": "Gesorteerde zoete aardappelen op de sorteertafel"
+        },
+        {
+          "caption": "Verpakking",
+          "alt": "Kisten gesorteerde zoete aardappelen vullen de verpakkingshal"
+        },
+        {
+          "caption": "Koelopslag",
+          "alt": "Koelcel — pallets op 12–14 °C"
+        },
+        {
+          "caption": "Belading",
+          "alt": "Belading — dozen gaan in een voorgekoelde reefer"
+        },
+        {
+          "caption": "Verscheping",
+          "alt": "Verscheping — de container verlaat een Egyptische haven"
+        }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "In hun woorden",
+      "title": "Wat onze kopers zeggen",
+      "cardTitle": "Gereserveerd voor een geverifieerde referentie",
+      "cardBody": "Wij publiceren de woorden van een koper pas nadat die koper ze schriftelijk heeft goedgekeurd, onder eigen naam en bedrijf. Tot die tijd blijft deze plek leeg.",
+      "note": "[[confirm: ondertekende referenties van bij naam genoemde kopers verzamelen]]"
+    },
+    "shipping": {
+      "eyebrow": "Zo komt het bij u",
+      "title": "Verzending & levering",
+      "sub": "Logistiek op containerschaal, netjes geregeld.",
+      "items": [
+        {
+          "title": "Havens",
+          "value": "Damietta · Alexandrië · Safaga · Suez"
+        },
+        {
+          "title": "Export via",
+          "value": "Zeevracht · wegtransport"
+        },
+        {
+          "title": "Minimale afname",
+          "value": "5 ton"
+        },
+        {
+          "title": "Koelketen",
+          "value": "12–14 °C, bewaakt"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Goed om te weten",
+      "title": "Veelgestelde vragen",
+      "items": [
+        {
+          "q": "Wat is uw minimale afname?",
+          "a": "5 ton. Wij leveren op contract; grotere programmavolumes worden per seizoen afgesproken."
+        },
+        {
+          "q": "In welke verpakking exporteert u?",
+          "a": "Exportdozen van 3 kg en 6 kg, en grote exportdozen van 10 kg. Uitsluitend bulkexport — geen consumenten- of winkelverpakking."
+        },
+        {
+          "q": "Vanaf welke havens laadt u?",
+          "a": "Damietta, Alexandrië, Safaga en Suez, per zeevracht of wegtransport."
+        },
+        {
+          "q": "Hoe snel reageert u?",
+          "a": "Binnen 4 uur, zondag tot en met vrijdag — met offerte en volledig specificatieblad."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Laten we uw eerste container op weg helpen",
+      "sub": "Vertel ons uw bestemmingshaven en volume — wij reageren binnen 4 uur met een offerte en specblad.",
+      "primary": "Offerte aanvragen",
+      "whatsapp": "Chat via WhatsApp"
+    },
+    "packaging": {
+      "eyebrow": "Exportverpakking",
+      "title": "Drie exportformaten",
+      "sub": "Uitsluitend exportverpakking in bulk. Wij bieden geen consumenten- of winkelverpakking en niets schapklaar aan.",
+      "moq": "Contractlevering · minimale afname 5 ton"
+    }
+  },
+  "footer": {
+    "tagline": "Premium Egyptische oranjevlezige zoete aardappelen voor Europese kopers.",
+    "export": "Export",
+    "logistics": "Logistiek",
+    "languages": "Talen",
+    "ports": "Damietta · Alexandrië · Safaga · Suez",
+    "incoterms": "FOB · CFR · CIF",
+    "quality": "Kwaliteit & certificeringen",
+    "rights": "Alle rechten voorbehouden.",
+    "freight": "Zeevracht · wegtransport",
+    "moq": "Minimale afname 5 t"
+  },
+  "rfqForm": {
+    "heading": "Offerte aanvragen",
+    "sub": "Wij reageren binnen 4 uur, zo–vr.",
+    "product": "Product",
+    "productBeauregard": "Beauregard",
+    "productBellevue": "Bellevue",
+    "destinationPort": "Bestemmingshaven",
+    "destinationPortPlaceholder": "Rotterdam",
+    "volume": "Volume",
+    "volumePlaceholder": "Vanaf 5 t",
+    "incoterm": "Incoterm",
+    "incotermOptions": [
+      "CIF",
+      "CFR",
+      "FOB",
+      "DAP"
+    ],
+    "email": "Zakelijk e-mailadres",
+    "emailPlaceholder": "u@bedrijf.com",
+    "message": "Bericht",
+    "messagePlaceholder": "Timing, verpakkingsformaat, bestemming…",
+    "submit": "Vraag mijn exportofferte aan",
+    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · of via WhatsApp",
+    "errorRequired": "Vul de verplichte velden in.",
+    "success": "Dank u — uw aanvraag staat klaar.",
+    "successNote": "We hebben WhatsApp geopend zodat u de aanvraag direct kunt versturen; ons exportteam reageert binnen 4 uur. [[confirm: also wire the form to email/CRM]]",
+    "legendNeed": "Wat u nodig heeft",
+    "legendReach": "Waar de offerte heen gaat",
+    "optional": "optioneel",
+    "errorPort": "Geef de bestemmingshaven door.",
+    "errorVolume": "Geef bij benadering door hoeveel u nodig heeft.",
+    "errorEmail": "Vul een e-mailadres in zodat wij de offerte kunnen sturen.",
+    "errorEmailFormat": "Controleer het e-mailadres — het lijkt onvolledig.",
+    "productOther": "Anders",
+    "moqNote": "Minimale afname 5 ton."
+  },
+  "product": {
+    "breadcrumb": "Zoete aardappelen",
+    "eyebrow": {
+      "varieties": "De oogst",
+      "calibre": "Sortering",
+      "packaging": "Exportverpakking",
+      "postHarvest": "Koelketen",
+      "season": "Beschikbaarheid",
+      "gallery": "Galerij",
+      "faq": "Vragen van kopers"
+    },
+    "hero": {
+      "kicker": "Oranje vruchtvlees · Beauregard & Bellevue",
+      "title": "Egyptische oranjevlezige zoete aardappelen.",
+      "sub": "Klasse I, gedroogd voor meer zoetheid, gesorteerd en verpakt voor bulkexport onder een bewaakte koelketen. Volledige specificaties hieronder — of vraag een offerte voor uw haven en volume.",
+      "imageAlt": "Doorgesneden Beauregard-zoeteaardappel met stralend oranje vruchtvlees en een met aarde bestoven schil, natuurlijk zijlicht op mat hout. [[confirm: replace with real macro]]",
+      "availability": "Vrijwel jaarrond beschikbaar",
+      "highlights": [
+        {
+          "label": "Klasse",
+          "value": "Klasse I"
+        },
+        {
+          "label": "Exportverpakking",
+          "value": "3 · 6 · 10 kg"
+        },
+        {
+          "label": "Minimale afname",
+          "value": "5 ton"
+        },
+        {
+          "label": "Koelketen",
+          "value": "12–14 °C"
+        }
+      ]
+    },
+    "downloadSpec": "Specblad downloaden (PDF)",
+    "varieties": {
+      "title": "Rassen",
+      "lead": "Twee rassen met oranje vruchtvlees, beide diep van kleur en exportgesorteerd.",
+      "head": [
+        "Ras",
+        "Vruchtvlees",
+        "Schil",
+        "Profiel"
+      ],
+      "rows": [
+        [
+          "Beauregard",
+          "Diep oranje",
+          "Koperroze",
+          "Zoet en smeuïg — de EU-standaard"
+        ],
+        [
+          "Bellevue",
+          "Oranje",
+          "Koper",
+          "Gelijkmatige sortering, lange houdbaarheid"
+        ]
+      ]
+    },
+    "calibre": {
+      "title": "Sortering en klasse — Klasse I",
+      "lead": "Klasse I is ons minimum in elke kist. De sorteringstabel wordt nog bevestigd met onze verpakkingshal en verschijnt hier zodra die geverifieerd is.",
+      "placeholder": "Sorterings- en maattabel — gereserveerd voor de geverifieerde cijfers",
+      "note": "Wij laten dit liever leeg dan een maat te noemen die wij niet op elke pallet kunnen waarmaken. Vraag het actuele sorteringsblad op bij onze exportafdeling. [[confirm: officiële sorterings- en maattabel]]",
+      "cta": "Sorteringsblad opvragen"
+    },
+    "packaging": {
+      "title": "Exportverpakking",
+      "lead": "Uitsluitend exportverpakking in bulk. Wij bieden geen consumenten- of winkelverpakking en niets schapklaar aan.",
+      "items": [
+        {
+          "title": "Exportdoos — 3 kg",
+          "specs": [
+            [
+              "Netto",
+              "3 kg"
+            ],
+            [
+              "Per pallet",
+              "[[confirm]]"
+            ],
+            [
+              "Per 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Exportdoos — 6 kg",
+          "specs": [
+            [
+              "Netto",
+              "6 kg"
+            ],
+            [
+              "Per pallet",
+              "[[confirm]]"
+            ],
+            [
+              "Per 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Grote exportdoos — 10 kg",
+          "specs": [
+            [
+              "Netto",
+              "10 kg"
+            ],
+            [
+              "Per pallet",
+              "[[confirm]]"
+            ],
+            [
+              "Per 40'",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ],
+      "moq": "Contractlevering · minimale afname 5 ton"
+    },
+    "container": {
+      "title": "Containerbelading",
+      "head": [
+        "Container",
+        "Pallets",
+        "Dozen",
+        "Nettogewicht"
+      ],
+      "rows": [
+        [
+          "20'-reefer",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ],
+        [
+          "40'-reefer",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ]
+      ],
+      "note": "Beladingscijfers worden per formaat en bestemming bevestigd bij de offerte. [[confirm: geverifieerde pallet- en doosaantallen]]"
+    },
+    "season": {
+      "title": "Seizoen & beschikbaarheid",
+      "lead": "Piekoogst aug–dec; koelopslag rekt de levering op tot vrijwel jaarrond.",
+      "peakLabel": "Piekoogst",
+      "storeLabel": "Levering uit koelopslag",
+      "note": "uit te breiden tot vrijwel jaarrond."
+    },
+    "postHarvest": {
+      "title": "Naoogst & koelketen",
+      "facts": [
+        {
+          "label": "Curing",
+          "value": "4–7 dagen"
+        },
+        {
+          "label": "Opslag",
+          "value": "12–14 °C"
+        },
+        {
+          "label": "Luchtvochtigheid",
+          "value": "85–90%"
+        },
+        {
+          "label": "Houdbaarheid",
+          "value": "4–6 mnd"
+        },
+        {
+          "label": "Koudeschade",
+          "value": "> 10 °C"
+        },
+        {
+          "label": "Bewaking",
+          "value": "Datalogger"
+        },
+        {
+          "label": "MRL",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Traceerbaarheid",
+          "value": "Op partijniveau"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificeringen",
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "ISO 22000",
+        "Fytosanitair"
+      ],
+      "note": "[[confirm certification]]"
+    },
+    "gallery": {
+      "title": "Van veld tot schip",
+      "alt": "Zoete aardappelen van El Molouk, velden en pakstation",
+      "steps": [
+        {
+          "caption": "Op het veld",
+          "alt": "Ruggen met zoete aardappelen in de Nijldelta"
+        },
+        {
+          "caption": "Oogst",
+          "alt": "Vers gerooide zoete aardappelen op de aarde van het veld"
+        },
+        {
+          "caption": "Sortering",
+          "alt": "Gesorteerde zoete aardappelen op de sorteertafel"
+        },
+        {
+          "caption": "Verpakking",
+          "alt": "Kisten gesorteerde zoete aardappelen vullen de verpakkingshal"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "items": [
+        {
+          "q": "Wat is uw minimale afname?",
+          "a": "5 ton. Wij leveren op contract; daarboven worden programmavolumes per seizoen afgesproken."
+        },
+        {
+          "q": "In welke verpakking exporteert u?",
+          "a": "Exportdozen van 3 kg en 6 kg, en grote exportdozen van 10 kg. Uitsluitend bulkexport — geen consumenten- of winkelverpakking."
+        },
+        {
+          "q": "Vanaf welke havens laadt u?",
+          "a": "Damietta, Alexandrië, Safaga en Suez, per zeevracht of wegtransport. FOB, CFR en CIF worden geoffreerd; DAP in overleg. [[confirm]]"
+        },
+        {
+          "q": "Levertijd?",
+          "a": "[[confirm: doorlooptijd van order tot belading]]"
+        }
+      ]
+    }
+  },
+  "rfq": {
+    "headerNote": "Reactie binnen 4 u · WhatsApp [[confirm]]",
+    "hero": {
+      "kicker": "Bulkexport · EU-importeurs",
+      "title": "Koop Egyptische oranjevlezige zoete aardappelen — bulkexport naar Europa.",
+      "sub": "Beauregard en Bellevue, klasse I, gedroogd en met bewaakte koelketen. Bulkexport uit Egypte in dozen van 3, 6 en 10 kg, vanaf 5 ton.",
+      "chips": [
+        "Beauregard · Bellevue",
+        "Dozen 3 · 6 · 10 kg",
+        "Damietta · Alexandrië · Safaga · Suez",
+        "Vanaf 5 t"
+      ],
+      "proof": [
+        "Gecertificeerd & geaudit — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Eigen velden & packhouse — controle van teler tot haven, traceerbaarheid op partijniveau",
+        "Antwoord binnen 4 uur met een offerte en volledig specblad"
+      ],
+      "trust": [
+        "GLOBALG.A.P [[confirm]]",
+        "BRCGS / IFS [[confirm]]",
+        "30.000 t / seizoen",
+        "Alleen bulkexport"
+      ]
+    },
+    "formNote": "2 minuten · vrijblijvend",
+    "stats": [
+      {
+        "value": "30.000 t",
+        "label": "geoogst per seizoen"
+      },
+      {
+        "value": "5 t",
+        "label": "minimale afname"
+      },
+      {
+        "value": "4",
+        "label": "laadhavens"
+      },
+      {
+        "value": "< 4 u",
+        "label": "reactietijd offerte"
+      }
+    ],
+    "glance": {
+      "title": "Exportverpakking in één oogopslag",
+      "head": [
+        "Formaat",
+        "Nettogewicht",
+        "Levering"
+      ],
+      "rows": [
+        [
+          "Exportdoos",
+          "3 kg",
+          "Bulkexport"
+        ],
+        [
+          "Exportdoos",
+          "6 kg",
+          "Bulkexport"
+        ],
+        [
+          "Grote exportdoos",
+          "10 kg",
+          "Bulkexport"
+        ]
+      ],
+      "note": "Contractlevering, minimale afname 5 ton. Belading in Damietta, Alexandrië, Safaga of Suez — zeevracht of wegtransport."
+    },
+    "finalTitle": "Klaar voor een prijs op uw eerste container?",
+    "footerNote": "El Molouk · الملوك للتصدير — Egyptische exporteur van oranjevlezige zoete aardappelen · [[confirm legal + address]]"
+  },
+  "quality": {
+    "breadcrumb": "Kwaliteit",
+    "hero": {
+      "eyebrow": "Kwaliteit & voedselveiligheid",
+      "title": "Controleer ons voordat u koopt.",
+      "sub": "Alles wat op deze pagina staat, kunt u nagaan: schemanummers en de instanties die ze afgaven, een ondertekend rapport bij elke controlestap, en een koelketen die u zo van de datalogger afleest.",
+      "ctaSecondary": "Bekijk de specificaties",
+      "badge": "Zes controlestappen",
+      "imageAlt": "Zoete aardappelen bij de oogst uit het veld gerooid",
+      "highlights": [
+        "Traceerbaar op partijniveau",
+        "Voldoet aan de EU-MRL’s",
+        "Documenten vóór het laden"
+      ],
+      "insetAlt": "Gesorteerde zoete aardappelen op de keuringstafel"
+    },
+    "facts": {
+      "label": "Bij elke zending vastgelegd",
+      "items": [
+        {
+          "label": "Traceerbaarheid",
+          "value": "Op partijniveau"
+        },
+        {
+          "label": "Koelketen",
+          "value": "12–14 °C, gelogd"
+        },
+        {
+          "label": "Residuen",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Controlerapport",
+          "value": "Elke stap"
+        }
+      ]
+    },
+    "standards": {
+      "eyebrow": "Exportnormen",
+      "title": "Waaraan elke kist moet voldoen",
+      "sub": "Eén specificatie, net zo toegepast op een proefpallet als op een programma van een heel seizoen.",
+      "items": [
+        {
+          "title": "EU-Klasse I",
+          "desc": "Vorm, kleur en stevigheid gesorteerd op EU-Klasse I. Wat daaronder valt, komt niet in de exportlijn."
+        },
+        {
+          "title": "Constante sortering",
+          "desc": "Gekalibreerd op uw sorteringsband, zodat kistgewicht en aantal in de hele container kloppen."
+        },
+        {
+          "title": "Residunormen",
+          "desc": "Geteeld binnen de EU-residulimieten van Verordening 396/2005, met residuonderzoek vóór verscheping. [[confirm]]"
+        },
+        {
+          "title": "Beheerste koelketen",
+          "desc": "Gecured, daarna bewaard en verscheept op 12–14 °C, met een datalogger in elke reefer."
+        },
+        {
+          "title": "Exportverpakking en etikettering",
+          "desc": "Exportdozen van 3, 6 en 10 kg, geëtiketteerd volgens uw specificatie en voorzien van het partijnummer. Uitsluitend bulkexport. [[confirm: GS1-etikettering]]"
+        },
+        {
+          "title": "Sociale compliance",
+          "desc": "GRASP en SMETA dekken eerlijk werk, veiligheid en welzijn van medewerkers op onze eigen velden. [[confirm]]"
+        }
+      ]
+    },
+    "inspection": {
+      "eyebrow": "Controle",
+      "title": "Zes controlepunten tussen het veld en de reefer",
+      "sub": "Elke stap heeft eigen acceptatiecriteria, een eigen rapport en een naam eronder. Een partij die zakt, gaat een stap terug.",
+      "steps": [
+        {
+          "name": "Veld & rooien",
+          "desc": "Partijen worden op rijpheid gerooid en vanaf de eerste kist gescheiden gehouden per veld en datum.",
+          "checks": [
+            "Veld en partij vastgelegd",
+            "Schilvastheid en rijpheid",
+            "Controle op grond en beschadiging"
+          ]
+        },
+        {
+          "name": "Aanvoer & curing",
+          "desc": "Curing bij 28–30 °C heelt de schil, ontwikkelt de suikers en beperkt bewaarverlies.",
+          "checks": [
+            "Temperatuur- en vochtlog",
+            "Duur van de curing",
+            "Rot en kneuzing verwijderd"
+          ]
+        },
+        {
+          "name": "Wassen & sorteren",
+          "desc": "Gewassen en daarna gesorteerd op vorm, schilbeeld en inwendige gebreken.",
+          "checks": [
+            "Waterkwaliteit",
+            "Schilbeeld en vorm",
+            "Snijtest per partij"
+          ]
+        },
+        {
+          "name": "Klasseren & kalibreren",
+          "desc": "Geklasseerd op EU-Klasse I en gekalibreerd op de sortering van uw order.",
+          "checks": [
+            "Criteria Klasse I",
+            "Sorteringsband en aantal",
+            "Controleweging van de dozen"
+          ]
+        },
+        {
+          "name": "Verpakken & etiketteren",
+          "desc": "Verpakt volgens uw doosspecificatie en voorzien van de partijcode die tot uw deur meeloopt.",
+          "checks": [
+            "Doos- en palletspecificatie",
+            "Partijcode en etiket",
+            "Aantal lagen en palletstabiliteit"
+          ]
+        },
+        {
+          "name": "Vóór het laden",
+          "desc": "Container gecontroleerd, voorgekoeld en onder toezicht geladen; de documenten liggen er vóór vertrek.",
+          "checks": [
+            "Voorkoeling en setpoint",
+            "Datalogger geplaatst",
+            "Fytosanitair en documenten [[confirm]]"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "eyebrow": "Voedselveiligheid",
+      "title": "Schoon behandeld, koel bewaard",
+      "lead": "Voedselveiligheid is vooral huishouden dat elke dag hetzelfde gebeurt: schoon water, schone handen, schone oppervlakken — en een temperatuur die niet wegloopt.",
+      "imageAlt": "Vers gesneden oranje vruchtvlees van de zoete aardappel",
+      "points": [
+        "Drinkwaterkwaliteit bij elke wasbeurt, volgens schema bemonsterd [[confirm]]",
+        "Kleurgecodeerd schoonmaakmateriaal en een vastgelegde reinigingsronde",
+        "Medewerkers getraind in hygiëne en persoonlijke beschermingsmiddelen",
+        "Ongediertebeheersing door een externe partij, rapporten in het dossier [[confirm]]",
+        "Allergenen- en vreemdvoorwerpcontrole voordat de dozen sluiten",
+        "Tracering op partijcode, vooruit en terug, binnen vier uur"
+      ],
+      "storageTitle": "Temperaturen die we aanhouden",
+      "storage": [
+        {
+          "title": "Curing",
+          "value": "28–30 °C",
+          "note": "5–7 dagen bij hoge luchtvochtigheid zodat de schil heelt"
+        },
+        {
+          "title": "Koelcel",
+          "value": "12–14 °C",
+          "note": "85–90% RV — onder 10 °C ontstaat koudeschade"
+        },
+        {
+          "title": "Reefer",
+          "value": "12–14 °C",
+          "note": "Voorgekoeld, setpoint de hele reis gelogd"
+        }
+      ]
+    },
+    "certs": {
+      "eyebrow": "Certificeringen",
+      "title": "Referenties die u kunt verifiëren",
+      "lead": "Per schema geven we het nummer, de geldigheid en de certificerende instantie, zodat uw kwaliteitsafdeling het bij de bron kan controleren. Waarden verschijnen hier pas nadat de instantie ze heeft bevestigd.",
+      "statusLabel": "Verificatie in behandeling",
+      "request": "Dit certificaat opvragen",
+      "note": "We tonen geen logo dat we niet mogen voeren. Staat een schema hier niet, dan hebben we het niet.",
+      "items": [
+        {
+          "code": "GG",
+          "name": "GLOBALG.A.P. — IFA",
+          "rows": [
+            [
+              "Nummer",
+              "[[confirm]]"
+            ],
+            [
+              "Geldig tot",
+              "[[confirm]]"
+            ],
+            [
+              "Instantie",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "BR",
+          "name": "BRCGS / IFS Food",
+          "rows": [
+            [
+              "Beoordeling",
+              "[[confirm]]"
+            ],
+            [
+              "Geldig tot",
+              "[[confirm]]"
+            ],
+            [
+              "Instantie",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "GR",
+          "name": "GRASP",
+          "rows": [
+            [
+              "Assessment",
+              "[[confirm]]"
+            ],
+            [
+              "Geldig tot",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "SM",
+          "name": "SMETA / Sedex",
+          "rows": [
+            [
+              "Pijlers",
+              "[[confirm]]"
+            ],
+            [
+              "Geldig tot",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ]
+    },
+    "facility": {
+      "eyebrow": "Bedrijf & operatie",
+      "title": "Waar het werk gebeurt",
+      "sub": "Onze eigen velden, ons eigen packhouse, en containers die op locatie worden geladen.",
+      "items": [
+        {
+          "caption": "De velden",
+          "desc": "Ruggen in de Nijldelta, ploeg voor ploeg gerooid",
+          "image": "hero"
+        },
+        {
+          "caption": "Oogst",
+          "desc": "Gerooid op rijpheid en gescheiden gehouden per perceel en datum",
+          "image": "roots"
+        },
+        {
+          "caption": "Sortering",
+          "desc": "Getoetst aan klasse I voordat er iets wordt verpakt",
+          "image": "basket"
+        },
+        {
+          "caption": "Verpakking",
+          "desc": "In exportdozen gezet en van partijnummer voorzien",
+          "image": "packhouse"
+        }
+      ],
+      "note": "Deze foto’s staan er tot onze eigen opnames op locatie klaar zijn. Tot die tijd bent u welkom om het bedrijf zelf te auditen of er met ons doorheen te lopen via een videogesprek. [[confirm]]"
+    },
+    "trust": {
+      "eyebrow": "Waarom kopers blijven",
+      "title": "Vier manieren waarop een groente-import misgaat",
+      "sub": "En wat wij hebben ingericht zodat het uw container niet overkomt.",
+      "riskLabel": "Waar zendingen misgaan",
+      "fixLabel": "Wat wij ertegen doen",
+      "items": [
+        {
+          "risk": "De aangekomen kwaliteit komt niet overeen met het goedgekeurde monster.",
+          "fix": "Inspectie vóór verscheping met gedateerde foto’s van de werkelijke partij, verstuurd voordat de container vertrekt."
+        },
+        {
+          "risk": "Certificaten die niet te controleren zijn — of van iemand anders zijn.",
+          "fix": "Schemanummer, geldigheid en certificerende instantie bij elke referentie, zodat u het bij de bron nagaat."
+        },
+        {
+          "risk": "Een gat in de koelketen dat niemand kan verklaren.",
+          "fix": "Een datalogger in elke reefer; de volledige temperatuurcurve wordt bij aankomst overgedragen."
+        },
+        {
+          "risk": "Stilte zodra de planning schuift.",
+          "fix": "Eén vaste contactpersoon die binnen vier uur antwoordt, zondag tot en met vrijdag."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Goed om te weten",
+      "title": "Wat kopers ons vragen",
+      "items": [
+        {
+          "q": "Kunnen we uw velden en packhouse auditen?",
+          "a": "Ja — ter plaatse of via een videogesprek, wanneer het u uitkomt. Op verzoek ontvangen we ook een audit door een derde partij. [[confirm]]"
+        },
+        {
+          "q": "Welke certificeringen hebt u echt?",
+          "a": "De hierboven genoemde schema’s, en alleen die. Nummers en geldigheidsdata staan hier zodra de certificerende instantie ze heeft bevestigd."
+        },
+        {
+          "q": "Hoe wordt traceerbaarheid vastgelegd?",
+          "a": "Elke doos draagt een partijcode die terugleidt naar het veld, de oogstdatum en de verpakkingsploeg. We traceren vooruit of terug binnen vier uur."
+        },
+        {
+          "q": "Test u op bestrijdingsmiddelenresiduen?",
+          "a": "Ja — tegen de EU-residulimieten van Verordening 396/2005, met per zending een residurapport op aanvraag. [[confirm]]"
+        },
+        {
+          "q": "Wat als een lading buiten specificatie aankomt?",
+          "a": "Stuur binnen 24 uur na lossing foto’s en het loggerbestand. We toetsen de claim aan ons eigen rapport van vóór verscheping en regelen die op de volgende zending of via een creditnota. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Certificeringen in orde bevonden?",
+      "sub": "Stuur uw bestemmingshaven en volume. Een offerte en het volledige documentenpakket volgen binnen vier uur.",
+      "whatsapp": "Chat op WhatsApp",
+      "points": [
+        "Antwoord binnen 4 uur",
+        "Volledig documentenpakket",
+        "Monsters op aanvraag [[confirm]]"
+      ]
+    }
+  },
+  "contact": {
+    "breadcrumb": "Contact",
+    "breadcrumbHome": "Home",
+    "hero": {
+      "badge": "Wij reageren binnen 4 uur, zondag t/m vrijdag",
+      "title": "Praat met de mensen die ze telen.",
+      "sub": "Geef uw bestemmingshaven, volume en planning door. Ons exportteam komt terug met een prijs, het volledige specblad en een laaddatum — zonder account, zonder verplichting.",
+      "ctaPrimary": "Aanvraag versturen",
+      "ctaSecondary": "Chat via WhatsApp",
+      "note": "Eén team antwoordt, calculeert en laadt. U wordt nooit doorverwezen.",
+      "imageAlt": "Een teler in de eigen velden van El Molouk aan het begin van het seizoen",
+      "cardTitle": "Exportteam",
+      "cardSub": "Zondag t/m vrijdag"
+    },
+    "strip": {
+      "items": [
+        "Reactie binnen 4 uur",
+        "Zondag tot en met vrijdag",
+        "Minimale afname 5 t",
+        "Damietta · Alexandrië · Safaga · Suez"
+      ]
+    },
+    "channels": {
+      "eyebrow": "Zo bereikt u ons",
+      "title": "Kies hoe u wilt overleggen",
+      "sub": "Elk kanaal komt direct bij het exportteam uit — hetzelfde team dat uw container calculeert en laadt.",
+      "preferred": "Beste keuze voor offertes",
+      "items": [
+        {
+          "name": "E-mail",
+          "desc": "Specificaties, prijslijsten en documentatie, op schrift.",
+          "action": "Schrijf ons"
+        },
+        {
+          "name": "Telefoon",
+          "desc": "Programmaplanning en alles wat niet op een mailbox kan wachten.",
+          "action": "Bel het exportteam"
+        },
+        {
+          "name": "WhatsApp",
+          "desc": "Korte vragen, foto's uit het packhouse en updates over zendingen.",
+          "action": "WhatsApp openen"
+        }
+      ],
+      "hoursTitle": "Openingstijden",
+      "hoursValue": "Zondag – vrijdag, [[confirm office hours]]",
+      "hoursNote": "Berichten buiten deze tijden pakken we op aan het begin van de eerstvolgende werkdag. [[confirm]]"
+    },
+    "form": {
+      "eyebrow": "Offerte aanvragen",
+      "title": "Stuur uw aanvraag",
+      "sub": "Drie gegevens volstaan om een container te prijzen: waarheen, hoeveel en wanneer.",
+      "stepsTitle": "Wat er daarna gebeurt",
+      "steps": [
+        {
+          "name": "U stuurt de kern",
+          "desc": "Haven, volume, planning. Twee minuten, zonder account."
+        },
+        {
+          "name": "Wij calculeren",
+          "desc": "Een offerte met volledig specblad en verpakkingsopties, binnen 4 uur, zondag t/m vrijdag."
+        },
+        {
+          "name": "Wij boeken de reefer",
+          "desc": "Een laaddatum vanuit Damietta, Alexandrië, Safaga of Suez, koelketen bewaakt tot uw haven."
+        }
+      ],
+      "asideTitle": "Liever even chatten?",
+      "asideDesc": "Stuur dezelfde drie gegevens via WhatsApp, dan nemen wij het over.",
+      "asideCta": "WhatsApp openen",
+      "privacy": "Uw gegevens gebruiken wij uitsluitend om deze aanvraag te beantwoorden. [[confirm privacy policy]]"
+    },
+    "company": {
+      "eyebrow": "Bedrijfsgegevens",
+      "title": "Met wie u zakendoet",
+      "sub": "De gegevens waar inkopers vóór een eerste order om vragen — hier, in plaats van op verzoek.",
+      "items": [
+        {
+          "label": "Geregistreerde onderneming",
+          "value": "[[confirm legal name + registration]]",
+          "desc": "Inschrijvings- en exportvergunningsnummers delen wij op verzoek."
+        },
+        {
+          "label": "Packhouse & kantoor",
+          "value": "[[confirm packhouse address]]",
+          "desc": "Sorteren, verpakken en koelopslag op één locatie in de Nijldelta."
+        },
+        {
+          "label": "Werktijden",
+          "value": "Zondag – vrijdag, [[confirm office hours]]",
+          "desc": "De oogst loopt van augustus tot maart; curing en koeling houden de levering het hele jaar op gang."
+        },
+        {
+          "label": "Exportmarkten",
+          "value": "Heel Europa [[confirm market list]]",
+          "desc": "Vaste containerprogramma's naar Noord- en West-Europa."
+        }
+      ]
+    },
+    "location": {
+      "eyebrow": "Waar we zitten",
+      "title": "Geteeld in de Nijldelta, verscheept vanuit vier havens",
+      "sub": "Onze verpakkingshal en koelcel liggen in de delta, met reefers die laden in Damietta, Alexandrië, Safaga en Suez.",
+      "mapLabel": "Kaartplaceholder — locatie packhouse, Egypte. [[confirm]]",
+      "pin": "Packhouse [[confirm]]",
+      "rows": [
+        {
+          "label": "Adres",
+          "value": "[[confirm packhouse address]]"
+        },
+        {
+          "label": "Laadhavens",
+          "value": "Damietta · Alexandrië · Safaga · Suez"
+        },
+        {
+          "label": "Export via",
+          "value": "Zeevracht · wegtransport"
+        },
+        {
+          "label": "Minimale afname",
+          "value": "5 ton"
+        },
+        {
+          "label": "Incoterms",
+          "value": "FOB · CFR · CIF · DAP"
+        }
+      ],
+      "note": "Bezoek aan het packhouse en audits door kopers zijn welkom op afspraak. [[confirm]]"
+    },
+    "why": {
+      "eyebrow": "Waarom kopers schrijven",
+      "title": "Wat u krijgt vóór u zich ergens aan bindt",
+      "sub": "Een aanvraag kost u twee minuten. Dit komt er terug.",
+      "items": [
+        {
+          "title": "Antwoord in uren, niet in dagen",
+          "desc": "Elke aanvraag wordt binnen 4 uur beantwoord, zondag t/m vrijdag — met een prijs, niet met een brochure."
+        },
+        {
+          "title": "Exportpapieren geregeld",
+          "desc": "Certificaten, fytosanitaire documenten en reeferboekingen worden voorbereid door hetzelfde team dat de doos vult."
+        },
+        {
+          "title": "Eén team, van veld tot haven",
+          "desc": "We telen, curen, sorteren en laden zelf, dus een antwoord over uw container komt van de mensen die hem in handen hebben."
+        },
+        {
+          "title": "Uw taal",
+          "desc": "We corresponderen in zeven talen, Arabisch en Engels inbegrepen."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Voordat u schrijft",
+      "title": "Wat kopers als eerste vragen",
+      "items": [
+        {
+          "q": "Wat moet ik in mijn aanvraag zetten?",
+          "a": "Bestemmingshaven, volume en planning zijn genoeg voor een eerste prijs. Verpakking, etikettering en programmadata kunnen daarna."
+        },
+        {
+          "q": "Hoe snel hoor ik iets?",
+          "a": "Binnen 4 uur, zondag t/m vrijdag — met een offerte en volledig specblad."
+        },
+        {
+          "q": "Kan ik monsters aanvragen?",
+          "a": "Laat weten welk kaliber en welke verpakking u wilt zien, dan komen wij terug met de mogelijkheden. [[confirm sample policy]]"
+        },
+        {
+          "q": "Welke Incoterms kunt u offreren?",
+          "a": "FOB Damietta, Alexandrië, Safaga of Suez; CFR en CIF naar de grote EU-havens; DAP in overleg. [[confirm]]"
+        },
+        {
+          "q": "Werkt u ook met nieuwe importeurs?",
+          "a": "Ja. Vertel waar u staat — wij offreren één losse container net zo graag als een seizoensprogramma. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Uw eerste container begint met één bericht",
+      "sub": "Stuur de haven, het volume en de planning. Wij komen terug met de prijs.",
+      "primary": "Aanvraag versturen",
+      "whatsapp": "Chat via WhatsApp",
+      "trust": [
+        "Reactie binnen 4 uur",
+        "GLOBALG.A.P · BRCGS [[confirm]]",
+        "Vrijblijvend"
+      ]
+    }
+  }
+}

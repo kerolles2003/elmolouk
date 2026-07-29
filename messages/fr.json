@@ -1,0 +1,1231 @@
+{
+  "metadata": {
+    "titleTemplate": "%s · El Molouk",
+    "ogAlt": {
+      "default": "Le logo El Molouk Fresh Produce à côté d'un champ de patates douces égyptien au moment de la récolte.",
+      "product": "Le logo El Molouk Fresh Produce à côté d'un carton d'export de patates douces à chair orange calibrées.",
+      "quality": "Le logo El Molouk Fresh Produce à côté de la station de conditionnement, patates douces calibrées en caisses d'export."
+    },
+    "home": {
+      "title": "Patates douces à chair orange d'Égypte — export en gros",
+      "description": "Patates douces égyptiennes à chair orange — Beauregard et Bellevue. Catégorie I, ressuyées et sous chaîne du froid contrôlée, en emballage d'export pour les importateurs européens.",
+      "keywords": [
+        "exportateur égyptien de patates douces",
+        "patate douce à chair orange",
+        "patate douce en gros",
+        "approvisionnement en vrac de patates douces",
+        "Beauregard",
+        "Bellevue",
+        "exportateur de produits frais Égypte"
+      ]
+    },
+    "sweetPotatoes": {
+      "title": "Patates douces — variétés, emballage d'export et chaîne du froid",
+      "description": "Beauregard et Bellevue, patates douces à chair orange : emballage d'export, chargement conteneur, saison et chaîne du froid. Commande minimum 5 tonnes.",
+      "keywords": [
+        "variétés de patate douce",
+        "patate douce Beauregard",
+        "patate douce Bellevue",
+        "emballage export patate douce",
+        "calibre patate douce",
+        "empotage conteneur",
+        "chaîne du froid",
+        "saison de la patate douce en Égypte"
+      ]
+    },
+    "quality": {
+      "title": "Qualité et certifications",
+      "description": "Certifications sécurité alimentaire et agricoles, traçabilité et maîtrise de la chaîne du froid : les références d'El Molouk, documentées et vérifiables.",
+      "keywords": [
+        "contrôle qualité patate douce",
+        "patate douce Catégorie I",
+        "traçabilité",
+        "surveillance de la chaîne du froid",
+        "ressuyage",
+        "calibrage en station de conditionnement",
+        "normes d'exportation"
+      ]
+    },
+    "rfq": {
+      "title": "Demander un devis — patates douces d'Égypte en gros",
+      "description": "Export de patates douces égyptiennes en vrac. Commande minimum 5 tonnes — indiquez votre port de destination et votre volume, devis sous 4 heures."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contactez l'équipe export d'El Molouk. Demandez un devis ou écrivez-nous sur WhatsApp — réponse sous 4 heures.",
+      "keywords": [
+        "contacter un exportateur de patates douces",
+        "demander un devis",
+        "fournisseur égyptien de patates douces",
+        "demande d'export patate douce",
+        "WhatsApp service export"
+      ]
+    }
+  },
+  "nav": {
+    "sweetPotatoes": "Patates douces",
+    "quality": "Qualité",
+    "contact": "Contact",
+    "requestQuote": "Demander un devis",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue",
+    "skipToContent": "Aller au contenu"
+  },
+  "common": {
+    "requestQuote": "Demander un devis",
+    "downloadSpecSheet": "Télécharger la fiche technique",
+    "whatsapp": "Écrivez-nous sur WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "viewSpecifications": "Voir les spécifications",
+    "getMyQuote": "Obtenir mon devis export",
+    "replyWithin": "Nous répondons sous 4 heures",
+    "placeholderTag": "Emplacement réservé",
+    "confirm": "[[confirm]]",
+    "awaitingPhoto": "Photo à venir"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Des terres fertiles du delta du Nil aux plus belles tables du monde.",
+      "titleLead": "La patate douce…",
+      "titleA": "Un voyage qui commence sur une terre reçue en héritage,",
+      "titleB": "et s’achève sur les tables de vos clients.",
+      "storyP1": "Des générations de notre famille ont cultivé le delta du Nil — apprenant le limon, l’eau et le tournant des saisons auprès de ceux qui travaillaient cette terre avant elles. Elle nous est revenue comme une responsabilité plutôt que comme un commerce, et nous l’entretenons avec ce que notre génération a reçu : sols analysés, irrigation mesurée, chambres de ressuyage contrôlées.",
+      "storyP2": "Ce que nous cultivons, nous l’accompagnons jusqu’au bout. Récolte, tri, conditionnement, froid, export — un seul voyage, que nous pilotons nous-mêmes, pour que la marchandise ne change jamais de mains sans que quelqu’un ici en réponde. Et chaque patate douce que nous retenons doit passer une seule question : sera-t-elle encore juste en arrivant chez votre client ?",
+      "quote": "Rien ne quitte nos mains que nous ne mettrions pas sur notre propre table.",
+      "ctaPrimary": "Demander un devis",
+      "ctaSecondary": "Découvrir nos produits",
+      "imageAlt": "Rangées d’une exploitation de patates douces s’étendant jusqu’à l’horizon sous un ciel dégagé",
+      "stat1Value": "30 000 t",
+      "stat1Label": "récoltées chaque saison",
+      "stat2Value": "Royaume-Uni et Europe",
+      "stat2Label": "nous exportons vers",
+      "journey": [
+        {
+          "caption": "Récolte",
+          "alt": "Patates douces fraîchement arrachées, posées sur la terre du champ"
+        },
+        {
+          "caption": "Emballage",
+          "alt": "Caisses de patates douces calibrées remplissant la station de conditionnement"
+        },
+        {
+          "caption": "À table",
+          "alt": "Un plat de patates douces, prêt à être servi"
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "Chaîne du froid surveillée",
+        "Approvisionnement toute l'année"
+      ]
+    },
+    "featured": {
+      "eyebrow": "Nos produits",
+      "title": "La patate douce, à son meilleur",
+      "sub": "Deux variétés à chair orange, cultivées sur nos propres terres et conditionnées pour l'export.",
+      "weightLabel": "Conditionnement export",
+      "originLabel": "Origine",
+      "cta": "Demander un devis",
+      "items": [
+        {
+          "name": "Beauregard",
+          "desc": "Chair orange soutenu, peau cuivrée rosée. Naturellement sucrée et fondante — la préférée des Européens.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Égypte",
+          "image": "flesh"
+        },
+        {
+          "name": "Bellevue",
+          "desc": "Chair orange, peau cuivrée. Calibre régulier et excellente conservation.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Égypte",
+          "image": "bellevue"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Pourquoi El Molouk",
+      "title": "Un producteur sur qui compter",
+      "sub": "Nous maîtrisons chaque étape, de notre terre à votre port.",
+      "items": [
+        {
+          "title": "Nos propres fermes",
+          "desc": "Cultivées et récoltées sur des terres que nous exploitons nous-mêmes — une qualité constante, caisse après caisse."
+        },
+        {
+          "title": "Certifiés et audités",
+          "desc": "GLOBALG.A.P., BRCGS/IFS et GRASP [[confirm]] — vérifiables, jamais simplement affirmés."
+        },
+        {
+          "title": "Disponible toute l'année",
+          "desc": "Une récolte août–mars, prolongée par le ressuyage et le stockage frigorifique."
+        },
+        {
+          "title": "Chaîne du froid ininterrompue",
+          "desc": "Suivie par enregistreurs de données, de la station de conditionnement au conteneur reefer, à 12–14 °C."
+        },
+        {
+          "title": "À l'échelle du conteneur",
+          "desc": "Conteneurs reefer 40' au départ de Damiette, Alexandrie, Safaga ou Suez — par fret maritime ou transport terrestre."
+        },
+        {
+          "title": "Une seule spécification",
+          "desc": "Catégorie I dans chaque caisse, chiffrée au conteneur — aucune surprise entre l'échantillon et l'expédition."
+        }
+      ]
+    },
+    "farm": {
+      "eyebrow": "Notre histoire",
+      "title": "Enracinés dans la terre d'Égypte",
+      "p1": "El Molouk est née d'une conviction simple : le delta du Nil produit certaines des meilleures patates douces au monde, et les acheteurs européens méritent de les recevoir au sommet de leur fraîcheur.",
+      "p2": "Aujourd'hui, nous cultivons, ressuyons, calibrons et expédions nous-mêmes — pour que la patate douce qui quitte notre station de conditionnement soit exactement celle que vos clients redemandent.",
+      "cta": "Découvrir notre démarche qualité",
+      "imageAlt": "Patates douces arrachées des buttes de nos propres parcelles du delta du Nil"
+    },
+    "process": {
+      "eyebrow": "Notre savoir-faire",
+      "title": "Du champ au conteneur, sous un même toit",
+      "sub": "Six étapes soignées pour des tubercules sucrés, sains et traçables.",
+      "steps": [
+        {
+          "name": "Récolte",
+          "desc": "Arrachées à la main dans nos propres champs, à pleine maturité."
+        },
+        {
+          "name": "Ressuyage",
+          "desc": "Repos à 28–30 °C pour cicatriser la peau et développer la douceur."
+        },
+        {
+          "name": "Tri et calibrage",
+          "desc": "Tri optique en calibres réguliers, Catégorie I UE."
+        },
+        {
+          "name": "Emballage",
+          "desc": "En cartons d'export de 3, 6 et 10 kg, marqués du numéro de lot à la fermeture."
+        },
+        {
+          "name": "Stockage frigorifique",
+          "desc": "Maintenues à 12–14 °C, avec suivi par enregistreurs de données."
+        },
+        {
+          "name": "Expédition",
+          "desc": "Chargées à Damiette, Alexandrie, Safaga ou Suez — par mer ou par la route."
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Naturellement bonne",
+      "title": "Pourquoi tout le monde aime la patate douce",
+      "sub": "Un produit qui se vend tout seul — sain, polyvalent et plein de couleur.",
+      "items": [
+        {
+          "title": "Riche en vitamine A",
+          "desc": "Cette chair orange soutenu regorge de bêta-carotène."
+        },
+        {
+          "title": "Naturellement sucrée",
+          "desc": "Le ressuyage révèle une saveur miellée, sans aucun additif."
+        },
+        {
+          "title": "Riche en fibres",
+          "desc": "Un basique sain que vos clients achètent déjà."
+        },
+        {
+          "title": "Infiniment polyvalente",
+          "desc": "Rôtie, en purée, frite ou au four — une vente toute l'année."
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "De la ferme",
+      "title": "Le parcours, dans l'ordre",
+      "sub": "Du champ au navire, dans l'ordre où cela se passe vraiment.",
+      "note": "Les cadres marqués sont réservés aux photographies d'El Molouk pour ces étapes. [[confirm: commander les prises de vue tri, chambre froide, chargement et expédition]]",
+      "steps": [
+        {
+          "caption": "Au champ",
+          "alt": "Buttes de patates douces dans le delta du Nil"
+        },
+        {
+          "caption": "Récolte",
+          "alt": "Patates douces fraîchement arrachées, posées sur la terre du champ"
+        },
+        {
+          "caption": "Tri",
+          "alt": "Patates douces calibrées sur la table de tri"
+        },
+        {
+          "caption": "Emballage",
+          "alt": "Caisses de patates douces calibrées remplissant la station de conditionnement"
+        },
+        {
+          "caption": "Chambre froide",
+          "alt": "Chambre froide — palettes tenues à 12–14 °C"
+        },
+        {
+          "caption": "Chargement",
+          "alt": "Chargement export — cartons entrant dans un reefer pré-refroidi"
+        },
+        {
+          "caption": "Expédition",
+          "alt": "Expédition — le conteneur quittant un port égyptien"
+        }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "Dans leurs mots",
+      "title": "Ce que disent nos acheteurs",
+      "cardTitle": "Réservé à un témoignage vérifié",
+      "cardBody": "Nous ne publions les mots d'un acheteur qu'après son accord écrit, sous son nom et celui de son entreprise. D'ici là, cet espace reste vide.",
+      "note": "[[confirm: recueillir des témoignages signés d'acheteurs nommés]]"
+    },
+    "shipping": {
+      "eyebrow": "L'acheminement",
+      "title": "Expédition et livraison",
+      "sub": "Une logistique à l'échelle du conteneur, menée correctement.",
+      "items": [
+        {
+          "title": "Ports",
+          "value": "Damiette · Alexandrie · Safaga · Suez"
+        },
+        {
+          "title": "Export par",
+          "value": "Fret maritime · transport terrestre"
+        },
+        {
+          "title": "Commande minimum",
+          "value": "5 tonnes"
+        },
+        {
+          "title": "Chaîne du froid",
+          "value": "12–14 °C, suivie"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Bon à savoir",
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Quelle est votre commande minimum ?",
+          "a": "5 tonnes. Nous livrons sous contrat ; les volumes de programme plus importants se conviennent à la saison."
+        },
+        {
+          "q": "Dans quel emballage exportez-vous ?",
+          "a": "Cartons d'export de 3 kg et 6 kg, et grandes caisses d'export de 10 kg. Export en vrac uniquement — pas de conditionnement de détail ni consommateur."
+        },
+        {
+          "q": "De quels ports chargez-vous ?",
+          "a": "Damiette, Alexandrie, Safaga et Suez, par fret maritime ou transport terrestre."
+        },
+        {
+          "q": "Sous quel délai répondez-vous ?",
+          "a": "Sous 4 heures, du dimanche au vendredi — avec un devis et la fiche technique complète."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Mettons votre premier conteneur en route",
+      "sub": "Indiquez-nous votre port de destination et votre volume — nous répondons sous 4 heures avec un devis et la fiche technique.",
+      "primary": "Demander un devis",
+      "whatsapp": "Discuter sur WhatsApp"
+    },
+    "packaging": {
+      "eyebrow": "Emballage d'export",
+      "title": "Trois formats d'export",
+      "sub": "Emballage d'export uniquement. Nous ne proposons ni conditionnement de détail, ni barquettes consommateur, ni emballage prêt pour le rayon.",
+      "moq": "Approvisionnement sous contrat · commande minimum 5 tonnes"
+    }
+  },
+  "footer": {
+    "tagline": "Patates douces égyptiennes à chair orange d'exception, pour les acheteurs européens.",
+    "export": "Export",
+    "logistics": "Logistique",
+    "languages": "Langues",
+    "ports": "Damiette · Alexandrie · Safaga · Suez",
+    "incoterms": "FOB · CFR · CIF",
+    "quality": "Qualité et certifications",
+    "rights": "Tous droits réservés.",
+    "freight": "Fret maritime · transport terrestre",
+    "moq": "Commande minimum 5 t"
+  },
+  "rfqForm": {
+    "heading": "Demander un devis",
+    "sub": "Nous répondons sous 4 heures, dim.–ven.",
+    "product": "Produit",
+    "productBeauregard": "Beauregard",
+    "productBellevue": "Bellevue",
+    "destinationPort": "Port de destination",
+    "destinationPortPlaceholder": "Rotterdam",
+    "volume": "Volume",
+    "volumePlaceholder": "À partir de 5 t",
+    "incoterm": "Incoterm",
+    "incotermOptions": [
+      "CIF",
+      "CFR",
+      "FOB",
+      "DAP"
+    ],
+    "email": "E-mail professionnel",
+    "emailPlaceholder": "vous@entreprise.com",
+    "message": "Message",
+    "messagePlaceholder": "Calendrier, format d'emballage, destination…",
+    "submit": "Obtenir mon devis export",
+    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · ou sur WhatsApp",
+    "errorRequired": "Merci de compléter les champs obligatoires.",
+    "success": "Merci — votre demande est prête.",
+    "successNote": "Nous avons ouvert WhatsApp pour que vous puissiez l'envoyer tout de suite ; notre équipe export répond sous 4 heures. [[confirm: also wire the form to email/CRM]]",
+    "legendNeed": "Ce qu'il vous faut",
+    "legendReach": "Où envoyer le devis",
+    "optional": "facultatif",
+    "errorPort": "Indiquez le port de destination.",
+    "errorVolume": "Indiquez approximativement la quantité souhaitée.",
+    "errorEmail": "Ajoutez une adresse e-mail pour que nous puissions envoyer le devis.",
+    "errorEmailFormat": "Vérifiez l'adresse e-mail : elle semble incomplète.",
+    "productOther": "Autre",
+    "moqNote": "Commande minimum 5 tonnes."
+  },
+  "product": {
+    "breadcrumb": "Patates douces",
+    "eyebrow": {
+      "varieties": "La récolte",
+      "calibre": "Calibrage",
+      "packaging": "Emballage d'export",
+      "postHarvest": "Chaîne du froid",
+      "season": "Disponibilité",
+      "gallery": "Galerie",
+      "faq": "Questions des acheteurs"
+    },
+    "hero": {
+      "kicker": "Chair orange · Beauregard & Bellevue",
+      "title": "Patates douces égyptiennes à chair orange.",
+      "sub": "Catégorie I, ressuyées pour développer le sucre, calibrées et conditionnées pour l'export en vrac sous chaîne du froid suivie. Toutes les spécifications ci-dessous — ou demandez un devis pour votre port et votre volume.",
+      "imageAlt": "Patate douce Beauregard coupée en deux, révélant une chair orange lumineuse et une peau mouchetée de terre, lumière latérale naturelle sur bois mat. [[confirm: replace with real macro]]",
+      "availability": "Disponible presque toute l'année",
+      "highlights": [
+        {
+          "label": "Catégorie",
+          "value": "Catégorie I"
+        },
+        {
+          "label": "Conditionnement",
+          "value": "3 · 6 · 10 kg"
+        },
+        {
+          "label": "Commande minimum",
+          "value": "5 tonnes"
+        },
+        {
+          "label": "Chaîne du froid",
+          "value": "12–14 °C"
+        }
+      ]
+    },
+    "downloadSpec": "Télécharger la fiche technique (PDF)",
+    "varieties": {
+      "title": "Variétés",
+      "lead": "Deux variétés à chair orange, toutes deux à chair profonde et calibrées pour l'export.",
+      "head": [
+        "Variété",
+        "Chair",
+        "Peau",
+        "Profil"
+      ],
+      "rows": [
+        [
+          "Beauregard",
+          "Orange soutenu",
+          "Cuivré rosé",
+          "Sucrée, fondante — la valeur sûre en UE"
+        ],
+        [
+          "Bellevue",
+          "Orange",
+          "Cuivré",
+          "Calibre régulier, longue conservation"
+        ]
+      ]
+    },
+    "calibre": {
+      "title": "Calibre et catégorie — Catégorie I",
+      "lead": "La catégorie I est notre minimum dans chaque caisse. La grille de calibres est en cours de validation avec notre station et sera publiée ici une fois vérifiée.",
+      "placeholder": "Grille de calibres et de tailles — réservée aux valeurs vérifiées",
+      "note": "Nous préférons laisser cet espace vide plutôt que d'annoncer un calibre que nous ne pourrions pas tenir sur chaque palette. Demandez la fiche de calibrage à notre service export. [[confirm: grille officielle de calibres et de tailles]]",
+      "cta": "Demander la fiche de calibrage"
+    },
+    "packaging": {
+      "title": "Emballage d'export",
+      "lead": "Emballage d'export uniquement. Nous ne proposons ni conditionnement de détail, ni barquettes consommateur, ni emballage prêt pour le rayon.",
+      "items": [
+        {
+          "title": "Carton d'export — 3 kg",
+          "specs": [
+            [
+              "Net",
+              "3 kg"
+            ],
+            [
+              "Par palette",
+              "[[confirm]]"
+            ],
+            [
+              "Par 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Carton d'export — 6 kg",
+          "specs": [
+            [
+              "Net",
+              "6 kg"
+            ],
+            [
+              "Par palette",
+              "[[confirm]]"
+            ],
+            [
+              "Par 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Grande caisse d'export — 10 kg",
+          "specs": [
+            [
+              "Net",
+              "10 kg"
+            ],
+            [
+              "Par palette",
+              "[[confirm]]"
+            ],
+            [
+              "Par 40'",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ],
+      "moq": "Approvisionnement sous contrat · commande minimum 5 tonnes"
+    },
+    "container": {
+      "title": "Chargement conteneur",
+      "head": [
+        "Conteneur",
+        "Palettes",
+        "Cartons",
+        "Poids net"
+      ],
+      "rows": [
+        [
+          "Reefer 20'",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ],
+        [
+          "Reefer 40'",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ]
+      ],
+      "note": "Les valeurs de chargement sont confirmées par format et par destination au moment du devis. [[confirm: nombres de palettes et de cartons vérifiés]]"
+    },
+    "season": {
+      "title": "Saison et disponibilité",
+      "lead": "Pleine récolte août–déc. ; le stockage frigorifique prolonge l'approvisionnement sur presque toute l'année.",
+      "peakLabel": "Pleine récolte",
+      "storeLabel": "Approvisionnement frigorifique",
+      "note": "extensible sur presque toute l'année."
+    },
+    "postHarvest": {
+      "title": "Après-récolte et chaîne du froid",
+      "facts": [
+        {
+          "label": "Ressuyage",
+          "value": "4–7 jours"
+        },
+        {
+          "label": "Stockage",
+          "value": "12–14 °C"
+        },
+        {
+          "label": "Humidité",
+          "value": "85–90 %"
+        },
+        {
+          "label": "Durée de conservation",
+          "value": "4–6 mois"
+        },
+        {
+          "label": "Lésions par le froid",
+          "value": "> 10 °C"
+        },
+        {
+          "label": "Suivi",
+          "value": "Enregistreur de données"
+        },
+        {
+          "label": "LMR",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Traçabilité",
+          "value": "Au niveau du lot"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "ISO 22000",
+        "Phytosanitaire"
+      ],
+      "note": "[[confirm certification]]"
+    },
+    "gallery": {
+      "title": "Du champ au navire",
+      "alt": "Patates douces El Molouk, champs et station de conditionnement",
+      "steps": [
+        {
+          "caption": "Au champ",
+          "alt": "Buttes de patates douces dans le delta du Nil"
+        },
+        {
+          "caption": "Récolte",
+          "alt": "Patates douces fraîchement arrachées, posées sur la terre du champ"
+        },
+        {
+          "caption": "Tri",
+          "alt": "Patates douces calibrées sur la table de tri"
+        },
+        {
+          "caption": "Emballage",
+          "alt": "Caisses de patates douces calibrées remplissant la station de conditionnement"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Quelle est votre commande minimum ?",
+          "a": "5 tonnes. Nous livrons sous contrat ; au-delà, les volumes de programme se conviennent à la saison."
+        },
+        {
+          "q": "Dans quel emballage exportez-vous ?",
+          "a": "Cartons d'export de 3 kg et 6 kg, et grandes caisses d'export de 10 kg. Export en vrac uniquement — pas de conditionnement de détail ni consommateur."
+        },
+        {
+          "q": "De quels ports chargez-vous ?",
+          "a": "Damiette, Alexandrie, Safaga et Suez, par fret maritime ou transport terrestre. FOB, CFR et CIF cotés ; DAP sur accord. [[confirm]]"
+        },
+        {
+          "q": "Délai ?",
+          "a": "[[confirm: délai entre la commande et le chargement]]"
+        }
+      ]
+    }
+  },
+  "rfq": {
+    "headerNote": "Réponse sous 4 h · WhatsApp [[confirm]]",
+    "hero": {
+      "kicker": "Export en gros · Importateurs UE",
+      "title": "Achetez des patates douces égyptiennes à chair orange — export en gros vers l'Europe.",
+      "sub": "Beauregard et Bellevue, catégorie I, ressuyées et sous chaîne du froid suivie. Export d'Égypte en cartons de 3, 6 et 10 kg, à partir de 5 tonnes.",
+      "chips": [
+        "Beauregard · Bellevue",
+        "Cartons 3 · 6 · 10 kg",
+        "Damiette · Alexandrie · Safaga · Suez",
+        "À partir de 5 t"
+      ],
+      "proof": [
+        "Certifiés et audités — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Fermes et station de conditionnement en propre — maîtrise du champ au port, traçabilité au niveau du lot",
+        "Réponse sous 4 heures avec un devis et la fiche technique complète"
+      ],
+      "trust": [
+        "GLOBALG.A.P [[confirm]]",
+        "BRCGS / IFS [[confirm]]",
+        "30 000 t / saison",
+        "Export en vrac uniquement"
+      ]
+    },
+    "formNote": "2 minutes · sans engagement",
+    "stats": [
+      {
+        "value": "30 000 t",
+        "label": "récoltées chaque saison"
+      },
+      {
+        "value": "5 t",
+        "label": "commande minimum"
+      },
+      {
+        "value": "4",
+        "label": "ports de chargement"
+      },
+      {
+        "value": "< 4 h",
+        "label": "délai de réponse"
+      }
+    ],
+    "glance": {
+      "title": "L'emballage d'export en bref",
+      "head": [
+        "Format",
+        "Poids net",
+        "Fourniture"
+      ],
+      "rows": [
+        [
+          "Carton d'export",
+          "3 kg",
+          "Export en vrac"
+        ],
+        [
+          "Carton d'export",
+          "6 kg",
+          "Export en vrac"
+        ],
+        [
+          "Grande caisse d'export",
+          "10 kg",
+          "Export en vrac"
+        ]
+      ],
+      "note": "Approvisionnement sous contrat, commande minimum 5 tonnes. Chargement à Damiette, Alexandrie, Safaga ou Suez — fret maritime ou transport terrestre."
+    },
+    "finalTitle": "Prêt à chiffrer votre premier conteneur ?",
+    "footerNote": "El Molouk · الملوك للتصدير — exportateur égyptien de patates douces à chair orange · [[confirm legal + address]]"
+  },
+  "quality": {
+    "breadcrumb": "Qualité",
+    "hero": {
+      "eyebrow": "Qualité et sécurité sanitaire",
+      "title": "Vérifiez-nous avant d’acheter.",
+      "sub": "Tout ce que dit cette page est vérifiable : numéros de référentiel et organismes émetteurs, un procès-verbal signé à chaque étape de contrôle, et une chaîne du froid que vous lisez directement sur l’enregistreur.",
+      "ctaSecondary": "Voir les spécifications",
+      "badge": "Six étapes de contrôle",
+      "imageAlt": "Patates douces arrachées du champ à la récolte",
+      "highlights": [
+        "Traçabilité au niveau du lot",
+        "Conforme aux LMR de l’UE",
+        "Documents avant chargement"
+      ],
+      "insetAlt": "Patates douces calibrées sur la table de contrôle"
+    },
+    "facts": {
+      "label": "Documenté à chaque expédition",
+      "items": [
+        {
+          "label": "Traçabilité",
+          "value": "Au niveau du lot"
+        },
+        {
+          "label": "Chaîne du froid",
+          "value": "12–14 °C, enregistrée"
+        },
+        {
+          "label": "Résidus",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Procès-verbal",
+          "value": "Chaque étape"
+        }
+      ]
+    },
+    "standards": {
+      "eyebrow": "Normes à l’export",
+      "title": "Ce que chaque caisse doit respecter",
+      "sub": "Une seule spécification, appliquée de la même façon à une palette d’essai et à un programme de toute une saison.",
+      "items": [
+        {
+          "title": "Catégorie I UE",
+          "desc": "Forme, couleur et fermeté classées en Catégorie I UE. Ce qui est en dessous ne rejoint pas la ligne export."
+        },
+        {
+          "title": "Calibre régulier",
+          "desc": "Calibré selon votre plage, pour que le poids et le nombre par colis tiennent sur tout le conteneur."
+        },
+        {
+          "title": "Conformité résidus",
+          "desc": "Cultivées dans les limites maximales de résidus de l’UE (règlement 396/2005), avec analyse avant expédition. [[confirm]]"
+        },
+        {
+          "title": "Maîtrise du froid",
+          "desc": "Ressuyées, puis stockées et expédiées à 12–14 °C, avec un enregistreur dans chaque reefer."
+        },
+        {
+          "title": "Emballage d'export et étiquetage",
+          "desc": "Cartons d'export de 3, 6 et 10 kg, étiquetés selon votre cahier des charges et marqués du numéro de lot. Export en vrac uniquement. [[confirm: étiquetage GS1]]"
+        },
+        {
+          "title": "Conformité sociale",
+          "desc": "GRASP et SMETA couvrent le travail équitable, la sécurité et le bien-être des équipes sur nos propres fermes. [[confirm]]"
+        }
+      ]
+    },
+    "inspection": {
+      "eyebrow": "Contrôle",
+      "title": "Six points de contrôle entre le champ et le reefer",
+      "sub": "Chaque étape a ses critères d’acceptation, son procès-verbal et un nom au bas de la page. Un lot qui échoue revient à l’étape précédente.",
+      "steps": [
+        {
+          "name": "Champ et arrachage",
+          "desc": "Les lots sont arrachés à maturité et tenus séparés par champ et par date dès la première caisse.",
+          "checks": [
+            "Champ et lot enregistrés",
+            "Tenue de la peau et maturité",
+            "Contrôle terre et blessures"
+          ]
+        },
+        {
+          "name": "Réception et ressuyage",
+          "desc": "Le ressuyage à 28–30 °C cicatrise la peau, développe les sucres et réduit les pertes au stockage.",
+          "checks": [
+            "Relevé température et humidité",
+            "Durée du ressuyage",
+            "Pourriture et chocs écartés"
+          ]
+        },
+        {
+          "name": "Lavage et tri",
+          "desc": "Lavées, puis triées sur la forme, l’aspect de la peau et les défauts internes.",
+          "checks": [
+            "Qualité de l’eau",
+            "Aspect de la peau et forme",
+            "Test de coupe par lot"
+          ]
+        },
+        {
+          "name": "Classement et calibrage",
+          "desc": "Classées en Catégorie I UE et calibrées selon la plage de votre commande.",
+          "checks": [
+            "Critères Catégorie I",
+            "Plage de calibre et nombre",
+            "Contrôle du poids des colis"
+          ]
+        },
+        {
+          "name": "Conditionnement et marquage",
+          "desc": "Conditionnées selon votre cahier des charges et marquées du code de lot qui les suit jusque chez vous.",
+          "checks": [
+            "Spécification colis et palette",
+            "Code de lot et étiquette",
+            "Nombre de couches et stabilité"
+          ]
+        },
+        {
+          "name": "Avant chargement",
+          "desc": "Conteneur inspecté, prérefroidi et chargé sous supervision ; les documents sont émis avant son départ.",
+          "checks": [
+            "Prérefroidissement et consigne",
+            "Enregistreur mis en place",
+            "Certificat phytosanitaire et documents [[confirm]]"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "eyebrow": "Sécurité sanitaire",
+      "title": "Manipulées au propre, tenues au froid",
+      "lead": "La sécurité sanitaire, c’est surtout de l’entretien fait de la même manière chaque jour : eau propre, mains propres, surfaces propres — et une température qui ne dérive pas.",
+      "imageAlt": "Chair orange de patate douce fraîchement coupée",
+      "points": [
+        "Eau potable à chaque lavage, prélevée selon un calendrier [[confirm]]",
+        "Matériel de nettoyage à code couleur et tournée de désinfection tracée",
+        "Équipes formées à l’hygiène et aux équipements de protection individuelle",
+        "Lutte contre les nuisibles confiée à un prestataire externe, rapports archivés [[confirm]]",
+        "Contrôle allergènes et corps étrangers avant la fermeture des colis",
+        "Traçabilité par code de lot, en amont comme en aval, sous quatre heures"
+      ],
+      "storageTitle": "Les températures que nous tenons",
+      "storage": [
+        {
+          "title": "Ressuyage",
+          "value": "28–30 °C",
+          "note": "5 à 7 jours en forte hygrométrie pour cicatriser la peau"
+        },
+        {
+          "title": "Chambre froide",
+          "value": "12–14 °C",
+          "note": "85–90 % HR — sous 10 °C, risque de dommages du froid"
+        },
+        {
+          "title": "Conteneur reefer",
+          "value": "12–14 °C",
+          "note": "Prérefroidi, consigne enregistrée sur toute la traversée"
+        }
+      ]
+    },
+    "certs": {
+      "eyebrow": "Certifications",
+      "title": "Des références que vous pouvez vérifier",
+      "lead": "Pour chaque référentiel, nous donnons le numéro, la date de validité et l’organisme certificateur, afin que votre service qualité contrôle à la source. Les valeurs n’apparaissent ici qu’une fois confirmées par l’organisme.",
+      "statusLabel": "Vérification en cours",
+      "request": "Demander ce certificat",
+      "note": "Nous n’affichons aucun logo que nous ne sommes pas en droit d’utiliser. Si un référentiel n’est pas listé ici, nous ne le détenons pas.",
+      "items": [
+        {
+          "code": "GG",
+          "name": "GLOBALG.A.P. — IFA",
+          "rows": [
+            [
+              "Numéro",
+              "[[confirm]]"
+            ],
+            [
+              "Valide jusqu’au",
+              "[[confirm]]"
+            ],
+            [
+              "Organisme",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "BR",
+          "name": "BRCGS / IFS Food",
+          "rows": [
+            [
+              "Note",
+              "[[confirm]]"
+            ],
+            [
+              "Valide jusqu’au",
+              "[[confirm]]"
+            ],
+            [
+              "Organisme",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "GR",
+          "name": "GRASP",
+          "rows": [
+            [
+              "Évaluation",
+              "[[confirm]]"
+            ],
+            [
+              "Valide jusqu’au",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "SM",
+          "name": "SMETA / Sedex",
+          "rows": [
+            [
+              "Piliers",
+              "[[confirm]]"
+            ],
+            [
+              "Valide jusqu’au",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ]
+    },
+    "facility": {
+      "eyebrow": "Site et opérations",
+      "title": "Là où tout se passe",
+      "sub": "Nos champs, notre station de conditionnement, et des conteneurs chargés sur place.",
+      "items": [
+        {
+          "caption": "Les champs",
+          "desc": "Buttes du delta du Nil, arrachées équipe par équipe",
+          "image": "hero"
+        },
+        {
+          "caption": "Récolte",
+          "desc": "Arrachées à maturité, séparées par parcelle et par date",
+          "image": "roots"
+        },
+        {
+          "caption": "Tri",
+          "desc": "Vérifiées en catégorie I avant tout conditionnement",
+          "image": "basket"
+        },
+        {
+          "caption": "Emballage",
+          "desc": "Mises en cartons d'export et marquées du lot",
+          "image": "packhouse"
+        }
+      ],
+      "note": "Ces photographies tiennent lieu de reportage sur notre propre site. En attendant, vous pouvez auditer les installations sur place ou les parcourir avec nous en visioconférence. [[confirm]]"
+    },
+    "trust": {
+      "eyebrow": "Pourquoi les acheteurs restent",
+      "title": "Quatre façons dont une importation de fruits et légumes déraille",
+      "sub": "Et ce que nous avons mis en place pour que cela n’arrive pas à votre conteneur.",
+      "riskLabel": "Là où les expéditions déraillent",
+      "fixLabel": "Ce que nous faisons",
+      "items": [
+        {
+          "risk": "La qualité à l’arrivée ne correspond pas à l’échantillon validé.",
+          "fix": "Contrôle avant expédition avec photos datées du lot réel, envoyées avant le départ du conteneur."
+        },
+        {
+          "risk": "Des certificats invérifiables — ou qui appartiennent à quelqu’un d’autre.",
+          "fix": "Numéro de référentiel, validité et organisme certificateur pour chaque référence, vérifiables à la source."
+        },
+        {
+          "risk": "Une rupture de la chaîne du froid que personne n’explique.",
+          "fix": "Un enregistreur dans chaque reefer ; la courbe complète de température est remise à l’arrivée."
+        },
+        {
+          "risk": "Le silence dès que le planning glisse.",
+          "fix": "Un interlocuteur nommé, qui répond sous quatre heures, du dimanche au vendredi."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Bon à savoir",
+      "title": "Les questions que posent les acheteurs",
+      "items": [
+        {
+          "q": "Pouvons-nous auditer la ferme et la station ?",
+          "a": "Oui — sur place ou en visioconférence, quand cela vous convient. Nous recevons également un audit tiers à votre demande. [[confirm]]"
+        },
+        {
+          "q": "Quelles certifications détenez-vous réellement ?",
+          "a": "Les référentiels listés ci-dessus, et rien d’autre. Numéros et dates de validité paraissent ici dès que l’organisme certificateur les confirme."
+        },
+        {
+          "q": "Comment la traçabilité est-elle enregistrée ?",
+          "a": "Chaque colis porte un code de lot qui renvoie au champ, à la date de récolte et à l’équipe de conditionnement. Nous remontons ou redescendons la chaîne sous quatre heures."
+        },
+        {
+          "q": "Analysez-vous les résidus de pesticides ?",
+          "a": "Oui — au regard des limites maximales de résidus de l’UE (règlement 396/2005), avec un rapport disponible par expédition. [[confirm]]"
+        },
+        {
+          "q": "Que se passe-t-il si un lot arrive hors spécification ?",
+          "a": "Envoyez les photos et le fichier de l’enregistreur dans les 24 heures suivant le déchargement. Nous confrontons la réclamation à notre propre procès-verbal avant expédition et la réglons sur l’expédition suivante ou par avoir. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Les certifications vous conviennent ?",
+      "sub": "Envoyez votre port de destination et votre volume. Devis et dossier documentaire complet sous quatre heures.",
+      "whatsapp": "Discuter sur WhatsApp",
+      "points": [
+        "Réponse sous 4 heures",
+        "Dossier documentaire complet",
+        "Échantillons sur demande [[confirm]]"
+      ]
+    }
+  },
+  "contact": {
+    "breadcrumb": "Contact",
+    "breadcrumbHome": "Accueil",
+    "hero": {
+      "badge": "Nous répondons sous 4 heures, du dimanche au vendredi",
+      "title": "Parlez à ceux qui les cultivent.",
+      "sub": "Indiquez votre port de destination, votre volume et votre calendrier. Notre équipe export revient avec un prix, la fiche technique complète et une date de chargement — sans compte, sans engagement.",
+      "ctaPrimary": "Envoyer une demande",
+      "ctaSecondary": "Discuter sur WhatsApp",
+      "note": "Une seule équipe répond, chiffre et charge. Vous n'êtes jamais transféré.",
+      "imageAlt": "Un producteur dans les champs d'El Molouk au début de la saison",
+      "cardTitle": "Équipe export",
+      "cardSub": "Du dimanche au vendredi"
+    },
+    "strip": {
+      "items": [
+        "Réponse sous 4 heures",
+        "Du dimanche au vendredi",
+        "Commande minimum 5 t",
+        "Damiette · Alexandrie · Safaga · Suez"
+      ]
+    },
+    "channels": {
+      "eyebrow": "Nous joindre",
+      "title": "Choisissez le canal qui vous convient",
+      "sub": "Chaque canal arrive directement à l'équipe export — celle qui chiffre votre conteneur et le charge.",
+      "preferred": "Idéal pour les demandes de devis",
+      "items": [
+        {
+          "name": "E-mail",
+          "desc": "Spécifications, tarifs et documents, par écrit.",
+          "action": "Écrivez-nous"
+        },
+        {
+          "name": "Téléphone",
+          "desc": "Planification des programmes et tout ce qui n'attend pas une réponse par e-mail.",
+          "action": "Appeler l'équipe export"
+        },
+        {
+          "name": "WhatsApp",
+          "desc": "Questions rapides, photos de la station et suivi d'expédition.",
+          "action": "Ouvrir WhatsApp"
+        }
+      ],
+      "hoursTitle": "Horaires",
+      "hoursValue": "Dimanche – vendredi, [[confirm office hours]]",
+      "hoursNote": "Les messages reçus en dehors de ces horaires sont traités dès le début du jour ouvré suivant. [[confirm]]"
+    },
+    "form": {
+      "eyebrow": "Demander un devis",
+      "title": "Envoyez votre demande",
+      "sub": "Trois informations suffisent pour chiffrer un conteneur : la destination, la quantité et la date.",
+      "stepsTitle": "La suite",
+      "steps": [
+        {
+          "name": "Vous envoyez l'essentiel",
+          "desc": "Port, volume, calendrier. Deux minutes, sans créer de compte."
+        },
+        {
+          "name": "Nous chiffrons",
+          "desc": "Un devis avec la fiche technique complète et les options d'emballage, sous 4 heures, du dimanche au vendredi."
+        },
+        {
+          "name": "Nous réservons le reefer",
+          "desc": "Une date de chargement à Damiette, Alexandrie, Safaga ou Suez, chaîne du froid suivie jusqu'à votre port."
+        }
+      ],
+      "asideTitle": "Vous préférez discuter ?",
+      "asideDesc": "Envoyez les mêmes trois informations sur WhatsApp, nous prenons le relais.",
+      "asideCta": "Ouvrir WhatsApp",
+      "privacy": "Vos coordonnées servent uniquement à répondre à cette demande. [[confirm privacy policy]]"
+    },
+    "company": {
+      "eyebrow": "Informations légales",
+      "title": "Qui est en face de vous",
+      "sub": "Les informations que les acheteurs demandent avant une première commande — ici, plutôt que sur demande.",
+      "items": [
+        {
+          "label": "Entité enregistrée",
+          "value": "[[confirm legal name + registration]]",
+          "desc": "Numéros d'immatriculation et de licence d'exportation communiqués sur demande."
+        },
+        {
+          "label": "Station & bureau",
+          "value": "[[confirm packhouse address]]",
+          "desc": "Calibrage, conditionnement et entrepôt frigorifique sur un seul site du delta du Nil."
+        },
+        {
+          "label": "Heures d'ouverture",
+          "value": "Dimanche – vendredi, [[confirm office hours]]",
+          "desc": "Récolte d'août à mars ; le curing et le froid assurent l'approvisionnement toute l'année."
+        },
+        {
+          "label": "Marchés d'export",
+          "value": "Toute l'Europe [[confirm market list]]",
+          "desc": "Programmes réguliers en conteneurs vers l'Europe du Nord et de l'Ouest."
+        }
+      ]
+    },
+    "location": {
+      "eyebrow": "Où nous sommes",
+      "title": "Cultivées dans le delta du Nil, expédiées de quatre ports",
+      "sub": "Notre station et notre chambre froide sont dans le delta, avec des reefers chargés à Damiette, Alexandrie, Safaga et Suez.",
+      "mapLabel": "Carte (emplacement réservé) — station de conditionnement, Égypte. [[confirm]]",
+      "pin": "Station [[confirm]]",
+      "rows": [
+        {
+          "label": "Adresse",
+          "value": "[[confirm packhouse address]]"
+        },
+        {
+          "label": "Ports de chargement",
+          "value": "Damiette · Alexandrie · Safaga · Suez"
+        },
+        {
+          "label": "Export par",
+          "value": "Fret maritime · transport terrestre"
+        },
+        {
+          "label": "Commande minimum",
+          "value": "5 tonnes"
+        },
+        {
+          "label": "Incoterms",
+          "value": "FOB · CFR · CIF · DAP"
+        }
+      ],
+      "note": "Visites de la station et audits acheteurs bienvenus sur rendez-vous. [[confirm]]"
+    },
+    "why": {
+      "eyebrow": "Pourquoi les acheteurs nous écrivent",
+      "title": "Ce que vous obtenez avant tout engagement",
+      "sub": "Une demande vous coûte deux minutes. Voici ce qui revient.",
+      "items": [
+        {
+          "title": "Une réponse en heures, pas en jours",
+          "desc": "Chaque demande reçoit une réponse sous 4 heures, du dimanche au vendredi — avec un prix, pas une brochure."
+        },
+        {
+          "title": "Formalités export comprises",
+          "desc": "Certificats, documents phytosanitaires et réservation du reefer sont préparés par l'équipe qui remplit la caisse."
+        },
+        {
+          "title": "Une équipe, du champ au port",
+          "desc": "Nous cultivons, curons, calibrons et chargeons nous-mêmes : la réponse sur votre conteneur vient de ceux qui le manipulent."
+        },
+        {
+          "title": "Votre langue",
+          "desc": "Nous correspondons en sept langues, arabe et anglais compris."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Avant d'écrire",
+      "title": "Les questions posées en premier",
+      "items": [
+        {
+          "q": "Que dois-je indiquer dans ma demande ?",
+          "a": "Port de destination, volume et calendrier suffisent pour un premier prix. L'emballage, l'étiquetage et les dates de programme peuvent suivre."
+        },
+        {
+          "q": "Sous quel délai aurai-je une réponse ?",
+          "a": "Sous 4 heures, du dimanche au vendredi — avec un devis et la fiche technique complète."
+        },
+        {
+          "q": "Puis-je demander des échantillons ?",
+          "a": "Indiquez le calibre et l'emballage que vous souhaitez voir, nous reviendrons avec les options. [[confirm sample policy]]"
+        },
+        {
+          "q": "Quels Incoterms pouvez-vous chiffrer ?",
+          "a": "FOB Damiette, Alexandrie, Safaga ou Suez ; CFR et CIF vers les grands ports de l'UE ; DAP sur accord. [[confirm]]"
+        },
+        {
+          "q": "Travaillez-vous avec de nouveaux importateurs ?",
+          "a": "Oui. Dites-nous où vous en êtes : nous chiffrons un conteneur isolé aussi volontiers qu'un programme de saison. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Votre premier conteneur commence par un message",
+      "sub": "Indiquez le port, le volume et la date. Nous revenons avec le prix.",
+      "primary": "Envoyer une demande",
+      "whatsapp": "Discuter sur WhatsApp",
+      "trust": [
+        "Réponse sous 4 heures",
+        "GLOBALG.A.P · BRCGS [[confirm]]",
+        "Sans engagement"
+      ]
+    }
+  }
+}

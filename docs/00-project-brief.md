@@ -61,7 +61,7 @@ Three overlapping B2B personas — procurement-minded, risk-averse, and increasi
 **Lean rule (applies everywhere):** every page and every section must justify its existence by improving **Trust, Clarity, or Conversion.** No decorative sections. Avoid enterprise complexity.
 
 **In scope (MVP):**
-- Single hero product line: **orange-fleshed sweet potatoes** (Beauregard/Bellevue).
+- Single hero product line: **orange-fleshed sweet potatoes** (Beauregard / Bellevue / Covington).
 - **Lean IA:** Home · Sweet Potatoes (product) · Quality & Certifications · About · Contact · **`/rfq`** (paid landing). *Sustainability/social compliance folded into Quality; a News/blog is deferred.* (Full IA in `02`.)
 - **Six languages live at launch** — EN, DE, NL, FR, ES, IT — via **next-intl** (multilingual SEO from day one).
 - SEO, performance, and accessibility foundations built in from day one.

@@ -49,6 +49,9 @@
 | P12 | Founder / agronomist portrait | environmental portrait | About | 🟡 | ⬜ |
 | P13 | Candid packhouse team | documentary | About human-trust band | 🟡 | ⬜ |
 | P14 | Retail punnet / pre-pack | product | Packaging section | 🟡 | ⬜ |
+| P15 | **Covington** portrait (whole + halved, to match P1/P3 treatment) | macro + product | Home featured card, Product varieties card | 🔴 Critical | ⬜ |
+
+> **P15 is stood in for**, not left blank: both Covington cards currently use the unbranded field shot of lifted roots (`/images/harvest.jpg`) rather than the Beauregard or Bellevue portraits, so no card claims to show a root it isn't. Search the code for `roots:` to find both stand-ins.
 
 ---
 
@@ -56,7 +59,7 @@
 
 | Fact | Value | Status |
 |---|---|---|
-| Legal company name | ________ | ⬜ |
+| Legal company name | **Kings For Import & Export** | ✅ |
 | "Exporting since" (year) | ________ | ⬜ |
 | Hectares farmed (own / contracted) | ________ | ⬜ |
 | Packhouse capacity | ________ | ⬜ |
@@ -74,7 +77,8 @@
 
 | Spec | Placeholder value to confirm | Confirmed value | Status |
 |---|---|---|---|
-| Varieties offered | Beauregard, Bellevue | ________ | ⬜ |
+| Varieties offered | Beauregard, Bellevue | **Beauregard, Bellevue, Covington** — client-confirmed as the full official list | ✅ |
+| Covington flesh/skin/profile copy | Orange flesh · rose-copper skin · blocky, uniform roots, steady calibre | ________ | ⬜ |
 | Calibre grades & weights | S/M/L1/L2/XL/G (per table) | ________ | ⬜ |
 | Packaging formats & weights | 6 kg carton, 10 kg box, ~550 kg bin, retail pre-pack | ________ | ⬜ |
 | Pieces per carton / per pallet | per table | ________ | ⬜ |
@@ -106,11 +110,12 @@
 | Item | Value | Status |
 |---|---|---|
 | Named export-sales contact | ________ | ⬜ |
-| Contact e-mail | ________ | ⬜ |
-| WhatsApp business number | ________ | ⬜ |
+| Contact e-mail | `elmoloukfreshproduce@gmail.com` | ✅ |
+| Phone | `+20 111 990 0389` → `tel:+201119900389` | ✅ |
+| WhatsApp business number | `https://wa.me/201119900389` | ✅ |
 | Physical / packhouse address | ________ | ⬜ |
-| Company registration / legal footer | ________ | ⬜ |
-| Domain name | ________ | ⬜ |
+| Company registration / legal footer | Legal name confirmed; **registration number still outstanding** | 🟡 |
+| Domain name | `https://elmolouk.com` | ✅ |
 | Hosting preference (Vercel / Cloudflare / other) | ________ | ⬜ |
 | Analytics preference (GA4 / Plausible) | ________ | ⬜ |
 | RFQ notification target (email / WhatsApp / CRM) | ________ | ⬜ |
@@ -120,5 +125,12 @@
 
 ## Where each placeholder appears
 `[[confirm certification]]` → §1 · placeholder images → §2 · stat band / About → §3 · spec tables & FAQ → §4 · ports/Incoterms/claims → §5 · footer/contact/RFQ backend → §6.
+
+**Contact details are no longer placeholders.** Phone, e-mail and WhatsApp live in
+one place — the `contact` object in `lib/site.ts` — and every card, button, footer
+row and JSON-LD block reads from it. The translation files carry only the *label*
+(`common.phone`, `common.email`, `common.whatsappShort`), never the value, so the
+number cannot drift between locales. Change it in `lib/site.ts` and it changes on
+all 35 pages.
 
 **Sign-off:** the site cannot go live until §1 (certifications), §2 hero+supply-chain (P1–P2, P5–P7, P11), §3, and §6 are ✅. Everything else can launch with a documented interim value.

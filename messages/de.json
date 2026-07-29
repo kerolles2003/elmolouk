@@ -1,0 +1,1231 @@
+{
+  "metadata": {
+    "titleTemplate": "%s · El Molouk",
+    "ogAlt": {
+      "default": "Das Logo von El Molouk Fresh Produce neben einem ägyptischen Süßkartoffelfeld zur Ernte.",
+      "product": "Das Logo von El Molouk Fresh Produce neben einem Exportkarton sortierter Süßkartoffeln mit orangem Fleisch.",
+      "quality": "Das Logo von El Molouk Fresh Produce neben der Packhausfläche mit in Exportkisten sortierten Süßkartoffeln."
+    },
+    "home": {
+      "title": "Ägyptischer Süßkartoffel-Exporteur — Großhandel & Bulk",
+      "description": "Hochwertige ägyptische Süßkartoffeln mit orangem Fleisch — Beauregard und Bellevue. Klasse I, abgehärtet und kühlkettenkontrolliert, in Export-Großgebinden für europäische Importeure.",
+      "keywords": [
+        "ägyptischer Süßkartoffel-Exporteur",
+        "Süßkartoffel mit orangem Fleisch",
+        "Süßkartoffeln Großhandel",
+        "Süßkartoffeln Bulk-Lieferung",
+        "Beauregard",
+        "Bellevue",
+        "Frischwaren-Exporteur Ägypten"
+      ]
+    },
+    "sweetPotatoes": {
+      "title": "Süßkartoffeln — Sorten, Exportverpackung & Kühlkette",
+      "description": "Beauregard und Bellevue, Süßkartoffeln mit orangem Fleisch: Exportverpackung, Containerbeladung, Saison und Kühlkette. Mindestbestellmenge 5 Tonnen.",
+      "keywords": [
+        "Süßkartoffel-Sorten",
+        "Beauregard Süßkartoffel",
+        "Bellevue Süßkartoffel",
+        "Süßkartoffel Exportverpackung",
+        "Süßkartoffel Kaliber",
+        "Containerbeladung",
+        "Kühlkette",
+        "Süßkartoffel-Saison Ägypten"
+      ]
+    },
+    "quality": {
+      "title": "Qualität & Zertifizierungen",
+      "description": "Zertifikate für Lebensmittelsicherheit und Anbau, Rückverfolgbarkeit und Kühlkette — El Molouks Nachweise für EU-Einkäufer: dokumentiert und prüfbar.",
+      "keywords": [
+        "Süßkartoffel Qualitätskontrolle",
+        "Süßkartoffel Klasse I",
+        "Rückverfolgbarkeit",
+        "Kühlkettenüberwachung",
+        "Curing",
+        "Sortierung im Packhaus",
+        "Exportstandards"
+      ]
+    },
+    "rfq": {
+      "title": "Angebot anfordern — Süßkartoffeln aus Ägypten",
+      "description": "Export ägyptischer Süßkartoffeln in Großgebinden. Mindestbestellmenge 5 Tonnen — Zielhafen und Menge senden, Angebot innerhalb von 4 Stunden."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie das Exportteam von El Molouk. Angebot anfordern oder per WhatsApp schreiben — Antwort innerhalb von 4 Stunden.",
+      "keywords": [
+        "Süßkartoffel-Exporteur kontaktieren",
+        "Angebot anfordern",
+        "ägyptischer Süßkartoffel-Lieferant",
+        "Süßkartoffel Exportanfrage",
+        "WhatsApp Exportteam"
+      ]
+    }
+  },
+  "nav": {
+    "sweetPotatoes": "Süßkartoffeln",
+    "quality": "Qualität",
+    "contact": "Kontakt",
+    "requestQuote": "Angebot anfordern",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "language": "Sprache",
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "common": {
+    "requestQuote": "Angebot anfordern",
+    "downloadSpecSheet": "Datenblatt herunterladen",
+    "whatsapp": "Per WhatsApp schreiben",
+    "whatsappShort": "WhatsApp",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "viewSpecifications": "Spezifikationen ansehen",
+    "getMyQuote": "Exportangebot erhalten",
+    "replyWithin": "Wir antworten innerhalb von 4 Stunden",
+    "placeholderTag": "Platzhalter",
+    "confirm": "[[confirm]]",
+    "awaitingPhoto": "Foto folgt"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Von den fruchtbaren Böden des Nildeltas auf die besten Tische der Welt.",
+      "titleLead": "Süßkartoffeln…",
+      "titleA": "Eine Reise, die auf Land beginnt, das wir mit Stolz geerbt haben,",
+      "titleB": "und auf den Tischen Ihrer Kunden endet.",
+      "storyP1": "Unsere Familie bewirtschaftet das Nildelta seit Generationen — den Schlick, das Wasser und den Wechsel der Jahreszeiten haben wir von denen gelernt, die vor uns hier gearbeitet haben. Das Land kam als Verantwortung zu uns, nicht als Geschäft, und wir erhalten es mit dem, was dieser Generation gegeben wurde: geprüfte Böden, dosierte Bewässerung, kontrollierte Trocknungs- und Lagerräume.",
+      "storyP2": "Was wir anbauen, begleiten wir bis zum Schluss. Ernte, Sortierung, Verpackung, Kühlhaus, Export — eine einzige Reise, die wir selbst steuern, damit die Ware nie den Besitzer wechselt, ohne dass hier jemand dafür geradesteht. Und jede Süßkartoffel, die wir zurücklegen, muss eine einzige Frage bestehen: Stimmt sie noch, wenn sie bei Ihrem Kunden ankommt?",
+      "quote": "Nichts verlässt unsere Hände, was wir nicht auf den eigenen Tisch stellen würden.",
+      "ctaPrimary": "Angebot anfordern",
+      "ctaSecondary": "Unsere Ware entdecken",
+      "imageAlt": "Reihen einer Süßkartoffelfarm, die sich unter freiem Himmel bis zum Horizont erstrecken",
+      "stat1Value": "30.000 t",
+      "stat1Label": "Ernte pro Saison",
+      "stat2Value": "Großbritannien & Europa",
+      "stat2Label": "Export nach",
+      "journey": [
+        {
+          "caption": "Ernte",
+          "alt": "Frisch gerodete Süßkartoffeln, die noch in der Ackererde liegen"
+        },
+        {
+          "caption": "Verpackung",
+          "alt": "Kisten sortierter Süßkartoffeln füllen die Packhalle"
+        },
+        {
+          "caption": "Auf dem Tisch",
+          "alt": "Ein fertiges Gericht aus Süßkartoffeln, servierbereit"
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "Kühlkette überwacht",
+        "Ganzjährige Versorgung"
+      ]
+    },
+    "featured": {
+      "eyebrow": "Unsere Ware",
+      "title": "Süßkartoffeln in Bestform",
+      "sub": "Zwei Sorten mit orangem Fleisch, auf eigenen Feldern angebaut und für den Export verpackt.",
+      "weightLabel": "Exportgebinde",
+      "originLabel": "Herkunft",
+      "cta": "Angebot anfordern",
+      "items": [
+        {
+          "name": "Beauregard",
+          "desc": "Tieforanges Fleisch, kupferrosa Schale. Natürlich süß und saftig — der europäische Favorit.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Ägypten",
+          "image": "flesh"
+        },
+        {
+          "name": "Bellevue",
+          "desc": "Oranges Fleisch, Kupferschale. Gleichmäßige Kalibrierung mit ausgezeichneter Haltbarkeit.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Ägypten",
+          "image": "bellevue"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Warum El Molouk",
+      "title": "Ein Erzeuger, auf den Sie zählen können",
+      "sub": "Wir steuern jeden Schritt — von unserem Boden bis zu Ihrem Hafen.",
+      "items": [
+        {
+          "title": "Eigene Farmen",
+          "desc": "Angebaut und geerntet auf Flächen, die wir selbst bewirtschaften — gleichbleibende Qualität, Kiste für Kiste."
+        },
+        {
+          "title": "Zertifiziert & auditiert",
+          "desc": "GLOBALG.A.P., BRCGS/IFS und GRASP [[confirm]] — nachprüfbar, nicht nur behauptet."
+        },
+        {
+          "title": "Ganzjährige Versorgung",
+          "desc": "Ernte von August–März, verlängert durch Aushärtung und Kühllagerung."
+        },
+        {
+          "title": "Kühlkette ohne Lücke",
+          "desc": "Von der Packstation bis zum Kühlcontainer per Datenlogger überwacht, konstant bei 12–14 °C."
+        },
+        {
+          "title": "Containermengen",
+          "desc": "40'-Kühlcontainer ab Damietta, Alexandria, Safaga oder Suez — per Seefracht oder Landtransport."
+        },
+        {
+          "title": "Eine Spezifikation",
+          "desc": "Klasse I in jeder Kiste, pro Container kalkuliert — keine Überraschungen zwischen Muster und Lieferung."
+        }
+      ]
+    },
+    "farm": {
+      "eyebrow": "Unsere Geschichte",
+      "title": "Verwurzelt im ägyptischen Boden",
+      "p1": "El Molouk begann mit einer einfachen Überzeugung: dass im Nildelta einige der besten Süßkartoffeln der Welt wachsen — und dass europäische Einkäufer sie in bester Frische verdienen.",
+      "p2": "Heute bauen wir an, härten aus, sortieren und verschiffen alles selbst — damit die Süßkartoffel, die unsere Packstation verlässt, dieselbe ist, für die Ihre Kunden wiederkommen.",
+      "cta": "Unseren Qualitätsprozess ansehen",
+      "imageAlt": "Süßkartoffeln, aus den Dämmen unserer eigenen Felder im Nildelta gerodet"
+    },
+    "process": {
+      "eyebrow": "So entsteht sie",
+      "title": "Vom Feld in den Container — alles aus einer Hand",
+      "sub": "Sechs sorgfältige Schritte halten jede Knolle süß, gesund und rückverfolgbar.",
+      "steps": [
+        {
+          "name": "Ernten",
+          "desc": "Von Hand aus unseren eigenen Feldern geholt, im optimalen Reifestadium."
+        },
+        {
+          "name": "Aushärten",
+          "desc": "Ruhezeit bei 28–30 °C, damit die Schale heilt und die Süße zunimmt."
+        },
+        {
+          "name": "Sortieren",
+          "desc": "Optisch sortiert auf gleichmäßige Kaliber der EU-Klasse I."
+        },
+        {
+          "name": "Verpacken",
+          "desc": "In Exportkartons zu 3, 6 und 10 kg, beim Verschließen mit der Partienummer versehen."
+        },
+        {
+          "name": "Kühllagern",
+          "desc": "Gelagert bei 12–14 °C mit Datenlogger-Überwachung."
+        },
+        {
+          "name": "Verschiffen",
+          "desc": "Verladen in Damietta, Alexandria, Safaga oder Suez — per Schiff oder auf dem Landweg."
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Von Natur aus gut",
+      "title": "Warum alle Süßkartoffeln lieben",
+      "sub": "Ein Produkt, das sich von selbst verkauft — vollwertig, vielseitig und farbenfroh.",
+      "items": [
+        {
+          "title": "Reich an Vitamin A",
+          "desc": "Das tieforange Fleisch steckt voller Beta-Carotin."
+        },
+        {
+          "title": "Natürlich süß",
+          "desc": "Die Aushärtung bringt einen honigartigen Geschmack hervor — ganz ohne Zusätze."
+        },
+        {
+          "title": "Ballaststoffreich",
+          "desc": "Ein bekömmliches Grundnahrungsmittel, nach dem Ihre Kunden ohnehin greifen."
+        },
+        {
+          "title": "Grenzenlos vielseitig",
+          "desc": "Geröstet, püriert, frittiert oder gebacken — ein Verkaufsschlager das ganze Jahr."
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Vom Hof",
+      "title": "Die Reise, der Reihe nach",
+      "sub": "Vom Feld bis zum Schiff, in der Reihenfolge, in der es wirklich geschieht.",
+      "note": "Markierte Felder sind für El Molouks eigene Aufnahmen dieser Stationen reserviert. [[confirm: Aufnahmen von Sortierung, Kühllager, Verladung und Verschiffung beauftragen]]",
+      "steps": [
+        {
+          "caption": "Auf dem Feld",
+          "alt": "Dämme mit Süßkartoffeln im Nildelta"
+        },
+        {
+          "caption": "Ernte",
+          "alt": "Frisch gerodete Süßkartoffeln, die noch in der Ackererde liegen"
+        },
+        {
+          "caption": "Sortierung",
+          "alt": "Sortierte Süßkartoffeln auf dem Sortiertisch"
+        },
+        {
+          "caption": "Verpackung",
+          "alt": "Kisten sortierter Süßkartoffeln füllen die Packhalle"
+        },
+        {
+          "caption": "Kühllager",
+          "alt": "Kühllager — Paletten bei 12–14 °C"
+        },
+        {
+          "caption": "Verladung",
+          "alt": "Verladung — Kartons gehen in einen vorgekühlten Kühlcontainer"
+        },
+        {
+          "caption": "Verschiffung",
+          "alt": "Verschiffung — der Container verlässt einen ägyptischen Hafen"
+        }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "In ihren Worten",
+      "title": "Was unsere Käufer sagen",
+      "cardTitle": "Reserviert für eine bestätigte Referenz",
+      "cardBody": "Wir veröffentlichen die Worte eines Käufers erst, wenn dieser sie schriftlich freigegeben hat — mit eigenem Namen und Unternehmen. Bis dahin bleibt dieser Platz leer.",
+      "note": "[[confirm: unterschriebene Referenzen benannter Käufer einholen]]"
+    },
+    "shipping": {
+      "eyebrow": "So kommt sie zu Ihnen",
+      "title": "Versand & Lieferung",
+      "sub": "Logistik im Containermaßstab, sauber abgewickelt.",
+      "items": [
+        {
+          "title": "Häfen",
+          "value": "Damietta · Alexandria · Safaga · Suez"
+        },
+        {
+          "title": "Export per",
+          "value": "Seefracht · Landtransport"
+        },
+        {
+          "title": "Mindestbestellmenge",
+          "value": "5 Tonnen"
+        },
+        {
+          "title": "Kühlkette",
+          "value": "12–14 °C, überwacht"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Gut zu wissen",
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "q": "Wie hoch ist Ihre Mindestbestellmenge?",
+          "a": "5 Tonnen. Wir liefern auf Vertragsbasis, größere Programmmengen werden saisonal vereinbart."
+        },
+        {
+          "q": "In welcher Verpackung exportieren Sie?",
+          "a": "Exportkartons zu 3 kg und 6 kg sowie große Exportkartons zu 10 kg. Ausschließlich Export in Großgebinden — keine Verbraucher- oder Endkundenverpackung."
+        },
+        {
+          "q": "Aus welchen Häfen verladen Sie?",
+          "a": "Damietta, Alexandria, Safaga und Suez, per Seefracht oder Landtransport."
+        },
+        {
+          "q": "Wie schnell antworten Sie?",
+          "a": "Innerhalb von 4 Stunden, Sonntag bis Freitag — mit Angebot und vollständigem Datenblatt."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bringen wir Ihren ersten Container auf den Weg",
+      "sub": "Nennen Sie uns Zielhafen und Volumen — wir antworten innerhalb von 4 Stunden mit Angebot und Datenblatt.",
+      "primary": "Angebot anfordern",
+      "whatsapp": "Per WhatsApp chatten"
+    },
+    "packaging": {
+      "eyebrow": "Exportverpackung",
+      "title": "Drei Export-Großgebinde",
+      "sub": "Ausschließlich Exportverpackung in Großgebinden. Wir bieten keine Verbraucher-, Endkunden- oder Supermarktverpackungen an.",
+      "moq": "Vertragsbelieferung · Mindestbestellmenge 5 Tonnen"
+    }
+  },
+  "footer": {
+    "tagline": "Premium-Süßkartoffeln mit orangefarbenem Fleisch aus Ägypten für europäische Einkäufer.",
+    "export": "Export",
+    "logistics": "Logistik",
+    "languages": "Sprachen",
+    "ports": "Damietta · Alexandria · Safaga · Suez",
+    "incoterms": "FOB · CFR · CIF",
+    "quality": "Qualität & Zertifizierungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "freight": "Seefracht · Landtransport",
+    "moq": "Mindestbestellmenge 5 t"
+  },
+  "rfqForm": {
+    "heading": "Angebot anfordern",
+    "sub": "Wir antworten innerhalb von 4 Stunden, So.–Fr.",
+    "product": "Produkt",
+    "productBeauregard": "Beauregard",
+    "productBellevue": "Bellevue",
+    "destinationPort": "Zielhafen",
+    "destinationPortPlaceholder": "Rotterdam",
+    "volume": "Volumen",
+    "volumePlaceholder": "Ab 5 t",
+    "incoterm": "Incoterm",
+    "incotermOptions": [
+      "CIF",
+      "CFR",
+      "FOB",
+      "DAP"
+    ],
+    "email": "Firmen-E-Mail",
+    "emailPlaceholder": "name@firma.de",
+    "message": "Nachricht",
+    "messagePlaceholder": "Zeitplan, Gebindegröße, Zielort…",
+    "submit": "Exportangebot erhalten",
+    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · oder per WhatsApp",
+    "errorRequired": "Bitte füllen Sie die Pflichtfelder aus.",
+    "success": "Vielen Dank — Ihre Anfrage ist bereit.",
+    "successNote": "Wir haben WhatsApp geöffnet, damit Sie sie direkt senden können; unser Exportteam antwortet innerhalb von 4 Stunden. [[confirm: also wire the form to email/CRM]]",
+    "legendNeed": "Was Sie benötigen",
+    "legendReach": "Wohin das Angebot geht",
+    "optional": "optional",
+    "errorPort": "Nennen Sie uns den Zielhafen.",
+    "errorVolume": "Nennen Sie uns ungefähr die benötigte Menge.",
+    "errorEmail": "Bitte eine E-Mail-Adresse angeben, damit wir das Angebot senden können.",
+    "errorEmailFormat": "Bitte die E-Mail-Adresse prüfen — sie wirkt unvollständig.",
+    "productOther": "Andere",
+    "moqNote": "Mindestbestellmenge 5 Tonnen."
+  },
+  "product": {
+    "breadcrumb": "Süßkartoffeln",
+    "eyebrow": {
+      "varieties": "Die Ernte",
+      "calibre": "Sortierung",
+      "packaging": "Exportverpackung",
+      "postHarvest": "Kühlkette",
+      "season": "Verfügbarkeit",
+      "gallery": "Galerie",
+      "faq": "Fragen von Käufern"
+    },
+    "hero": {
+      "kicker": "Oranges Fleisch · Beauregard & Bellevue",
+      "title": "Orangefleischige Süßkartoffeln aus Ägypten.",
+      "sub": "Klasse I, abgehärtet für mehr Süße, sortiert und für den Export in Großgebinden verpackt, unter überwachter Kühlkette. Alle Angaben unten — oder direkt ein Angebot für Ihren Hafen und Ihre Menge anfordern.",
+      "imageAlt": "Halbierte Beauregard-Süßkartoffel mit leuchtend orangem Fleisch und erdiger Schale, natürliches Seitenlicht auf mattem Holz. [[confirm: replace with real macro]]",
+      "availability": "Nahezu ganzjährig verfügbar",
+      "highlights": [
+        {
+          "label": "Klasse",
+          "value": "Klasse I"
+        },
+        {
+          "label": "Exportgebinde",
+          "value": "3 · 6 · 10 kg"
+        },
+        {
+          "label": "Mindestbestellmenge",
+          "value": "5 Tonnen"
+        },
+        {
+          "label": "Kühlkette",
+          "value": "12–14 °C"
+        }
+      ]
+    },
+    "downloadSpec": "Datenblatt herunterladen (PDF)",
+    "varieties": {
+      "title": "Sorten",
+      "lead": "Zwei Sorten mit orangem Fleisch, beide tieffleischig und exportsortiert.",
+      "head": [
+        "Sorte",
+        "Fleisch",
+        "Schale",
+        "Profil"
+      ],
+      "rows": [
+        [
+          "Beauregard",
+          "Tieforange",
+          "Kupferrosa",
+          "Süß, saftig — EU-Klassiker"
+        ],
+        [
+          "Bellevue",
+          "Orange",
+          "Kupfer",
+          "Gleichmäßiges Kaliber, lange Haltbarkeit"
+        ]
+      ]
+    },
+    "calibre": {
+      "title": "Kalibrierung & Sortierung — Klasse I",
+      "lead": "Klasse I ist unsere Mindestqualität in jeder Kiste. Die Kalibertabelle selbst wird derzeit mit unserer Packhalle abgestimmt und hier veröffentlicht, sobald sie bestätigt ist.",
+      "placeholder": "Kaliber- und Größentabelle — reserviert für die bestätigten Werte",
+      "note": "Lieber lassen wir dies leer, als eine Größe zu drucken, die wir nicht auf jeder Palette halten können. Das aktuelle Sortierblatt erhalten Sie beim Exportteam. [[confirm: offizielle Kaliber- und Größentabelle]]",
+      "cta": "Sortierblatt anfordern"
+    },
+    "packaging": {
+      "title": "Exportverpackung",
+      "lead": "Ausschließlich Exportverpackung in Großgebinden. Wir bieten keine Verbraucher-, Endkunden- oder Supermarktverpackungen an.",
+      "items": [
+        {
+          "title": "Exportkarton — 3 kg",
+          "specs": [
+            [
+              "Netto",
+              "3 kg"
+            ],
+            [
+              "Pro Palette",
+              "[[confirm]]"
+            ],
+            [
+              "Pro 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Exportkarton — 6 kg",
+          "specs": [
+            [
+              "Netto",
+              "6 kg"
+            ],
+            [
+              "Pro Palette",
+              "[[confirm]]"
+            ],
+            [
+              "Pro 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Großer Exportkarton — 10 kg",
+          "specs": [
+            [
+              "Netto",
+              "10 kg"
+            ],
+            [
+              "Pro Palette",
+              "[[confirm]]"
+            ],
+            [
+              "Pro 40'",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ],
+      "moq": "Vertragsbelieferung · Mindestbestellmenge 5 Tonnen"
+    },
+    "container": {
+      "title": "Containerbeladung",
+      "head": [
+        "Container",
+        "Paletten",
+        "Kartons",
+        "Nettogewicht"
+      ],
+      "rows": [
+        [
+          "20'-Kühlcontainer",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ],
+        [
+          "40'-Kühlcontainer",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ]
+      ],
+      "note": "Beladungswerte werden je Gebinde und Zielhafen im Angebot bestätigt. [[confirm: geprüfte Paletten- und Kartonzahlen]]"
+    },
+    "season": {
+      "title": "Saison & Verfügbarkeit",
+      "lead": "Haupternte Aug.–Dez.; die Kühllagerung verlängert die Versorgung auf nahezu ganzjährig.",
+      "peakLabel": "Haupternte",
+      "storeLabel": "Belieferung aus Kühllager",
+      "note": "erweiterbar auf nahezu ganzjährig."
+    },
+    "postHarvest": {
+      "title": "Nachernte & Kühlkette",
+      "facts": [
+        {
+          "label": "Aushärtung",
+          "value": "4–7 Tage"
+        },
+        {
+          "label": "Lagerung",
+          "value": "12–14 °C"
+        },
+        {
+          "label": "Luftfeuchte",
+          "value": "85–90 %"
+        },
+        {
+          "label": "Haltbarkeit",
+          "value": "4–6 Mon."
+        },
+        {
+          "label": "Kälteschäden",
+          "value": "> 10 °C"
+        },
+        {
+          "label": "Überwachung",
+          "value": "Datenlogger"
+        },
+        {
+          "label": "MRL",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Rückverfolgbarkeit",
+          "value": "Auf Losebene"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Zertifizierungen",
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "ISO 22000",
+        "Pflanzengesundheit"
+      ],
+      "note": "[[confirm certification]]"
+    },
+    "gallery": {
+      "title": "Vom Feld bis zum Schiff",
+      "alt": "Süßkartoffeln, Felder und Packstation von El Molouk",
+      "steps": [
+        {
+          "caption": "Auf dem Feld",
+          "alt": "Dämme mit Süßkartoffeln im Nildelta"
+        },
+        {
+          "caption": "Ernte",
+          "alt": "Frisch gerodete Süßkartoffeln, die noch in der Ackererde liegen"
+        },
+        {
+          "caption": "Sortierung",
+          "alt": "Sortierte Süßkartoffeln auf dem Sortiertisch"
+        },
+        {
+          "caption": "Verpackung",
+          "alt": "Kisten sortierter Süßkartoffeln füllen die Packhalle"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gefragt",
+      "items": [
+        {
+          "q": "Wie hoch ist Ihre Mindestbestellmenge?",
+          "a": "5 Tonnen. Wir liefern auf Vertragsbasis, größere Programmmengen werden saisonal vereinbart."
+        },
+        {
+          "q": "In welcher Verpackung exportieren Sie?",
+          "a": "Exportkartons zu 3 kg und 6 kg sowie große Exportkartons zu 10 kg. Ausschließlich Export in Großgebinden — keine Verbraucher- oder Endkundenverpackung."
+        },
+        {
+          "q": "Aus welchen Häfen verladen Sie?",
+          "a": "Damietta, Alexandria, Safaga und Suez, per Seefracht oder Landtransport. FOB, CFR und CIF im Angebot; DAP nach Absprache. [[confirm]]"
+        },
+        {
+          "q": "Lieferzeit?",
+          "a": "[[confirm: Vorlaufzeit von Bestellung bis Verladung]]"
+        }
+      ]
+    }
+  },
+  "rfq": {
+    "headerNote": "Antwort in 4 h · WhatsApp [[confirm]]",
+    "hero": {
+      "kicker": "Bulk-Export · EU-Importeure",
+      "title": "Orangefleischige Süßkartoffeln aus Ägypten kaufen — Bulk-Export nach Europa.",
+      "sub": "Beauregard und Bellevue, Klasse I, abgehärtet und kühlkettenkontrolliert. Export aus Ägypten in Kartons zu 3, 6 und 10 kg, ab 5 Tonnen Mindestbestellmenge.",
+      "chips": [
+        "Beauregard · Bellevue",
+        "Kartons 3 · 6 · 10 kg",
+        "Damietta · Alexandria · Safaga · Suez",
+        "Ab 5 t"
+      ],
+      "proof": [
+        "Zertifiziert & auditiert — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Eigene Farmen & Packstation — Kontrolle vom Anbau bis zum Hafen, Rückverfolgbarkeit auf Losebene",
+        "Antwort innerhalb von 4 Stunden mit Angebot und vollständigem Datenblatt"
+      ],
+      "trust": [
+        "GLOBALG.A.P [[confirm]]",
+        "BRCGS / IFS [[confirm]]",
+        "30.000 t / Saison",
+        "Nur Exportgebinde"
+      ]
+    },
+    "formNote": "2 Minuten · unverbindlich",
+    "stats": [
+      {
+        "value": "30.000 t",
+        "label": "Ernte pro Saison"
+      },
+      {
+        "value": "5 t",
+        "label": "Mindestbestellmenge"
+      },
+      {
+        "value": "4",
+        "label": "Verladehäfen"
+      },
+      {
+        "value": "< 4 h",
+        "label": "Angebotszeit"
+      }
+    ],
+    "glance": {
+      "title": "Exportverpackung im Überblick",
+      "head": [
+        "Gebinde",
+        "Nettogewicht",
+        "Belieferung"
+      ],
+      "rows": [
+        [
+          "Exportkarton",
+          "3 kg",
+          "Großgebinde"
+        ],
+        [
+          "Exportkarton",
+          "6 kg",
+          "Großgebinde"
+        ],
+        [
+          "Großer Exportkarton",
+          "10 kg",
+          "Großgebinde"
+        ]
+      ],
+      "note": "Vertragsbelieferung, Mindestbestellmenge 5 Tonnen. Verladung in Damietta, Alexandria, Safaga oder Suez — per Seefracht oder Landtransport."
+    },
+    "finalTitle": "Bereit für den Preis Ihres ersten Containers?",
+    "footerNote": "El Molouk · الملوك للتصدير — Ägyptischer Exporteur orangefleischiger Süßkartoffeln · [[confirm legal + address]]"
+  },
+  "quality": {
+    "breadcrumb": "Qualität",
+    "hero": {
+      "eyebrow": "Qualität & Lebensmittelsicherheit",
+      "title": "Prüfen Sie uns, bevor Sie kaufen.",
+      "sub": "Jede Aussage auf dieser Seite können Sie nachprüfen: Schemanummern und die ausstellenden Stellen, ein gezeichnetes Protokoll auf jeder Kontrollstufe und eine Kühlkette, die Sie direkt vom Datenlogger ablesen.",
+      "ctaSecondary": "Spezifikationen ansehen",
+      "badge": "Sechs Kontrollstufen",
+      "imageAlt": "Süßkartoffeln bei der Ernte aus dem Feld gerodet",
+      "highlights": [
+        "Rückverfolgbar auf Losebene",
+        "EU-Rückstandshöchstgehalte eingehalten",
+        "Unterlagen vor der Verladung"
+      ],
+      "insetAlt": "Sortierte Süßkartoffeln auf dem Prüftisch"
+    },
+    "facts": {
+      "label": "Bei jeder Sendung dokumentiert",
+      "items": [
+        {
+          "label": "Rückverfolgbarkeit",
+          "value": "Auf Losebene"
+        },
+        {
+          "label": "Kühlkette",
+          "value": "12–14 °C, protokolliert"
+        },
+        {
+          "label": "Rückstände",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Prüfprotokoll",
+          "value": "Jede Stufe"
+        }
+      ]
+    },
+    "standards": {
+      "eyebrow": "Exportstandards",
+      "title": "Woran sich jede Kiste messen lassen muss",
+      "sub": "Eine Spezifikation — für die Musterpalette genauso wie für ein Programm über die ganze Saison.",
+      "items": [
+        {
+          "title": "EU-Klasse I",
+          "desc": "Form, Farbe und Festigkeit nach EU-Klasse I sortiert. Was darunter liegt, kommt nicht in die Exportlinie."
+        },
+        {
+          "title": "Gleichmäßiges Kaliber",
+          "desc": "Auf Ihr Kaliberband sortiert, damit Kartongewicht und Stückzahl über den ganzen Container hinweg stimmen."
+        },
+        {
+          "title": "Rückstandskonformität",
+          "desc": "Angebaut innerhalb der EU-Rückstandshöchstgehalte nach Verordnung 396/2005, mit Rückstandsanalyse vor dem Versand. [[confirm]]"
+        },
+        {
+          "title": "Kühlkettenführung",
+          "desc": "Ausgehärtet, dann gelagert und verschifft bei 12–14 °C, mit Datenlogger in jedem Kühlcontainer."
+        },
+        {
+          "title": "Exportverpackung & Kennzeichnung",
+          "desc": "Exportkartons zu 3, 6 und 10 kg, nach Ihrer Vorgabe gekennzeichnet und mit Partienummer versehen. Ausschließlich Großgebinde. [[confirm: GS1-Kennzeichnung]]"
+        },
+        {
+          "title": "Soziale Compliance",
+          "desc": "GRASP und SMETA decken faire Arbeit, Sicherheit und das Wohl der Beschäftigten auf unseren eigenen Farmen ab. [[confirm]]"
+        }
+      ]
+    },
+    "inspection": {
+      "eyebrow": "Kontrolle",
+      "title": "Sechs Kontrollpunkte zwischen Feld und Kühlcontainer",
+      "sub": "Jede Stufe hat eigene Freigabekriterien, ein eigenes Protokoll und einen Namen darunter. Ein Los, das durchfällt, geht eine Stufe zurück.",
+      "steps": [
+        {
+          "name": "Feld & Rodung",
+          "desc": "Lose werden bei Reife gerodet und ab der ersten Kiste nach Feld und Datum getrennt gehalten.",
+          "checks": [
+            "Feld und Los erfasst",
+            "Schalenfestigkeit und Reife",
+            "Erd- und Beschädigungskontrolle"
+          ]
+        },
+        {
+          "name": "Annahme & Aushärtung",
+          "desc": "Die Aushärtung bei 28–30 °C lässt die Schale heilen, entwickelt die Süße und senkt Lagerverluste.",
+          "checks": [
+            "Temperatur- und Feuchteprotokoll",
+            "Dauer der Aushärtung",
+            "Fäule und Druckstellen aussortiert"
+          ]
+        },
+        {
+          "name": "Waschen & Sortieren",
+          "desc": "Gewaschen, dann nach Form, Schalenbild und inneren Mängeln sortiert.",
+          "checks": [
+            "Wasserqualität",
+            "Schalenbild und Form",
+            "Schnittprobe je Los"
+          ]
+        },
+        {
+          "name": "Sortierung & Kaliber",
+          "desc": "Auf EU-Klasse I sortiert und auf das Kaliber Ihrer Bestellung gebracht.",
+          "checks": [
+            "Kriterien der Klasse I",
+            "Kaliberband und Stückzahl",
+            "Kontrollwiegen der Kartons"
+          ]
+        },
+        {
+          "name": "Verpacken & Etikettieren",
+          "desc": "Nach Ihrer Kartonspezifikation verpackt und mit dem Loscode versehen, der bis zu Ihrer Rampe mitläuft.",
+          "checks": [
+            "Karton- und Palettenspezifikation",
+            "Loscode und Etikett",
+            "Lagenzahl und Palettenstabilität"
+          ]
+        },
+        {
+          "name": "Vor der Verladung",
+          "desc": "Container kontrolliert, vorgekühlt und unter Aufsicht verladen; die Unterlagen liegen vor der Abfahrt vor.",
+          "checks": [
+            "Vorkühlung und Solltemperatur",
+            "Datenlogger eingelegt",
+            "Pflanzengesundheitszeugnis und Papiere [[confirm]]"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "eyebrow": "Lebensmittelsicherheit",
+      "title": "Sauber gehandhabt, kühl gehalten",
+      "lead": "Lebensmittelsicherheit ist vor allem Hauswirtschaft, jeden Tag gleich ausgeführt: sauberes Wasser, saubere Hände, saubere Flächen — und eine Temperatur, die nicht wandert.",
+      "imageAlt": "Frisch aufgeschnittenes orangefarbenes Süßkartoffelfleisch",
+      "points": [
+        "Trinkwasserqualität bei jedem Waschgang, planmäßig beprobt [[confirm]]",
+        "Farbcodierte Reinigungsmittel und ein dokumentierter Reinigungsrundgang",
+        "Beschäftigte in Hygiene und persönlicher Schutzausrüstung geschult",
+        "Schädlingsbekämpfung durch einen externen Dienstleister, Berichte liegen vor [[confirm]]",
+        "Allergen- und Fremdkörperkontrolle, bevor die Kartons schließen",
+        "Rückverfolgung über den Loscode, vorwärts wie rückwärts, innerhalb von vier Stunden"
+      ],
+      "storageTitle": "Temperaturen, die wir halten",
+      "storage": [
+        {
+          "title": "Aushärtung",
+          "value": "28–30 °C",
+          "note": "5–7 Tage bei hoher Luftfeuchte, damit die Schale heilt"
+        },
+        {
+          "title": "Kühllager",
+          "value": "12–14 °C",
+          "note": "85–90 % rF — unter 10 °C entstehen Kälteschäden"
+        },
+        {
+          "title": "Kühlcontainer",
+          "value": "12–14 °C",
+          "note": "Vorgekühlt, Solltemperatur über die ganze Reise protokolliert"
+        }
+      ]
+    },
+    "certs": {
+      "eyebrow": "Zertifizierungen",
+      "title": "Nachweise, die Sie prüfen können",
+      "lead": "Zu jedem Schema nennen wir Nummer, Gültigkeit und ausstellende Stelle, damit Ihre Qualitätssicherung direkt an der Quelle prüfen kann. Angaben erscheinen hier erst, wenn die Zertifizierungsstelle sie bestätigt hat.",
+      "statusLabel": "Prüfung ausstehend",
+      "request": "Zertifikat anfordern",
+      "note": "Wir zeigen kein Logo, das wir nicht führen dürfen. Was hier nicht steht, haben wir nicht.",
+      "items": [
+        {
+          "code": "GG",
+          "name": "GLOBALG.A.P. — IFA",
+          "rows": [
+            [
+              "Nummer",
+              "[[confirm]]"
+            ],
+            [
+              "Gültig bis",
+              "[[confirm]]"
+            ],
+            [
+              "Stelle",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "BR",
+          "name": "BRCGS / IFS Food",
+          "rows": [
+            [
+              "Bewertung",
+              "[[confirm]]"
+            ],
+            [
+              "Gültig bis",
+              "[[confirm]]"
+            ],
+            [
+              "Stelle",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "GR",
+          "name": "GRASP",
+          "rows": [
+            [
+              "Beurteilung",
+              "[[confirm]]"
+            ],
+            [
+              "Gültig bis",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "SM",
+          "name": "SMETA / Sedex",
+          "rows": [
+            [
+              "Säulen",
+              "[[confirm]]"
+            ],
+            [
+              "Gültig bis",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ]
+    },
+    "facility": {
+      "eyebrow": "Betrieb & Anlagen",
+      "title": "Wo die Arbeit passiert",
+      "sub": "Eigene Felder, eigene Packstation — und Container, die bei uns auf dem Hof beladen werden.",
+      "items": [
+        {
+          "caption": "Die Felder",
+          "desc": "Dämme im Nildelta, Trupp für Trupp gerodet",
+          "image": "hero"
+        },
+        {
+          "caption": "Ernte",
+          "desc": "Bei Reife gerodet, nach Feld und Datum getrennt gehalten",
+          "image": "roots"
+        },
+        {
+          "caption": "Sortierung",
+          "desc": "Gegen Klasse I geprüft, bevor irgendetwas verpackt wird",
+          "image": "basket"
+        },
+        {
+          "caption": "Verpackung",
+          "desc": "In Exportkartons gelegt und mit Partienummer versehen",
+          "image": "packhouse"
+        }
+      ],
+      "note": "Diese Aufnahmen stehen stellvertretend für unser eigenes Shooting vor Ort. Bis dahin können Sie den Betrieb gern persönlich auditieren oder mit uns per Videoanruf ablaufen. [[confirm]]"
+    },
+    "trust": {
+      "eyebrow": "Warum Käufer bleiben",
+      "title": "Vier Wege, auf denen ein Obst- und Gemüseimport schiefgeht",
+      "sub": "Und was wir dagegen eingerichtet haben.",
+      "riskLabel": "Wo Sendungen schiefgehen",
+      "fixLabel": "Was wir dagegen tun",
+      "items": [
+        {
+          "risk": "Die angelieferte Ware entspricht nicht dem freigegebenen Muster.",
+          "fix": "Vorversandkontrolle mit datierten Fotos des tatsächlichen Loses, bevor der Container abfährt."
+        },
+        {
+          "risk": "Zertifikate, die sich nicht prüfen lassen — oder jemand anderem gehören.",
+          "fix": "Schemanummer, Gültigkeit und Zertifizierungsstelle zu jedem Nachweis, damit Sie an der Quelle prüfen können."
+        },
+        {
+          "risk": "Eine Lücke in der Kühlkette, die niemand erklären kann.",
+          "fix": "Ein Datenlogger in jedem Kühlcontainer; der vollständige Temperaturverlauf wird bei Ankunft übergeben."
+        },
+        {
+          "risk": "Funkstille, wenn der Fahrplan rutscht.",
+          "fix": "Eine feste Ansprechperson, die innerhalb von vier Stunden antwortet, Sonntag bis Freitag."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Gut zu wissen",
+      "title": "Was Einkäufer uns fragen",
+      "items": [
+        {
+          "q": "Können wir Farm und Packstation auditieren?",
+          "a": "Ja — vor Ort oder per Videoanruf, wann es Ihnen passt. Auf Wunsch empfangen wir auch ein Audit durch Dritte. [[confirm]]"
+        },
+        {
+          "q": "Welche Zertifizierungen haben Sie tatsächlich?",
+          "a": "Die oben gelisteten Schemata, und nur diese. Nummern und Gültigkeiten stehen hier, sobald die Zertifizierungsstelle sie bestätigt hat."
+        },
+        {
+          "q": "Wie wird die Rückverfolgbarkeit festgehalten?",
+          "a": "Jeder Karton trägt einen Loscode, der auf Feld, Erntedatum und Packschicht zurückführt. Wir verfolgen vorwärts wie rückwärts innerhalb von vier Stunden."
+        },
+        {
+          "q": "Prüfen Sie auf Pestizidrückstände?",
+          "a": "Ja — gegen die EU-Rückstandshöchstgehalte nach Verordnung 396/2005, mit Rückstandsbericht je Sendung auf Anfrage. [[confirm]]"
+        },
+        {
+          "q": "Was passiert, wenn eine Partie außerhalb der Spezifikation ankommt?",
+          "a": "Senden Sie innerhalb von 24 Stunden nach Löschung Fotos und die Loggerdatei. Wir gleichen die Reklamation mit unserem eigenen Vorversandprotokoll ab und regeln sie über die nächste Sendung oder per Gutschrift. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Zertifikate überzeugen?",
+      "sub": "Senden Sie Zielhafen und Volumen. Angebot und vollständiges Unterlagenpaket folgen innerhalb von vier Stunden.",
+      "whatsapp": "Auf WhatsApp schreiben",
+      "points": [
+        "Antwort in 4 Stunden",
+        "Vollständiges Unterlagenpaket",
+        "Muster auf Anfrage [[confirm]]"
+      ]
+    }
+  },
+  "contact": {
+    "breadcrumb": "Kontakt",
+    "breadcrumbHome": "Startseite",
+    "hero": {
+      "badge": "Wir antworten innerhalb von 4 Stunden, Sonntag bis Freitag",
+      "title": "Sprechen Sie mit denen, die sie anbauen.",
+      "sub": "Nennen Sie uns Zielhafen, Volumen und Zeitraum. Unser Exportteam antwortet mit Preis, vollständigem Datenblatt und Verladetermin — ohne Konto, ohne Verpflichtung.",
+      "ctaPrimary": "Anfrage senden",
+      "ctaSecondary": "Per WhatsApp chatten",
+      "note": "Ein Team antwortet, kalkuliert und verlädt. Sie werden nie weitergereicht.",
+      "imageAlt": "Ein Landwirt auf den eigenen Feldern von El Molouk zu Saisonbeginn",
+      "cardTitle": "Exportteam",
+      "cardSub": "Sonntag bis Freitag"
+    },
+    "strip": {
+      "items": [
+        "Antwort in 4 Stunden",
+        "Sonntag bis Freitag",
+        "Mindestbestellmenge 5 t",
+        "Damietta · Alexandria · Safaga · Suez"
+      ]
+    },
+    "channels": {
+      "eyebrow": "So erreichen Sie uns",
+      "title": "Wählen Sie den Weg, der Ihnen passt",
+      "sub": "Jeder Kanal führt direkt zum Exportteam — demselben, das Ihren Container kalkuliert und verlädt.",
+      "preferred": "Ideal für Anfragen",
+      "items": [
+        {
+          "name": "E-Mail",
+          "desc": "Spezifikationen, Preislisten und Unterlagen, schriftlich.",
+          "action": "Schreiben Sie uns"
+        },
+        {
+          "name": "Telefon",
+          "desc": "Programmplanung und alles, was nicht bis zur nächsten E-Mail warten kann.",
+          "action": "Exportteam anrufen"
+        },
+        {
+          "name": "WhatsApp",
+          "desc": "Kurze Fragen, Fotos aus der Packstation und Sendungsupdates.",
+          "action": "WhatsApp öffnen"
+        }
+      ],
+      "hoursTitle": "Geschäftszeiten",
+      "hoursValue": "Sonntag – Freitag, [[confirm office hours]]",
+      "hoursNote": "Nachrichten außerhalb dieser Zeiten bearbeiten wir gleich zu Beginn des nächsten Arbeitstages. [[confirm]]"
+    },
+    "form": {
+      "eyebrow": "Angebot anfordern",
+      "title": "Senden Sie Ihre Anfrage",
+      "sub": "Drei Angaben genügen für einen Containerpreis: wohin, wie viel und wann.",
+      "stepsTitle": "So geht es weiter",
+      "steps": [
+        {
+          "name": "Sie senden die Eckdaten",
+          "desc": "Hafen, Volumen, Zeitraum. Zwei Minuten, ganz ohne Konto."
+        },
+        {
+          "name": "Wir kalkulieren",
+          "desc": "Ein Angebot mit vollständigem Datenblatt und Verpackungsoptionen, innerhalb von 4 Stunden, Sonntag bis Freitag."
+        },
+        {
+          "name": "Wir buchen den Kühlcontainer",
+          "desc": "Ein Verladetermin ab Damietta, Alexandria, Safaga oder Suez, kühlkettenkontrolliert bis zu Ihrem Hafen."
+        }
+      ],
+      "asideTitle": "Lieber schreiben?",
+      "asideDesc": "Senden Sie dieselben drei Angaben per WhatsApp — wir übernehmen von dort.",
+      "asideCta": "WhatsApp öffnen",
+      "privacy": "Ihre Angaben verwenden wir ausschließlich zur Beantwortung dieser Anfrage. [[confirm privacy policy]]"
+    },
+    "company": {
+      "eyebrow": "Unternehmensangaben",
+      "title": "Mit wem Sie es zu tun haben",
+      "sub": "Die Angaben, nach denen Einkäufer vor der ersten Bestellung fragen — hier statt auf Nachfrage.",
+      "items": [
+        {
+          "label": "Eingetragenes Unternehmen",
+          "value": "[[confirm legal name + registration]]",
+          "desc": "Handelsregister- und Exportlizenznummern geben wir auf Anfrage weiter."
+        },
+        {
+          "label": "Packstation & Büro",
+          "value": "[[confirm packhouse address]]",
+          "desc": "Sortierung, Verpackung und Kühlhaus an einem Standort im Nildelta."
+        },
+        {
+          "label": "Arbeitszeiten",
+          "value": "Sonntag – Freitag, [[confirm office hours]]",
+          "desc": "Ernte von August bis März; Curing und Kühlhaus sichern die Versorgung das ganze Jahr."
+        },
+        {
+          "label": "Exportmärkte",
+          "value": "Europaweit [[confirm market list]]",
+          "desc": "Regelmäßige Containerprogramme nach Nord- und Westeuropa."
+        }
+      ]
+    },
+    "location": {
+      "eyebrow": "Wo wir sind",
+      "title": "Im Nildelta angebaut, aus vier Häfen verschifft",
+      "sub": "Packhalle und Kühllager liegen im Delta, verladen wird in Damietta, Alexandria, Safaga und Suez.",
+      "mapLabel": "Kartenplatzhalter — Standort der Packstation, Ägypten. [[confirm]]",
+      "pin": "Packstation [[confirm]]",
+      "rows": [
+        {
+          "label": "Adresse",
+          "value": "[[confirm packhouse address]]"
+        },
+        {
+          "label": "Verladehäfen",
+          "value": "Damietta · Alexandria · Safaga · Suez"
+        },
+        {
+          "label": "Export per",
+          "value": "Seefracht · Landtransport"
+        },
+        {
+          "label": "Mindestbestellmenge",
+          "value": "5 Tonnen"
+        },
+        {
+          "label": "Incoterms",
+          "value": "FOB · CFR · CIF · DAP"
+        }
+      ],
+      "note": "Besuche in der Packstation und Kundenaudits sind nach Terminvereinbarung willkommen. [[confirm]]"
+    },
+    "why": {
+      "eyebrow": "Warum Einkäufer schreiben",
+      "title": "Was Sie erhalten, bevor Sie sich zu irgendetwas verpflichten",
+      "sub": "Eine Anfrage kostet Sie zwei Minuten. Das kommt zurück.",
+      "items": [
+        {
+          "title": "Antwort in Stunden, nicht in Tagen",
+          "desc": "Jede Anfrage wird innerhalb von 4 Stunden beantwortet, Sonntag bis Freitag — mit einem Preis, nicht mit einer Broschüre."
+        },
+        {
+          "title": "Exportpapiere inklusive",
+          "desc": "Zertifikate, Pflanzengesundheitszeugnisse und Containerbuchungen bereitet dasselbe Team vor, das die Kiste packt."
+        },
+        {
+          "title": "Ein Team, vom Feld bis zum Hafen",
+          "desc": "Wir bauen an, curen, sortieren und verladen selbst — die Antwort zu Ihrem Container kommt von denen, die ihn in den Händen halten."
+        },
+        {
+          "title": "Ihre Sprache",
+          "desc": "Wir korrespondieren in sieben Sprachen, Arabisch und Englisch inbegriffen."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Bevor Sie schreiben",
+      "title": "Was Einkäufer zuerst fragen",
+      "items": [
+        {
+          "q": "Was sollte meine Anfrage enthalten?",
+          "a": "Zielhafen, Volumen und Zeitraum genügen für einen ersten Preis. Verpackung, Etikettierung und Programmtermine können folgen."
+        },
+        {
+          "q": "Wie schnell höre ich von Ihnen?",
+          "a": "Innerhalb von 4 Stunden, Sonntag bis Freitag — mit Angebot und vollständigem Datenblatt."
+        },
+        {
+          "q": "Kann ich Muster anfordern?",
+          "a": "Nennen Sie uns Kaliber und Verpackung, die Sie sehen möchten, und wir melden uns mit den Möglichkeiten. [[confirm sample policy]]"
+        },
+        {
+          "q": "Welche Incoterms können Sie anbieten?",
+          "a": "FOB Damietta, Alexandria, Safaga oder Suez; CFR und CIF zu den großen EU-Häfen; DAP nach Absprache. [[confirm]]"
+        },
+        {
+          "q": "Arbeiten Sie auch mit neuen Importeuren?",
+          "a": "Ja. Sagen Sie uns, wo Sie stehen — wir kalkulieren einen einzelnen Container ebenso gern wie ein Saisonprogramm. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ihr erster Container beginnt mit einer Nachricht",
+      "sub": "Nennen Sie Hafen, Volumen und Zeitraum. Den Preis liefern wir.",
+      "primary": "Anfrage senden",
+      "whatsapp": "Per WhatsApp chatten",
+      "trust": [
+        "Antwort innerhalb von 4 Stunden",
+        "GLOBALG.A.P · BRCGS [[confirm]]",
+        "Unverbindlich"
+      ]
+    }
+  }
+}

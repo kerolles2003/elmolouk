@@ -30,7 +30,7 @@ Every page justifies itself by **Trust, Clarity, or Conversion** (`00` §5). Sus
 1. **Full-bleed hero — the cut-to-reveal shot.** Glowing orange cross-section on an earthy ground; headline/CTA sit in the negative space. Keyword-aware `H1` (*"Premium Egyptian Orange-Fleshed Sweet Potatoes"*) + credibility subline (*"Certified grower-exporter · Germany's #1 sweet-potato origin, 2025"* `[[CONFIRM]]`). CTAs: **[Request a Quote]** + **[WhatsApp]**. This image is the LCP element (eager-loaded, sized).
 2. **Certification + metrics trust strip** — GLOBALG.A.P. · BRCGS/IFS · GRASP `[[CONFIRM CERTIFICATION]]` + concrete numbers (tonnes · hectares · countries · years) → links to `/quality`. *(The trust gate, above the fold.)*
 3. **Positioning line** — one sentence: premium Egyptian exporter, European standards.
-4. **Product card** — Beauregard/Bellevue, macro flesh photo → `/sweet-potatoes`.
+4. **Product card** — Beauregard/Bellevue/Covington, macro flesh photo → `/sweet-potatoes`.
 5. **"Why El Molouk" proof band** (`forest` ground) — own farms + packhouse · traceability · cold chain · year-round availability · value vs USA/Spain.
 6. **Process / scrollytelling teaser** — field → curing → sorting → packing → container (real supply-chain shots; curing highlighted as a differentiator).
 7. **Season calendar teaser** — 12-month strip → "year-round reliability."
@@ -45,7 +45,7 @@ Every page justifies itself by **Trust, Clarity, or Conversion** (`00` §5). Sus
 A **procurement-ready spec kit** *and* ≥1,000 words unique for SEO. Basic specs **ungated** on-page; detailed export spec-sheet PDF **gated** (§6). Sections:
 
 1. Hero: variety, deep-orange-flesh macro, one-line sensory descriptor, **[Request a Quote]** + **[Download Spec Sheet]**.
-2. **Varieties** — Beauregard, Bellevue (flesh/skin/sensory).
+2. **Varieties** — Beauregard, Bellevue, Covington (flesh/skin/sensory).
 3. **Caliber table** — S/M/L1/L2/XL/G gram ranges; Class I + uniformity.
 4. **Packaging** — 6 kg carton, 8/10 kg boxes, bulk bins, retail punnet/pre-pack, private label.
 5. **Container loading** — 20′ / 40′ reefer: pallets, cases, net weight.

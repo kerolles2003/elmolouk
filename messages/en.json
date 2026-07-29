@@ -1,0 +1,1231 @@
+{
+  "metadata": {
+    "titleTemplate": "%s · El Molouk",
+    "ogAlt": {
+      "default": "The El Molouk Fresh Produce logo beside an Egyptian sweet-potato field at harvest.",
+      "product": "The El Molouk Fresh Produce logo beside an export carton of graded orange-fleshed sweet potatoes.",
+      "quality": "The El Molouk Fresh Produce logo beside the packhouse floor, sweet potatoes graded into export crates."
+    },
+    "home": {
+      "title": "Egyptian Orange-Fleshed Sweet Potato Exporter — Wholesale & Bulk Supply",
+      "description": "Premium Egyptian orange-fleshed sweet potatoes — Beauregard and Bellevue. Class I, cured and cold-chain monitored, in bulk export cartons for European importers.",
+      "keywords": [
+        "Egyptian sweet potato exporter",
+        "orange-fleshed sweet potato",
+        "sweet potato wholesale",
+        "bulk sweet potato supply",
+        "Beauregard",
+        "Bellevue",
+        "fresh produce exporter Egypt"
+      ]
+    },
+    "sweetPotatoes": {
+      "title": "Sweet Potatoes — Varieties, Export Packaging & Cold Chain",
+      "description": "Beauregard and Bellevue orange-fleshed sweet potatoes: bulk export packaging, container loading, season and cold chain. Minimum order 5 metric tons.",
+      "keywords": [
+        "sweet potato varieties",
+        "Beauregard sweet potato",
+        "Bellevue sweet potato",
+        "sweet potato export packaging",
+        "sweet potato calibre",
+        "container loading",
+        "cold chain",
+        "Egyptian sweet potato season"
+      ]
+    },
+    "quality": {
+      "title": "Quality & Certifications",
+      "description": "Food-safety and farm certifications, traceability and cold-chain control — El Molouk's credentials for European buyers, documented and verifiable.",
+      "keywords": [
+        "sweet potato quality control",
+        "Class I sweet potato",
+        "traceability",
+        "cold chain monitoring",
+        "curing",
+        "packhouse grading",
+        "export standards"
+      ]
+    },
+    "rfq": {
+      "title": "Request a Quote — Bulk Egyptian Sweet Potatoes for Europe",
+      "description": "Bulk export of Egyptian orange-fleshed sweet potatoes. Minimum order 5 metric tons — send your destination port and volume for a quote within 4 hours."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact El Molouk's export team. Request a quote or reach us on WhatsApp — reply within 4 hours.",
+      "keywords": [
+        "contact sweet potato exporter",
+        "request a quote",
+        "Egyptian sweet potato supplier",
+        "sweet potato export enquiry",
+        "WhatsApp export desk"
+      ]
+    }
+  },
+  "nav": {
+    "sweetPotatoes": "Sweet Potatoes",
+    "quality": "Quality",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "common": {
+    "requestQuote": "Request a Quote",
+    "downloadSpecSheet": "Download Spec Sheet",
+    "whatsapp": "WhatsApp us",
+    "whatsappShort": "WhatsApp",
+    "phone": "Phone",
+    "email": "E-mail",
+    "viewSpecifications": "View specifications",
+    "getMyQuote": "Get my export quote",
+    "replyWithin": "We reply within 4 hours",
+    "placeholderTag": "Placeholder",
+    "confirm": "[[confirm]]",
+    "awaitingPhoto": "Awaiting photo"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "From the fertile lands of the Nile Delta to the finest tables around the world.",
+      "titleLead": "Sweet potatoes…",
+      "titleA": "A journey that begins in land we inherited with pride,",
+      "titleB": "and ends on your customers’ tables.",
+      "storyP1": "Generations of our family have farmed the Nile Delta — learning the silt, the water and the turn of the season from the people who worked it before them. The land came to us as a responsibility rather than a business, and we keep it with what this generation was given: tested soil, measured irrigation, controlled curing rooms.",
+      "storyP2": "What we grow, we see through. Harvest, sorting, packing, cold storage, export — one journey, managed by us, so the crop never changes hands without someone here answering for it. And every sweet potato we set aside is chosen against a single question: will it still be right when it reaches your customer?",
+      "quote": "Nothing leaves our hands that we would not put on our own table.",
+      "ctaPrimary": "Request a quote",
+      "ctaSecondary": "Explore our produce",
+      "imageAlt": "Rows of a sweet-potato farm stretching toward the horizon under an open sky",
+      "stat1Value": "30,000 t",
+      "stat1Label": "harvested each season",
+      "stat2Value": "United Kingdom & Europe",
+      "stat2Label": "exporting to",
+      "journey": [
+        {
+          "caption": "Harvest",
+          "alt": "Freshly lifted sweet potatoes resting in the soil of the field"
+        },
+        {
+          "caption": "Packing",
+          "alt": "Crates of graded sweet potatoes filling the packing floor"
+        },
+        {
+          "caption": "On the table",
+          "alt": "A finished dish made with sweet potatoes, ready to serve"
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "Cold-chain monitored",
+        "Year-round supply"
+      ]
+    },
+    "featured": {
+      "eyebrow": "Our produce",
+      "title": "Sweet potatoes, at their very best",
+      "sub": "Two orange-fleshed varieties, grown on our own farms and packed for bulk export.",
+      "weightLabel": "Export packing",
+      "originLabel": "Origin",
+      "cta": "Request a Quote",
+      "items": [
+        {
+          "name": "Beauregard",
+          "desc": "Deep-orange flesh, copper-pink skin. Naturally sweet and moist — the European favourite.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Egypt",
+          "image": "flesh"
+        },
+        {
+          "name": "Bellevue",
+          "desc": "Orange flesh, copper skin. Uniform calibre with an excellent shelf life.",
+          "weight": "3 / 6 / 10 kg",
+          "origin": "Egypt",
+          "image": "bellevue"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why El Molouk",
+      "title": "A grower you can rely on",
+      "sub": "We control every step from our soil to your port.",
+      "items": [
+        {
+          "title": "Our own farms",
+          "desc": "Grown and harvested on land we farm ourselves — consistent quality, every crate."
+        },
+        {
+          "title": "Certified & audited",
+          "desc": "GLOBALG.A.P., BRCGS/IFS and GRASP [[confirm]] — verifiable, never just claimed."
+        },
+        {
+          "title": "Year-round supply",
+          "desc": "An August–March harvest, extended by curing and cold storage."
+        },
+        {
+          "title": "Cold chain intact",
+          "desc": "Data-logger monitored from packhouse to reefer, held at 12–14 °C."
+        },
+        {
+          "title": "Container scale",
+          "desc": "40' reefers loading at Damietta, Alexandria, Safaga or Suez — by sea freight or land transport."
+        },
+        {
+          "title": "One specification",
+          "desc": "Class I on every crate, quoted per container, with no surprises between the sample and the shipment."
+        }
+      ]
+    },
+    "farm": {
+      "eyebrow": "Our story",
+      "title": "Rooted in Egyptian soil",
+      "p1": "El Molouk began with a simple belief: that the Nile Delta grows some of the world's finest sweet potatoes, and that European buyers deserve them at their freshest.",
+      "p2": "Today we farm, cure, grade and ship it all ourselves — so the sweet potato that leaves our packhouse is the same one your customers come back for.",
+      "cta": "See our quality process",
+      "imageAlt": "Sweet potatoes lifted from the ridges of our own Nile Delta fields"
+    },
+    "process": {
+      "eyebrow": "How it's done",
+      "title": "From field to container, under one roof",
+      "sub": "Six careful steps keep every tuber sweet, sound and traceable.",
+      "steps": [
+        {
+          "name": "Harvest",
+          "desc": "Hand-lifted from our own fields at peak ripeness."
+        },
+        {
+          "name": "Cure",
+          "desc": "Rested at 28–30 °C to heal the skin and deepen sweetness."
+        },
+        {
+          "name": "Sort & grade",
+          "desc": "Optically sorted to uniform EU Class-I calibres."
+        },
+        {
+          "name": "Pack",
+          "desc": "Into 3, 6 and 10 kg export cartons, lot-marked as they close."
+        },
+        {
+          "name": "Cold store",
+          "desc": "Held at 12–14 °C with data-logger monitoring."
+        },
+        {
+          "name": "Ship",
+          "desc": "Loaded at Damietta, Alexandria, Safaga or Suez — by sea or by land."
+        }
+      ]
+    },
+    "benefits": {
+      "eyebrow": "Naturally good",
+      "title": "Why everyone loves sweet potatoes",
+      "sub": "A crop that sells itself — wholesome, versatile and full of colour.",
+      "items": [
+        {
+          "title": "Rich in vitamin A",
+          "desc": "That deep orange flesh is packed with beta-carotene."
+        },
+        {
+          "title": "Naturally sweet",
+          "desc": "Curing brings out a honeyed flavour, with no additives."
+        },
+        {
+          "title": "High in fibre",
+          "desc": "A wholesome staple your customers already reach for."
+        },
+        {
+          "title": "Endlessly versatile",
+          "desc": "Roasted, mashed, fried or baked — a year-round seller."
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "From the farm",
+      "title": "The journey, in order",
+      "sub": "Field to vessel, in the sequence it actually happens.",
+      "note": "Marked frames are reserved for El Molouk's own photography of these stages. [[confirm: commission the sorting, cold-store, loading and shipping shots]]",
+      "steps": [
+        {
+          "caption": "In the field",
+          "alt": "Ridged rows of sweet potatoes growing in the Nile Delta"
+        },
+        {
+          "caption": "Harvest",
+          "alt": "Freshly lifted sweet potatoes resting in the soil of the field"
+        },
+        {
+          "caption": "Sorting",
+          "alt": "Graded sweet potatoes on the sorting bench"
+        },
+        {
+          "caption": "Packing",
+          "alt": "Crates of graded sweet potatoes filling the packing floor"
+        },
+        {
+          "caption": "Cold storage",
+          "alt": "Cold store — pallets held at 12–14 °C"
+        },
+        {
+          "caption": "Export loading",
+          "alt": "Export loading — cartons going into a pre-cooled reefer"
+        },
+        {
+          "caption": "Shipping",
+          "alt": "Shipping — the container leaving an Egyptian port"
+        }
+      ]
+    },
+    "reviews": {
+      "eyebrow": "In their words",
+      "title": "What our buyers say",
+      "cardTitle": "Reserved for a verified testimonial",
+      "cardBody": "We publish a buyer's words only once that buyer has approved them in writing, under their own name and company. Nothing stands in this space until then.",
+      "note": "[[confirm: collect signed testimonials from named buyers]]"
+    },
+    "shipping": {
+      "eyebrow": "Getting it to you",
+      "title": "Shipping & delivery",
+      "sub": "Container-scale logistics, handled properly.",
+      "items": [
+        {
+          "title": "Ports",
+          "value": "Damietta · Alexandria · Safaga · Suez"
+        },
+        {
+          "title": "Export by",
+          "value": "Sea freight · land transport"
+        },
+        {
+          "title": "Minimum order",
+          "value": "5 metric tons"
+        },
+        {
+          "title": "Cold chain",
+          "value": "12–14 °C, monitored"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "title": "Common questions",
+      "items": [
+        {
+          "q": "What is your minimum order?",
+          "a": "5 metric tons. We supply on contract, so larger programme volumes are agreed by season."
+        },
+        {
+          "q": "What packaging do you export in?",
+          "a": "Export cartons of 3 kg and 6 kg, and large export boxes of 10 kg. Bulk export only — we do not supply retail or consumer packs."
+        },
+        {
+          "q": "Which ports do you load from?",
+          "a": "Damietta, Alexandria, Safaga and Suez, by sea freight or by land transport."
+        },
+        {
+          "q": "How fast do you reply?",
+          "a": "Within 4 hours, Sunday to Friday — with a quote and full spec sheet."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's get your first container moving",
+      "sub": "Tell us your destination port and volume — we'll reply within 4 hours with a quote and spec sheet.",
+      "primary": "Request a Quote",
+      "whatsapp": "Chat on WhatsApp"
+    },
+    "packaging": {
+      "eyebrow": "Export packaging",
+      "title": "Three bulk export formats",
+      "sub": "Bulk export packaging only. We do not offer retail packs, consumer packs or supermarket-ready packaging.",
+      "moq": "Contract supply · minimum order 5 metric tons"
+    }
+  },
+  "footer": {
+    "tagline": "Premium Egyptian orange-fleshed sweet potatoes for European buyers.",
+    "export": "Export",
+    "logistics": "Logistics",
+    "languages": "Languages",
+    "ports": "Damietta · Alexandria · Safaga · Suez",
+    "incoterms": "FOB · CFR · CIF",
+    "quality": "Quality & Certifications",
+    "rights": "All rights reserved.",
+    "freight": "Sea freight · land transport",
+    "moq": "Minimum order 5 t"
+  },
+  "rfqForm": {
+    "heading": "Request a quote",
+    "sub": "We reply within 4 hours, Sun–Fri.",
+    "product": "Product",
+    "productBeauregard": "Beauregard",
+    "productBellevue": "Bellevue",
+    "destinationPort": "Destination port",
+    "destinationPortPlaceholder": "Rotterdam",
+    "volume": "Volume",
+    "volumePlaceholder": "From 5 t",
+    "incoterm": "Incoterm",
+    "incotermOptions": [
+      "CIF",
+      "CFR",
+      "FOB",
+      "DAP"
+    ],
+    "email": "Company e-mail",
+    "emailPlaceholder": "you@company.com",
+    "message": "Message",
+    "messagePlaceholder": "Timing, packaging format, destination…",
+    "submit": "Get my export quote",
+    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · or chat on WhatsApp",
+    "errorRequired": "Please complete the required fields.",
+    "success": "Thank you — your request is ready.",
+    "successNote": "We opened WhatsApp so you can send it now; our export team replies within 4 hours. [[confirm: also wire the form to email/CRM]]",
+    "legendNeed": "What you need",
+    "legendReach": "Where to send the quote",
+    "optional": "optional",
+    "errorPort": "Tell us the destination port.",
+    "errorVolume": "Tell us roughly how much you need.",
+    "errorEmail": "Add an e-mail address so we can send the quote.",
+    "errorEmailFormat": "Check the e-mail address — it looks incomplete.",
+    "productOther": "Other",
+    "moqNote": "Minimum order 5 metric tons."
+  },
+  "product": {
+    "breadcrumb": "Sweet Potatoes",
+    "eyebrow": {
+      "varieties": "The crop",
+      "calibre": "Grading",
+      "packaging": "Export packing",
+      "postHarvest": "Cold chain",
+      "season": "Availability",
+      "gallery": "Gallery",
+      "faq": "Buyer questions"
+    },
+    "hero": {
+      "kicker": "Orange-Fleshed · Beauregard & Bellevue",
+      "title": "Egyptian orange-fleshed sweet potatoes.",
+      "sub": "Class I, cured to deepen sweetness, graded and packed for bulk export under a monitored cold chain. Full specifications below — or request a quote for your port and volume.",
+      "imageAlt": "Halved Beauregard sweet potato showing glowing orange flesh and soil-flecked skin, natural side-light on matte wood. [[confirm: replace with real macro]]",
+      "availability": "Available near year-round",
+      "highlights": [
+        {
+          "label": "Grade",
+          "value": "Class I"
+        },
+        {
+          "label": "Export packing",
+          "value": "3 · 6 · 10 kg"
+        },
+        {
+          "label": "Minimum order",
+          "value": "5 metric tons"
+        },
+        {
+          "label": "Cold chain",
+          "value": "12–14 °C"
+        }
+      ]
+    },
+    "downloadSpec": "Download Spec Sheet (PDF)",
+    "varieties": {
+      "title": "Varieties",
+      "lead": "Two orange-fleshed varieties, both deep-flesh and export-graded.",
+      "head": [
+        "Variety",
+        "Flesh",
+        "Skin",
+        "Profile"
+      ],
+      "rows": [
+        [
+          "Beauregard",
+          "Deep orange",
+          "Copper-pink",
+          "Sweet, moist — EU workhorse"
+        ],
+        [
+          "Bellevue",
+          "Orange",
+          "Copper",
+          "Uniform calibre, long shelf life"
+        ]
+      ]
+    },
+    "calibre": {
+      "title": "Calibre & grading — Class I",
+      "lead": "Class I is our minimum grade on every crate. The calibre table itself is being confirmed with our packhouse and will be published here once it is verified.",
+      "placeholder": "Calibre and size table — reserved for the verified figures",
+      "note": "We would rather leave this blank than print a size we cannot hold to on every pallet. Ask the export desk for the current grading sheet. [[confirm: official calibre and size table]]",
+      "cta": "Request the grading sheet"
+    },
+    "packaging": {
+      "title": "Export packaging",
+      "lead": "Bulk export packaging only. We do not offer retail packs, consumer packs or supermarket-ready packaging.",
+      "items": [
+        {
+          "title": "Export carton — 3 kg",
+          "specs": [
+            [
+              "Net",
+              "3 kg"
+            ],
+            [
+              "Per pallet",
+              "[[confirm]]"
+            ],
+            [
+              "Per 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Export carton — 6 kg",
+          "specs": [
+            [
+              "Net",
+              "6 kg"
+            ],
+            [
+              "Per pallet",
+              "[[confirm]]"
+            ],
+            [
+              "Per 40'",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "title": "Large export box — 10 kg",
+          "specs": [
+            [
+              "Net",
+              "10 kg"
+            ],
+            [
+              "Per pallet",
+              "[[confirm]]"
+            ],
+            [
+              "Per 40'",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ],
+      "moq": "Contract supply · minimum order 5 metric tons"
+    },
+    "container": {
+      "title": "Container loading",
+      "head": [
+        "Container",
+        "Pallets",
+        "Cartons",
+        "Net weight"
+      ],
+      "rows": [
+        [
+          "20' reefer",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ],
+        [
+          "40' reefer",
+          "[[confirm]]",
+          "[[confirm]]",
+          "[[confirm]]"
+        ]
+      ],
+      "note": "Loading figures are confirmed per format and per destination when we quote. [[confirm: verified pallet and carton counts]]"
+    },
+    "season": {
+      "title": "Season & availability",
+      "lead": "Peak harvest Aug–Dec; cold storage extends supply to near year-round.",
+      "peakLabel": "Peak harvest",
+      "storeLabel": "Cold-store supply",
+      "note": "extendable to near year-round."
+    },
+    "postHarvest": {
+      "title": "Post-harvest & cold chain",
+      "facts": [
+        {
+          "label": "Curing",
+          "value": "4–7 days"
+        },
+        {
+          "label": "Storage",
+          "value": "12–14 °C"
+        },
+        {
+          "label": "Humidity",
+          "value": "85–90%"
+        },
+        {
+          "label": "Shelf life",
+          "value": "4–6 mo"
+        },
+        {
+          "label": "Chilling injury",
+          "value": "> 10 °C"
+        },
+        {
+          "label": "Monitoring",
+          "value": "Data-logger"
+        },
+        {
+          "label": "MRL",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Traceability",
+          "value": "Lot-level"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "GRASP",
+        "ISO 22000",
+        "Phytosanitary"
+      ],
+      "note": "[[confirm certification]]"
+    },
+    "gallery": {
+      "title": "From field to vessel",
+      "alt": "El Molouk sweet potatoes, fields and packhouse",
+      "steps": [
+        {
+          "caption": "In the field",
+          "alt": "Ridged rows of sweet potatoes growing in the Nile Delta"
+        },
+        {
+          "caption": "Harvest",
+          "alt": "Freshly lifted sweet potatoes resting in the soil of the field"
+        },
+        {
+          "caption": "Sorting",
+          "alt": "Graded sweet potatoes on the sorting bench"
+        },
+        {
+          "caption": "Packing",
+          "alt": "Crates of graded sweet potatoes filling the packing floor"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked",
+      "items": [
+        {
+          "q": "What is your minimum order?",
+          "a": "5 metric tons. We supply on contract, so programme volumes above that are agreed by season."
+        },
+        {
+          "q": "What packaging do you export in?",
+          "a": "Export cartons of 3 kg and 6 kg, and large export boxes of 10 kg. Bulk export only — no retail or consumer packs."
+        },
+        {
+          "q": "Which ports do you load from?",
+          "a": "Damietta, Alexandria, Safaga and Suez, by sea freight or land transport. FOB, CFR and CIF quoted; DAP by arrangement. [[confirm]]"
+        },
+        {
+          "q": "Lead time?",
+          "a": "[[confirm: lead time from purchase order to loading]]"
+        }
+      ]
+    }
+  },
+  "rfq": {
+    "headerNote": "Reply within 4 h · WhatsApp [[confirm]]",
+    "hero": {
+      "kicker": "Bulk Export · EU Importers",
+      "title": "Buy Egyptian orange-fleshed sweet potatoes — bulk export to Europe.",
+      "sub": "Beauregard and Bellevue, Class I, cured and cold-chain monitored. Bulk export from Egypt in 3, 6 and 10 kg cartons, from a 5-tonne minimum order.",
+      "chips": [
+        "Beauregard · Bellevue",
+        "3 · 6 · 10 kg cartons",
+        "Damietta · Alexandria · Safaga · Suez",
+        "From 5 t"
+      ],
+      "proof": [
+        "Certified & audited — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Own farms & packhouse — grower-to-port control, lot-level traceability",
+        "Reply within 4 hours with a quote and full spec sheet"
+      ],
+      "trust": [
+        "GLOBALG.A.P [[confirm]]",
+        "BRCGS / IFS [[confirm]]",
+        "30,000 t / season",
+        "Bulk export only"
+      ]
+    },
+    "formNote": "2 minutes · no obligation",
+    "stats": [
+      {
+        "value": "30,000 t",
+        "label": "harvested each season"
+      },
+      {
+        "value": "5 t",
+        "label": "minimum order"
+      },
+      {
+        "value": "4",
+        "label": "loading ports"
+      },
+      {
+        "value": "< 4 h",
+        "label": "quote turnaround"
+      }
+    ],
+    "glance": {
+      "title": "Export packaging at a glance",
+      "head": [
+        "Format",
+        "Net weight",
+        "Supply"
+      ],
+      "rows": [
+        [
+          "Export carton",
+          "3 kg",
+          "Bulk export"
+        ],
+        [
+          "Export carton",
+          "6 kg",
+          "Bulk export"
+        ],
+        [
+          "Large export box",
+          "10 kg",
+          "Bulk export"
+        ]
+      ],
+      "note": "Contract supply, minimum order 5 metric tons. Loading at Damietta, Alexandria, Safaga or Suez — sea freight or land transport."
+    },
+    "finalTitle": "Ready to price your first container?",
+    "footerNote": "El Molouk · الملوك للتصدير — Egyptian orange-fleshed sweet potato exporter · [[confirm legal + address]]"
+  },
+  "quality": {
+    "breadcrumb": "Quality",
+    "hero": {
+      "eyebrow": "Quality & food safety",
+      "title": "Verify us before you buy.",
+      "sub": "Every claim on this page is one you can check: scheme numbers and the bodies that issued them, a signed record at each inspection stage, and a cold chain you can read straight off the logger.",
+      "ctaSecondary": "See the specifications",
+      "badge": "Six inspection stages",
+      "imageAlt": "Sweet potatoes lifted from the field at harvest",
+      "highlights": [
+        "Lot-level traceability",
+        "EU MRL compliant",
+        "Documents before loading"
+      ],
+      "insetAlt": "Graded sweet potatoes on the inspection bench"
+    },
+    "facts": {
+      "label": "Documented on every shipment",
+      "items": [
+        {
+          "label": "Traceability",
+          "value": "Lot-level"
+        },
+        {
+          "label": "Cold chain",
+          "value": "12–14 °C, logged"
+        },
+        {
+          "label": "Residues",
+          "value": "EU 396/2005"
+        },
+        {
+          "label": "Inspection record",
+          "value": "Every stage"
+        }
+      ]
+    },
+    "standards": {
+      "eyebrow": "Export standards",
+      "title": "What every crate has to meet",
+      "sub": "One specification, applied the same way to a trial pallet and to a season-long programme.",
+      "items": [
+        {
+          "title": "EU Class I grading",
+          "desc": "Shape, colour and firmness graded to EU Class I. Anything below it never joins the export line."
+        },
+        {
+          "title": "Consistent calibre",
+          "desc": "Sized to your calibre band so carton weight and count hold across the whole container."
+        },
+        {
+          "title": "Residue compliance",
+          "desc": "Grown within EU maximum residue limits under Regulation 396/2005, with residue testing before shipment. [[confirm]]"
+        },
+        {
+          "title": "Cold-chain control",
+          "desc": "Cured, then held and shipped at 12–14 °C with a data-logger in every reefer."
+        },
+        {
+          "title": "Export packaging & labelling",
+          "desc": "Export cartons of 3, 6 and 10 kg, labelled to your specification and lot-marked. Bulk export only. [[confirm: GS1 labelling]]"
+        },
+        {
+          "title": "Social compliance",
+          "desc": "GRASP and SMETA cover fair labour, safety and worker welfare on our own farms. [[confirm]]"
+        }
+      ]
+    },
+    "inspection": {
+      "eyebrow": "Inspection",
+      "title": "Six checkpoints between the field and the reefer",
+      "sub": "Each stage has its own pass criteria, its own record and a name against it. A lot that fails one goes back a stage.",
+      "steps": [
+        {
+          "name": "Field & lifting",
+          "desc": "Lots are lifted at maturity and kept separate by field and date from the first crate onward.",
+          "checks": [
+            "Field and lot recorded",
+            "Skin set and maturity",
+            "Soil and damage screen"
+          ]
+        },
+        {
+          "name": "Intake & curing",
+          "desc": "Curing at 28–30 °C heals the skin, develops the sugars and cuts storage loss.",
+          "checks": [
+            "Temperature and humidity log",
+            "Curing duration",
+            "Rot and bruising removed"
+          ]
+        },
+        {
+          "name": "Wash & sort",
+          "desc": "Washed, then sorted for shape, skin finish and internal defects.",
+          "checks": [
+            "Water quality",
+            "Skin finish and shape",
+            "Cut test per lot"
+          ]
+        },
+        {
+          "name": "Grading & calibre",
+          "desc": "Graded to EU Class I and sized to the calibre band on your order.",
+          "checks": [
+            "Class I criteria",
+            "Calibre band and count",
+            "Carton check-weighing"
+          ]
+        },
+        {
+          "name": "Packing & labelling",
+          "desc": "Packed to your carton spec and marked with the lot code that follows it to your door.",
+          "checks": [
+            "Carton and pallet spec",
+            "Lot code and label",
+            "Pallet count and stability"
+          ]
+        },
+        {
+          "name": "Pre-loading",
+          "desc": "Container inspected, pre-cooled and loaded under supervision; documents are issued before it leaves.",
+          "checks": [
+            "Pre-cool and set point",
+            "Data-logger placed",
+            "Phyto and documents [[confirm]]"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "eyebrow": "Food safety",
+      "title": "Handled clean, held cold",
+      "lead": "Food safety is mostly housekeeping done the same way every day: clean water, clean hands, clean surfaces — and a temperature that never drifts.",
+      "imageAlt": "Freshly cut orange sweet-potato flesh",
+      "points": [
+        "Potable water for every wash, sampled on a schedule [[confirm]]",
+        "Colour-coded cleaning kit and a documented sanitation round",
+        "Staff trained in hygiene and personal protective equipment",
+        "Pest control by an external contractor, reports on file [[confirm]]",
+        "Allergen and foreign-body checks before the cartons close",
+        "Traceability by lot code, forward and back, within four hours"
+      ],
+      "storageTitle": "Temperatures we hold",
+      "storage": [
+        {
+          "title": "Curing",
+          "value": "28–30 °C",
+          "note": "5–7 days at high humidity so the skin heals"
+        },
+        {
+          "title": "Cold store",
+          "value": "12–14 °C",
+          "note": "85–90% RH — below 10 °C causes chilling injury"
+        },
+        {
+          "title": "Reefer",
+          "value": "12–14 °C",
+          "note": "Pre-cooled, set point logged for the whole voyage"
+        }
+      ]
+    },
+    "certs": {
+      "eyebrow": "Certifications",
+      "title": "Credentials you can verify",
+      "lead": "For each scheme we give you the number, the validity date and the body that issued it, so your compliance team can check it at source. Values appear here only once the certifying body has confirmed them.",
+      "statusLabel": "Awaiting verification",
+      "request": "Request this certificate",
+      "note": "We display no logo we are not entitled to use. If a scheme is not listed here, we do not hold it.",
+      "items": [
+        {
+          "code": "GG",
+          "name": "GLOBALG.A.P. — IFA",
+          "rows": [
+            [
+              "Number",
+              "[[confirm]]"
+            ],
+            [
+              "Valid to",
+              "[[confirm]]"
+            ],
+            [
+              "Body",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "BR",
+          "name": "BRCGS / IFS Food",
+          "rows": [
+            [
+              "Grade",
+              "[[confirm]]"
+            ],
+            [
+              "Valid to",
+              "[[confirm]]"
+            ],
+            [
+              "Body",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "GR",
+          "name": "GRASP",
+          "rows": [
+            [
+              "Assessment",
+              "[[confirm]]"
+            ],
+            [
+              "Valid to",
+              "[[confirm]]"
+            ]
+          ]
+        },
+        {
+          "code": "SM",
+          "name": "SMETA / Sedex",
+          "rows": [
+            [
+              "Pillars",
+              "[[confirm]]"
+            ],
+            [
+              "Valid to",
+              "[[confirm]]"
+            ]
+          ]
+        }
+      ]
+    },
+    "facility": {
+      "eyebrow": "Facility & operations",
+      "title": "Where the work happens",
+      "sub": "Our own fields, our own packhouse, and containers loaded on site.",
+      "items": [
+        {
+          "caption": "The fields",
+          "desc": "Ridged rows in the Nile Delta, lifted crew by crew",
+          "image": "hero"
+        },
+        {
+          "caption": "Harvest",
+          "desc": "Lifted at maturity and kept separate by field and date",
+          "image": "roots"
+        },
+        {
+          "caption": "Grading",
+          "desc": "Checked against Class I before anything is packed",
+          "image": "basket"
+        },
+        {
+          "caption": "Packing",
+          "desc": "Cased into export cartons and lot-marked",
+          "image": "packhouse"
+        }
+      ],
+      "note": "These photographs stand in for our own facility shoot. Until then, you are welcome to audit the site in person or walk it with us on a video call. [[confirm]]"
+    },
+    "trust": {
+      "eyebrow": "Why buyers stay",
+      "title": "Four ways a produce import goes wrong",
+      "sub": "And what we have in place so it doesn’t happen to your container.",
+      "riskLabel": "Where shipments go wrong",
+      "fixLabel": "What we do about it",
+      "items": [
+        {
+          "risk": "Arrival quality doesn’t match the sample you approved.",
+          "fix": "Pre-shipment inspection with dated photos of the actual lot, sent before the container leaves."
+        },
+        {
+          "risk": "Certificates that can’t be checked — or belong to someone else.",
+          "fix": "Scheme number, validity and certifying body for every credential, so you can verify them at source."
+        },
+        {
+          "risk": "A gap in the cold chain that nobody can account for.",
+          "fix": "A data-logger in every reefer; the full temperature trace is handed over on arrival."
+        },
+        {
+          "risk": "Silence when the schedule slips.",
+          "fix": "One named contact who replies within four hours, Sunday to Friday."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "title": "Questions buyers ask us",
+      "items": [
+        {
+          "q": "Can we audit your farm and packhouse?",
+          "a": "Yes — in person or by video call, whenever suits you. We will also host a third-party audit at your request. [[confirm]]"
+        },
+        {
+          "q": "Which certifications do you actually hold?",
+          "a": "The schemes listed above, and only those. Numbers and validity dates are published here once the certifying body has confirmed them."
+        },
+        {
+          "q": "How is traceability recorded?",
+          "a": "Every carton carries a lot code that maps back to the field, the harvest date and the packing shift. We can trace forward or back within four hours."
+        },
+        {
+          "q": "Do you test for pesticide residues?",
+          "a": "Yes — against EU maximum residue limits under Regulation 396/2005, with a residue report available per shipment. [[confirm]]"
+        },
+        {
+          "q": "What happens if a load arrives out of spec?",
+          "a": "Send photos and the logger file within 24 hours of discharge. We assess the claim against our own pre-shipment record and settle it on the next shipment or by credit note. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Certifications check out?",
+      "sub": "Send your destination port and volume. A quote and the full documentation pack follow within four hours.",
+      "whatsapp": "Chat on WhatsApp",
+      "points": [
+        "Reply within 4 hours",
+        "Full document pack",
+        "Samples on request [[confirm]]"
+      ]
+    }
+  },
+  "contact": {
+    "breadcrumb": "Contact",
+    "breadcrumbHome": "Home",
+    "hero": {
+      "badge": "We reply within 4 hours, Sunday to Friday",
+      "title": "Talk to the people who grow it.",
+      "sub": "Send your destination port, volume and timing. Our export desk comes back with a price, a full spec sheet and a loading date — no account, no obligation.",
+      "ctaPrimary": "Send an enquiry",
+      "ctaSecondary": "Chat on WhatsApp",
+      "note": "One team answers, quotes and loads. You are never handed on.",
+      "imageAlt": "A grower standing in El Molouk's own fields at the start of the season",
+      "cardTitle": "Export desk",
+      "cardSub": "Sunday to Friday"
+    },
+    "strip": {
+      "items": [
+        "Reply within 4 hours",
+        "Sunday to Friday",
+        "Minimum order 5 t",
+        "Damietta · Alexandria · Safaga · Suez"
+      ]
+    },
+    "channels": {
+      "eyebrow": "Ways to reach us",
+      "title": "Choose how you'd like to talk",
+      "sub": "Every channel reaches the export desk directly — the same team that prices your container and loads it.",
+      "preferred": "Best for RFQs",
+      "items": [
+        {
+          "name": "E-mail",
+          "desc": "Specifications, price lists and documentation, in writing.",
+          "action": "Write to us"
+        },
+        {
+          "name": "Phone",
+          "desc": "Programme planning and anything that can't wait for an inbox.",
+          "action": "Call the export desk"
+        },
+        {
+          "name": "WhatsApp",
+          "desc": "Quick questions, photos from the packhouse and shipment updates.",
+          "action": "Open WhatsApp"
+        }
+      ],
+      "hoursTitle": "Business hours",
+      "hoursValue": "Sunday – Friday, [[confirm office hours]]",
+      "hoursNote": "Messages that arrive outside these hours are picked up at the start of the next working day. [[confirm]]"
+    },
+    "form": {
+      "eyebrow": "Request a quote",
+      "title": "Send your enquiry",
+      "sub": "Three details are enough to price a container: where it's going, how much you need, and when you need it.",
+      "stepsTitle": "What happens next",
+      "steps": [
+        {
+          "name": "You send the brief",
+          "desc": "Port, volume, timing. Two minutes, and no account to create."
+        },
+        {
+          "name": "We price it",
+          "desc": "A quote with the full spec sheet and packaging options, within 4 hours, Sunday to Friday."
+        },
+        {
+          "name": "We book the reefer",
+          "desc": "A loading date from Damietta, Alexandria, Safaga or Suez, cold chain monitored to your port."
+        }
+      ],
+      "asideTitle": "Prefer to chat?",
+      "asideDesc": "Send the same three details on WhatsApp and we'll take it from there.",
+      "asideCta": "Open WhatsApp",
+      "privacy": "Your details are used to answer this enquiry and nothing else. [[confirm privacy policy]]"
+    },
+    "company": {
+      "eyebrow": "Company details",
+      "title": "Who you're dealing with",
+      "sub": "The details buyers ask for before a first order — here, rather than on request.",
+      "items": [
+        {
+          "label": "Registered business",
+          "value": "[[confirm legal name + registration]]",
+          "desc": "Commercial registration and export licence numbers are shared on request."
+        },
+        {
+          "label": "Packhouse & office",
+          "value": "[[confirm packhouse address]]",
+          "desc": "Grading, packing and cold storage on one site in the Nile Delta."
+        },
+        {
+          "label": "Operating hours",
+          "value": "Sunday – Friday, [[confirm office hours]]",
+          "desc": "Harvest runs August to March; curing and cold storage keep supply year-round."
+        },
+        {
+          "label": "Export markets",
+          "value": "Europe-wide [[confirm market list]]",
+          "desc": "Regular container programmes into northern and western Europe."
+        }
+      ]
+    },
+    "location": {
+      "eyebrow": "Where we are",
+      "title": "Grown in the Nile Delta, shipped from four ports",
+      "sub": "Our packhouse and cold store sit in the Delta, with reefers loading at Damietta, Alexandria, Safaga and Suez.",
+      "mapLabel": "Map placeholder — packhouse location, Egypt. [[confirm]]",
+      "pin": "Packhouse [[confirm]]",
+      "rows": [
+        {
+          "label": "Address",
+          "value": "[[confirm packhouse address]]"
+        },
+        {
+          "label": "Loading ports",
+          "value": "Damietta · Alexandria · Safaga · Suez"
+        },
+        {
+          "label": "Export by",
+          "value": "Sea freight · land transport"
+        },
+        {
+          "label": "Minimum order",
+          "value": "5 metric tons"
+        },
+        {
+          "label": "Incoterms",
+          "value": "FOB · CFR · CIF · DAP"
+        }
+      ],
+      "note": "Packhouse visits and buyer audits are welcome by appointment. [[confirm]]"
+    },
+    "why": {
+      "eyebrow": "Why buyers write to us",
+      "title": "What you get before you've committed to anything",
+      "sub": "An enquiry costs you two minutes. Here is what comes back.",
+      "items": [
+        {
+          "title": "A reply in hours, not days",
+          "desc": "Every enquiry is answered within 4 hours, Sunday to Friday — with a price, not a brochure."
+        },
+        {
+          "title": "Export paperwork handled",
+          "desc": "Certificates, phytosanitary documents and reefer bookings are prepared by the team that packs the crate."
+        },
+        {
+          "title": "One team, field to port",
+          "desc": "We farm, cure, grade and load ourselves, so an answer about your container comes from the people holding it."
+        },
+        {
+          "title": "Your language",
+          "desc": "We correspond in seven languages, Arabic and English included."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Before you write",
+      "title": "Questions buyers ask first",
+      "items": [
+        {
+          "q": "What should I include in my enquiry?",
+          "a": "Destination port, volume and timing are enough for a first price. Packaging, labelling and programme dates can follow."
+        },
+        {
+          "q": "How quickly will I hear back?",
+          "a": "Within 4 hours, Sunday to Friday — with a quote and a full spec sheet."
+        },
+        {
+          "q": "Can I ask for samples?",
+          "a": "Tell us the calibre and packaging you want to see and we'll come back with the options. [[confirm sample policy]]"
+        },
+        {
+          "q": "Which Incoterms can you quote?",
+          "a": "FOB Damietta, Alexandria, Safaga or Suez; CFR and CIF to major EU ports; DAP by arrangement. [[confirm]]"
+        },
+        {
+          "q": "Do you work with first-time importers?",
+          "a": "Yes. Tell us where you are in the process — we quote a single container as readily as a season programme. [[confirm]]"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your first container starts with one message",
+      "sub": "Send the port, the volume and the timing. We'll come back with the price.",
+      "primary": "Send an enquiry",
+      "whatsapp": "Chat on WhatsApp",
+      "trust": [
+        "Reply within 4 hours",
+        "GLOBALG.A.P · BRCGS [[confirm]]",
+        "No obligation"
+      ]
+    }
+  }
+}
