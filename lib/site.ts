@@ -46,8 +46,24 @@ export const siteConfig = {
   domain: 'https://elmolouk.com',
   ...contact,
   legal: 'Kings For Import & Export', // [[confirm commercial registration no.]]
-  address: '[[confirm packhouse address]]',
-  /** ISO 3166-1 alpha-2. The only part of the address that is confirmed. */
+  /**
+   * Packhouse and office. Client-verified.
+   *
+   * Two scripts, one place: `addressAr` is the line as the client wrote it — what
+   * a local driver reads — and `address` is the same site spelled for the six
+   * Latin-script locales and for a map search. The footer picks by locale; the
+   * contact page carries its own per-locale line in `messages/`, which is why
+   * only the country name is localised there and not the street.
+   */
+  address: 'International Coastal Road, Motobas, Kafr El Sheikh, Egypt',
+  addressAr: 'مصر - كفر الشيخ - مطوبس - الطريق الدولي الساحلي',
+  /** The same address in parts — `PostalAddress` wants fields, not a line. */
+  addressParts: {
+    street: 'International Coastal Road',
+    locality: 'Motobas',
+    region: 'Kafr El Sheikh',
+  },
+  /** ISO 3166-1 alpha-2. */
   country: 'EG',
   /** `applicationName`, manifest `name`/`short_name`, and `og:site_name`. */
   shortName: 'El Molouk',

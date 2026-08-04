@@ -11,19 +11,19 @@
  * survives, so the emblem alone is the icon. The full lockup is kept for the
  * Open Graph cards, where there is room to read it.
  */
-import {mkdir, writeFile} from 'node:fs/promises';
-import {join, dirname} from 'node:path';
-import {fileURLToPath} from 'node:url';
-import sharp from 'sharp';
+import { mkdir, writeFile } from "node:fs/promises";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+import sharp from "sharp";
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const p = (...s) => join(ROOT, ...s);
 
 /** Brand tokens, mirrored from `app/globals.css`. Keep in sync by hand. */
-const CREAM = '#fbf5ea';
-const GOLD = '#c99a5b';
+const CREAM = "#fbf5ea";
+const GOLD = "#c99a5b";
 
-const SRC_LOCKUP = p('public/images/logo_english.png');
+const SRC_LOCKUP = p("public/images/logo_english.png");
 
 // ---------------------------------------------------------------------------
 // Emblem extraction
@@ -36,11 +36,11 @@ const SRC_LOCKUP = p('public/images/logo_english.png');
  * hard-coded so a re-exported logo with different margins still crops right.
  */
 async function emblemBox(src) {
-  const {data, info} = await sharp(src)
+  const { data, info } = await sharp(src)
     .ensureAlpha()
     .raw()
-    .toBuffer({resolveWithObject: true});
-  const {width: W, height: H, channels: C} = info;
+    .toBuffer({ resolveWithObject: true });
+  const { width: W, height: H, channels: C } = info;
   const inked = (x, y) => {
     const i = (y * W + x) * C;
     if (data[i + 3] < 32) return false;
@@ -72,7 +72,7 @@ async function emblemBox(src) {
       if (x > right) right = x;
     }
   }
-  return {left, top, width: right - left + 1, height: bottom - top + 1};
+  return { left, top, width: right - left + 1, height: bottom - top + 1 };
 }
 
 /**
@@ -89,7 +89,7 @@ async function squareEmblem(src) {
       bottom: side - box.height - Math.round((side - box.height) / 2),
       left: Math.round((side - box.width) / 2),
       right: side - box.width - Math.round((side - box.width) / 2),
-      background: {r: 0, g: 0, b: 0, alpha: 0},
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
     })
     .png()
     .toBuffer();
@@ -104,11 +104,11 @@ async function squareEmblem(src) {
 async function icon(emblem, size, inset, bg) {
   const art = Math.round(size * (1 - inset * 2));
   const scaled = await sharp(emblem)
-    .resize(art, art, {kernel: 'lanczos3', fit: 'contain'})
+    .resize(art, art, { kernel: "lanczos3", fit: "contain" })
     // The source emblem is 259px across; anything above ~1.5x picks up the
     // softness of the upscale. A light unsharp pass puts the edge back without
     // ringing on the gold gradient.
-    .sharpen({sigma: 0.6, m1: 0.4, m2: 0.9})
+    .sharpen({ sigma: 0.6, m1: 0.4, m2: 0.9 })
     .toBuffer();
 
   const base = sharp({
@@ -116,13 +116,13 @@ async function icon(emblem, size, inset, bg) {
       width: size,
       height: size,
       channels: 4,
-      background: bg ?? {r: 0, g: 0, b: 0, alpha: 0},
+      background: bg ?? { r: 0, g: 0, b: 0, alpha: 0 },
     },
   });
   const offset = Math.round((size - art) / 2);
   return (
     base
-      .composite([{input: scaled, top: offset, left: offset}])
+      .composite([{ input: scaled, top: offset, left: offset }])
       /*
         Palette-quantised, not truecolour. The emblem is two flat inks over a
         gold gradient, so 256 colours reproduce it with no visible banding while
@@ -130,7 +130,7 @@ async function icon(emblem, size, inset, bg) {
         looks: manifest icons are fetched on install, and Android pulls the 512
         before it will show the splash screen.
       */
-      .png({compressionLevel: 9, palette: true, quality: 100, effort: 10})
+      .png({ compressionLevel: 9, palette: true, quality: 100, effort: 10 })
       .toBuffer()
   );
 }
@@ -149,7 +149,7 @@ async function icon(emblem, size, inset, bg) {
  * the compatible encoding wins.
  */
 function buildIco(frames) {
-  const dibs = frames.map(({size, rgba}) => {
+  const dibs = frames.map(({ size, rgba }) => {
     const header = Buffer.alloc(40);
     header.writeUInt32LE(40, 0);
     header.writeInt32LE(size, 4);
@@ -177,7 +177,7 @@ function buildIco(frames) {
     // requires the rows to be present; zeroed means "use the alpha channel".
     const maskStride = Math.ceil(size / 32) * 4;
     const mask = Buffer.alloc(maskStride * size, 0);
-    return {size, data: Buffer.concat([header, pixels, mask])};
+    return { size, data: Buffer.concat([header, pixels, mask]) };
   });
 
   const dir = Buffer.alloc(6);
@@ -186,7 +186,7 @@ function buildIco(frames) {
   dir.writeUInt16LE(dibs.length, 4);
 
   let offset = 6 + dibs.length * 16;
-  const entries = dibs.map(({size, data}) => {
+  const entries = dibs.map(({ size, data }) => {
     const e = Buffer.alloc(16);
     e.writeUInt8(size === 256 ? 0 : size, 0);
     e.writeUInt8(size === 256 ? 0 : size, 1);
@@ -223,12 +223,12 @@ const PANEL = 508;
 
 async function ogCard(photo, out) {
   const lockup = await sharp(SRC_LOCKUP)
-    .resize({width: 336, kernel: 'lanczos3'})
+    .resize({ width: 336, kernel: "lanczos3" })
     .toBuffer();
   const lockupMeta = await sharp(lockup).metadata();
 
   const shot = await sharp(photo)
-    .resize(OG_W - PANEL, OG_H, {fit: 'cover', position: 'attention'})
+    .resize(OG_W - PANEL, OG_H, { fit: "cover", position: "attention" })
     .toBuffer();
 
   // A short cream-to-transparent feather so the photo does not butt hard
@@ -252,8 +252,8 @@ async function ogCard(photo, out) {
     },
   })
     .composite([
-      {input: shot, left: PANEL, top: 0},
-      {input: feather, left: PANEL, top: 0},
+      { input: shot, left: PANEL, top: 0 },
+      { input: feather, left: PANEL, top: 0 },
       {
         input: Buffer.from(
           `<svg width="4" height="${OG_H}" xmlns="http://www.w3.org/2000/svg">
@@ -269,19 +269,21 @@ async function ogCard(photo, out) {
         top: Math.round((OG_H - lockupMeta.height) / 2),
       },
     ])
-    .jpeg({quality: 88, chromaSubsampling: '4:4:4', mozjpeg: true})
+    .jpeg({ quality: 88, chromaSubsampling: "4:4:4", mozjpeg: true })
     .toFile(out);
 }
 
 // ---------------------------------------------------------------------------
 
 async function main() {
-  await mkdir(p('public/icons'), {recursive: true});
-  await mkdir(p('public/og'), {recursive: true});
+  await mkdir(p("public/icons"), { recursive: true });
+  await mkdir(p("public/og"), { recursive: true });
 
   const emblem = await squareEmblem(SRC_LOCKUP);
   const box = await emblemBox(SRC_LOCKUP);
-  console.log(`emblem source: ${box.width}x${box.height} at ${box.left},${box.top}`);
+  console.log(
+    `emblem source: ${box.width}x${box.height} at ${box.left},${box.top}`,
+  );
 
   // --- favicon.ico -------------------------------------------------------
   // Zero inset: 16px has no room to spend on margin, and the browser already
@@ -289,37 +291,40 @@ async function main() {
   const icoFrames = [];
   for (const size of [16, 32, 48]) {
     const png = await icon(emblem, size, 0.02, null);
-    const {data} = await sharp(png).ensureAlpha().raw().toBuffer({resolveWithObject: true});
-    icoFrames.push({size, rgba: data});
+    const { data } = await sharp(png)
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    icoFrames.push({ size, rgba: data });
   }
-  await writeFile(p('app/favicon.ico'), buildIco(icoFrames));
-  console.log('app/favicon.ico  16 + 32 + 48');
+  await writeFile(p("app/favicon.ico"), buildIco(icoFrames));
+  console.log("app/favicon.ico  16 + 32 + 48");
 
   // --- standalone PNG icons ---------------------------------------------
   const pngIcons = [
-    ['public/icons/icon-16.png', 16, 0.02, null],
-    ['public/icons/icon-32.png', 32, 0.02, null],
-    ['public/icons/icon-192.png', 192, 0.06, null],
-    ['public/icons/icon-512.png', 512, 0.06, null],
+    ["public/icons/icon-16.png", 16, 0.02, null],
+    ["public/icons/icon-32.png", 32, 0.02, null],
+    ["public/icons/icon-192.png", 192, 0.06, null],
+    ["public/icons/icon-512.png", 512, 0.06, null],
     // Apple composites the touch icon onto the home screen with no alpha
     // handling of its own, so a transparent icon lands on black. Opaque cream,
     // and more inset because iOS rounds the corners off what we send.
-    ['public/icons/apple-touch-icon.png', 180, 0.12, CREAM],
+    ["public/icons/apple-touch-icon.png", 180, 0.12, CREAM],
     // Maskable: Android crops to an arbitrary shape and only the middle 80%
     // is guaranteed to survive, so the emblem sits inside that safe circle.
-    ['public/icons/icon-maskable-512.png', 512, 0.22, CREAM],
-    ['public/icons/icon-maskable-192.png', 192, 0.22, CREAM],
+    ["public/icons/icon-maskable-512.png", 512, 0.22, CREAM],
+    ["public/icons/icon-maskable-192.png", 192, 0.22, CREAM],
   ];
   for (const [out, size, inset, bg] of pngIcons) {
     await writeFile(p(out), await icon(emblem, size, inset, bg));
-    console.log(`${out}  ${size}x${size}${bg ? ' opaque' : ''}`);
+    console.log(`${out}  ${size}x${size}${bg ? " opaque" : ""}`);
   }
 
   // --- Open Graph cards --------------------------------------------------
   const cards = [
-    ['public/images/hero.jpg', 'public/og/og-default.jpg'],
-    ['public/images/Beauregard.webp', 'public/og/og-product.jpg'],
-    ['public/images/factory.webp', 'public/og/og-quality.jpg'],
+    ["public/images/land.webp", "public/og/og-default.jpg"],
+    ["public/images/Beauregard.webp", "public/og/og-product.jpg"],
+    ["public/images/factory.webp", "public/og/og-quality.jpg"],
   ];
   for (const [photo, out] of cards) {
     await ogCard(p(photo), p(out));

@@ -141,10 +141,17 @@ export default async function LocaleLayout({
   const fontVariable = rtl ? cairo.variable : jakarta.variable;
 
   const messages = await getMessages();
+  /*
+    Only what a client component actually reads. `footer` is here for the two
+    legal links the RFQ form prints under the submit button: the form is a
+    client component, and naming the documents from the same namespace the
+    footer uses is what stops one site calling one document two things.
+  */
   const clientMessages = {
     nav: messages.nav,
     common: messages.common,
     rfqForm: messages.rfqForm,
+    footer: messages.footer,
   };
 
   return (

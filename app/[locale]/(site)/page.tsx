@@ -19,14 +19,12 @@ import {
   Anchor,
   Scale,
   MessageCircle,
-  MessageSquareQuote,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Eyebrow } from "@/components/Eyebrow";
 import { Photo } from "@/components/Photo";
-import { PlaceholderImage } from "@/components/PlaceholderImage";
 import { Wave } from "@/components/Wave";
 import { Faq } from "@/components/sections/Faq";
 import { PackagingGrid } from "@/components/sections/PackagingGrid";
@@ -55,14 +53,13 @@ import { pageMetadata } from "@/lib/seo";
   fails on. Const-asserted, a stale key is a type error.
 */
 const IMG = {
-  hero: "/images/hero.jpg",
+  hero: "/images/land.webp",
   flesh: "/images/Beauregard.webp",
   bellevue: "/images/Bellevue.webp",
   /** Lifted roots still in the soil — the harvest frame. */
-  roots: "/images/harvest.jpg",
+  roots: "/images/products.webp",
   /** The grading and packing floor, stacked with export cartons. */
   packhouse: "/images/factory.webp",
-  cooking: "/images/cooking.jpg",
   basket: "/images/basket.jpg",
 } as const;
 
@@ -71,28 +68,26 @@ type Shot = keyof typeof IMG;
 
 /**
  * The hero's journey strip, in the order the crop travels: roots lifted out of
- * the soil, the packing floor, then the table it is grown for. Captions and alt
+ * the soil, the packing floor, then the graded produce itself. Captions and alt
  * text live in the dictionaries; the shots stay here so seven files can't drift
  * out of step with each other.
+ *
+ * The third frame used to be a plated dish — `cooking.jpg`, which is a
+ * photograph of spaghetti squash. A picture of a different vegetable captioned
+ * as our own crop is the one thing a produce buyer spots instantly, so it is
+ * gone and the variety macro stands in its place.
  */
-const JOURNEY_SHOTS: Shot[] = ["roots", "packhouse", "cooking"];
+const JOURNEY_SHOTS: Shot[] = ["roots", "packhouse", "flesh"];
 
 /**
- * The product journey, field to vessel, in the order it happens.
+ * The product journey, field to packing floor, in the order it happens.
  *
- * `null` marks a stage El Molouk has no photograph of yet. Those cells render a
- * labelled placeholder rather than a stand-in from another stage: a cold store
- * illustrated with a packing shot is a claim about a facility we have not shown.
+ * The strip runs only as far as El Molouk has photographs. Cold store, loading
+ * and shipping used to sit here as labelled empty frames; the section now stops
+ * where the pictures do rather than advertising the gaps. Index-paired with
+ * `gallery.steps` in the dictionaries — add a shot here and its caption there.
  */
-const GALLERY_SHOTS: (Shot | null)[] = [
-  "hero",
-  "roots",
-  "basket",
-  "packhouse",
-  null,
-  null,
-  null,
-];
+const GALLERY_SHOTS: Shot[] = ["hero", "roots", "basket", "packhouse"];
 
 const WHY_ICONS = [
   Sprout,
@@ -131,7 +126,6 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
-  const tc = await getTranslations("common");
 
   const trust = t.raw("trust.items") as string[];
   const journey = t.raw("hero.journey") as { caption: string; alt: string }[];
@@ -293,10 +287,10 @@ export default async function HomePage({
                 {t("hero.storyP2")}
               </RevealItem>
               {/*
-                A rule and a shift in weight is all the quote gets. The oversized
-                quotation glyph belongs to the customer reviews further down,
-                where the words are somebody else's; this line is the house
-                speaking, so it is set as type rather than as a testimonial.
+                A rule and a shift in weight is all the quote gets. No oversized
+                quotation glyph: that mark belongs to words that are somebody
+                else's, and this line is the house speaking — so it is set as
+                type rather than dressed as a testimonial.
               */}
               <RevealItem className="mt-8 max-w-[33rem] border-s-2 border-sweet/45 ps-5 lg:ps-6">
                 <blockquote className="text-[18px] font-semibold leading-[1.6] text-soil rtl:leading-[1.8] lg:text-[20px]">
@@ -682,13 +676,9 @@ export default async function HomePage({
       {/* ============ THE JOURNEY ============ */}
       {/*
         Was a scrapbook mosaic in no particular order. It is now the export
-        journey in sequence — field, harvest, sorting, packing, cold store,
-        loading, shipping — which is what a buyer is actually trying to picture,
-        and it is an <ol> because the order is the content.
-
-        The last three stages have no photograph yet and say so. A labelled
-        placeholder is the honest answer; borrowing the packhouse shot for a
-        cold store would be showing a buyer a facility we have not shown them.
+        journey in sequence — field, harvest, sorting, packing — which is what a
+        buyer is actually trying to picture, and it is an <ol> because the order
+        is the content. It runs as far as the photographs do; see GALLERY_SHOTS.
       */}
       <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
         <Reveal className="max-w-[46ch]">
@@ -703,82 +693,22 @@ export default async function HomePage({
           className="mt-10 grid grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-3 sm:gap-x-4 lg:grid-cols-4"
           stagger={STAGGER.tight}
         >
-          {gallery.map((step, i) => {
-            const shot = GALLERY_SHOTS[i];
-            return (
-              <RevealItem as="li" key={step.caption}>
-                {shot ? (
-                  <Photo
-                    src={IMG[shot]}
-                    alt={step.alt}
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="aspect-[4/3] rounded-2xl shadow-sm"
-                  />
-                ) : (
-                  <PlaceholderImage
-                    tone={i % 2 ? "cure" : "crate"}
-                    tag={tc("awaitingPhoto")}
-                    label={step.alt}
-                    rounded="rounded-2xl"
-                    className="aspect-[4/3]"
-                  />
-                )}
-                <span className="mt-2.5 block text-[11.5px] font-bold uppercase tracking-[0.1em] text-ink-soft rtl:tracking-normal">
-                  {step.caption}
-                </span>
-              </RevealItem>
-            );
-          })}
+          {/* Driven by GALLERY_SHOTS, not the dictionary: the strip is as long
+              as the photography, and a caption without a frame draws nothing. */}
+          {GALLERY_SHOTS.map((shot, i) => (
+            <RevealItem as="li" key={shot}>
+              <Photo
+                src={IMG[shot]}
+                alt={gallery[i].alt}
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                className="aspect-[4/3] rounded-2xl shadow-sm"
+              />
+              <span className="mt-2.5 block text-[11.5px] font-bold uppercase tracking-[0.1em] text-ink-soft rtl:tracking-normal">
+                {gallery[i].caption}
+              </span>
+            </RevealItem>
+          ))}
         </RevealGroup>
-        <Reveal className="mt-6" delay={0.08}>
-          <p className="max-w-[62ch] text-[13px] leading-relaxed text-ink-soft/80">
-            {t("gallery.note")}
-          </p>
-        </Reveal>
-      </section>
-
-      {/* ============ REVIEWS ============ */}
-      <section className="bg-sand">
-        <Wave fill="fill-cream" />
-        <div className="mx-auto max-w-7xl px-6 pb-16 lg:px-10 lg:pb-24">
-          <Reveal className="max-w-[44ch]">
-            <Eyebrow>{t("reviews.eyebrow")}</Eyebrow>
-            <h2 className="mt-4 text-[clamp(25px,6.8vw,30px)] font-extrabold tracking-tight lg:text-[40px]">
-              {t("reviews.title")}
-            </h2>
-          </Reveal>
-          {/*
-            Three reserved slots, not three testimonials. The cards used to
-            carry written-for-us quotes, five gold stars and "[[confirm name]]"
-            where a buyer's name belongs — invented praise attributed to nobody.
-            They now say plainly what they are waiting for. Nothing here is
-            dressed as a quotation: no quote glyph, no star rating, no rule
-            under a name that does not exist.
-          */}
-          <RevealGroup className="mt-10 grid gap-5 md:grid-cols-3">
-            {[0, 1, 2].map((i) => (
-              <RevealItem
-                key={i}
-                distance={RISE.card}
-                className="flex flex-col rounded-3xl border border-dashed border-line bg-card/60 p-6"
-              >
-                <span className="inline-flex w-fit items-center gap-1.5 rounded-md border border-dashed border-gold bg-gold/8 px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.1em] text-ink-soft rtl:tracking-normal">
-                  <MessageSquareQuote className="h-3.5 w-3.5" aria-hidden />
-                  {tc("placeholderTag")}
-                </span>
-                <h3 className="mt-4 text-[16px] font-bold text-ink-soft">
-                  {t("reviews.cardTitle")}
-                </h3>
-                <p className="mt-2 text-[14px] leading-relaxed text-ink-soft/85">
-                  {t("reviews.cardBody")}
-                </p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-          <p className="mt-4 text-[11px] text-ink-soft/70">
-            {t("reviews.note")}
-          </p>
-        </div>
       </section>
 
       {/* ============ SHIPPING ============ */}

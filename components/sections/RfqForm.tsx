@@ -2,19 +2,26 @@
 
 import {useState, type FormEvent, type ReactNode} from 'react';
 import {useTranslations} from 'next-intl';
-import {ArrowRight, CircleAlert, CircleCheck} from 'lucide-react';
+import {ArrowRight, CircleAlert, CircleCheck, Mail, MessageCircle} from 'lucide-react';
+import {Link} from '@/i18n/navigation';
 import {Label} from '@/components/ui/label';
 import {Input} from '@/components/ui/input';
 import {Select} from '@/components/ui/select';
 import {Textarea} from '@/components/ui/textarea';
-import {Button} from '@/components/ui/button';
+import {Button, buttonVariants} from '@/components/ui/button';
 import {siteConfig} from '@/lib/site';
 import {cn} from '@/lib/utils';
 
 /**
- * RFQ form. Frontend-only: on submit it opens a pre-filled WhatsApp thread
- * (the conversion path in the approved design) and shows a confirmation.
- * [[confirm: also POST to an email/CRM endpoint when a backend exists]]
+ * RFQ form. Frontend-only: there is no server endpoint behind it, so it never
+ * claims the enquiry was *sent*. On submit it composes the message, opens a
+ * pre-filled WhatsApp thread (the conversion path in the approved design) and
+ * says the request is *ready to send* — then hands over both the WhatsApp link
+ * and a pre-filled mailto as real, clickable fallbacks.
+ *
+ * That branch matters more than it looks: `window.open` returns null under a
+ * popup blocker, and a corporate procurement desk is exactly where popups are
+ * blocked. Claiming success there would lose the enquiry silently.
  */
 
 /** The three answers a container cannot be priced without. */
@@ -59,7 +66,9 @@ export function RfqForm({
   className?: string;
 }) {
   const t = useTranslations('rfqForm');
-  const [submitted, setSubmitted] = useState(false);
+  const tf = useTranslations('footer');
+  /** The composed request, kept so the confirmation can offer it again. */
+  const [sent, setSent] = useState<{whatsapp: string; email: string} | null>(null);
   /** Which required fields came back wrong, and what to say about each. */
   const [errors, setErrors] = useState<Partial<Record<RequiredField, string>>>({});
   const incoterms = t.raw('incotermOptions') as string[];
@@ -99,8 +108,9 @@ export function RfqForm({
     }
 
     setErrors({});
+    const subject = 'RFQ — El Molouk';
     const lines = [
-      'RFQ — El Molouk',
+      subject,
       `Product: ${data.get('product') ?? 'Sweet potato'}`,
       `Port: ${port}`,
       `Volume: ${volume}`,
@@ -108,12 +118,15 @@ export function RfqForm({
       `Email: ${email}`,
       data.get('message') ? `Message: ${data.get('message')}` : '',
     ].filter(Boolean);
-    const url = `${siteConfig.whatsapp}?text=${encodeURIComponent(lines.join('\n'))}`;
-    window.open(url, '_blank', 'noopener');
-    setSubmitted(true);
+    const body = lines.join('\n');
+    setSent({
+      whatsapp: `${siteConfig.whatsapp}?text=${encodeURIComponent(body)}`,
+      email: `${siteConfig.emailHref}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+    });
+    window.open(`${siteConfig.whatsapp}?text=${encodeURIComponent(body)}`, '_blank', 'noopener');
   }
 
-  if (submitted) {
+  if (sent) {
     return (
       <div className={cn('rounded-3xl border border-leaf/25 bg-leaf/8 p-6 text-center', className)}>
         <span className="mx-auto grid h-12 w-12 place-items-center rounded-2xl bg-leaf/15 text-leaf-deep">
@@ -123,6 +136,26 @@ export function RfqForm({
         <p className="mx-auto mt-2 max-w-[46ch] text-[14px] leading-relaxed text-ink-soft">
           {t('successNote')}
         </p>
+        {/* Both routes stay open. If the popup was blocked the buyer has lost
+            nothing — the same composed message is one click away here. */}
+        <div className="mt-5 flex flex-wrap justify-center gap-3">
+          <a
+            href={sent.whatsapp}
+            target="_blank"
+            rel="noopener"
+            className={cn(buttonVariants({size: 'sm'}), 'min-h-11')}
+          >
+            <MessageCircle className="h-4 w-4" aria-hidden />
+            {t('openWhatsApp')}
+          </a>
+          <a
+            href={sent.email}
+            className={cn(buttonVariants({variant: 'outline', size: 'sm'}), 'min-h-11')}
+          >
+            <Mail className="h-4 w-4" aria-hidden />
+            {t('sendEmail')}
+          </a>
+        </div>
       </div>
     );
   }
@@ -264,6 +297,20 @@ export function RfqForm({
         <p className="flex items-center gap-2 border-t border-line pt-3 text-[12px] text-ink-soft">
           <span aria-hidden className="h-2 w-2 shrink-0 rounded-full bg-wa" />
           {t('trust')}
+        </p>
+
+        {/* The two documents, at the point where the buyer parts with an
+            e-mail address. Labels come from the footer namespace so the same
+            document is called the same thing wherever it is linked. */}
+        <p className="text-[12px] leading-relaxed text-ink-soft">
+          {t('legalNote')}{' '}
+          <Link href="/terms" className="font-semibold underline-offset-2 hover:underline">
+            {tf('terms')}
+          </Link>
+          {' · '}
+          <Link href="/privacy" className="font-semibold underline-offset-2 hover:underline">
+            {tf('privacy')}
+          </Link>
         </p>
       </div>
     </form>

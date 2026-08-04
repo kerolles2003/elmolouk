@@ -34,8 +34,9 @@ export function PackagingGrid({items}: {items: {title: string; specs: string[][]
                 <Fragment key={j}>
                   <dt className="text-ink-soft">{label}</dt>
                   {/* `text-end`, not `text-right` — the column flips in Arabic.
-                      Pallet and container counts are not verified yet, so they
-                      arrive bracketed and are drawn as open slots. */}
+                      Container capacity is a range, not a fixed count, so the
+                      value wraps rather than sitting on one line. Anything still
+                      bracketed is drawn as an open slot by `ConfirmValue`. */}
                   <dd className="flex justify-end text-end font-bold tabular-nums">
                     <ConfirmValue value={value} />
                   </dd>

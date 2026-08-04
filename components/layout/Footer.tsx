@@ -1,5 +1,5 @@
 import type {ReactNode} from 'react';
-import {getTranslations} from 'next-intl/server';
+import {getLocale, getTranslations} from 'next-intl/server';
 import {Mail, MapPin, MessageCircle, Phone} from 'lucide-react';
 import {Link} from '@/i18n/navigation';
 import {Brand} from './Brand';
@@ -66,6 +66,7 @@ export async function Footer() {
   const t = await getTranslations('footer');
   const tn = await getTranslations('nav');
   const tc = await getTranslations('common');
+  const locale = await getLocale();
   const year = new Date().getFullYear();
 
   return (
@@ -78,7 +79,10 @@ export async function Footer() {
           </p>
           <p className="mt-4 inline-flex items-center gap-2 text-[13px] text-cream/60">
             <MapPin className="h-4 w-4 text-amber" aria-hidden />
-            {siteConfig.address}
+            {/* Unlike the phone and the e-mail, an address is words, not digits —
+                so the Arabic page gets the Arabic line rather than a
+                transliteration the reader would have to decode. */}
+            {locale === 'ar' ? siteConfig.addressAr : siteConfig.address}
           </p>
           {/* The three ways to reach the export desk, together and above the
               fold of the footer rather than buried in the logistics column. */}
@@ -137,9 +141,22 @@ export async function Footer() {
         </Col>
       </div>
       <div className="border-t border-cream/10">
-        <div className="mx-auto max-w-7xl px-6 py-5 text-[12px] text-cream/55 lg:px-10">
-          © {year} {siteConfig.name} · {t('rights')} ·{' '}
-          <span className="text-cream/70">{siteConfig.legal}</span>
+        {/* Copyright line and the two legal documents on one bar. They wrap to
+            their own line on a phone rather than becoming a fifth column: a
+            procurement team looks for them here, at the very foot. */}
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-6 py-5 text-[12px] text-cream/55 lg:px-10">
+          <span>
+            © {year} {siteConfig.name} · {t('rights')} ·{' '}
+            <span className="text-cream/70">{siteConfig.legal}</span>
+          </span>
+          <span className="flex items-center gap-x-4">
+            <Link href="/privacy" className="transition-colors hover:text-cream">
+              {t('privacy')}
+            </Link>
+            <Link href="/terms" className="transition-colors hover:text-cream">
+              {t('terms')}
+            </Link>
+          </span>
         </div>
       </div>
     </footer>

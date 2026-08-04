@@ -61,6 +61,16 @@
         "WhatsApp equipa de exportação"
       ]
     }
+  ,
+    "privacy": {
+      "title": "Política de Privacidade",
+      "description": "Como a El Molouk trata os dados pessoais dos pedidos de compradores — o que recolhemos, porquê, durante quanto tempo e que direitos tem."
+    }
+  ,
+    "terms": {
+      "title": "Termos e Condições",
+      "description": "Condições de utilização do site da El Molouk e tratamento de propostas, encomendas, certificados e reclamações para compradores profissionais."
+    }
   },
   "nav": {
     "sweetPotatoes": "Batatas-doces",
@@ -74,7 +84,7 @@
   },
   "common": {
     "requestQuote": "Pedir orçamento",
-    "downloadSpecSheet": "Descarregar ficha técnica",
+    "downloadSpecSheet": "Solicitar ficha técnica",
     "whatsapp": "Fale connosco por WhatsApp",
     "whatsappShort": "WhatsApp",
     "phone": "Telefone",
@@ -82,9 +92,7 @@
     "viewSpecifications": "Ver especificações",
     "getMyQuote": "Quero o meu orçamento de exportação",
     "replyWithin": "Respondemos em menos de 4 horas",
-    "placeholderTag": "Marcador",
-    "confirm": "[[confirm]]",
-    "awaitingPhoto": "Fotografia pendente"
+    "placeholderTag": "Mediante pedido"
   },
   "home": {
     "hero": {
@@ -98,8 +106,8 @@
       "ctaPrimary": "Pedir orçamento",
       "ctaSecondary": "Conheça os nossos produtos",
       "imageAlt": "Fileiras de uma plantação de batata-doce que se estendem até ao horizonte sob um céu aberto",
-      "stat1Value": "30 000 t",
-      "stat1Label": "colhidas em cada campanha",
+      "stat1Value": "ago – dez",
+      "stat1Label": "pico da colheita",
       "stat2Value": "Reino Unido e Europa",
       "stat2Label": "exportamos para",
       "journey": [
@@ -112,8 +120,8 @@
           "alt": "Caixas de batata-doce calibrada a encher o centro de embalagem"
         },
         {
-          "caption": "À mesa",
-          "alt": "Um prato feito com batata-doce, pronto a servir"
+          "caption": "O produto",
+          "alt": "Batata-doce cortada mostrando a polpa alaranjada"
         }
       ]
     },
@@ -123,7 +131,7 @@
         "BRCGS / IFS",
         "GRASP",
         "Cadeia de frio monitorizada",
-        "Fornecimento todo o ano"
+        "Fornecimento a partir de câmara"
       ]
     },
     "featured": {
@@ -161,11 +169,11 @@
         },
         {
           "title": "Certificados e auditados",
-          "desc": "GLOBALG.A.P., BRCGS/IFS e GRASP [[confirm]] — verificáveis, nunca apenas declarados."
+          "desc": "GLOBALG.A.P., BRCGS/IFS e GRASP — cópias dos certificados mediante pedido."
         },
         {
           "title": "Fornecimento todo o ano",
-          "desc": "Uma colheita de agosto–março, prolongada pela cura e pela conservação em casa de fresco."
+          "desc": "Pico da colheita de agosto a dezembro, prolongado pela cura e pela câmara frigorífica."
         },
         {
           "title": "Cadeia de frio intacta",
@@ -187,7 +195,7 @@
       "p1": "A El Molouk nasceu de uma convicção simples: que o delta do Nilo produz algumas das melhores batatas-doces do mundo e que os compradores europeus merecem recebê-las no seu ponto mais fresco.",
       "p2": "Hoje cultivamos, curamos, calibramos e expedimos tudo nós próprios — para que a batata-doce que sai da nossa central de embalamento seja a mesma pela qual os seus clientes voltam.",
       "cta": "Conheça o nosso processo de qualidade",
-      "imageAlt": "Batata-doce arrancada dos camalhões das nossas próprias parcelas no delta do Nilo"
+      "imageAlt": "Batata-doce arrancada dos camalhões de um campo no delta do Nilo"
     },
     "process": {
       "eyebrow": "Como o fazemos",
@@ -226,16 +234,16 @@
       "sub": "Um produto que se vende sozinho — saudável, versátil e cheio de cor.",
       "items": [
         {
-          "title": "Rica em vitamina A",
-          "desc": "Aquela polpa laranja-intenso é riquíssima em betacaroteno."
+          "title": "Cor naturalmente intensa",
+          "desc": "Essa polpa laranja intensa é exatamente o que compradores e os seus clientes procuram."
         },
         {
           "title": "Doce por natureza",
           "desc": "A cura realça um sabor amelado, sem quaisquer aditivos."
         },
         {
-          "title": "Rica em fibra",
-          "desc": "Um alimento saudável que os seus clientes já compram."
+          "title": "Fonte de fibra",
+          "desc": "Um básico que os seus clientes já compram."
         },
         {
           "title": "Infinitamente versátil",
@@ -246,8 +254,7 @@
     "gallery": {
       "eyebrow": "Da exploração",
       "title": "O percurso, por ordem",
-      "sub": "Do campo ao navio, pela ordem em que realmente acontece.",
-      "note": "Os quadros assinalados estão reservados às fotografias da própria El Molouk destas fases. [[confirm: encomendar as imagens de seleção, câmara, carga e expedição]]",
+      "sub": "Do campo à central, pela ordem em que realmente acontece.",
       "steps": [
         {
           "caption": "No campo",
@@ -264,27 +271,8 @@
         {
           "caption": "Embalagem",
           "alt": "Caixas de batata-doce calibrada a encher o centro de embalagem"
-        },
-        {
-          "caption": "Câmara frigorífica",
-          "alt": "Câmara frigorífica — paletes mantidas a 12–14 °C"
-        },
-        {
-          "caption": "Carga",
-          "alt": "Carga para exportação — caixas a entrar num reefer pré-arrefecido"
-        },
-        {
-          "caption": "Expedição",
-          "alt": "Expedição — o contentor a sair de um porto egípcio"
         }
       ]
-    },
-    "reviews": {
-      "eyebrow": "Nas palavras deles",
-      "title": "O que dizem os nossos compradores",
-      "cardTitle": "Reservado a um testemunho verificado",
-      "cardBody": "Só publicamos as palavras de um comprador depois de esse comprador as aprovar por escrito, com o seu nome e a sua empresa. Até lá, este espaço fica vazio.",
-      "note": "[[confirm: recolher testemunhos assinados de compradores identificados]]"
     },
     "shipping": {
       "eyebrow": "Como lhe chega",
@@ -319,7 +307,7 @@
         },
         {
           "q": "Em que embalagem exportam?",
-          "a": "Caixas de exportação de 3 kg e 6 kg, e caixas grandes de exportação de 10 kg. Apenas exportação a granel — não fornecemos embalagem de retalho nem de consumo."
+          "a": "Exportamos batata-doce em caixas de 3 kg, 6 kg e 10 kg, com especificações de embalagem adaptadas aos requisitos de cada cliente. Um contentor reefer de 40 pés comporta normalmente cerca de 6.500–7.000 caixas de 3 kg, 3.500–4.000 caixas de 6 kg ou 2.000–2.200 caixas de 10 kg. As quantidades reais podem variar ligeiramente consoante as dimensões finais da caixa e a configuração de embalagem."
         },
         {
           "q": "De que portos carregam?",
@@ -340,7 +328,7 @@
     "packaging": {
       "eyebrow": "Embalagem de exportação",
       "title": "Três formatos de exportação",
-      "sub": "Apenas embalagem de exportação a granel. Não oferecemos embalagem de retalho, formatos de consumo nem apresentações prontas para linear.",
+      "sub": "Apenas embalagem de exportação a granel. Não oferecemos embalagem de retalho, formatos de consumo nem apresentações prontas para linear. A capacidade do contentor varia consoante as dimensões da caixa e a configuração de carga.",
       "moq": "Fornecimento por contrato · encomenda mínima 5 toneladas"
     }
   },
@@ -355,6 +343,10 @@
     "rights": "Todos os direitos reservados.",
     "freight": "Frete marítimo · transporte terrestre",
     "moq": "Encomenda mínima 5 t"
+  ,
+    "privacy": "Privacidade"
+  ,
+    "terms": "Termos e Condições"
   },
   "rfqForm": {
     "heading": "Pedir orçamento",
@@ -367,21 +359,16 @@
     "volume": "Volume",
     "volumePlaceholder": "A partir de 5 t",
     "incoterm": "Incoterm",
-    "incotermOptions": [
-      "CIF",
-      "CFR",
-      "FOB",
-      "DAP"
-    ],
+    "incotermOptions": ["CIF", "CFR", "FOB", "DAP"],
     "email": "E-mail da empresa",
     "emailPlaceholder": "nome@empresa.com",
     "message": "Mensagem",
     "messagePlaceholder": "Calendário, formato de embalagem, destino…",
     "submit": "Quero o meu orçamento de exportação",
-    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · ou por WhatsApp",
+    "trust": "GLOBALG.A.P · BRCGS · ou por WhatsApp",
     "errorRequired": "Por favor, preencha os campos obrigatórios.",
-    "success": "Obrigado — o seu pedido está pronto.",
-    "successNote": "Abrimos o WhatsApp para que o possa enviar agora; a nossa equipa de exportação responde em menos de 4 horas. [[confirm: also wire the form to email/CRM]]",
+    "success": "O seu pedido está pronto a enviar.",
+    "successNote": "Preparámos o seu pedido e abrimos o WhatsApp para que o possa enviar à nossa equipa de exportação. Se o WhatsApp não abriu, use o botão abaixo ou envie-nos os mesmos dados por e-mail — respondemos em 4 horas, de domingo a sexta-feira.",
     "legendNeed": "O que precisa",
     "legendReach": "Para onde enviamos o orçamento",
     "optional": "opcional",
@@ -390,7 +377,10 @@
     "errorEmail": "Acrescente um e-mail para lhe podermos enviar o orçamento.",
     "errorEmailFormat": "Verifique o e-mail — parece incompleto.",
     "productOther": "Outra",
-    "moqNote": "Encomenda mínima 5 toneladas."
+    "moqNote": "Encomenda mínima 5 toneladas.",
+    "legalNote": "Ao enviar este pedido aceita os nossos",
+    "openWhatsApp": "Abrir o WhatsApp",
+    "sendEmail": "Enviar antes por e-mail"
   },
   "product": {
     "breadcrumb": "Batatas-doces",
@@ -407,8 +397,8 @@
       "kicker": "Polpa laranja · Beauregard e Bellevue",
       "title": "Batatas-doces egípcias de polpa alaranjada.",
       "sub": "Categoria I, curada para aprofundar a doçura, calibrada e embalada para exportação a granel sob cadeia de frio monitorizada. Especificações completas abaixo — ou peça proposta para o seu porto e volume.",
-      "imageAlt": "Batata-doce Beauregard cortada ao meio, mostrando a polpa alaranjada luminosa e a casca com vestígios de terra, com luz lateral natural sobre madeira mate. [[confirm: replace with real macro]]",
-      "availability": "Disponível quase todo o ano",
+      "imageAlt": "Batata-doce Beauregard cortada ao meio, com polpa laranja e casca com vestígios de terra.",
+      "availability": "Pico da colheita ago–dez",
       "highlights": [
         {
           "label": "Categoria",
@@ -428,16 +418,11 @@
         }
       ]
     },
-    "downloadSpec": "Descarregar ficha técnica (PDF)",
+    "downloadSpec": "Ficha técnica do produto disponível mediante pedido",
     "varieties": {
       "title": "Variedades",
       "lead": "Duas variedades de polpa laranja, ambas de polpa intensa e calibradas para exportação.",
-      "head": [
-        "Variedade",
-        "Polpa",
-        "Casca",
-        "Perfil"
-      ],
+      "head": ["Variedade", "Polpa", "Casca", "Perfil"],
       "rows": [
         [
           "Beauregard",
@@ -445,73 +430,47 @@
           "Cobre rosado",
           "Doce e macia — a referência na UE"
         ],
-        [
-          "Bellevue",
-          "Laranja",
-          "Cobre",
-          "Calibre uniforme, longa conservação"
-        ]
+        ["Bellevue", "Laranja", "Cobre", "Calibre uniforme, longa conservação"]
       ]
     },
     "calibre": {
       "title": "Calibre e categoria — Categoria I",
       "lead": "A categoria I é o nosso mínimo em cada caixa. A tabela de calibres está a ser confirmada com o nosso centro de embalagem e será publicada aqui assim que estiver verificada.",
-      "placeholder": "Tabela de calibres e tamanhos — reservada aos valores verificados",
-      "note": "Preferimos deixar em branco a publicar um calibre que não consigamos manter em todas as paletes. Peça a ficha de calibragem ao nosso departamento de exportação. [[confirm: tabela oficial de calibres e tamanhos]]",
+      "placeholder": "As especificações de calibre e tamanho estão disponíveis mediante pedido",
+      "note": "A calibragem é acordada por encomenda e confirmada por escrito antes da carga. A nossa equipa de exportação envia a especificação de calibre e tamanho em vigor para o seu mercado juntamente com a proposta.",
       "cta": "Pedir a ficha de calibragem"
     },
     "packaging": {
       "title": "Embalagem de exportação",
-      "lead": "Apenas embalagem de exportação a granel. Não oferecemos embalagem de retalho, formatos de consumo nem apresentações prontas para linear.",
+      "lead": "Apenas embalagem de exportação a granel. Não oferecemos embalagem de retalho, formatos de consumo nem apresentações prontas para linear. A capacidade do contentor varia consoante as dimensões da caixa e a configuração de carga.",
       "items": [
         {
           "title": "Caixa de exportação — 3 kg",
           "specs": [
+            ["Líquido", "3 kg"],
             [
-              "Líquido",
-              "3 kg"
-            ],
-            [
-              "Por palete",
-              "[[confirm]]"
-            ],
-            [
-              "Por 40'",
-              "[[confirm]]"
+              "Capacidade por contentor",
+              "Aproximadamente 6.500–7.000 caixas por reefer de 40'"
             ]
           ]
         },
         {
           "title": "Caixa de exportação — 6 kg",
           "specs": [
+            ["Líquido", "6 kg"],
             [
-              "Líquido",
-              "6 kg"
-            ],
-            [
-              "Por palete",
-              "[[confirm]]"
-            ],
-            [
-              "Por 40'",
-              "[[confirm]]"
+              "Capacidade por contentor",
+              "Aproximadamente 3.500–4.000 caixas por reefer de 40'"
             ]
           ]
         },
         {
           "title": "Caixa grande de exportação — 10 kg",
           "specs": [
+            ["Líquido", "10 kg"],
             [
-              "Líquido",
-              "10 kg"
-            ],
-            [
-              "Por palete",
-              "[[confirm]]"
-            ],
-            [
-              "Por 40'",
-              "[[confirm]]"
+              "Capacidade por contentor",
+              "Aproximadamente 2.000–2.200 caixas por reefer de 40'"
             ]
           ]
         }
@@ -521,33 +480,27 @@
     "container": {
       "title": "Carga em contentor",
       "head": [
-        "Contentor",
-        "Paletes",
-        "Caixas",
-        "Peso líquido"
+        "Formato de caixa",
+        "Caixas por reefer de 40'",
+        "Peso líquido por caixa"
       ],
       "rows": [
+        ["Caixa de exportação 3 kg", "Aproximadamente 6.500–7.000", "3 kg"],
+        ["Caixa de exportação 6 kg", "Aproximadamente 3.500–4.000", "6 kg"],
         [
-          "Reefer 20'",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
-        ],
-        [
-          "Reefer 40'",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
+          "Caixa grande de exportação 10 kg",
+          "Aproximadamente 2.000–2.200",
+          "10 kg"
         ]
       ],
-      "note": "Os valores de carga são confirmados por formato e destino no momento da proposta. [[confirm: contagens verificadas de paletes e caixas]]"
+      "note": "Os valores referem-se a um reefer de 40' e são confirmados por formato e destino em cada proposta. Reefers de 20' e cargas mistas são cotados mediante pedido."
     },
     "season": {
       "title": "Campanha e disponibilidade",
-      "lead": "Pico de colheita de ago.–dez.; a casa de fresco prolonga o fornecimento a quase todo o ano.",
+      "lead": "Pico da colheita ago–dez; a câmara frigorífica prolonga o fornecimento pelos meses seguintes.",
       "peakLabel": "Pico de colheita",
       "storeLabel": "Fornecimento em casa de fresco",
-      "note": "prolongável a quase todo o ano."
+      "note": "prolongado pela cura e pelo frio."
     },
     "postHarvest": {
       "title": "Pós-colheita e cadeia de frio",
@@ -592,10 +545,10 @@
         "GLOBALG.A.P",
         "BRCGS / IFS",
         "GRASP",
-        "ISO 22000",
-        "Fitossanitário"
+        "SMETA",
+        "Certificado fitossanitário"
       ],
-      "note": "[[confirm certification]]"
+      "note": "As cópias dos certificados estão disponíveis mediante pedido para compradores qualificados."
     },
     "gallery": {
       "title": "Do campo ao navio",
@@ -628,21 +581,21 @@
         },
         {
           "q": "Em que embalagem exportam?",
-          "a": "Caixas de exportação de 3 kg e 6 kg, e caixas grandes de exportação de 10 kg. Apenas exportação a granel — sem embalagem de retalho ou de consumo."
+          "a": "Exportamos batata-doce em caixas de 3 kg, 6 kg e 10 kg, com especificações de embalagem adaptadas aos requisitos de cada cliente. Um contentor reefer de 40 pés comporta normalmente cerca de 6.500–7.000 caixas de 3 kg, 3.500–4.000 caixas de 6 kg ou 2.000–2.200 caixas de 10 kg. As quantidades reais podem variar ligeiramente consoante as dimensões finais da caixa e a configuração de embalagem."
         },
         {
           "q": "De que portos carregam?",
-          "a": "Damietta, Alexandria, Safaga e Suez, por frete marítimo ou transporte terrestre. Cotamos FOB, CFR e CIF; DAP por acordo. [[confirm]]"
+          "a": "Damietta, Alexandria, Safaga e Suez, por frete marítimo ou transporte terrestre. Cotamos FOB, CFR e CIF; DAP por acordo."
         },
         {
           "q": "Prazo de entrega?",
-          "a": "[[confirm: prazo entre a encomenda e a carga]]"
+          "a": "O prazo depende da época, do volume e do porto de carga. Confirmamos uma janela de carga em cada proposta — indique-nos as suas datas e voltamos com a primeira disponível."
         }
       ]
     }
   },
   "rfq": {
-    "headerNote": "Resposta em 4 h · WhatsApp [[confirm]]",
+    "headerNote": "Resposta em 4 h · WhatsApp",
     "hero": {
       "kicker": "Exportação por grosso · Importadores da UE",
       "title": "Compre batata-doce egípcia de polpa alaranjada — exportação por grosso para a Europa.",
@@ -654,23 +607,19 @@
         "A partir de 5 t"
       ],
       "proof": [
-        "Certificados e auditados — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Certificados e auditados — GLOBALG.A.P., BRCGS/IFS, GRASP",
         "Quintas e central de embalamento próprias — controlo do produtor ao porto e rastreabilidade por lote",
         "Resposta em menos de 4 horas com orçamento e ficha técnica completa"
       ],
       "trust": [
-        "GLOBALG.A.P [[confirm]]",
-        "BRCGS / IFS [[confirm]]",
-        "30 000 t / campanha",
-        "Apenas exportação a granel"
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "Apenas exportação a granel",
+        "Certificados mediante pedido"
       ]
     },
     "formNote": "2 minutos · sem compromisso",
     "stats": [
-      {
-        "value": "30 000 t",
-        "label": "colhidas em cada campanha"
-      },
       {
         "value": "5 t",
         "label": "encomenda mínima"
@@ -680,45 +629,33 @@
         "label": "portos de carga"
       },
       {
+        "value": "3 · 6 · 10 kg",
+        "label": "caixas de exportação"
+      },
+      {
         "value": "< 4 h",
-        "label": "prazo de resposta"
+        "label": "prazo de proposta"
       }
     ],
     "glance": {
       "title": "A embalagem de exportação num relance",
-      "head": [
-        "Formato",
-        "Peso líquido",
-        "Fornecimento"
-      ],
+      "head": ["Formato", "Peso líquido", "Fornecimento"],
       "rows": [
-        [
-          "Caixa de exportação",
-          "3 kg",
-          "A granel"
-        ],
-        [
-          "Caixa de exportação",
-          "6 kg",
-          "A granel"
-        ],
-        [
-          "Caixa grande de exportação",
-          "10 kg",
-          "A granel"
-        ]
+        ["Caixa de exportação", "3 kg", "A granel"],
+        ["Caixa de exportação", "6 kg", "A granel"],
+        ["Caixa grande de exportação", "10 kg", "A granel"]
       ],
       "note": "Fornecimento por contrato, encomenda mínima 5 toneladas. Carga em Damietta, Alexandria, Safaga ou Suez — frete marítimo ou transporte terrestre."
     },
     "finalTitle": "Pronto para orçamentar o seu primeiro contentor?",
-    "footerNote": "El Molouk · الملوك للتصدير — exportador egípcio de batata-doce de polpa alaranjada · [[confirm legal + address]]"
+    "footerNote": "El Molouk · الملوك للتصدير — Kings For Import & Export · International Coastal Road, Motobas, Kafr El Sheikh, Egito"
   },
   "quality": {
     "breadcrumb": "Qualidade",
     "hero": {
       "eyebrow": "Qualidade e segurança alimentar",
       "title": "Verifique-nos antes de comprar.",
-      "sub": "Tudo o que esta página afirma pode ser confirmado: números de esquema e os organismos que os emitiram, um auto assinado em cada ponto de controlo e uma cadeia de frio que se lê diretamente do registador.",
+      "sub": "Tudo o que afirmamos nesta página é verificável: certificados com o respetivo número e a entidade emissora, um registo assinado em cada fase de inspeção e uma cadeia de frio que se lê diretamente do registador. A documentação é fornecida mediante pedido e com cada proposta.",
       "ctaSecondary": "Ver as especificações",
       "badge": "Seis pontos de controlo",
       "imageAlt": "Batata-doce arrancada do campo na colheita",
@@ -765,7 +702,7 @@
         },
         {
           "title": "Conformidade de resíduos",
-          "desc": "Cultivada dentro dos limites máximos de resíduos da UE (Regulamento 396/2005), com análise antes da expedição. [[confirm]]"
+          "desc": "Cultivada dentro dos limites máximos de resíduos da UE (Regulamento 396/2005), com análise antes da expedição. Relatórios de resíduos por expedição mediante pedido."
         },
         {
           "title": "Controlo da cadeia de frio",
@@ -773,11 +710,11 @@
         },
         {
           "title": "Embalagem de exportação e rotulagem",
-          "desc": "Caixas de exportação de 3, 6 e 10 kg, rotuladas de acordo com a sua especificação e marcadas com o lote. Apenas exportação a granel. [[confirm: rotulagem GS1]]"
+          "desc": "Caixas de exportação de 3, 6 e 10 kg, rotuladas segundo a sua especificação e marcadas por lote. Apenas exportação a granel. As normas de rotulagem, incluindo GS1, são acordadas com a sua equipa antes da impressão."
         },
         {
           "title": "Conformidade social",
-          "desc": "GRASP e SMETA cobrem trabalho digno, segurança e bem-estar das equipas nas nossas próprias quintas. [[confirm]]"
+          "desc": "GRASP e SMETA cobrem trabalho digno, segurança e bem-estar das equipas. Documentação de auditoria mediante pedido."
         }
       ]
     },
@@ -837,7 +774,7 @@
           "checks": [
             "Pré-arrefecimento e temperatura definida",
             "Registador colocado",
-            "Certificado fitossanitário e documentos [[confirm]]"
+            "Certificado fitossanitário e documentos"
           ]
         }
       ]
@@ -848,10 +785,10 @@
       "lead": "A segurança alimentar é sobretudo rotina feita da mesma maneira todos os dias: água limpa, mãos limpas, superfícies limpas — e uma temperatura que não oscila.",
       "imageAlt": "Polpa alaranjada de batata-doce acabada de cortar",
       "points": [
-        "Água potável em cada lavagem, com colheitas programadas [[confirm]]",
+        "Água potável em cada lavagem, com colheitas programadas",
         "Material de limpeza com código de cores e ronda de higienização documentada",
         "Equipas formadas em higiene e equipamento de proteção individual",
-        "Controlo de pragas por prestador externo, com relatórios em arquivo [[confirm]]",
+        "Controlo de pragas por prestador externo, com relatórios em arquivo",
         "Controlo de alergénios e corpos estranhos antes de fechar as caixas",
         "Rastreabilidade por código de lote, para a frente e para trás, em quatro horas"
       ],
@@ -877,73 +814,40 @@
     "certs": {
       "eyebrow": "Certificações",
       "title": "Credenciais que pode verificar",
-      "lead": "De cada esquema damos-lhe o número, a data de validade e o organismo que o emitiu, para que a sua equipa de qualidade confirme na origem. Os valores só aparecem aqui depois de o organismo certificador os confirmar.",
-      "statusLabel": "A aguardar verificação",
-      "request": "Pedir este certificado",
-      "note": "Não mostramos nenhum selo que não tenhamos direito a usar. Se um esquema não estiver listado aqui, não o temos.",
+      "lead": "Os certificados são emitidos por entidades acreditadas e mantidos em vigor. As cópias — com número do certificado, data de validade e entidade emissora — são facultadas a compradores qualificados mediante pedido e com cada proposta, para que a sua equipa de qualidade os possa verificar na origem.",
+      "request": "Solicitar cópia do certificado",
+      "note": "Não exibimos qualquer logótipo que não estejamos autorizados a usar. Se um referencial não estiver listado aqui, não o detemos. As cópias dos certificados são partilhadas durante o processo de proposta.",
       "items": [
         {
           "code": "GG",
           "name": "GLOBALG.A.P. — IFA",
           "rows": [
-            [
-              "Número",
-              "[[confirm]]"
-            ],
-            [
-              "Válido até",
-              "[[confirm]]"
-            ],
-            [
-              "Organismo",
-              "[[confirm]]"
-            ]
+            ["Abrange", "Boas práticas agrícolas na exploração"],
+            ["Certificado", "Cópia mediante pedido"]
           ]
         },
         {
           "code": "BR",
           "name": "BRCGS / IFS Food",
           "rows": [
-            [
-              "Classificação",
-              "[[confirm]]"
-            ],
-            [
-              "Válido até",
-              "[[confirm]]"
-            ],
-            [
-              "Organismo",
-              "[[confirm]]"
-            ]
+            ["Abrange", "Segurança alimentar na central"],
+            ["Certificado", "Cópia mediante pedido"]
           ]
         },
         {
           "code": "GR",
           "name": "GRASP",
           "rows": [
-            [
-              "Avaliação",
-              "[[confirm]]"
-            ],
-            [
-              "Válido até",
-              "[[confirm]]"
-            ]
+            ["Abrange", "Práticas sociais na exploração"],
+            ["Avaliação", "Cópia mediante pedido"]
           ]
         },
         {
           "code": "SM",
           "name": "SMETA / Sedex",
           "rows": [
-            [
-              "Pilares",
-              "[[confirm]]"
-            ],
-            [
-              "Válido até",
-              "[[confirm]]"
-            ]
+            ["Abrange", "Auditoria de comércio ético"],
+            ["Relatório", "Cópia mediante pedido"]
           ]
         }
       ]
@@ -951,7 +855,7 @@
     "facility": {
       "eyebrow": "Instalações e operação",
       "title": "Onde o trabalho acontece",
-      "sub": "As nossas quintas, a nossa central de embalamento e contentores carregados no local.",
+      "sub": "Campo, colheita, calibragem e embalamento — as fases por que passa cada contentor.",
       "items": [
         {
           "caption": "Os campos",
@@ -974,7 +878,7 @@
           "image": "packhouse"
         }
       ],
-      "note": "Estas fotografias substituem provisoriamente o registo das nossas próprias instalações. Até lá, pode auditar o local presencialmente ou percorrê-lo connosco por videochamada. [[confirm]]"
+      "note": "Fotografia agrícola ilustrativa. O registo das nossas próprias instalações está em produção; até lá, pode auditar o local presencialmente ou percorrê-lo connosco por videochamada."
     },
     "trust": {
       "eyebrow": "Porque ficam os compradores",
@@ -1007,11 +911,11 @@
       "items": [
         {
           "q": "Podemos auditar a quinta e a central de embalamento?",
-          "a": "Sim — presencialmente ou por videochamada, quando lhe der jeito. Também recebemos uma auditoria de terceira parte a seu pedido. [[confirm]]"
+          "a": "Sim — presencialmente ou por videochamada, quando lhe der jeito. Também recebemos uma auditoria de terceira parte a seu pedido."
         },
         {
           "q": "Que certificações têm de facto?",
-          "a": "Os esquemas listados acima, e apenas esses. Os números e as datas de validade são publicados aqui assim que o organismo certificador os confirmar."
+          "a": "Os referenciais listados acima, e apenas esses. As cópias dos certificados, com número e data de validade, são facultadas a compradores qualificados mediante pedido."
         },
         {
           "q": "Como é registada a rastreabilidade?",
@@ -1019,11 +923,11 @@
         },
         {
           "q": "Analisam resíduos de pesticidas?",
-          "a": "Sim — face aos limites máximos de resíduos da UE (Regulamento 396/2005), com relatório disponível por expedição. [[confirm]]"
+          "a": "Sim — face aos limites máximos de resíduos da UE (Regulamento 396/2005), com relatório de resíduos disponível por expedição."
         },
         {
           "q": "O que acontece se uma carga chegar fora de especificação?",
-          "a": "Envie fotografias e o ficheiro do registador nas 24 horas seguintes à descarga. Confrontamos a reclamação com o nosso próprio auto de pré-expedição e resolvemo-la na expedição seguinte ou por nota de crédito. [[confirm]]"
+          "a": "Envie fotografias e o ficheiro do registador logo que possível após a descarga. Avaliamos a reclamação face ao nosso próprio registo pré-expedição; a forma de regularizar uma reclamação confirmada consta do contrato da sua expedição."
         }
       ]
     },
@@ -1034,7 +938,7 @@
       "points": [
         "Resposta em 4 horas",
         "Dossiê documental completo",
-        "Amostras a pedido [[confirm]]"
+        "Amostras mediante pedido"
       ]
     }
   },
@@ -1048,7 +952,7 @@
       "ctaPrimary": "Enviar pedido",
       "ctaSecondary": "Falar por WhatsApp",
       "note": "É a mesma equipa que responde, orçamenta e carrega. Nunca é encaminhado para outro serviço.",
-      "imageAlt": "Um produtor nos campos da El Molouk no início da campanha",
+      "imageAlt": "Batata-doce calibrada a ser acondicionada em caixas de exportação na central",
       "cardTitle": "Equipa de exportação",
       "cardSub": "De domingo a sexta-feira"
     },
@@ -1083,8 +987,8 @@
         }
       ],
       "hoursTitle": "Horário",
-      "hoursValue": "Domingo – sexta-feira, [[confirm office hours]]",
-      "hoursNote": "As mensagens recebidas fora deste horário são tratadas logo no início do dia útil seguinte. [[confirm]]"
+      "hoursValue": "Domingo – sexta-feira, horário oficial de expediente",
+      "hoursNote": "A nossa equipa de exportação responde durante o horário oficial de expediente no Egito (EET). As mensagens recebidas fora desse horário são tratadas no início do dia útil seguinte."
     },
     "form": {
       "eyebrow": "Pedir orçamento",
@@ -1108,7 +1012,7 @@
       "asideTitle": "Prefere conversar?",
       "asideDesc": "Envie os mesmos três dados por WhatsApp e seguimos a partir daí.",
       "asideCta": "Abrir WhatsApp",
-      "privacy": "Os seus dados são usados apenas para responder a este pedido. [[confirm privacy policy]]"
+      "privacy": "Os seus dados são usados apenas para responder a este pedido."
     },
     "company": {
       "eyebrow": "Dados da empresa",
@@ -1117,22 +1021,22 @@
       "items": [
         {
           "label": "Empresa registada",
-          "value": "[[confirm legal name + registration]]",
-          "desc": "Números de registo comercial e de licença de exportação disponíveis mediante pedido."
+          "value": "Kings For Import & Export",
+          "desc": "Os dados de registo comercial, registo fiscal e licença de exportação estão disponíveis mediante pedido."
         },
         {
           "label": "Central e escritório",
-          "value": "[[confirm packhouse address]]",
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Egito",
           "desc": "Calibragem, embalamento e câmara frigorífica no mesmo local, no delta do Nilo."
         },
         {
           "label": "Horário de trabalho",
-          "value": "Domingo – sexta-feira, [[confirm office hours]]",
-          "desc": "A colheita decorre de agosto a março; a cura e o frio mantêm o fornecimento todo o ano."
+          "value": "Domingo – sexta-feira, horário oficial de expediente",
+          "desc": "Pico da colheita de agosto a dezembro; a cura e o frio prolongam o fornecimento pelos meses seguintes."
         },
         {
           "label": "Mercados de exportação",
-          "value": "Toda a Europa [[confirm market list]]",
+          "value": "Europa e Reino Unido",
           "desc": "Programas regulares de contentores para o norte e o oeste da Europa."
         }
       ]
@@ -1141,12 +1045,12 @@
       "eyebrow": "Onde estamos",
       "title": "Cultivada no delta do Nilo, expedida de quatro portos",
       "sub": "O nosso centro de embalagem e a câmara ficam no delta, com reefers a carregar em Damietta, Alexandria, Safaga e Suez.",
-      "mapLabel": "Mapa (marcador de posição) — localização da central, Egito. [[confirm]]",
-      "pin": "Central [[confirm]]",
+      "mapLabel": "Central de embalagem e câmara frigorífica — Motobas, Kafr El Sheikh, Egito.",
+      "pin": "Central",
       "rows": [
         {
           "label": "Morada",
-          "value": "[[confirm packhouse address]]"
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Egito"
         },
         {
           "label": "Portos de carga",
@@ -1165,7 +1069,7 @@
           "value": "FOB · CFR · CIF · DAP"
         }
       ],
-      "note": "Visitas à central e auditorias de clientes são bem-vindas mediante marcação. [[confirm]]"
+      "note": "Visitas à central e auditorias de compradores são bem-vindas mediante marcação."
     },
     "why": {
       "eyebrow": "Porque nos escrevem",
@@ -1204,15 +1108,15 @@
         },
         {
           "q": "Posso pedir amostras?",
-          "a": "Diga-nos o calibre e a embalagem que quer ver e voltamos com as opções. [[confirm sample policy]]"
+          "a": "Diga-nos o calibre e a embalagem que pretende ver e a nossa equipa de exportação responde com as opções e as condições aplicáveis ao seu mercado."
         },
         {
           "q": "Com que Incoterms podem orçamentar?",
-          "a": "FOB Damietta, Alexandria, Safaga ou Suez; CFR e CIF para os principais portos da UE; DAP por acordo. [[confirm]]"
+          "a": "FOB Damietta, Alexandria, Safaga ou Suez; CFR e CIF para os principais portos da UE; DAP por acordo."
         },
         {
           "q": "Trabalham com importadores pela primeira vez?",
-          "a": "Sim. Diga-nos em que ponto está — orçamentamos um contentor isolado tão prontamente como um programa de campanha. [[confirm]]"
+          "a": "Sim. Diga-nos em que ponto está — cotamos um único contentor com a mesma disponibilidade com que cotamos um programa de época."
         }
       ]
     },
@@ -1223,8 +1127,72 @@
       "whatsapp": "Falar por WhatsApp",
       "trust": [
         "Resposta em menos de 4 horas",
-        "GLOBALG.A.P · BRCGS [[confirm]]",
+        "Certificados e auditados",
         "Sem compromisso"
+      ]
+    }
+  },
+  "legal": {
+    "updated": "Última atualização: 5 de agosto de 2026",
+    "contactHeading": "Dados da empresa",
+    "privacy": {
+      "title": "Política de Privacidade",
+      "intro": "A El Molouk é uma exportadora de produtos frescos que trabalha entre empresas. Esta política explica que dados pessoais tratamos quando nos contacta ou utiliza este site, porque o fazemos e que direitos lhe assistem.",
+      "sections": [
+        {
+          "title": "Quem é responsável",
+          "body": "A Kings For Import & Export, que opera como El Molouk, é a responsável pelo tratamento dos dados aqui descritos. Os dados completos da empresa e de contacto constam do rodapé desta página."
+        },
+        {
+          "title": "O que recolhemos",
+          "body": "Apenas o que nos envia. O nosso formulário pede porto de destino, volume e um e-mail de empresa e, facultativamente, um Incoterm e uma mensagem. Se nos escrever por e-mail, telefone ou WhatsApp, guardamos essa correspondência. O nosso fornecedor de alojamento regista registos técnicos habituais, como o endereço IP e o tipo de navegador, para servir e proteger o site."
+        },
+        {
+          "title": "Porque o usamos e com que fundamento",
+          "body": "Para responder ao seu pedido, preparar uma proposta e, se avançar, executar o contrato daí resultante — o fundamento é a execução de um contrato ou as diligências prévias efetuadas a seu pedido. A conservação da correspondência comercial e a proteção deste site assentam no nosso interesse legítimo. Não usamos os seus dados para decisões automatizadas ou definição de perfis, e nunca os vendemos."
+        },
+        {
+          "title": "Quem mais os vê e por quanto tempo os guardamos",
+          "body": "Ninguém além do necessário. Se optar por enviar o pedido pelo WhatsApp, a mensagem passa por esse serviço nos termos dele. O nosso fornecedor de alojamento trata os registos técnicos por nossa conta. Só partilhamos dados com transitários, entidades de inspeção ou autoridades quando uma expedição que encomendou o exija. Os pedidos sem seguimento comercial são guardados até 24 meses; a documentação ligada a uma expedição real, pelo período exigido pela lei comercial e aduaneira."
+        },
+        {
+          "title": "Cookies",
+          "body": "Este site não coloca cookies de publicidade, de análise ou de rastreio. Um único cookie funcional regista o idioma em que está a ler, para que o site não mude de idioma entre páginas."
+        },
+        {
+          "title": "Os seus direitos e alterações",
+          "body": "Se estiver na UE, no Reino Unido ou noutra jurisdição com legislação equivalente, pode pedir-nos uma cópia dos seus dados, a sua retificação ou apagamento, a limitação ou oposição a um tratamento concreto, ou a sua portabilidade. Escreva para o e-mail indicado abaixo e responderemos no prazo de 30 dias. Tem também o direito de apresentar reclamação à autoridade nacional de proteção de dados. Se esta política mudar, a data acima muda com ela."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Termos e Condições",
+      "intro": "Estes termos regem a utilização deste site. Não constituem um contrato de compra e venda: as condições de fornecimento são acordadas por escrito em cada encomenda.",
+      "sections": [
+        {
+          "title": "Com quem contrata",
+          "body": "Este site é explorado pela Kings For Import & Export, que opera como El Molouk. Destina-se a utilizadores profissionais — importadores, grossistas e transformadores — e não a consumidores."
+        },
+        {
+          "title": "A informação publicada aqui",
+          "body": "Descrições de produto, calibres, formatos de embalagem, capacidades de carga e disponibilidade são dadas de boa-fé como apoio ao planeamento. Os valores de carga são aproximados e variam com as dimensões finais da caixa e a configuração de embalamento. Nada disto constitui uma especificação vinculativa enquanto não for confirmado por escrito para a sua encomenda."
+        },
+        {
+          "title": "Propostas e encomendas",
+          "body": "Uma proposta é um convite a negociar e não uma oferta vinculativa, sendo válida apenas pelo período nela indicado. O contrato forma-se quando confirmamos a sua encomenda por escrito. A encomenda mínima é de 5 toneladas."
+        },
+        {
+          "title": "Certificados e documentação",
+          "body": "Os certificados, relatórios de auditoria e documentos de expedição são emitidos por entidades terceiras e por autoridades públicas. Facultamos cópias válidas a compradores qualificados mediante pedido e com as propostas. Não afirmamos deter qualquer referencial que não detenhamos nem exibimos logótipos que não estejamos autorizados a usar."
+        },
+        {
+          "title": "Preços, entrega e reclamações",
+          "body": "Os preços, as regras Incoterms® 2020, o porto de carga, as janelas de entrega, os acordos de inspeção e o tratamento de qualquer reclamação de qualidade são acordados por encomenda e constam do contrato dessa expedição, bem como a lei aplicável. Havendo divergência entre este site e um contrato assinado, prevalece o contrato."
+        },
+        {
+          "title": "Propriedade intelectual, responsabilidade e alterações",
+          "body": "Os textos, fotografias e a composição deste site pertencem-nos ou são usados com autorização e não podem ser reproduzidos comercialmente sem o nosso consentimento escrito; os nomes e logótipos de referenciais de terceiros permanecem propriedade dos respetivos titulares. Zelamos pelo rigor e disponibilidade do site, mas não garantimos ausência de erros nem funcionamento ininterrupto, e não respondemos por decisões tomadas apenas com base no site em vez de uma especificação escrita confirmada. Nada aqui limita responsabilidade que a lei não permita limitar. Podemos atualizar estes termos; a data acima indica a última alteração."
+        }
       ]
     }
   }

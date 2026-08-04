@@ -37,11 +37,11 @@ import { siteConfig } from "@/lib/site";
 import { pageMetadata } from "@/lib/seo";
 
 const IMG = {
-  field: "/images/hero.jpg",
+  field: "/images/land.webp",
   flesh: "/images/Beauregard.webp",
   bellevue: "/images/Bellevue.webp",
   /** Lifted roots still in the soil. */
-  roots: "/images/harvest.jpg",
+  roots: "/images/products.webp",
   /** Graded roots off the sorting bench. */
   basket: "/images/basket.jpg",
   /** The grading and packing floor, stacked with export cartons. */

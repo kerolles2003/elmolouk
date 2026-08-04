@@ -61,6 +61,16 @@
         "WhatsApp departamento de exportación"
       ]
     }
+  ,
+    "privacy": {
+      "title": "Política de privacidad",
+      "description": "Cómo trata El Molouk los datos personales de las consultas de compradores: qué recogemos, por qué, cuánto tiempo lo conservamos y qué derechos tiene."
+    }
+  ,
+    "terms": {
+      "title": "Términos y condiciones",
+      "description": "Condiciones de uso del sitio de El Molouk y tratamiento de ofertas, pedidos, certificados y reclamaciones para compradores profesionales."
+    }
   },
   "nav": {
     "sweetPotatoes": "Boniatos",
@@ -74,7 +84,7 @@
   },
   "common": {
     "requestQuote": "Solicitar presupuesto",
-    "downloadSpecSheet": "Descargar ficha técnica",
+    "downloadSpecSheet": "Solicitar ficha técnica",
     "whatsapp": "Escríbanos por WhatsApp",
     "whatsappShort": "WhatsApp",
     "phone": "Teléfono",
@@ -82,9 +92,7 @@
     "viewSpecifications": "Ver especificaciones",
     "getMyQuote": "Quiero mi presupuesto de exportación",
     "replyWithin": "Respondemos en menos de 4 horas",
-    "placeholderTag": "Marcador",
-    "confirm": "[[confirm]]",
-    "awaitingPhoto": "Foto pendiente"
+    "placeholderTag": "Bajo petición"
   },
   "home": {
     "hero": {
@@ -98,8 +106,8 @@
       "ctaPrimary": "Solicitar presupuesto",
       "ctaSecondary": "Descubra nuestros productos",
       "imageAlt": "Hileras de una finca de boniatos que se extienden hasta el horizonte bajo un cielo abierto",
-      "stat1Value": "30.000 t",
-      "stat1Label": "cosechadas cada temporada",
+      "stat1Value": "ago – dic",
+      "stat1Label": "pico de cosecha",
       "stat2Value": "Reino Unido y Europa",
       "stat2Label": "exportamos a",
       "journey": [
@@ -112,8 +120,8 @@
           "alt": "Cajas de boniatos calibrados llenando la nave de envasado"
         },
         {
-          "caption": "En la mesa",
-          "alt": "Un plato elaborado con boniato, listo para servir"
+          "caption": "El producto",
+          "alt": "Boniato cortado que muestra su pulpa naranja"
         }
       ]
     },
@@ -123,7 +131,7 @@
         "BRCGS / IFS",
         "GRASP",
         "Cadena de frío controlada",
-        "Suministro todo el año"
+        "Suministro desde cámara"
       ]
     },
     "featured": {
@@ -161,11 +169,11 @@
         },
         {
           "title": "Certificados y auditados",
-          "desc": "GLOBALG.A.P., BRCGS/IFS y GRASP [[confirm]]: verificables, nunca solo declarados."
+          "desc": "GLOBALG.A.P., BRCGS/IFS y GRASP — copias de los certificados bajo petición."
         },
         {
           "title": "Suministro todo el año",
-          "desc": "Una cosecha de agosto–marzo, prolongada mediante el curado y la cámara frigorífica."
+          "desc": "Cosecha principal de agosto a diciembre, prolongada mediante el curado y la cámara frigorífica."
         },
         {
           "title": "Cadena de frío intacta",
@@ -187,7 +195,7 @@
       "p1": "El Molouk nació de una convicción sencilla: que el delta del Nilo produce algunos de los mejores boniatos del mundo y que los compradores europeos merecen recibirlos en su punto más fresco.",
       "p2": "Hoy cultivamos, curamos, clasificamos y enviamos todo nosotros mismos, para que el boniato que sale de nuestro almacén de confección sea el mismo por el que sus clientes vuelven.",
       "cta": "Conozca nuestro proceso de calidad",
-      "imageAlt": "Boniatos arrancados de los caballones de nuestras propias fincas del delta del Nilo"
+      "imageAlt": "Boniatos arrancados de los caballones de una finca del delta del Nilo"
     },
     "process": {
       "eyebrow": "Cómo lo hacemos",
@@ -226,16 +234,16 @@
       "sub": "Un producto que se vende solo: saludable, versátil y lleno de color.",
       "items": [
         {
-          "title": "Rico en vitamina A",
-          "desc": "Esa pulpa naranja intensa está repleta de betacaroteno."
+          "title": "Color natural intenso",
+          "desc": "Esa pulpa naranja intensa es justo lo que buscan los compradores y sus clientes."
         },
         {
           "title": "Dulce por naturaleza",
           "desc": "El curado realza un sabor amielado, sin ningún aditivo."
         },
         {
-          "title": "Alto contenido en fibra",
-          "desc": "Un básico saludable que sus clientes ya compran."
+          "title": "Fuente de fibra",
+          "desc": "Un básico que sus clientes ya compran."
         },
         {
           "title": "Infinitamente versátil",
@@ -246,8 +254,7 @@
     "gallery": {
       "eyebrow": "Desde la finca",
       "title": "El recorrido, en orden",
-      "sub": "Del campo al buque, en el orden en que realmente ocurre.",
-      "note": "Los recuadros marcados están reservados a las fotografías propias de El Molouk de estas fases. [[confirm: encargar las tomas de selección, cámara, carga y envío]]",
+      "sub": "Del campo al almacén, en el orden en que realmente ocurre.",
       "steps": [
         {
           "caption": "En el campo",
@@ -264,27 +271,8 @@
         {
           "caption": "Envasado",
           "alt": "Cajas de boniatos calibrados llenando la nave de envasado"
-        },
-        {
-          "caption": "Cámara frigorífica",
-          "alt": "Cámara frigorífica — palets a 12–14 °C"
-        },
-        {
-          "caption": "Carga",
-          "alt": "Carga de exportación — cajas entrando en un reefer pre-enfriado"
-        },
-        {
-          "caption": "Envío",
-          "alt": "Envío — el contenedor saliendo de un puerto egipcio"
         }
       ]
-    },
-    "reviews": {
-      "eyebrow": "En sus palabras",
-      "title": "Lo que dicen nuestros compradores",
-      "cardTitle": "Reservado a un testimonio verificado",
-      "cardBody": "Publicamos las palabras de un comprador solo cuando ese comprador las ha aprobado por escrito, con su nombre y su empresa. Hasta entonces, este espacio queda vacío.",
-      "note": "[[confirm: recoger testimonios firmados de compradores identificados]]"
     },
     "shipping": {
       "eyebrow": "Cómo se lo llevamos",
@@ -319,7 +307,7 @@
         },
         {
           "q": "¿En qué envase exportan?",
-          "a": "Cajas de exportación de 3 kg y 6 kg, y cajas grandes de exportación de 10 kg. Solo exportación a granel — no suministramos envase de detalle ni de consumo."
+          "a": "Exportamos boniato en cajas de 3 kg, 6 kg y 10 kg, con especificaciones de envase adaptadas a los requisitos de cada cliente. Un contenedor reefer de 40 pies admite normalmente unas 6.500–7.000 cajas de 3 kg, 3.500–4.000 cajas de 6 kg o 2.000–2.200 cajas de 10 kg, aproximadamente. Las cantidades reales pueden variar ligeramente según las dimensiones finales de la caja y la configuración de envasado."
         },
         {
           "q": "¿Desde qué puertos cargan?",
@@ -340,7 +328,7 @@
     "packaging": {
       "eyebrow": "Envase de exportación",
       "title": "Tres formatos de exportación",
-      "sub": "Únicamente envase de exportación a granel. No ofrecemos envase de venta al detalle, ni formatos de consumo, ni presentaciones listas para lineal.",
+      "sub": "Únicamente envase de exportación a granel. No ofrecemos envase de venta al detalle, ni formatos de consumo, ni presentaciones listas para lineal. La capacidad del contenedor varía según las dimensiones de la caja y la configuración de carga.",
       "moq": "Suministro por contrato · pedido mínimo 5 toneladas"
     }
   },
@@ -355,6 +343,10 @@
     "rights": "Todos los derechos reservados.",
     "freight": "Flete marítimo · transporte terrestre",
     "moq": "Pedido mínimo 5 t"
+  ,
+    "privacy": "Privacidad"
+  ,
+    "terms": "Términos y condiciones"
   },
   "rfqForm": {
     "heading": "Solicitar presupuesto",
@@ -378,10 +370,10 @@
     "message": "Mensaje",
     "messagePlaceholder": "Calendario, formato de envase, destino…",
     "submit": "Quiero mi presupuesto de exportación",
-    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · o por WhatsApp",
+    "trust": "GLOBALG.A.P · BRCGS · o por WhatsApp",
     "errorRequired": "Por favor, complete los campos obligatorios.",
-    "success": "Gracias: su solicitud ya está lista.",
-    "successNote": "Hemos abierto WhatsApp para que pueda enviarla ahora; nuestro equipo de exportación responde en menos de 4 horas. [[confirm: also wire the form to email/CRM]]",
+    "success": "Su solicitud está lista para enviar.",
+    "successNote": "Hemos preparado su solicitud y abierto WhatsApp para que la envíe a nuestro equipo de exportación. Si WhatsApp no se abrió, use el botón de abajo o envíenos los mismos datos por correo: respondemos en menos de 4 horas, de domingo a viernes.",
     "legendNeed": "Qué necesita",
     "legendReach": "Adónde enviamos el presupuesto",
     "optional": "opcional",
@@ -390,7 +382,10 @@
     "errorEmail": "Añada un correo electrónico para poder enviarle el presupuesto.",
     "errorEmailFormat": "Revise el correo electrónico: parece incompleto.",
     "productOther": "Otro",
-    "moqNote": "Pedido mínimo 5 toneladas."
+    "moqNote": "Pedido mínimo 5 toneladas.",
+    "legalNote": "Al enviar esta consulta acepta nuestros",
+    "openWhatsApp": "Abrir WhatsApp",
+    "sendEmail": "Enviar por correo electrónico"
   },
   "product": {
     "breadcrumb": "Boniatos",
@@ -407,8 +402,8 @@
       "kicker": "Pulpa naranja · Beauregard y Bellevue",
       "title": "Boniatos egipcios de pulpa naranja.",
       "sub": "Categoría I, curados para intensificar el dulzor, calibrados y envasados para exportación a granel bajo cadena de frío monitorizada. Especificaciones completas abajo — o pida precio para su puerto y volumen.",
-      "imageAlt": "Boniato Beauregard partido por la mitad que muestra una pulpa naranja luminosa y una piel con restos de tierra, con luz lateral natural sobre madera mate. [[confirm: replace with real macro]]",
-      "availability": "Disponible casi todo el año",
+      "imageAlt": "Boniato Beauregard partido por la mitad, con pulpa naranja y piel con restos de tierra.",
+      "availability": "Cosecha principal ago–dic",
       "highlights": [
         {
           "label": "Categoría",
@@ -428,7 +423,7 @@
         }
       ]
     },
-    "downloadSpec": "Descargar ficha técnica (PDF)",
+    "downloadSpec": "Ficha técnica del producto disponible bajo petición",
     "varieties": {
       "title": "Variedades",
       "lead": "Dos variedades de pulpa naranja, ambas de pulpa intensa y calibradas para exportación.",
@@ -456,13 +451,13 @@
     "calibre": {
       "title": "Calibre y categoría — Categoría I",
       "lead": "La categoría I es nuestro mínimo en cada caja. La tabla de calibres está pendiente de confirmación con nuestro almacén y se publicará aquí una vez verificada.",
-      "placeholder": "Tabla de calibres y tamaños — reservada a los datos verificados",
-      "note": "Preferimos dejarlo en blanco antes que publicar un calibre que no podamos mantener en todos los palets. Pida la hoja de calibrado a nuestro departamento de exportación. [[confirm: tabla oficial de calibres y tamaños]]",
+      "placeholder": "Las especificaciones de calibre y tamaño están disponibles bajo petición",
+      "note": "El calibrado se acuerda por pedido y se confirma por escrito antes de la carga. Nuestro equipo de exportación envía la especificación de calibre y tamaño vigente para su mercado junto con la oferta.",
       "cta": "Solicitar la hoja de calibrado"
     },
     "packaging": {
       "title": "Envase de exportación",
-      "lead": "Únicamente envase de exportación a granel. No ofrecemos envase de venta al detalle, ni formatos de consumo, ni presentaciones listas para lineal.",
+      "lead": "Únicamente envase de exportación a granel. No ofrecemos envase de venta al detalle, ni formatos de consumo, ni presentaciones listas para lineal. La capacidad del contenedor varía según las dimensiones de la caja y la configuración de carga.",
       "items": [
         {
           "title": "Caja de exportación — 3 kg",
@@ -472,12 +467,8 @@
               "3 kg"
             ],
             [
-              "Por palet",
-              "[[confirm]]"
-            ],
-            [
-              "Por 40'",
-              "[[confirm]]"
+              "Capacidad por contenedor",
+              "Aproximadamente 6.500–7.000 cajas por reefer de 40'"
             ]
           ]
         },
@@ -489,12 +480,8 @@
               "6 kg"
             ],
             [
-              "Por palet",
-              "[[confirm]]"
-            ],
-            [
-              "Por 40'",
-              "[[confirm]]"
+              "Capacidad por contenedor",
+              "Aproximadamente 3.500–4.000 cajas por reefer de 40'"
             ]
           ]
         },
@@ -506,12 +493,8 @@
               "10 kg"
             ],
             [
-              "Por palet",
-              "[[confirm]]"
-            ],
-            [
-              "Por 40'",
-              "[[confirm]]"
+              "Capacidad por contenedor",
+              "Aproximadamente 2.000–2.200 cajas por reefer de 40'"
             ]
           ]
         }
@@ -521,33 +504,35 @@
     "container": {
       "title": "Carga en contenedor",
       "head": [
-        "Contenedor",
-        "Palets",
-        "Cajas",
-        "Peso neto"
+        "Formato de caja",
+        "Cajas por reefer de 40'",
+        "Peso neto por caja"
       ],
       "rows": [
         [
-          "Reefer 20'",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
+          "Caja de exportación 3 kg",
+          "Aproximadamente 6.500–7.000",
+          "3 kg"
         ],
         [
-          "Reefer 40'",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
+          "Caja de exportación 6 kg",
+          "Aproximadamente 3.500–4.000",
+          "6 kg"
+        ],
+        [
+          "Caja grande de exportación 10 kg",
+          "Aproximadamente 2.000–2.200",
+          "10 kg"
         ]
       ],
-      "note": "Las cifras de carga se confirman por formato y destino al presupuestar. [[confirm: recuentos verificados de palets y cajas]]"
+      "note": "Las cifras corresponden a un reefer de 40' y se confirman por formato y destino con cada oferta. Los reefers de 20' y las cargas mixtas se cotizan bajo petición."
     },
     "season": {
       "title": "Temporada y disponibilidad",
-      "lead": "Pico de cosecha de ago.–dic.; la cámara frigorífica prolonga el suministro a casi todo el año.",
+      "lead": "Cosecha principal ago–dic; la cámara frigorífica prolonga el suministro a los meses siguientes.",
       "peakLabel": "Pico de cosecha",
       "storeLabel": "Suministro desde cámara",
-      "note": "ampliable a casi todo el año."
+      "note": "prolongado mediante el curado y el frío."
     },
     "postHarvest": {
       "title": "Poscosecha y cadena de frío",
@@ -592,10 +577,10 @@
         "GLOBALG.A.P",
         "BRCGS / IFS",
         "GRASP",
-        "ISO 22000",
-        "Fitosanitario"
+        "SMETA",
+        "Certificado fitosanitario"
       ],
-      "note": "[[confirm certification]]"
+      "note": "Las copias de los certificados están disponibles bajo petición para compradores cualificados."
     },
     "gallery": {
       "title": "Del campo al buque",
@@ -628,21 +613,21 @@
         },
         {
           "q": "¿En qué envase exportan?",
-          "a": "Cajas de exportación de 3 kg y 6 kg, y cajas grandes de exportación de 10 kg. Solo exportación a granel — sin envase de detalle ni de consumo."
+          "a": "Exportamos boniato en cajas de 3 kg, 6 kg y 10 kg, con especificaciones de envase adaptadas a los requisitos de cada cliente. Un contenedor reefer de 40 pies admite normalmente unas 6.500–7.000 cajas de 3 kg, 3.500–4.000 cajas de 6 kg o 2.000–2.200 cajas de 10 kg, aproximadamente. Las cantidades reales pueden variar ligeramente según las dimensiones finales de la caja y la configuración de envasado."
         },
         {
           "q": "¿Desde qué puertos cargan?",
-          "a": "Damietta, Alejandría, Safaga y Suez, por flete marítimo o transporte terrestre. Cotizamos FOB, CFR y CIF; DAP por acuerdo. [[confirm]]"
+          "a": "Damietta, Alejandría, Safaga y Suez, por flete marítimo o transporte terrestre. Cotizamos FOB, CFR y CIF; DAP por acuerdo."
         },
         {
           "q": "¿Plazo de entrega?",
-          "a": "[[confirm: plazo desde el pedido hasta la carga]]"
+          "a": "El plazo depende de la temporada, el volumen y el puerto de carga. Confirmamos una ventana de carga con cada oferta: indíquenos sus fechas y le responderemos con el hueco disponible más próximo."
         }
       ]
     }
   },
   "rfq": {
-    "headerNote": "Respuesta en 4 h · WhatsApp [[confirm]]",
+    "headerNote": "Respuesta en 4 h · WhatsApp",
     "hero": {
       "kicker": "Exportación a granel · Importadores de la UE",
       "title": "Compre boniato egipcio de pulpa naranja: exportación a granel a Europa.",
@@ -654,23 +639,19 @@
         "Desde 5 t"
       ],
       "proof": [
-        "Certificados y auditados — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Certificados y auditados — GLOBALG.A.P., BRCGS/IFS, GRASP",
         "Fincas y almacén de confección propios: control del campo al puerto y trazabilidad por lote",
         "Respuesta en menos de 4 horas con presupuesto y ficha técnica completa"
       ],
       "trust": [
-        "GLOBALG.A.P [[confirm]]",
-        "BRCGS / IFS [[confirm]]",
-        "30.000 t / temporada",
-        "Solo exportación a granel"
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "Solo exportación a granel",
+        "Certificados bajo petición"
       ]
     },
     "formNote": "2 minutos · sin compromiso",
     "stats": [
-      {
-        "value": "30.000 t",
-        "label": "cosechadas cada temporada"
-      },
       {
         "value": "5 t",
         "label": "pedido mínimo"
@@ -680,8 +661,12 @@
         "label": "puertos de carga"
       },
       {
+        "value": "3 · 6 · 10 kg",
+        "label": "cajas de exportación"
+      },
+      {
         "value": "< 4 h",
-        "label": "plazo de respuesta"
+        "label": "plazo de oferta"
       }
     ],
     "glance": {
@@ -711,14 +696,14 @@
       "note": "Suministro por contrato, pedido mínimo 5 toneladas. Carga en Damietta, Alejandría, Safaga o Suez — flete marítimo o transporte terrestre."
     },
     "finalTitle": "¿Listo para presupuestar su primer contenedor?",
-    "footerNote": "El Molouk · الملوك للتصدير — exportador egipcio de boniato de pulpa naranja · [[confirm legal + address]]"
+    "footerNote": "El Molouk · الملوك للتصدير — Kings For Import & Export · International Coastal Road, Motobas, Kafr El Sheikh, Egipto"
   },
   "quality": {
     "breadcrumb": "Calidad",
     "hero": {
       "eyebrow": "Calidad y seguridad alimentaria",
       "title": "Verifíquenos antes de comprar.",
-      "sub": "Todo lo que dice esta página se puede comprobar: números de esquema y organismos que los emitieron, un acta firmada en cada punto de control y una cadena de frío que se lee directamente del registrador.",
+      "sub": "Todo lo que afirmamos en esta página es comprobable: certificados con su número y el organismo emisor, un registro firmado en cada fase de inspección y una cadena de frío que se lee directamente del registrador. La documentación se facilita bajo petición y con cada oferta.",
       "ctaSecondary": "Ver las especificaciones",
       "badge": "Seis puntos de control",
       "imageAlt": "Boniatos arrancados del campo en la cosecha",
@@ -765,7 +750,7 @@
         },
         {
           "title": "Cumplimiento de residuos",
-          "desc": "Cultivados dentro de los límites máximos de residuos de la UE (Reglamento 396/2005), con analítica antes del envío. [[confirm]]"
+          "desc": "Cultivados dentro de los límites máximos de residuos de la UE (Reglamento 396/2005), con análisis de residuos antes del embarque. Informes de residuos por embarque bajo petición."
         },
         {
           "title": "Control de la cadena de frío",
@@ -773,11 +758,11 @@
         },
         {
           "title": "Envase de exportación y etiquetado",
-          "desc": "Cajas de exportación de 3, 6 y 10 kg, etiquetadas según su especificación y marcadas con el lote. Solo exportación a granel. [[confirm: etiquetado GS1]]"
+          "desc": "Cajas de exportación de 3, 6 y 10 kg, etiquetadas según su especificación y marcadas por lote. Solo exportación a granel. Las normas de etiquetado, GS1 incluida, se acuerdan con su equipo antes de imprimir."
         },
         {
           "title": "Cumplimiento social",
-          "desc": "GRASP y SMETA cubren el trabajo justo, la seguridad y el bienestar de las personas en nuestras propias fincas. [[confirm]]"
+          "desc": "GRASP y SMETA cubren el trabajo justo, la seguridad y el bienestar de las personas. Documentación de auditoría bajo petición."
         }
       ]
     },
@@ -837,7 +822,7 @@
           "checks": [
             "Preenfriado y consigna",
             "Registrador colocado",
-            "Certificado fitosanitario y documentos [[confirm]]"
+            "Certificado fitosanitario y documentos"
           ]
         }
       ]
@@ -848,10 +833,10 @@
       "lead": "La seguridad alimentaria es sobre todo orden repetido igual cada día: agua limpia, manos limpias, superficies limpias y una temperatura que no se mueve.",
       "imageAlt": "Pulpa naranja de boniato recién cortada",
       "points": [
-        "Agua potable en cada lavado, con muestreo programado [[confirm]]",
+        "Agua potable en cada lavado, con muestreo programado",
         "Útiles de limpieza con código de color y ronda de higienización documentada",
         "Personal formado en higiene y equipos de protección individual",
-        "Control de plagas mediante empresa externa, con informes archivados [[confirm]]",
+        "Control de plagas por empresa externa, con informes archivados",
         "Control de alérgenos y cuerpos extraños antes de cerrar las cajas",
         "Trazabilidad por código de lote, hacia delante y hacia atrás, en cuatro horas"
       ],
@@ -877,26 +862,21 @@
     "certs": {
       "eyebrow": "Certificaciones",
       "title": "Credenciales que puede verificar",
-      "lead": "De cada esquema le damos el número, la fecha de validez y el organismo que lo emitió, para que su departamento de calidad lo compruebe en origen. Los valores solo aparecen aquí cuando el organismo certificador los ha confirmado.",
-      "statusLabel": "Pendiente de verificación",
-      "request": "Solicitar este certificado",
-      "note": "No mostramos ningún sello que no tengamos derecho a usar. Si un esquema no aparece aquí, no lo tenemos.",
+      "lead": "Los certificados están emitidos por organismos acreditados y se mantienen vigentes. Las copias —con número de certificado, fecha de validez y organismo emisor— se facilitan a compradores cualificados bajo petición y con cada oferta, para que su departamento de calidad pueda verificarlas en origen.",
+      "request": "Solicitar copia del certificado",
+      "note": "No mostramos ningún logotipo que no estemos autorizados a usar. Si un esquema no aparece aquí, no lo tenemos. Las copias de los certificados se comparten durante el proceso de oferta.",
       "items": [
         {
           "code": "GG",
           "name": "GLOBALG.A.P. — IFA",
           "rows": [
             [
-              "Número",
-              "[[confirm]]"
+              "Cubre",
+              "Buenas prácticas agrícolas en finca"
             ],
             [
-              "Válido hasta",
-              "[[confirm]]"
-            ],
-            [
-              "Organismo",
-              "[[confirm]]"
+              "Certificado",
+              "Copia bajo petición"
             ]
           ]
         },
@@ -905,16 +885,12 @@
           "name": "BRCGS / IFS Food",
           "rows": [
             [
-              "Grado",
-              "[[confirm]]"
+              "Cubre",
+              "Seguridad alimentaria en almacén"
             ],
             [
-              "Válido hasta",
-              "[[confirm]]"
-            ],
-            [
-              "Organismo",
-              "[[confirm]]"
+              "Certificado",
+              "Copia bajo petición"
             ]
           ]
         },
@@ -923,12 +899,12 @@
           "name": "GRASP",
           "rows": [
             [
-              "Evaluación",
-              "[[confirm]]"
+              "Cubre",
+              "Prácticas sociales en finca"
             ],
             [
-              "Válido hasta",
-              "[[confirm]]"
+              "Evaluación",
+              "Copia bajo petición"
             ]
           ]
         },
@@ -937,12 +913,12 @@
           "name": "SMETA / Sedex",
           "rows": [
             [
-              "Pilares",
-              "[[confirm]]"
+              "Cubre",
+              "Auditoría de comercio ético"
             ],
             [
-              "Válido hasta",
-              "[[confirm]]"
+              "Informe",
+              "Copia bajo petición"
             ]
           ]
         }
@@ -951,7 +927,7 @@
     "facility": {
       "eyebrow": "Instalaciones y operación",
       "title": "Donde ocurre el trabajo",
-      "sub": "Nuestras fincas, nuestro almacén de confección y contenedores que se cargan en las instalaciones.",
+      "sub": "Campo, cosecha, calibrado y envasado: las fases por las que pasa cada contenedor.",
       "items": [
         {
           "caption": "Los campos",
@@ -974,7 +950,7 @@
           "image": "packhouse"
         }
       ],
-      "note": "Estas fotografías sustituyen provisionalmente al reportaje de nuestras propias instalaciones. Hasta entonces, puede auditar el centro en persona o recorrerlo con nosotros por videollamada. [[confirm]]"
+      "note": "Fotografía agrícola ilustrativa. Las imágenes de nuestras propias instalaciones están en producción; hasta entonces, puede auditar el emplazamiento en persona o recorrerlo con nosotros por videollamada."
     },
     "trust": {
       "eyebrow": "Por qué se quedan los compradores",
@@ -1007,11 +983,11 @@
       "items": [
         {
           "q": "¿Podemos auditar la finca y el almacén?",
-          "a": "Sí — presencialmente o por videollamada, cuando le venga bien. También recibimos una auditoría de tercera parte si lo solicita. [[confirm]]"
+          "a": "Sí — presencialmente o por videollamada, cuando le venga bien. También acogemos una auditoría de tercera parte a petición suya."
         },
         {
           "q": "¿Qué certificaciones tienen realmente?",
-          "a": "Los esquemas indicados arriba, y solo esos. Los números y las fechas de validez se publican aquí en cuanto el organismo certificador los confirma."
+          "a": "Los esquemas indicados arriba, y solo esos. Las copias de los certificados, con número y fecha de validez, se facilitan a compradores cualificados bajo petición."
         },
         {
           "q": "¿Cómo se registra la trazabilidad?",
@@ -1019,11 +995,11 @@
         },
         {
           "q": "¿Analizan residuos de fitosanitarios?",
-          "a": "Sí — frente a los límites máximos de residuos de la UE (Reglamento 396/2005), con informe disponible por envío. [[confirm]]"
+          "a": "Sí — frente a los límites máximos de residuos de la UE (Reglamento 396/2005), con informe de residuos disponible por embarque."
         },
         {
           "q": "¿Qué pasa si una carga llega fuera de especificación?",
-          "a": "Envíe fotos y el fichero del registrador en las 24 horas siguientes a la descarga. Contrastamos la reclamación con nuestra propia acta previa al embarque y la resolvemos en el siguiente envío o mediante abono. [[confirm]]"
+          "a": "Envíe fotos y el archivo del registrador lo antes posible tras la descarga. Evaluamos la reclamación frente a nuestro propio registro previo al embarque; la forma de liquidar una reclamación confirmada se establece en el contrato de su embarque."
         }
       ]
     },
@@ -1034,7 +1010,7 @@
       "points": [
         "Respuesta en 4 horas",
         "Dossier documental completo",
-        "Muestras a petición [[confirm]]"
+        "Muestras bajo petición"
       ]
     }
   },
@@ -1048,7 +1024,7 @@
       "ctaPrimary": "Enviar consulta",
       "ctaSecondary": "Chatear por WhatsApp",
       "note": "Un mismo equipo responde, presupuesta y carga. Nunca le pasamos a otro departamento.",
-      "imageAlt": "Un agricultor en los campos propios de El Molouk al comienzo de la temporada",
+      "imageAlt": "Boniatos calibrados colocados en cajas de exportación en la nave de envasado",
       "cardTitle": "Equipo de exportación",
       "cardSub": "De domingo a viernes"
     },
@@ -1083,8 +1059,8 @@
         }
       ],
       "hoursTitle": "Horario",
-      "hoursValue": "Domingo – viernes, [[confirm office hours]]",
-      "hoursNote": "Los mensajes recibidos fuera de este horario se atienden al inicio del siguiente día laborable. [[confirm]]"
+      "hoursValue": "Domingo – viernes, horario oficial de oficina",
+      "hoursNote": "Nuestro equipo de exportación atiende las consultas en horario oficial de oficina en Egipto (EET). Los mensajes recibidos fuera de ese horario se atienden al inicio del siguiente día laborable."
     },
     "form": {
       "eyebrow": "Solicitar presupuesto",
@@ -1108,7 +1084,7 @@
       "asideTitle": "¿Prefiere chatear?",
       "asideDesc": "Envíe esos mismos tres datos por WhatsApp y seguimos desde ahí.",
       "asideCta": "Abrir WhatsApp",
-      "privacy": "Sus datos se utilizan únicamente para responder a esta consulta. [[confirm privacy policy]]"
+      "privacy": "Sus datos se utilizan únicamente para responder a esta consulta."
     },
     "company": {
       "eyebrow": "Datos de la empresa",
@@ -1117,22 +1093,22 @@
       "items": [
         {
           "label": "Empresa registrada",
-          "value": "[[confirm legal name + registration]]",
-          "desc": "Números de registro mercantil y de licencia de exportación disponibles bajo petición."
+          "value": "Kings For Import & Export",
+          "desc": "Los datos de registro mercantil, registro fiscal y licencia de exportación están disponibles bajo petición."
         },
         {
           "label": "Almacén y oficina",
-          "value": "[[confirm packhouse address]]",
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Egipto",
           "desc": "Calibrado, envasado y cámara frigorífica en un único emplazamiento del delta del Nilo."
         },
         {
           "label": "Horario de trabajo",
-          "value": "Domingo – viernes, [[confirm office hours]]",
-          "desc": "La cosecha va de agosto a marzo; el curado y el frío mantienen el suministro todo el año."
+          "value": "Domingo – viernes, horario oficial de oficina",
+          "desc": "Cosecha principal de agosto a diciembre; el curado y el frío prolongan el suministro a los meses siguientes."
         },
         {
           "label": "Mercados de exportación",
-          "value": "Toda Europa [[confirm market list]]",
+          "value": "Europa y Reino Unido",
           "desc": "Programas regulares de contenedores hacia el norte y el oeste de Europa."
         }
       ]
@@ -1141,12 +1117,12 @@
       "eyebrow": "Dónde estamos",
       "title": "Cultivados en el delta del Nilo, embarcados desde cuatro puertos",
       "sub": "Nuestro almacén y cámara están en el delta, con reefers cargando en Damietta, Alejandría, Safaga y Suez.",
-      "mapLabel": "Mapa de marcador de posición: ubicación del almacén, Egipto. [[confirm]]",
-      "pin": "Almacén [[confirm]]",
+      "mapLabel": "Almacén de confección y cámara frigorífica — Motobas, Kafr El Sheikh, Egipto.",
+      "pin": "Almacén",
       "rows": [
         {
           "label": "Dirección",
-          "value": "[[confirm packhouse address]]"
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Egipto"
         },
         {
           "label": "Puertos de carga",
@@ -1165,7 +1141,7 @@
           "value": "FOB · CFR · CIF · DAP"
         }
       ],
-      "note": "Las visitas al almacén y las auditorías de clientes son bienvenidas con cita previa. [[confirm]]"
+      "note": "Las visitas al almacén y las auditorías de compradores son bienvenidas con cita previa."
     },
     "why": {
       "eyebrow": "Por qué nos escriben",
@@ -1204,15 +1180,15 @@
         },
         {
           "q": "¿Puedo pedir muestras?",
-          "a": "Díganos el calibre y el envase que quiere ver y le respondemos con las opciones. [[confirm sample policy]]"
+          "a": "Indíquenos el calibre y el envase que desea ver y nuestro equipo de exportación le responderá con las opciones y las condiciones aplicables a su mercado."
         },
         {
           "q": "¿Con qué Incoterms pueden presupuestar?",
-          "a": "FOB Damietta, Alejandría, Safaga o Suez; CFR y CIF a los principales puertos de la UE; DAP por acuerdo. [[confirm]]"
+          "a": "FOB Damietta, Alejandría, Safaga o Suez; CFR y CIF a los principales puertos de la UE; DAP por acuerdo."
         },
         {
           "q": "¿Trabajan con importadores nuevos?",
-          "a": "Sí. Cuéntenos en qué punto está: presupuestamos un contenedor suelto igual que un programa de temporada. [[confirm]]"
+          "a": "Sí. Díganos en qué punto está: cotizamos un solo contenedor con la misma disposición que un programa de temporada."
         }
       ]
     },
@@ -1223,8 +1199,72 @@
       "whatsapp": "Chatear por WhatsApp",
       "trust": [
         "Respuesta en menos de 4 horas",
-        "GLOBALG.A.P · BRCGS [[confirm]]",
+        "Certificados y auditados",
         "Sin compromiso"
+      ]
+    }
+  },
+  "legal": {
+    "updated": "Última actualización: 5 de agosto de 2026",
+    "contactHeading": "Datos de la empresa",
+    "privacy": {
+      "title": "Política de privacidad",
+      "intro": "El Molouk es un exportador de productos frescos que trabaja entre empresas. Esta política explica qué datos personales tratamos cuando usted nos contacta o utiliza este sitio web, por qué lo hacemos y qué derechos le asisten.",
+      "sections": [
+        {
+          "title": "Quién es responsable",
+          "body": "Kings For Import & Export, que opera como El Molouk, es el responsable del tratamiento de los datos descritos aquí. Los datos completos de la empresa y de contacto figuran al pie de esta página."
+        },
+        {
+          "title": "Qué recogemos",
+          "body": "Solo lo que usted nos envía. Nuestro formulario solicita puerto de destino, volumen y un correo electrónico de empresa y, opcionalmente, un Incoterm y un mensaje. Si nos escribe por correo, teléfono o WhatsApp, conservamos esa correspondencia. Nuestro proveedor de alojamiento registra los registros técnicos habituales, como la dirección IP y el tipo de navegador, para servir y proteger el sitio."
+        },
+        {
+          "title": "Por qué lo usamos y con qué base",
+          "body": "Para responder a su consulta, preparar una oferta y, si sigue adelante, ejecutar el contrato resultante: la base es la ejecución de un contrato o las actuaciones previas realizadas a petición suya. Conservar la correspondencia comercial y proteger este sitio se apoyan en nuestro interés legítimo. No usamos sus datos para decisiones automatizadas ni elaboración de perfiles, y nunca los vendemos."
+        },
+        {
+          "title": "Quién más los ve y cuánto tiempo los conservamos",
+          "body": "Nadie más allá de lo necesario. Si decide enviar su consulta por WhatsApp, el mensaje circula por ese servicio conforme a sus propias condiciones. Nuestro proveedor de alojamiento trata los registros técnicos por cuenta nuestra. Solo compartimos datos con transitarios, organismos de inspección o autoridades cuando lo exige un embarque que usted haya encargado. Las consultas que no derivan en operación se conservan hasta 24 meses; la documentación ligada a un embarque real, el tiempo que exija la normativa mercantil y aduanera."
+        },
+        {
+          "title": "Cookies",
+          "body": "Este sitio no instala cookies publicitarias, analíticas ni de seguimiento. Una única cookie funcional recuerda el idioma en que usted lee, para que el sitio no cambie de idioma entre páginas."
+        },
+        {
+          "title": "Sus derechos y cambios",
+          "body": "Si se encuentra en la UE, el Reino Unido u otra jurisdicción con legislación equivalente, puede solicitarnos una copia de sus datos, su rectificación o supresión, la limitación u oposición a un tratamiento concreto, o su portabilidad. Escriba a la dirección de correo que figura abajo y responderemos en un plazo de 30 días. También tiene derecho a reclamar ante su autoridad nacional de protección de datos. Si esta política cambia, la fecha superior cambiará con ella."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Términos y condiciones",
+      "intro": "Estos términos rigen el uso de este sitio web. No constituyen un contrato de compraventa: las condiciones de suministro se acuerdan por escrito para cada pedido.",
+      "sections": [
+        {
+          "title": "Con quién contrata",
+          "body": "Este sitio lo gestiona Kings For Import & Export, que opera como El Molouk. Está dirigido a usuarios profesionales —importadores, mayoristas y transformadores— y no a consumidores."
+        },
+        {
+          "title": "La información publicada aquí",
+          "body": "Las descripciones de producto, calibres, formatos de envase, capacidades de carga y disponibilidad se ofrecen de buena fe como orientación para la planificación. Las cifras de carga son aproximadas y varían según las dimensiones finales de la caja y la configuración de envasado. Nada de esto constituye una especificación vinculante mientras no se haya confirmado por escrito para su pedido."
+        },
+        {
+          "title": "Ofertas y pedidos",
+          "body": "Una oferta es una invitación a negociar, no una oferta vinculante, y solo es válida durante el plazo que indique. El contrato se perfecciona cuando confirmamos su pedido por escrito. El pedido mínimo es de 5 toneladas."
+        },
+        {
+          "title": "Certificados y documentación",
+          "body": "Los certificados, informes de auditoría y documentos de embarque los emiten organismos externos y autoridades públicas. Facilitamos copias vigentes a compradores cualificados bajo petición y junto con las ofertas. No afirmamos poseer ningún esquema que no tengamos ni mostramos logotipos que no estemos autorizados a usar."
+        },
+        {
+          "title": "Precios, entrega y reclamaciones",
+          "body": "Los precios, las reglas Incoterms® 2020, el puerto de carga, las ventanas de entrega, los acuerdos de inspección y la tramitación de cualquier reclamación de calidad se acuerdan por pedido y constan en el contrato de ese embarque, junto con la ley aplicable. Si este sitio y un contrato firmado difieren, prevalece el contrato."
+        },
+        {
+          "title": "Propiedad intelectual, responsabilidad y cambios",
+          "body": "Los textos, fotografías y el diseño de este sitio nos pertenecen o se usan con autorización y no pueden reproducirse con fines comerciales sin nuestro consentimiento escrito; los nombres y logotipos de esquemas de terceros siguen siendo de sus titulares. Cuidamos la exactitud y disponibilidad del sitio, pero no garantizamos que esté libre de errores ni sea ininterrumpido, y no respondemos de decisiones tomadas solo sobre la base del sitio en lugar de una especificación escrita confirmada. Nada aquí limita responsabilidades que la ley no permita limitar. Podemos actualizar estos términos; la fecha superior indica el último cambio."
+        }
       ]
     }
   }

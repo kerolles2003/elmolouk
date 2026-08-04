@@ -18,9 +18,20 @@ export const PAGES = {
   sweetPotatoes: {path: '/sweet-potatoes', card: 'product'},
   quality: {path: '/quality', card: 'quality'},
   contact: {path: '/contact', card: 'default'},
+  /*
+    The two legal documents. Indexable — a buyer's procurement team looks for
+    them, and a privacy policy a crawler cannot see is one a compliance review
+    reads as absent. `keywords: false` because there is no query to rank for
+    here: these pages are reached from the footer and from the two forms.
+  */
+  privacy: {path: '/privacy', card: 'default', keywords: false},
+  terms: {path: '/terms', card: 'default', keywords: false},
   /** Google-Ads landing page: paid traffic only, deliberately out of the index. */
   rfq: {path: '/rfq', card: 'default', noindex: true},
-} as const satisfies Record<string, {path: string; card: OgCard; noindex?: boolean}>;
+} as const satisfies Record<
+  string,
+  {path: string; card: OgCard; noindex?: boolean; keywords?: false}
+>;
 
 export type PageKey = keyof typeof PAGES;
 
@@ -72,7 +83,8 @@ export function alternates(locale: string, path: string) {
  */
 export async function pageMetadata(page: PageKey, locale: string): Promise<Metadata> {
   const t = await getTranslations({locale, namespace: 'metadata'});
-  const entry: {path: string; card: OgCard; noindex?: boolean} = PAGES[page];
+  const entry: {path: string; card: OgCard; noindex?: boolean; keywords?: false} =
+    PAGES[page];
   const noindex = entry.noindex === true;
 
   const title = t(`${page}.title`);
@@ -103,9 +115,11 @@ export async function pageMetadata(page: PageKey, locale: string): Promise<Metad
     */
     title: page === 'home' ? {absolute: title} : title,
     description,
-    // Deliberately absent on /rfq: keywords on a noindex page are read by
-    // nothing, and the page exists to convert ad clicks, not to rank.
-    ...(noindex ? {} : {keywords: t.raw(`${page}.keywords`) as string[]}),
+    // Deliberately absent on /rfq, /privacy and /terms: keywords on a noindex
+    // page are read by nothing, and a legal document has no query to rank for.
+    ...(noindex || entry.keywords === false
+      ? {}
+      : {keywords: t.raw(`${page}.keywords`) as string[]}),
     alternates: alternates(locale, entry.path),
     openGraph: {
       type: 'website',

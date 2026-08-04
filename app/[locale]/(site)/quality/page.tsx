@@ -42,10 +42,10 @@ import { pageMetadata } from "@/lib/seo";
   contradicts the copy beside it.
 */
 const IMG = {
-  hero: "/images/hero.jpg",
+  hero: "/images/land.webp",
   flesh: "/images/Beauregard.webp",
   /** Lifted roots still in the soil. */
-  roots: "/images/harvest.jpg",
+  roots: "/images/products.webp",
   /** Graded roots off the inspection bench. */
   basket: "/images/basket.jpg",
   /** The grading and packing floor, stacked with export cartons. */
@@ -470,15 +470,13 @@ export default async function QualityPage({
           <p className="mt-3 text-[16px] text-ink-soft">{t("certs.lead")}</p>
         </Reveal>
         <RevealGroup className="mt-10 grid gap-5 md:grid-cols-2">
+          {/*
+            Every row carries a value now — what the scheme covers, and how to
+            get the certificate itself. There is no "pending" state to draw: a
+            card with a blank chip where a number belongs reads as a defect, so
+            the card either says something useful or it is not on the page.
+          */}
           {certs.map((c) => {
-            /*
-              The card labels itself while the values are still placeholders,
-              and stops doing so on its own the moment real ones land — the
-              status is derived from the data, never set by hand.
-            */
-            const pending = c.rows.every(([, value]) =>
-              value.includes("[[confirm"),
-            );
             return (
               <RevealItem
                 key={c.code}
@@ -495,15 +493,6 @@ export default async function QualityPage({
                     <h3 className="text-[18px] font-bold leading-snug">
                       {c.name}
                     </h3>
-                    {pending && (
-                      <span className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-sand px-2.5 py-1 text-[11.5px] font-semibold text-ink-soft">
-                        <span
-                          className="h-1.5 w-1.5 rounded-full bg-gold"
-                          aria-hidden
-                        />
-                        {t("certs.statusLabel")}
-                      </span>
-                    )}
                   </div>
                 </div>
                 <dl className="mt-5 grid gap-2 border-t border-line pt-4 text-[13.5px]">

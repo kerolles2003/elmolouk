@@ -103,6 +103,9 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("contact");
+  /* The privacy link under the form: one label for the document, shared with
+     the footer, so it is never called two different things on one site. */
+  const tf = await getTranslations("footer");
   const tr = await getTranslations("rfqForm");
 
   const strip = t.raw("strip.items") as string[];
@@ -446,7 +449,13 @@ export default async function ContactPage({
                 as="p"
                 className="px-1 text-[12.5px] leading-relaxed text-ink-soft"
               >
-                {t("form.privacy")}
+                {t("form.privacy")}{" "}
+                <Link
+                  href="/privacy"
+                  className="font-semibold underline-offset-2 hover:underline"
+                >
+                  {tf("privacy")}
+                </Link>
               </Reveal>
             </div>
           </div>

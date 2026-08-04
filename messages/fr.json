@@ -61,6 +61,16 @@
         "WhatsApp service export"
       ]
     }
+  ,
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Comment El Molouk traite les données personnelles issues des demandes acheteurs — ce que nous collectons, pourquoi, combien de temps et quels sont vos droits."
+    }
+  ,
+    "terms": {
+      "title": "Conditions générales",
+      "description": "Conditions d’utilisation du site El Molouk et traitement des devis, commandes, certificats et réclamations pour les acheteurs professionnels."
+    }
   },
   "nav": {
     "sweetPotatoes": "Patates douces",
@@ -74,7 +84,7 @@
   },
   "common": {
     "requestQuote": "Demander un devis",
-    "downloadSpecSheet": "Télécharger la fiche technique",
+    "downloadSpecSheet": "Demander la fiche technique",
     "whatsapp": "Écrivez-nous sur WhatsApp",
     "whatsappShort": "WhatsApp",
     "phone": "Téléphone",
@@ -82,9 +92,7 @@
     "viewSpecifications": "Voir les spécifications",
     "getMyQuote": "Obtenir mon devis export",
     "replyWithin": "Nous répondons sous 4 heures",
-    "placeholderTag": "Emplacement réservé",
-    "confirm": "[[confirm]]",
-    "awaitingPhoto": "Photo à venir"
+    "placeholderTag": "Sur demande"
   },
   "home": {
     "hero": {
@@ -98,8 +106,8 @@
       "ctaPrimary": "Demander un devis",
       "ctaSecondary": "Découvrir nos produits",
       "imageAlt": "Rangées d’une exploitation de patates douces s’étendant jusqu’à l’horizon sous un ciel dégagé",
-      "stat1Value": "30 000 t",
-      "stat1Label": "récoltées chaque saison",
+      "stat1Value": "août – déc.",
+      "stat1Label": "pic de récolte",
       "stat2Value": "Royaume-Uni et Europe",
       "stat2Label": "nous exportons vers",
       "journey": [
@@ -112,8 +120,8 @@
           "alt": "Caisses de patates douces calibrées remplissant la station de conditionnement"
         },
         {
-          "caption": "À table",
-          "alt": "Un plat de patates douces, prêt à être servi"
+          "caption": "Le produit",
+          "alt": "Patate douce coupée montrant sa chair orange"
         }
       ]
     },
@@ -123,7 +131,7 @@
         "BRCGS / IFS",
         "GRASP",
         "Chaîne du froid surveillée",
-        "Approvisionnement toute l'année"
+        "Approvisionnement sous froid"
       ]
     },
     "featured": {
@@ -161,11 +169,11 @@
         },
         {
           "title": "Certifiés et audités",
-          "desc": "GLOBALG.A.P., BRCGS/IFS et GRASP [[confirm]] — vérifiables, jamais simplement affirmés."
+          "desc": "GLOBALG.A.P., BRCGS/IFS et GRASP — copies des certificats sur demande."
         },
         {
           "title": "Disponible toute l'année",
-          "desc": "Une récolte août–mars, prolongée par le ressuyage et le stockage frigorifique."
+          "desc": "Pic de récolte d’août à décembre, prolongé par le ressuyage et le stockage frigorifique."
         },
         {
           "title": "Chaîne du froid ininterrompue",
@@ -187,7 +195,7 @@
       "p1": "El Molouk est née d'une conviction simple : le delta du Nil produit certaines des meilleures patates douces au monde, et les acheteurs européens méritent de les recevoir au sommet de leur fraîcheur.",
       "p2": "Aujourd'hui, nous cultivons, ressuyons, calibrons et expédions nous-mêmes — pour que la patate douce qui quitte notre station de conditionnement soit exactement celle que vos clients redemandent.",
       "cta": "Découvrir notre démarche qualité",
-      "imageAlt": "Patates douces arrachées des buttes de nos propres parcelles du delta du Nil"
+      "imageAlt": "Patates douces arrachées des buttes d’une parcelle du delta du Nil"
     },
     "process": {
       "eyebrow": "Notre savoir-faire",
@@ -226,16 +234,16 @@
       "sub": "Un produit qui se vend tout seul — sain, polyvalent et plein de couleur.",
       "items": [
         {
-          "title": "Riche en vitamine A",
-          "desc": "Cette chair orange soutenu regorge de bêta-carotène."
+          "title": "Une couleur naturelle",
+          "desc": "Cette chair orange soutenu est exactement ce que recherchent les acheteurs et leurs clients."
         },
         {
           "title": "Naturellement sucrée",
           "desc": "Le ressuyage révèle une saveur miellée, sans aucun additif."
         },
         {
-          "title": "Riche en fibres",
-          "desc": "Un basique sain que vos clients achètent déjà."
+          "title": "Source de fibres",
+          "desc": "Un produit de base que vos clients achètent déjà."
         },
         {
           "title": "Infiniment polyvalente",
@@ -246,8 +254,7 @@
     "gallery": {
       "eyebrow": "De la ferme",
       "title": "Le parcours, dans l'ordre",
-      "sub": "Du champ au navire, dans l'ordre où cela se passe vraiment.",
-      "note": "Les cadres marqués sont réservés aux photographies d'El Molouk pour ces étapes. [[confirm: commander les prises de vue tri, chambre froide, chargement et expédition]]",
+      "sub": "Du champ à la station, dans l'ordre où cela se passe vraiment.",
       "steps": [
         {
           "caption": "Au champ",
@@ -264,27 +271,8 @@
         {
           "caption": "Emballage",
           "alt": "Caisses de patates douces calibrées remplissant la station de conditionnement"
-        },
-        {
-          "caption": "Chambre froide",
-          "alt": "Chambre froide — palettes tenues à 12–14 °C"
-        },
-        {
-          "caption": "Chargement",
-          "alt": "Chargement export — cartons entrant dans un reefer pré-refroidi"
-        },
-        {
-          "caption": "Expédition",
-          "alt": "Expédition — le conteneur quittant un port égyptien"
         }
       ]
-    },
-    "reviews": {
-      "eyebrow": "Dans leurs mots",
-      "title": "Ce que disent nos acheteurs",
-      "cardTitle": "Réservé à un témoignage vérifié",
-      "cardBody": "Nous ne publions les mots d'un acheteur qu'après son accord écrit, sous son nom et celui de son entreprise. D'ici là, cet espace reste vide.",
-      "note": "[[confirm: recueillir des témoignages signés d'acheteurs nommés]]"
     },
     "shipping": {
       "eyebrow": "L'acheminement",
@@ -319,7 +307,7 @@
         },
         {
           "q": "Dans quel emballage exportez-vous ?",
-          "a": "Cartons d'export de 3 kg et 6 kg, et grandes caisses d'export de 10 kg. Export en vrac uniquement — pas de conditionnement de détail ni consommateur."
+          "a": "Nous exportons la patate douce en cartons de 3 kg, 6 kg et 10 kg, avec des spécifications d'emballage adaptées aux besoins de chaque client. Un conteneur reefer de 40 pieds charge généralement environ 6 500–7 000 cartons de 3 kg, 3 500–4 000 cartons de 6 kg ou 2 000–2 200 cartons de 10 kg. Les quantités réelles peuvent varier légèrement selon les dimensions finales des cartons et la configuration d'emballage."
         },
         {
           "q": "De quels ports chargez-vous ?",
@@ -340,7 +328,7 @@
     "packaging": {
       "eyebrow": "Emballage d'export",
       "title": "Trois formats d'export",
-      "sub": "Emballage d'export uniquement. Nous ne proposons ni conditionnement de détail, ni barquettes consommateur, ni emballage prêt pour le rayon.",
+      "sub": "Emballage d'export uniquement. Nous ne proposons ni conditionnement de détail, ni barquettes consommateur, ni emballage prêt pour le rayon. La capacité du conteneur varie selon les dimensions des cartons et la configuration de chargement.",
       "moq": "Approvisionnement sous contrat · commande minimum 5 tonnes"
     }
   },
@@ -355,6 +343,10 @@
     "rights": "Tous droits réservés.",
     "freight": "Fret maritime · transport terrestre",
     "moq": "Commande minimum 5 t"
+  ,
+    "privacy": "Confidentialité"
+  ,
+    "terms": "Conditions générales"
   },
   "rfqForm": {
     "heading": "Demander un devis",
@@ -378,10 +370,10 @@
     "message": "Message",
     "messagePlaceholder": "Calendrier, format d'emballage, destination…",
     "submit": "Obtenir mon devis export",
-    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · ou sur WhatsApp",
+    "trust": "GLOBALG.A.P · BRCGS · ou via WhatsApp",
     "errorRequired": "Merci de compléter les champs obligatoires.",
-    "success": "Merci — votre demande est prête.",
-    "successNote": "Nous avons ouvert WhatsApp pour que vous puissiez l'envoyer tout de suite ; notre équipe export répond sous 4 heures. [[confirm: also wire the form to email/CRM]]",
+    "success": "Votre demande est prête à être envoyée.",
+    "successNote": "Nous avons préparé votre demande et ouvert WhatsApp pour que vous puissiez l’envoyer à notre équipe export. Si WhatsApp ne s’est pas ouvert, utilisez le bouton ci-dessous ou envoyez-nous les mêmes informations par e-mail — nous répondons sous 4 heures, du dimanche au vendredi.",
     "legendNeed": "Ce qu'il vous faut",
     "legendReach": "Où envoyer le devis",
     "optional": "facultatif",
@@ -390,7 +382,10 @@
     "errorEmail": "Ajoutez une adresse e-mail pour que nous puissions envoyer le devis.",
     "errorEmailFormat": "Vérifiez l'adresse e-mail : elle semble incomplète.",
     "productOther": "Autre",
-    "moqNote": "Commande minimum 5 tonnes."
+    "moqNote": "Commande minimum 5 tonnes.",
+    "legalNote": "En envoyant cette demande, vous acceptez nos",
+    "openWhatsApp": "Ouvrir WhatsApp",
+    "sendEmail": "Envoyer plutôt par e-mail"
   },
   "product": {
     "breadcrumb": "Patates douces",
@@ -407,8 +402,8 @@
       "kicker": "Chair orange · Beauregard & Bellevue",
       "title": "Patates douces égyptiennes à chair orange.",
       "sub": "Catégorie I, ressuyées pour développer le sucre, calibrées et conditionnées pour l'export en vrac sous chaîne du froid suivie. Toutes les spécifications ci-dessous — ou demandez un devis pour votre port et votre volume.",
-      "imageAlt": "Patate douce Beauregard coupée en deux, révélant une chair orange lumineuse et une peau mouchetée de terre, lumière latérale naturelle sur bois mat. [[confirm: replace with real macro]]",
-      "availability": "Disponible presque toute l'année",
+      "imageAlt": "Patate douce Beauregard coupée en deux, chair orange et peau marquée de terre.",
+      "availability": "Pic de récolte août–déc.",
       "highlights": [
         {
           "label": "Catégorie",
@@ -428,7 +423,7 @@
         }
       ]
     },
-    "downloadSpec": "Télécharger la fiche technique (PDF)",
+    "downloadSpec": "Fiche technique produit disponible sur demande",
     "varieties": {
       "title": "Variétés",
       "lead": "Deux variétés à chair orange, toutes deux à chair profonde et calibrées pour l'export.",
@@ -456,13 +451,13 @@
     "calibre": {
       "title": "Calibre et catégorie — Catégorie I",
       "lead": "La catégorie I est notre minimum dans chaque caisse. La grille de calibres est en cours de validation avec notre station et sera publiée ici une fois vérifiée.",
-      "placeholder": "Grille de calibres et de tailles — réservée aux valeurs vérifiées",
-      "note": "Nous préférons laisser cet espace vide plutôt que d'annoncer un calibre que nous ne pourrions pas tenir sur chaque palette. Demandez la fiche de calibrage à notre service export. [[confirm: grille officielle de calibres et de tailles]]",
+      "placeholder": "Les spécifications de calibre et de taille sont disponibles sur demande",
+      "note": "Le calibrage est convenu commande par commande et confirmé par écrit avant chargement. Notre équipe export vous transmet la spécification de calibre et de taille en vigueur pour votre marché avec le devis.",
       "cta": "Demander la fiche de calibrage"
     },
     "packaging": {
       "title": "Emballage d'export",
-      "lead": "Emballage d'export uniquement. Nous ne proposons ni conditionnement de détail, ni barquettes consommateur, ni emballage prêt pour le rayon.",
+      "lead": "Emballage d'export uniquement. Nous ne proposons ni conditionnement de détail, ni barquettes consommateur, ni emballage prêt pour le rayon. La capacité du conteneur varie selon les dimensions des cartons et la configuration de chargement.",
       "items": [
         {
           "title": "Carton d'export — 3 kg",
@@ -472,12 +467,8 @@
               "3 kg"
             ],
             [
-              "Par palette",
-              "[[confirm]]"
-            ],
-            [
-              "Par 40'",
-              "[[confirm]]"
+              "Capacité conteneur",
+              "Environ 6 500–7 000 cartons par reefer 40'"
             ]
           ]
         },
@@ -489,29 +480,21 @@
               "6 kg"
             ],
             [
-              "Par palette",
-              "[[confirm]]"
-            ],
-            [
-              "Par 40'",
-              "[[confirm]]"
+              "Capacité conteneur",
+              "Environ 3 500–4 000 cartons par reefer 40'"
             ]
           ]
         },
         {
-          "title": "Grande caisse d'export — 10 kg",
+          "title": "Grand carton d'export — 10 kg",
           "specs": [
             [
               "Net",
               "10 kg"
             ],
             [
-              "Par palette",
-              "[[confirm]]"
-            ],
-            [
-              "Par 40'",
-              "[[confirm]]"
+              "Capacité conteneur",
+              "Environ 2 000–2 200 cartons par reefer 40'"
             ]
           ]
         }
@@ -521,33 +504,35 @@
     "container": {
       "title": "Chargement conteneur",
       "head": [
-        "Conteneur",
-        "Palettes",
-        "Cartons",
-        "Poids net"
+        "Format de carton",
+        "Cartons par reefer 40'",
+        "Poids net par carton"
       ],
       "rows": [
         [
-          "Reefer 20'",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
+          "Carton d'export 3 kg",
+          "Environ 6 500–7 000",
+          "3 kg"
         ],
         [
-          "Reefer 40'",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
+          "Carton d'export 6 kg",
+          "Environ 3 500–4 000",
+          "6 kg"
+        ],
+        [
+          "Grand carton d'export 10 kg",
+          "Environ 2 000–2 200",
+          "10 kg"
         ]
       ],
-      "note": "Les valeurs de chargement sont confirmées par format et par destination au moment du devis. [[confirm: nombres de palettes et de cartons vérifiés]]"
+      "note": "Les chiffres portent sur un reefer 40' et sont confirmés par format et par destination avec chaque devis. Les reefers 20' et les chargements mixtes sont chiffrés sur demande."
     },
     "season": {
       "title": "Saison et disponibilité",
-      "lead": "Pleine récolte août–déc. ; le stockage frigorifique prolonge l'approvisionnement sur presque toute l'année.",
+      "lead": "Pic de récolte août–déc. ; le froid prolonge l’approvisionnement sur les mois suivants.",
       "peakLabel": "Pleine récolte",
       "storeLabel": "Approvisionnement frigorifique",
-      "note": "extensible sur presque toute l'année."
+      "note": "prolongé par le ressuyage et le froid."
     },
     "postHarvest": {
       "title": "Après-récolte et chaîne du froid",
@@ -592,10 +577,10 @@
         "GLOBALG.A.P",
         "BRCGS / IFS",
         "GRASP",
-        "ISO 22000",
-        "Phytosanitaire"
+        "SMETA",
+        "Certificat phytosanitaire"
       ],
-      "note": "[[confirm certification]]"
+      "note": "Les copies des certificats sont disponibles sur demande pour les acheteurs qualifiés."
     },
     "gallery": {
       "title": "Du champ au navire",
@@ -628,21 +613,21 @@
         },
         {
           "q": "Dans quel emballage exportez-vous ?",
-          "a": "Cartons d'export de 3 kg et 6 kg, et grandes caisses d'export de 10 kg. Export en vrac uniquement — pas de conditionnement de détail ni consommateur."
+          "a": "Nous exportons la patate douce en cartons de 3 kg, 6 kg et 10 kg, avec des spécifications d'emballage adaptées aux besoins de chaque client. Un conteneur reefer de 40 pieds charge généralement environ 6 500–7 000 cartons de 3 kg, 3 500–4 000 cartons de 6 kg ou 2 000–2 200 cartons de 10 kg. Les quantités réelles peuvent varier légèrement selon les dimensions finales des cartons et la configuration d'emballage."
         },
         {
           "q": "De quels ports chargez-vous ?",
-          "a": "Damiette, Alexandrie, Safaga et Suez, par fret maritime ou transport terrestre. FOB, CFR et CIF cotés ; DAP sur accord. [[confirm]]"
+          "a": "Damiette, Alexandrie, Safaga et Suez, par voie maritime ou terrestre. FOB, CFR et CIF proposés ; DAP sur accord."
         },
         {
           "q": "Délai ?",
-          "a": "[[confirm: délai entre la commande et le chargement]]"
+          "a": "Le délai dépend de la saison, du volume et du port de chargement. Nous confirmons une fenêtre de chargement avec chaque devis — indiquez-nous vos dates et nous reviendrons avec le créneau disponible le plus proche."
         }
       ]
     }
   },
   "rfq": {
-    "headerNote": "Réponse sous 4 h · WhatsApp [[confirm]]",
+    "headerNote": "Réponse sous 4 h · WhatsApp",
     "hero": {
       "kicker": "Export en gros · Importateurs UE",
       "title": "Achetez des patates douces égyptiennes à chair orange — export en gros vers l'Europe.",
@@ -654,23 +639,19 @@
         "À partir de 5 t"
       ],
       "proof": [
-        "Certifiés et audités — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Certifiés & audités — GLOBALG.A.P., BRCGS/IFS, GRASP",
         "Fermes et station de conditionnement en propre — maîtrise du champ au port, traçabilité au niveau du lot",
         "Réponse sous 4 heures avec un devis et la fiche technique complète"
       ],
       "trust": [
-        "GLOBALG.A.P [[confirm]]",
-        "BRCGS / IFS [[confirm]]",
-        "30 000 t / saison",
-        "Export en vrac uniquement"
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "Export en vrac uniquement",
+        "Certificats sur demande"
       ]
     },
     "formNote": "2 minutes · sans engagement",
     "stats": [
-      {
-        "value": "30 000 t",
-        "label": "récoltées chaque saison"
-      },
       {
         "value": "5 t",
         "label": "commande minimum"
@@ -680,8 +661,12 @@
         "label": "ports de chargement"
       },
       {
+        "value": "3 · 6 · 10 kg",
+        "label": "cartons d'export"
+      },
+      {
         "value": "< 4 h",
-        "label": "délai de réponse"
+        "label": "délai de devis"
       }
     ],
     "glance": {
@@ -703,7 +688,7 @@
           "Export en vrac"
         ],
         [
-          "Grande caisse d'export",
+          "Grand carton d'export",
           "10 kg",
           "Export en vrac"
         ]
@@ -711,14 +696,14 @@
       "note": "Approvisionnement sous contrat, commande minimum 5 tonnes. Chargement à Damiette, Alexandrie, Safaga ou Suez — fret maritime ou transport terrestre."
     },
     "finalTitle": "Prêt à chiffrer votre premier conteneur ?",
-    "footerNote": "El Molouk · الملوك للتصدير — exportateur égyptien de patates douces à chair orange · [[confirm legal + address]]"
+    "footerNote": "El Molouk · الملوك للتصدير — Kings For Import & Export · International Coastal Road, Motobas, Kafr El Sheikh, Égypte"
   },
   "quality": {
     "breadcrumb": "Qualité",
     "hero": {
       "eyebrow": "Qualité et sécurité sanitaire",
       "title": "Vérifiez-nous avant d’acheter.",
-      "sub": "Tout ce que dit cette page est vérifiable : numéros de référentiel et organismes émetteurs, un procès-verbal signé à chaque étape de contrôle, et une chaîne du froid que vous lisez directement sur l’enregistreur.",
+      "sub": "Tout ce qui figure sur cette page est vérifiable : des certificats avec leur numéro et l’organisme émetteur, un relevé signé à chaque étape de contrôle, et une chaîne du froid que vous lisez directement sur l’enregistreur. La documentation est fournie sur demande et avec chaque devis.",
       "ctaSecondary": "Voir les spécifications",
       "badge": "Six étapes de contrôle",
       "imageAlt": "Patates douces arrachées du champ à la récolte",
@@ -765,7 +750,7 @@
         },
         {
           "title": "Conformité résidus",
-          "desc": "Cultivées dans les limites maximales de résidus de l’UE (règlement 396/2005), avec analyse avant expédition. [[confirm]]"
+          "desc": "Cultivées dans le respect des LMR de l’UE (règlement 396/2005), avec analyse de résidus avant expédition. Rapports de résidus par expédition sur demande."
         },
         {
           "title": "Maîtrise du froid",
@@ -773,11 +758,11 @@
         },
         {
           "title": "Emballage d'export et étiquetage",
-          "desc": "Cartons d'export de 3, 6 et 10 kg, étiquetés selon votre cahier des charges et marqués du numéro de lot. Export en vrac uniquement. [[confirm: étiquetage GS1]]"
+          "desc": "Cartons d’export de 3, 6 et 10 kg, étiquetés selon votre cahier des charges et marqués par lot. Export en vrac uniquement. Les normes d’étiquetage, GS1 comprise, sont validées avec vos équipes avant impression."
         },
         {
           "title": "Conformité sociale",
-          "desc": "GRASP et SMETA couvrent le travail équitable, la sécurité et le bien-être des équipes sur nos propres fermes. [[confirm]]"
+          "desc": "GRASP et SMETA couvrent le travail équitable, la sécurité et le bien-être des équipes. Documents d’audit sur demande."
         }
       ]
     },
@@ -837,7 +822,7 @@
           "checks": [
             "Prérefroidissement et consigne",
             "Enregistreur mis en place",
-            "Certificat phytosanitaire et documents [[confirm]]"
+            "Certificat phytosanitaire et documents"
           ]
         }
       ]
@@ -848,10 +833,10 @@
       "lead": "La sécurité sanitaire, c’est surtout de l’entretien fait de la même manière chaque jour : eau propre, mains propres, surfaces propres — et une température qui ne dérive pas.",
       "imageAlt": "Chair orange de patate douce fraîchement coupée",
       "points": [
-        "Eau potable à chaque lavage, prélevée selon un calendrier [[confirm]]",
+        "Eau potable à chaque lavage, prélevée selon un calendrier",
         "Matériel de nettoyage à code couleur et tournée de désinfection tracée",
         "Équipes formées à l’hygiène et aux équipements de protection individuelle",
-        "Lutte contre les nuisibles confiée à un prestataire externe, rapports archivés [[confirm]]",
+        "Lutte antiparasitaire par un prestataire externe, rapports archivés",
         "Contrôle allergènes et corps étrangers avant la fermeture des colis",
         "Traçabilité par code de lot, en amont comme en aval, sous quatre heures"
       ],
@@ -877,26 +862,21 @@
     "certs": {
       "eyebrow": "Certifications",
       "title": "Des références que vous pouvez vérifier",
-      "lead": "Pour chaque référentiel, nous donnons le numéro, la date de validité et l’organisme certificateur, afin que votre service qualité contrôle à la source. Les valeurs n’apparaissent ici qu’une fois confirmées par l’organisme.",
-      "statusLabel": "Vérification en cours",
-      "request": "Demander ce certificat",
-      "note": "Nous n’affichons aucun logo que nous ne sommes pas en droit d’utiliser. Si un référentiel n’est pas listé ici, nous ne le détenons pas.",
+      "lead": "Les certificats sont délivrés par des organismes accrédités et tenus à jour. Les copies — numéro de certificat, date de validité et organisme émetteur — sont fournies aux acheteurs qualifiés sur demande et avec chaque devis, afin que votre service qualité puisse les vérifier à la source.",
+      "request": "Demander la copie du certificat",
+      "note": "Nous n’affichons aucun logo que nous ne sommes pas autorisés à utiliser. Si un référentiel n’est pas listé ici, nous ne le détenons pas. Les copies des certificats sont partagées pendant la phase de devis.",
       "items": [
         {
           "code": "GG",
           "name": "GLOBALG.A.P. — IFA",
           "rows": [
             [
-              "Numéro",
-              "[[confirm]]"
+              "Couvre",
+              "Bonnes pratiques agricoles à la ferme"
             ],
             [
-              "Valide jusqu’au",
-              "[[confirm]]"
-            ],
-            [
-              "Organisme",
-              "[[confirm]]"
+              "Certificat",
+              "Copie sur demande"
             ]
           ]
         },
@@ -905,16 +885,12 @@
           "name": "BRCGS / IFS Food",
           "rows": [
             [
-              "Note",
-              "[[confirm]]"
+              "Couvre",
+              "Sécurité alimentaire en station"
             ],
             [
-              "Valide jusqu’au",
-              "[[confirm]]"
-            ],
-            [
-              "Organisme",
-              "[[confirm]]"
+              "Certificat",
+              "Copie sur demande"
             ]
           ]
         },
@@ -923,12 +899,12 @@
           "name": "GRASP",
           "rows": [
             [
-              "Évaluation",
-              "[[confirm]]"
+              "Couvre",
+              "Pratiques sociales à la ferme"
             ],
             [
-              "Valide jusqu’au",
-              "[[confirm]]"
+              "Évaluation",
+              "Copie sur demande"
             ]
           ]
         },
@@ -937,12 +913,12 @@
           "name": "SMETA / Sedex",
           "rows": [
             [
-              "Piliers",
-              "[[confirm]]"
+              "Couvre",
+              "Audit de commerce éthique"
             ],
             [
-              "Valide jusqu’au",
-              "[[confirm]]"
+              "Rapport",
+              "Copie sur demande"
             ]
           ]
         }
@@ -951,7 +927,7 @@
     "facility": {
       "eyebrow": "Site et opérations",
       "title": "Là où tout se passe",
-      "sub": "Nos champs, notre station de conditionnement, et des conteneurs chargés sur place.",
+      "sub": "Champ, récolte, calibrage et conditionnement — les étapes que traverse chaque conteneur.",
       "items": [
         {
           "caption": "Les champs",
@@ -974,7 +950,7 @@
           "image": "packhouse"
         }
       ],
-      "note": "Ces photographies tiennent lieu de reportage sur notre propre site. En attendant, vous pouvez auditer les installations sur place ou les parcourir avec nous en visioconférence. [[confirm]]"
+      "note": "Photographies agricoles d’illustration. Les prises de vue de notre propre site sont en cours ; d’ici là, vous êtes bienvenu pour auditer le site en personne ou le parcourir avec nous en visioconférence."
     },
     "trust": {
       "eyebrow": "Pourquoi les acheteurs restent",
@@ -1007,11 +983,11 @@
       "items": [
         {
           "q": "Pouvons-nous auditer la ferme et la station ?",
-          "a": "Oui — sur place ou en visioconférence, quand cela vous convient. Nous recevons également un audit tiers à votre demande. [[confirm]]"
+          "a": "Oui — sur place ou en visioconférence, quand vous le souhaitez. Nous accueillons également un audit tierce partie à votre demande."
         },
         {
           "q": "Quelles certifications détenez-vous réellement ?",
-          "a": "Les référentiels listés ci-dessus, et rien d’autre. Numéros et dates de validité paraissent ici dès que l’organisme certificateur les confirme."
+          "a": "Les référentiels listés ci-dessus, et ceux-là seulement. Les copies des certificats, avec numéro et date de validité, sont fournies aux acheteurs qualifiés sur demande."
         },
         {
           "q": "Comment la traçabilité est-elle enregistrée ?",
@@ -1019,11 +995,11 @@
         },
         {
           "q": "Analysez-vous les résidus de pesticides ?",
-          "a": "Oui — au regard des limites maximales de résidus de l’UE (règlement 396/2005), avec un rapport disponible par expédition. [[confirm]]"
+          "a": "Oui — au regard des LMR de l’UE (règlement 396/2005), avec un rapport de résidus disponible par expédition."
         },
         {
           "q": "Que se passe-t-il si un lot arrive hors spécification ?",
-          "a": "Envoyez les photos et le fichier de l’enregistreur dans les 24 heures suivant le déchargement. Nous confrontons la réclamation à notre propre procès-verbal avant expédition et la réglons sur l’expédition suivante ou par avoir. [[confirm]]"
+          "a": "Envoyez les photos et le fichier de l’enregistreur dès que possible après le déchargement. Nous instruisons la réclamation au regard de notre propre relevé avant chargement ; les modalités de règlement d’une réclamation confirmée figurent au contrat de votre expédition."
         }
       ]
     },
@@ -1034,7 +1010,7 @@
       "points": [
         "Réponse sous 4 heures",
         "Dossier documentaire complet",
-        "Échantillons sur demande [[confirm]]"
+        "Échantillons sur demande"
       ]
     }
   },
@@ -1048,7 +1024,7 @@
       "ctaPrimary": "Envoyer une demande",
       "ctaSecondary": "Discuter sur WhatsApp",
       "note": "Une seule équipe répond, chiffre et charge. Vous n'êtes jamais transféré.",
-      "imageAlt": "Un producteur dans les champs d'El Molouk au début de la saison",
+      "imageAlt": "Patates douces calibrées mises en cartons d’export sur la station de conditionnement",
       "cardTitle": "Équipe export",
       "cardSub": "Du dimanche au vendredi"
     },
@@ -1083,8 +1059,8 @@
         }
       ],
       "hoursTitle": "Horaires",
-      "hoursValue": "Dimanche – vendredi, [[confirm office hours]]",
-      "hoursNote": "Les messages reçus en dehors de ces horaires sont traités dès le début du jour ouvré suivant. [[confirm]]"
+      "hoursValue": "Dimanche – vendredi, heures d’ouverture officielles",
+      "hoursNote": "Notre équipe export répond aux demandes pendant les heures d’ouverture officielles en Égypte (EET). Les messages reçus en dehors sont traités au début du jour ouvré suivant."
     },
     "form": {
       "eyebrow": "Demander un devis",
@@ -1108,7 +1084,7 @@
       "asideTitle": "Vous préférez discuter ?",
       "asideDesc": "Envoyez les mêmes trois informations sur WhatsApp, nous prenons le relais.",
       "asideCta": "Ouvrir WhatsApp",
-      "privacy": "Vos coordonnées servent uniquement à répondre à cette demande. [[confirm privacy policy]]"
+      "privacy": "Vos coordonnées servent uniquement à répondre à cette demande."
     },
     "company": {
       "eyebrow": "Informations légales",
@@ -1117,22 +1093,22 @@
       "items": [
         {
           "label": "Entité enregistrée",
-          "value": "[[confirm legal name + registration]]",
-          "desc": "Numéros d'immatriculation et de licence d'exportation communiqués sur demande."
+          "value": "Kings For Import & Export",
+          "desc": "Les informations d’immatriculation, d’enregistrement fiscal et de licence d’exportation sont communiquées sur demande."
         },
         {
           "label": "Station & bureau",
-          "value": "[[confirm packhouse address]]",
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Égypte",
           "desc": "Calibrage, conditionnement et entrepôt frigorifique sur un seul site du delta du Nil."
         },
         {
           "label": "Heures d'ouverture",
-          "value": "Dimanche – vendredi, [[confirm office hours]]",
-          "desc": "Récolte d'août à mars ; le curing et le froid assurent l'approvisionnement toute l'année."
+          "value": "Dimanche – vendredi, heures d’ouverture officielles",
+          "desc": "Pic de récolte d’août à décembre ; le ressuyage et le froid prolongent l’approvisionnement sur les mois suivants."
         },
         {
           "label": "Marchés d'export",
-          "value": "Toute l'Europe [[confirm market list]]",
+          "value": "Europe et Royaume-Uni",
           "desc": "Programmes réguliers en conteneurs vers l'Europe du Nord et de l'Ouest."
         }
       ]
@@ -1141,12 +1117,12 @@
       "eyebrow": "Où nous sommes",
       "title": "Cultivées dans le delta du Nil, expédiées de quatre ports",
       "sub": "Notre station et notre chambre froide sont dans le delta, avec des reefers chargés à Damiette, Alexandrie, Safaga et Suez.",
-      "mapLabel": "Carte (emplacement réservé) — station de conditionnement, Égypte. [[confirm]]",
-      "pin": "Station [[confirm]]",
+      "mapLabel": "Station de conditionnement et chambre froide — Motobas, Kafr El Sheikh, Égypte.",
+      "pin": "Station",
       "rows": [
         {
           "label": "Adresse",
-          "value": "[[confirm packhouse address]]"
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Égypte"
         },
         {
           "label": "Ports de chargement",
@@ -1165,7 +1141,7 @@
           "value": "FOB · CFR · CIF · DAP"
         }
       ],
-      "note": "Visites de la station et audits acheteurs bienvenus sur rendez-vous. [[confirm]]"
+      "note": "Les visites de la station et les audits acheteurs sont les bienvenus sur rendez-vous."
     },
     "why": {
       "eyebrow": "Pourquoi les acheteurs nous écrivent",
@@ -1204,15 +1180,15 @@
         },
         {
           "q": "Puis-je demander des échantillons ?",
-          "a": "Indiquez le calibre et l'emballage que vous souhaitez voir, nous reviendrons avec les options. [[confirm sample policy]]"
+          "a": "Indiquez le calibre et l’emballage que vous souhaitez voir : notre équipe export revient vers vous avec les options et les conditions applicables à votre marché."
         },
         {
           "q": "Quels Incoterms pouvez-vous chiffrer ?",
-          "a": "FOB Damiette, Alexandrie, Safaga ou Suez ; CFR et CIF vers les grands ports de l'UE ; DAP sur accord. [[confirm]]"
+          "a": "FOB Damiette, Alexandrie, Safaga ou Suez ; CFR et CIF vers les grands ports de l’UE ; DAP sur accord."
         },
         {
           "q": "Travaillez-vous avec de nouveaux importateurs ?",
-          "a": "Oui. Dites-nous où vous en êtes : nous chiffrons un conteneur isolé aussi volontiers qu'un programme de saison. [[confirm]]"
+          "a": "Oui. Dites-nous où vous en êtes — nous chiffrons un conteneur unique aussi volontiers qu’un programme de saison."
         }
       ]
     },
@@ -1223,8 +1199,72 @@
       "whatsapp": "Discuter sur WhatsApp",
       "trust": [
         "Réponse sous 4 heures",
-        "GLOBALG.A.P · BRCGS [[confirm]]",
+        "Certifiés & audités",
         "Sans engagement"
+      ]
+    }
+  },
+  "legal": {
+    "updated": "Dernière mise à jour le 5 août 2026",
+    "contactHeading": "Informations société",
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "El Molouk est un exportateur de produits frais destiné aux professionnels. Cette politique explique quelles données personnelles nous traitons lorsque vous nous contactez ou utilisez ce site, pourquoi nous le faisons et quels droits vous avez sur ces données.",
+      "sections": [
+        {
+          "title": "Qui est responsable",
+          "body": "Kings For Import & Export, exerçant sous le nom El Molouk, est le responsable de traitement des données décrites ici. Les coordonnées complètes de la société figurent au bas de cette page."
+        },
+        {
+          "title": "Ce que nous collectons",
+          "body": "Uniquement ce que vous nous envoyez. Notre formulaire demande un port de destination, un volume et une adresse e-mail professionnelle, et facultativement un Incoterm et un message. Si vous nous écrivez par e-mail, téléphone ou WhatsApp, nous conservons cette correspondance. Notre hébergeur enregistre des journaux techniques usuels, tels que l’adresse IP et le type de navigateur, pour servir et sécuriser le site."
+        },
+        {
+          "title": "Pourquoi et sur quelle base",
+          "body": "Pour répondre à votre demande, établir un devis et, si vous donnez suite, exécuter le contrat qui en découle — la base étant l’exécution d’un contrat ou des mesures précontractuelles prises à votre demande. La conservation de la correspondance commerciale et la sécurité du site reposent sur notre intérêt légitime. Nous n’utilisons pas vos données pour des décisions automatisées ou du profilage, et nous ne les vendons jamais."
+        },
+        {
+          "title": "Destinataires et durée de conservation",
+          "body": "Personne au-delà du nécessaire. Si vous choisissez d’envoyer votre demande via WhatsApp, le message transite par ce service selon ses propres conditions. Notre hébergeur traite les journaux techniques pour notre compte. Les informations ne sont transmises aux transitaires, organismes de contrôle ou autorités que lorsqu’une expédition que vous avez commandée l’exige. Les demandes sans suite commerciale sont conservées jusqu’à 24 mois ; les documents liés à une expédition réelle, aussi longtemps que le droit commercial et douanier l’impose."
+        },
+        {
+          "title": "Cookies",
+          "body": "Ce site ne dépose aucun cookie publicitaire, de mesure d’audience ou de suivi. Un cookie fonctionnel mémorise la langue de lecture, afin que le site ne change pas de langue d’une page à l’autre."
+        },
+        {
+          "title": "Vos droits et modifications",
+          "body": "Si vous vous trouvez dans l’UE, au Royaume-Uni ou dans un pays doté d’une législation comparable, vous pouvez demander une copie de vos données, leur rectification ou leur effacement, la limitation ou l’arrêt d’un traitement, ou leur portabilité. Écrivez à l’adresse e-mail ci-dessous ; nous répondons sous 30 jours. Vous pouvez également saisir votre autorité nationale de protection des données. Si cette politique évolue, la date ci-dessus évolue avec elle."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Conditions générales",
+      "intro": "Ces conditions régissent votre utilisation de ce site. Elles ne constituent pas un contrat de vente : les conditions de fourniture des marchandises sont convenues par écrit pour chaque commande.",
+      "sections": [
+        {
+          "title": "Qui est votre interlocuteur",
+          "body": "Ce site est exploité par Kings For Import & Export, exerçant sous le nom El Molouk. Il s’adresse à des utilisateurs professionnels — importateurs, grossistes et transformateurs — et non à des consommateurs."
+        },
+        {
+          "title": "Les informations publiées ici",
+          "body": "Descriptions produit, calibres, formats d’emballage, capacités de chargement et disponibilités sont données de bonne foi à titre indicatif pour la planification. Les chiffres de chargement sont approximatifs et varient selon les dimensions finales des cartons et la configuration d’emballage. Rien ici ne constitue une spécification opposable tant qu’elle n’a pas été confirmée par écrit pour votre commande."
+        },
+        {
+          "title": "Devis et commandes",
+          "body": "Un devis est une invitation à entrer en relation d’affaires et non une offre ferme ; il n’est valable que pour la durée qui y est indiquée. Le contrat est formé lorsque nous confirmons votre commande par écrit. La commande minimum est de 5 tonnes."
+        },
+        {
+          "title": "Certificats et documentation",
+          "body": "Les certificats, rapports d’audit et documents d’expédition sont délivrés par des organismes tiers et par les autorités publiques. Nous fournissons des copies à jour aux acheteurs qualifiés sur demande et avec les devis. Nous n’affirmons détenir aucun référentiel que nous ne détenons pas et n’affichons aucun logo que nous ne sommes pas autorisés à utiliser."
+        },
+        {
+          "title": "Prix, livraison et réclamations",
+          "body": "Les prix, les règles Incoterms® 2020, le port de chargement, les fenêtres de livraison, les modalités d’inspection et le traitement d’une réclamation qualité sont convenus commande par commande et figurent au contrat de l’expédition concernée, de même que la loi applicable. En cas de divergence entre ce site et un contrat signé, le contrat prévaut."
+        },
+        {
+          "title": "Propriété intellectuelle, responsabilité et modifications",
+          "body": "Les textes, photographies et la mise en page de ce site nous appartiennent ou sont utilisés avec autorisation et ne peuvent être reproduits à des fins commerciales sans notre accord écrit ; les noms et logos de référentiels tiers restent la propriété de leurs titulaires. Nous veillons à l’exactitude et à la disponibilité du site, sans garantir l’absence d’erreur ni la continuité du service, et nous ne répondons pas des décisions prises sur la seule base du site plutôt que d’une spécification écrite confirmée. Rien ici ne limite une responsabilité que la loi interdit de limiter. Nous pouvons faire évoluer ces conditions ; la date ci-dessus indique la dernière modification."
+        }
       ]
     }
   }

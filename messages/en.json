@@ -61,6 +61,16 @@
         "WhatsApp export desk"
       ]
     }
+  ,
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How El Molouk handles personal data from buyer enquiries — what we collect, why, how long we keep it and the rights you have over it."
+    }
+  ,
+    "terms": {
+      "title": "Terms & Conditions",
+      "description": "Terms of use for the El Molouk website, and how quotations, orders, certifications and claims are handled for B2B buyers."
+    }
   },
   "nav": {
     "sweetPotatoes": "Sweet Potatoes",
@@ -74,7 +84,7 @@
   },
   "common": {
     "requestQuote": "Request a Quote",
-    "downloadSpecSheet": "Download Spec Sheet",
+    "downloadSpecSheet": "Request spec sheet",
     "whatsapp": "WhatsApp us",
     "whatsappShort": "WhatsApp",
     "phone": "Phone",
@@ -82,9 +92,7 @@
     "viewSpecifications": "View specifications",
     "getMyQuote": "Get my export quote",
     "replyWithin": "We reply within 4 hours",
-    "placeholderTag": "Placeholder",
-    "confirm": "[[confirm]]",
-    "awaitingPhoto": "Awaiting photo"
+    "placeholderTag": "On request"
   },
   "home": {
     "hero": {
@@ -98,8 +106,8 @@
       "ctaPrimary": "Request a quote",
       "ctaSecondary": "Explore our produce",
       "imageAlt": "Rows of a sweet-potato farm stretching toward the horizon under an open sky",
-      "stat1Value": "30,000 t",
-      "stat1Label": "harvested each season",
+      "stat1Value": "Aug – Dec",
+      "stat1Label": "peak harvest window",
       "stat2Value": "United Kingdom & Europe",
       "stat2Label": "exporting to",
       "journey": [
@@ -112,8 +120,8 @@
           "alt": "Crates of graded sweet potatoes filling the packing floor"
         },
         {
-          "caption": "On the table",
-          "alt": "A finished dish made with sweet potatoes, ready to serve"
+          "caption": "The produce",
+          "alt": "Orange-fleshed sweet potato, cut to show the flesh"
         }
       ]
     },
@@ -123,7 +131,7 @@
         "BRCGS / IFS",
         "GRASP",
         "Cold-chain monitored",
-        "Year-round supply"
+        "Cold-store supply"
       ]
     },
     "featured": {
@@ -161,11 +169,11 @@
         },
         {
           "title": "Certified & audited",
-          "desc": "GLOBALG.A.P., BRCGS/IFS and GRASP [[confirm]] — verifiable, never just claimed."
+          "desc": "GLOBALG.A.P., BRCGS/IFS and GRASP — certificate copies available on request."
         },
         {
           "title": "Year-round supply",
-          "desc": "An August–March harvest, extended by curing and cold storage."
+          "desc": "Peak harvest August–December, extended by curing and cold storage."
         },
         {
           "title": "Cold chain intact",
@@ -187,7 +195,7 @@
       "p1": "El Molouk began with a simple belief: that the Nile Delta grows some of the world's finest sweet potatoes, and that European buyers deserve them at their freshest.",
       "p2": "Today we farm, cure, grade and ship it all ourselves — so the sweet potato that leaves our packhouse is the same one your customers come back for.",
       "cta": "See our quality process",
-      "imageAlt": "Sweet potatoes lifted from the ridges of our own Nile Delta fields"
+      "imageAlt": "Sweet potatoes lifted from the ridges of a Nile Delta field"
     },
     "process": {
       "eyebrow": "How it's done",
@@ -226,15 +234,15 @@
       "sub": "A crop that sells itself — wholesome, versatile and full of colour.",
       "items": [
         {
-          "title": "Rich in vitamin A",
-          "desc": "That deep orange flesh is packed with beta-carotene."
+          "title": "Naturally rich in colour",
+          "desc": "That deep orange flesh is what buyers and their customers look for."
         },
         {
           "title": "Naturally sweet",
           "desc": "Curing brings out a honeyed flavour, with no additives."
         },
         {
-          "title": "High in fibre",
+          "title": "A source of fibre",
           "desc": "A wholesome staple your customers already reach for."
         },
         {
@@ -246,8 +254,7 @@
     "gallery": {
       "eyebrow": "From the farm",
       "title": "The journey, in order",
-      "sub": "Field to vessel, in the sequence it actually happens.",
-      "note": "Marked frames are reserved for El Molouk's own photography of these stages. [[confirm: commission the sorting, cold-store, loading and shipping shots]]",
+      "sub": "Field to packhouse, in the sequence it actually happens.",
       "steps": [
         {
           "caption": "In the field",
@@ -264,27 +271,8 @@
         {
           "caption": "Packing",
           "alt": "Crates of graded sweet potatoes filling the packing floor"
-        },
-        {
-          "caption": "Cold storage",
-          "alt": "Cold store — pallets held at 12–14 °C"
-        },
-        {
-          "caption": "Export loading",
-          "alt": "Export loading — cartons going into a pre-cooled reefer"
-        },
-        {
-          "caption": "Shipping",
-          "alt": "Shipping — the container leaving an Egyptian port"
         }
       ]
-    },
-    "reviews": {
-      "eyebrow": "In their words",
-      "title": "What our buyers say",
-      "cardTitle": "Reserved for a verified testimonial",
-      "cardBody": "We publish a buyer's words only once that buyer has approved them in writing, under their own name and company. Nothing stands in this space until then.",
-      "note": "[[confirm: collect signed testimonials from named buyers]]"
     },
     "shipping": {
       "eyebrow": "Getting it to you",
@@ -319,7 +307,7 @@
         },
         {
           "q": "What packaging do you export in?",
-          "a": "Export cartons of 3 kg and 6 kg, and large export boxes of 10 kg. Bulk export only — we do not supply retail or consumer packs."
+          "a": "We export sweet potatoes in 3 kg, 6 kg and 10 kg cartons, with packaging specifications tailored to customer requirements. Typical loading capacity for a 40-foot reefer container is approximately 6,500–7,000 cartons of 3 kg, 3,500–4,000 cartons of 6 kg, or 2,000–2,200 cartons of 10 kg. Actual quantities may vary slightly depending on the final carton dimensions and packing configuration."
         },
         {
           "q": "Which ports do you load from?",
@@ -340,7 +328,7 @@
     "packaging": {
       "eyebrow": "Export packaging",
       "title": "Three bulk export formats",
-      "sub": "Bulk export packaging only. We do not offer retail packs, consumer packs or supermarket-ready packaging.",
+      "sub": "Bulk export packaging only. We do not offer retail packs, consumer packs or supermarket-ready packaging. Container capacity varies with carton dimensions and packing configuration.",
       "moq": "Contract supply · minimum order 5 metric tons"
     }
   },
@@ -355,6 +343,10 @@
     "rights": "All rights reserved.",
     "freight": "Sea freight · land transport",
     "moq": "Minimum order 5 t"
+  ,
+    "privacy": "Privacy Policy"
+  ,
+    "terms": "Terms & Conditions"
   },
   "rfqForm": {
     "heading": "Request a quote",
@@ -367,21 +359,16 @@
     "volume": "Volume",
     "volumePlaceholder": "From 5 t",
     "incoterm": "Incoterm",
-    "incotermOptions": [
-      "CIF",
-      "CFR",
-      "FOB",
-      "DAP"
-    ],
+    "incotermOptions": ["CIF", "CFR", "FOB", "DAP"],
     "email": "Company e-mail",
     "emailPlaceholder": "you@company.com",
     "message": "Message",
     "messagePlaceholder": "Timing, packaging format, destination…",
     "submit": "Get my export quote",
-    "trust": "GLOBALG.A.P · BRCGS [[confirm]] · or chat on WhatsApp",
+    "trust": "GLOBALG.A.P · BRCGS · or chat on WhatsApp",
     "errorRequired": "Please complete the required fields.",
-    "success": "Thank you — your request is ready.",
-    "successNote": "We opened WhatsApp so you can send it now; our export team replies within 4 hours. [[confirm: also wire the form to email/CRM]]",
+    "success": "Your request is ready to send.",
+    "successNote": "We have prepared your request and opened WhatsApp so you can send it to our export team. If WhatsApp did not open, use the button below or e-mail us the same details — we reply within 4 hours, Sunday to Friday.",
     "legendNeed": "What you need",
     "legendReach": "Where to send the quote",
     "optional": "optional",
@@ -390,7 +377,10 @@
     "errorEmail": "Add an e-mail address so we can send the quote.",
     "errorEmailFormat": "Check the e-mail address — it looks incomplete.",
     "productOther": "Other",
-    "moqNote": "Minimum order 5 metric tons."
+    "moqNote": "Minimum order 5 metric tons.",
+    "legalNote": "By sending this enquiry you accept our",
+    "openWhatsApp": "Open WhatsApp",
+    "sendEmail": "Send by e-mail instead"
   },
   "product": {
     "breadcrumb": "Sweet Potatoes",
@@ -407,8 +397,8 @@
       "kicker": "Orange-Fleshed · Beauregard & Bellevue",
       "title": "Egyptian orange-fleshed sweet potatoes.",
       "sub": "Class I, cured to deepen sweetness, graded and packed for bulk export under a monitored cold chain. Full specifications below — or request a quote for your port and volume.",
-      "imageAlt": "Halved Beauregard sweet potato showing glowing orange flesh and soil-flecked skin, natural side-light on matte wood. [[confirm: replace with real macro]]",
-      "availability": "Available near year-round",
+      "imageAlt": "Halved Beauregard sweet potato showing orange flesh and soil-flecked skin.",
+      "availability": "Peak harvest Aug–Dec",
       "highlights": [
         {
           "label": "Grade",
@@ -428,16 +418,11 @@
         }
       ]
     },
-    "downloadSpec": "Download Spec Sheet (PDF)",
+    "downloadSpec": "Product specification sheet available on request",
     "varieties": {
       "title": "Varieties",
       "lead": "Two orange-fleshed varieties, both deep-flesh and export-graded.",
-      "head": [
-        "Variety",
-        "Flesh",
-        "Skin",
-        "Profile"
-      ],
+      "head": ["Variety", "Flesh", "Skin", "Profile"],
       "rows": [
         [
           "Beauregard",
@@ -445,74 +430,39 @@
           "Copper-pink",
           "Sweet, moist — EU workhorse"
         ],
-        [
-          "Bellevue",
-          "Orange",
-          "Copper",
-          "Uniform calibre, long shelf life"
-        ]
+        ["Bellevue", "Orange", "Copper", "Uniform calibre, long shelf life"]
       ]
     },
     "calibre": {
       "title": "Calibre & grading — Class I",
       "lead": "Class I is our minimum grade on every crate. The calibre table itself is being confirmed with our packhouse and will be published here once it is verified.",
-      "placeholder": "Calibre and size table — reserved for the verified figures",
-      "note": "We would rather leave this blank than print a size we cannot hold to on every pallet. Ask the export desk for the current grading sheet. [[confirm: official calibre and size table]]",
+      "placeholder": "Calibre and size specifications are available on request",
+      "note": "Grading is agreed per order and confirmed in writing before loading. Our export team will send the current calibre and size specification for your market together with your quotation.",
       "cta": "Request the grading sheet"
     },
     "packaging": {
       "title": "Export packaging",
-      "lead": "Bulk export packaging only. We do not offer retail packs, consumer packs or supermarket-ready packaging.",
+      "lead": "Bulk export packaging only. We do not offer retail packs, consumer packs or supermarket-ready packaging. Container capacity varies with carton dimensions and packing configuration.",
       "items": [
         {
           "title": "Export carton — 3 kg",
           "specs": [
-            [
-              "Net",
-              "3 kg"
-            ],
-            [
-              "Per pallet",
-              "[[confirm]]"
-            ],
-            [
-              "Per 40'",
-              "[[confirm]]"
-            ]
+            ["Net", "3 kg"],
+            ["Container capacity", "Approximately 6,500–7,000 cartons per 40' reefer"]
           ]
         },
         {
           "title": "Export carton — 6 kg",
           "specs": [
-            [
-              "Net",
-              "6 kg"
-            ],
-            [
-              "Per pallet",
-              "[[confirm]]"
-            ],
-            [
-              "Per 40'",
-              "[[confirm]]"
-            ]
+            ["Net", "6 kg"],
+            ["Container capacity", "Approximately 3,500–4,000 cartons per 40' reefer"]
           ]
         },
         {
-          "title": "Large export box — 10 kg",
+          "title": "Large export carton — 10 kg",
           "specs": [
-            [
-              "Net",
-              "10 kg"
-            ],
-            [
-              "Per pallet",
-              "[[confirm]]"
-            ],
-            [
-              "Per 40'",
-              "[[confirm]]"
-            ]
+            ["Net", "10 kg"],
+            ["Container capacity", "Approximately 2,000–2,200 cartons per 40' reefer"]
           ]
         }
       ],
@@ -521,33 +471,23 @@
     "container": {
       "title": "Container loading",
       "head": [
-        "Container",
-        "Pallets",
-        "Cartons",
-        "Net weight"
+        "Carton format",
+        "Cartons per 40' reefer",
+        "Net weight per carton"
       ],
       "rows": [
-        [
-          "20' reefer",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
-        ],
-        [
-          "40' reefer",
-          "[[confirm]]",
-          "[[confirm]]",
-          "[[confirm]]"
-        ]
+        ["3 kg export carton", "Approximately 6,500–7,000", "3 kg"],
+        ["6 kg export carton", "Approximately 3,500–4,000", "6 kg"],
+        ["10 kg large export carton", "Approximately 2,000–2,200", "10 kg"]
       ],
-      "note": "Loading figures are confirmed per format and per destination when we quote. [[confirm: verified pallet and carton counts]]"
+      "note": "Figures are for a 40' reefer and are confirmed per format and destination with every quotation. 20' reefer and mixed-format loads are quoted on request."
     },
     "season": {
       "title": "Season & availability",
-      "lead": "Peak harvest Aug–Dec; cold storage extends supply to near year-round.",
+      "lead": "Peak harvest Aug–Dec, with cold storage extending supply into the following months.",
       "peakLabel": "Peak harvest",
       "storeLabel": "Cold-store supply",
-      "note": "extendable to near year-round."
+      "note": "extended by curing and cold storage."
     },
     "postHarvest": {
       "title": "Post-harvest & cold chain",
@@ -592,10 +532,10 @@
         "GLOBALG.A.P",
         "BRCGS / IFS",
         "GRASP",
-        "ISO 22000",
-        "Phytosanitary"
+        "SMETA",
+        "Phytosanitary certificate"
       ],
-      "note": "[[confirm certification]]"
+      "note": "Certificate copies are available to qualified buyers on request."
     },
     "gallery": {
       "title": "From field to vessel",
@@ -628,21 +568,21 @@
         },
         {
           "q": "What packaging do you export in?",
-          "a": "Export cartons of 3 kg and 6 kg, and large export boxes of 10 kg. Bulk export only — no retail or consumer packs."
+          "a": "We export sweet potatoes in 3 kg, 6 kg and 10 kg cartons, with packaging specifications tailored to customer requirements. Typical loading capacity for a 40-foot reefer container is approximately 6,500–7,000 cartons of 3 kg, 3,500–4,000 cartons of 6 kg, or 2,000–2,200 cartons of 10 kg. Actual quantities may vary slightly depending on the final carton dimensions and packing configuration."
         },
         {
           "q": "Which ports do you load from?",
-          "a": "Damietta, Alexandria, Safaga and Suez, by sea freight or land transport. FOB, CFR and CIF quoted; DAP by arrangement. [[confirm]]"
+          "a": "Damietta, Alexandria, Safaga and Suez, by sea freight or land transport. FOB, CFR and CIF quoted; DAP by arrangement."
         },
         {
           "q": "Lead time?",
-          "a": "[[confirm: lead time from purchase order to loading]]"
+          "a": "Lead time depends on the season, the volume and the loading port. We confirm a loading window with every quotation — send us your dates and we will come back with the earliest available slot."
         }
       ]
     }
   },
   "rfq": {
-    "headerNote": "Reply within 4 h · WhatsApp [[confirm]]",
+    "headerNote": "Reply within 4 h · WhatsApp",
     "hero": {
       "kicker": "Bulk Export · EU Importers",
       "title": "Buy Egyptian orange-fleshed sweet potatoes — bulk export to Europe.",
@@ -654,23 +594,19 @@
         "From 5 t"
       ],
       "proof": [
-        "Certified & audited — GLOBALG.A.P., BRCGS/IFS, GRASP [[confirm]]",
+        "Certified & audited — GLOBALG.A.P., BRCGS/IFS, GRASP",
         "Own farms & packhouse — grower-to-port control, lot-level traceability",
         "Reply within 4 hours with a quote and full spec sheet"
       ],
       "trust": [
-        "GLOBALG.A.P [[confirm]]",
-        "BRCGS / IFS [[confirm]]",
-        "30,000 t / season",
-        "Bulk export only"
+        "GLOBALG.A.P",
+        "BRCGS / IFS",
+        "Bulk export only",
+        "Certificates on request"
       ]
     },
     "formNote": "2 minutes · no obligation",
     "stats": [
-      {
-        "value": "30,000 t",
-        "label": "harvested each season"
-      },
       {
         "value": "5 t",
         "label": "minimum order"
@@ -680,45 +616,33 @@
         "label": "loading ports"
       },
       {
+        "value": "3 · 6 · 10 kg",
+        "label": "export cartons"
+      },
+      {
         "value": "< 4 h",
         "label": "quote turnaround"
       }
     ],
     "glance": {
       "title": "Export packaging at a glance",
-      "head": [
-        "Format",
-        "Net weight",
-        "Supply"
-      ],
+      "head": ["Format", "Net weight", "Supply"],
       "rows": [
-        [
-          "Export carton",
-          "3 kg",
-          "Bulk export"
-        ],
-        [
-          "Export carton",
-          "6 kg",
-          "Bulk export"
-        ],
-        [
-          "Large export box",
-          "10 kg",
-          "Bulk export"
-        ]
+        ["Export carton", "3 kg", "Bulk export"],
+        ["Export carton", "6 kg", "Bulk export"],
+        ["Large export carton", "10 kg", "Bulk export"]
       ],
       "note": "Contract supply, minimum order 5 metric tons. Loading at Damietta, Alexandria, Safaga or Suez — sea freight or land transport."
     },
     "finalTitle": "Ready to price your first container?",
-    "footerNote": "El Molouk · الملوك للتصدير — Egyptian orange-fleshed sweet potato exporter · [[confirm legal + address]]"
+    "footerNote": "El Molouk · الملوك للتصدير — Kings For Import & Export · International Coastal Road, Motobas, Kafr El Sheikh, Egypt"
   },
   "quality": {
     "breadcrumb": "Quality",
     "hero": {
       "eyebrow": "Quality & food safety",
       "title": "Verify us before you buy.",
-      "sub": "Every claim on this page is one you can check: scheme numbers and the bodies that issued them, a signed record at each inspection stage, and a cold chain you can read straight off the logger.",
+      "sub": "Every claim on this page is one you can check: certificates with their scheme numbers and issuing bodies, a signed record at each inspection stage, and a cold chain you can read straight off the logger. Documentation is provided on request and with every quotation.",
       "ctaSecondary": "See the specifications",
       "badge": "Six inspection stages",
       "imageAlt": "Sweet potatoes lifted from the field at harvest",
@@ -765,7 +689,7 @@
         },
         {
           "title": "Residue compliance",
-          "desc": "Grown within EU maximum residue limits under Regulation 396/2005, with residue testing before shipment. [[confirm]]"
+          "desc": "Grown within EU maximum residue limits under Regulation 396/2005, with residue testing before shipment. Residue reports are available per shipment on request."
         },
         {
           "title": "Cold-chain control",
@@ -773,11 +697,11 @@
         },
         {
           "title": "Export packaging & labelling",
-          "desc": "Export cartons of 3, 6 and 10 kg, labelled to your specification and lot-marked. Bulk export only. [[confirm: GS1 labelling]]"
+          "desc": "Export cartons of 3, 6 and 10 kg, labelled to your specification and lot-marked. Bulk export only. Labelling standards, GS1 included, are agreed with your team before printing."
         },
         {
           "title": "Social compliance",
-          "desc": "GRASP and SMETA cover fair labour, safety and worker welfare on our own farms. [[confirm]]"
+          "desc": "GRASP and SMETA cover fair labour, safety and worker welfare. Audit documentation is available on request."
         }
       ]
     },
@@ -837,7 +761,7 @@
           "checks": [
             "Pre-cool and set point",
             "Data-logger placed",
-            "Phyto and documents [[confirm]]"
+            "Phytosanitary certificate and documents"
           ]
         }
       ]
@@ -848,10 +772,10 @@
       "lead": "Food safety is mostly housekeeping done the same way every day: clean water, clean hands, clean surfaces — and a temperature that never drifts.",
       "imageAlt": "Freshly cut orange sweet-potato flesh",
       "points": [
-        "Potable water for every wash, sampled on a schedule [[confirm]]",
+        "Potable water for every wash, sampled on a schedule",
         "Colour-coded cleaning kit and a documented sanitation round",
         "Staff trained in hygiene and personal protective equipment",
-        "Pest control by an external contractor, reports on file [[confirm]]",
+        "Pest control by an external contractor, reports on file",
         "Allergen and foreign-body checks before the cartons close",
         "Traceability by lot code, forward and back, within four hours"
       ],
@@ -877,73 +801,40 @@
     "certs": {
       "eyebrow": "Certifications",
       "title": "Credentials you can verify",
-      "lead": "For each scheme we give you the number, the validity date and the body that issued it, so your compliance team can check it at source. Values appear here only once the certifying body has confirmed them.",
-      "statusLabel": "Awaiting verification",
-      "request": "Request this certificate",
-      "note": "We display no logo we are not entitled to use. If a scheme is not listed here, we do not hold it.",
+      "lead": "Certificates are issued by accredited bodies and kept current. Copies — carrying the scheme number, the validity date and the issuing body — are provided to qualified buyers on request and with every quotation, so your compliance team can verify them at source.",
+      "request": "Request certificate copy",
+      "note": "We display no logo we are not entitled to use. If a scheme is not listed here, we do not hold it. Certificate copies are shared during the quotation process.",
       "items": [
         {
           "code": "GG",
           "name": "GLOBALG.A.P. — IFA",
           "rows": [
-            [
-              "Number",
-              "[[confirm]]"
-            ],
-            [
-              "Valid to",
-              "[[confirm]]"
-            ],
-            [
-              "Body",
-              "[[confirm]]"
-            ]
+            ["Covers", "Farm-level good agricultural practice"],
+            ["Certificate", "Copy available on request"]
           ]
         },
         {
           "code": "BR",
           "name": "BRCGS / IFS Food",
           "rows": [
-            [
-              "Grade",
-              "[[confirm]]"
-            ],
-            [
-              "Valid to",
-              "[[confirm]]"
-            ],
-            [
-              "Body",
-              "[[confirm]]"
-            ]
+            ["Covers", "Packhouse food-safety management"],
+            ["Certificate", "Copy available on request"]
           ]
         },
         {
           "code": "GR",
           "name": "GRASP",
           "rows": [
-            [
-              "Assessment",
-              "[[confirm]]"
-            ],
-            [
-              "Valid to",
-              "[[confirm]]"
-            ]
+            ["Covers", "Social practice on the farm"],
+            ["Assessment", "Copy available on request"]
           ]
         },
         {
           "code": "SM",
           "name": "SMETA / Sedex",
           "rows": [
-            [
-              "Pillars",
-              "[[confirm]]"
-            ],
-            [
-              "Valid to",
-              "[[confirm]]"
-            ]
+            ["Covers", "Ethical trade audit"],
+            ["Report", "Copy available on request"]
           ]
         }
       ]
@@ -951,7 +842,7 @@
     "facility": {
       "eyebrow": "Facility & operations",
       "title": "Where the work happens",
-      "sub": "Our own fields, our own packhouse, and containers loaded on site.",
+      "sub": "Field, harvest, grading and packing — the stages every container passes through.",
       "items": [
         {
           "caption": "The fields",
@@ -974,7 +865,7 @@
           "image": "packhouse"
         }
       ],
-      "note": "These photographs stand in for our own facility shoot. Until then, you are welcome to audit the site in person or walk it with us on a video call. [[confirm]]"
+      "note": "Illustrative agricultural photography. Photography of our own site is in production; until it is ready you are welcome to audit the facility in person or walk it with us on a video call."
     },
     "trust": {
       "eyebrow": "Why buyers stay",
@@ -1007,11 +898,11 @@
       "items": [
         {
           "q": "Can we audit your farm and packhouse?",
-          "a": "Yes — in person or by video call, whenever suits you. We will also host a third-party audit at your request. [[confirm]]"
+          "a": "Yes — in person or by video call, whenever suits you. We will also host a third-party audit at your request."
         },
         {
           "q": "Which certifications do you actually hold?",
-          "a": "The schemes listed above, and only those. Numbers and validity dates are published here once the certifying body has confirmed them."
+          "a": "The schemes listed above, and only those. Certificate copies, with numbers and validity dates, are provided to qualified buyers on request."
         },
         {
           "q": "How is traceability recorded?",
@@ -1019,11 +910,11 @@
         },
         {
           "q": "Do you test for pesticide residues?",
-          "a": "Yes — against EU maximum residue limits under Regulation 396/2005, with a residue report available per shipment. [[confirm]]"
+          "a": "Yes — against EU maximum residue limits under Regulation 396/2005, with a residue report available per shipment."
         },
         {
           "q": "What happens if a load arrives out of spec?",
-          "a": "Send photos and the logger file within 24 hours of discharge. We assess the claim against our own pre-shipment record and settle it on the next shipment or by credit note. [[confirm]]"
+          "a": "Send photos and the logger file as soon as possible after discharge. We assess the claim against our own pre-shipment record; how a confirmed claim is settled is set out in the contract for your shipment."
         }
       ]
     },
@@ -1034,7 +925,7 @@
       "points": [
         "Reply within 4 hours",
         "Full document pack",
-        "Samples on request [[confirm]]"
+        "Samples on request"
       ]
     }
   },
@@ -1048,7 +939,7 @@
       "ctaPrimary": "Send an enquiry",
       "ctaSecondary": "Chat on WhatsApp",
       "note": "One team answers, quotes and loads. You are never handed on.",
-      "imageAlt": "A grower standing in El Molouk's own fields at the start of the season",
+      "imageAlt": "Graded sweet potatoes being cased into export cartons on the packing floor",
       "cardTitle": "Export desk",
       "cardSub": "Sunday to Friday"
     },
@@ -1083,8 +974,8 @@
         }
       ],
       "hoursTitle": "Business hours",
-      "hoursValue": "Sunday – Friday, [[confirm office hours]]",
-      "hoursNote": "Messages that arrive outside these hours are picked up at the start of the next working day. [[confirm]]"
+      "hoursValue": "Sunday – Friday, official business hours",
+      "hoursNote": "Our export team answers enquiries during official business hours in Egypt (EET). Messages that arrive outside them are picked up at the start of the next working day."
     },
     "form": {
       "eyebrow": "Request a quote",
@@ -1108,7 +999,7 @@
       "asideTitle": "Prefer to chat?",
       "asideDesc": "Send the same three details on WhatsApp and we'll take it from there.",
       "asideCta": "Open WhatsApp",
-      "privacy": "Your details are used to answer this enquiry and nothing else. [[confirm privacy policy]]"
+      "privacy": "Your details are used to answer this enquiry and nothing else."
     },
     "company": {
       "eyebrow": "Company details",
@@ -1117,22 +1008,22 @@
       "items": [
         {
           "label": "Registered business",
-          "value": "[[confirm legal name + registration]]",
-          "desc": "Commercial registration and export licence numbers are shared on request."
+          "value": "Kings For Import & Export",
+          "desc": "Commercial Registration, Tax Registration and Export Licence details are available upon request."
         },
         {
           "label": "Packhouse & office",
-          "value": "[[confirm packhouse address]]",
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Egypt",
           "desc": "Grading, packing and cold storage on one site in the Nile Delta."
         },
         {
           "label": "Operating hours",
-          "value": "Sunday – Friday, [[confirm office hours]]",
-          "desc": "Harvest runs August to March; curing and cold storage keep supply year-round."
+          "value": "Sunday – Friday, official business hours",
+          "desc": "Peak harvest August–December; curing and cold storage extend supply into the following months."
         },
         {
           "label": "Export markets",
-          "value": "Europe-wide [[confirm market list]]",
+          "value": "Europe and the United Kingdom",
           "desc": "Regular container programmes into northern and western Europe."
         }
       ]
@@ -1141,12 +1032,12 @@
       "eyebrow": "Where we are",
       "title": "Grown in the Nile Delta, shipped from four ports",
       "sub": "Our packhouse and cold store sit in the Delta, with reefers loading at Damietta, Alexandria, Safaga and Suez.",
-      "mapLabel": "Map placeholder — packhouse location, Egypt. [[confirm]]",
-      "pin": "Packhouse [[confirm]]",
+      "mapLabel": "Packhouse and cold store — Motobas, Kafr El Sheikh, Egypt.",
+      "pin": "Packhouse",
       "rows": [
         {
           "label": "Address",
-          "value": "[[confirm packhouse address]]"
+          "value": "International Coastal Road, Motobas, Kafr El Sheikh, Egypt"
         },
         {
           "label": "Loading ports",
@@ -1165,7 +1056,7 @@
           "value": "FOB · CFR · CIF · DAP"
         }
       ],
-      "note": "Packhouse visits and buyer audits are welcome by appointment. [[confirm]]"
+      "note": "Packhouse visits and buyer audits are welcome by appointment."
     },
     "why": {
       "eyebrow": "Why buyers write to us",
@@ -1204,15 +1095,15 @@
         },
         {
           "q": "Can I ask for samples?",
-          "a": "Tell us the calibre and packaging you want to see and we'll come back with the options. [[confirm sample policy]]"
+          "a": "Tell us the calibre and packaging you want to see and our export team will come back with the options and the terms that apply to your market."
         },
         {
           "q": "Which Incoterms can you quote?",
-          "a": "FOB Damietta, Alexandria, Safaga or Suez; CFR and CIF to major EU ports; DAP by arrangement. [[confirm]]"
+          "a": "FOB Damietta, Alexandria, Safaga or Suez; CFR and CIF to major EU ports; DAP by arrangement."
         },
         {
           "q": "Do you work with first-time importers?",
-          "a": "Yes. Tell us where you are in the process — we quote a single container as readily as a season programme. [[confirm]]"
+          "a": "Yes. Tell us where you are in the process — we quote a single container as readily as a season programme."
         }
       ]
     },
@@ -1221,10 +1112,70 @@
       "sub": "Send the port, the volume and the timing. We'll come back with the price.",
       "primary": "Send an enquiry",
       "whatsapp": "Chat on WhatsApp",
-      "trust": [
-        "Reply within 4 hours",
-        "GLOBALG.A.P · BRCGS [[confirm]]",
-        "No obligation"
+      "trust": ["Reply within 4 hours", "Certified & audited", "No obligation"]
+    }
+  },
+  "legal": {
+    "updated": "Last updated 5 August 2026",
+    "contactHeading": "Company details",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "El Molouk is a business-to-business exporter of fresh produce. This policy explains what personal data we handle when you contact us or use this website, why we handle it, and the rights you have over it.",
+      "sections": [
+        {
+          "title": "Who is responsible",
+          "body": "Kings For Import & Export, trading as El Molouk, is the controller of the data described here. Our full company and contact details are listed at the foot of this page."
+        },
+        {
+          "title": "What we collect",
+          "body": "Only what you send us. Our enquiry form asks for a destination port, a volume, a company e-mail address and, optionally, an Incoterm and a message. If you write to us by e-mail, telephone or WhatsApp, we hold that correspondence. Our hosting provider records standard technical logs, such as IP address and browser type, in order to serve and secure the site."
+        },
+        {
+          "title": "Why we use it, and on what basis",
+          "body": "To answer your enquiry, prepare a quotation and, if you go ahead, perform the resulting contract — the basis for which is the performance of a contract, or steps taken at your request before entering one. Keeping records of business correspondence and protecting this site rest on our legitimate interests. We do not use your details for automated decision-making or profiling, and we never sell them."
+        },
+        {
+          "title": "Who else sees it, and for how long we keep it",
+          "body": "Nobody beyond what is necessary. If you choose to send your enquiry through WhatsApp, the message travels through that service under its own terms. Our hosting provider processes technical logs on our behalf. Details are shared with freight forwarders, inspection bodies or authorities only where a shipment you have ordered requires it. Enquiries that do not lead to business are kept for up to 24 months; records connected to an actual shipment are kept for as long as commercial and customs law requires."
+        },
+        {
+          "title": "Cookies",
+          "body": "This site sets no advertising, analytics or tracking cookies. One functional cookie records the language you are reading in, so the site does not switch language on you between pages."
+        },
+        {
+          "title": "Your rights, and changes to this policy",
+          "body": "If you are in the EU, the UK or another jurisdiction with comparable law, you may ask us for a copy of your data, ask us to correct or erase it, ask us to restrict or stop a particular use, or ask for it in a portable form. Write to the e-mail address below and we will respond within 30 days. You also have the right to complain to your national data protection authority. If this policy changes, the date above will change with it."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "intro": "These terms govern your use of this website. They are not a contract of sale: the terms on which we supply goods are agreed in writing for each order.",
+      "sections": [
+        {
+          "title": "Who these terms are with",
+          "body": "This website is operated by Kings For Import & Export, trading as El Molouk. It is intended for business users — importers, wholesalers and processors — and not for consumers."
+        },
+        {
+          "title": "Information on this site",
+          "body": "Product descriptions, calibres, packaging formats, loading capacities and availability are given in good faith as a guide for planning. Loading figures are approximate and vary with final carton dimensions and packing configuration. Nothing here is a specification you can rely on until it has been confirmed in writing for your order."
+        },
+        {
+          "title": "Quotations and orders",
+          "body": "A quotation is an invitation to do business rather than a binding offer, and is valid only for the period stated on it. A contract comes into existence when we confirm your order in writing. Our minimum order quantity is 5 metric tons."
+        },
+        {
+          "title": "Certifications and documentation",
+          "body": "Certificates, audit reports and shipment documents are issued by third-party bodies and by public authorities. We provide current copies to qualified buyers on request and with quotations. We make no representation about a scheme we do not hold, and we display no scheme logo we are not entitled to use."
+        },
+        {
+          "title": "Prices, delivery and claims",
+          "body": "Prices, Incoterms® 2020 rules, loading port, delivery windows, inspection arrangements and the handling of any quality claim are agreed per order and set out in the contract for that shipment, together with the law governing it. Where this website and a signed contract differ, the contract governs."
+        },
+        {
+          "title": "Intellectual property, liability and changes",
+          "body": "The text, photographs and layout of this site belong to us or are used with permission and may not be reproduced commercially without our written consent; third-party scheme names and logos remain the property of their owners. We take care to keep this site accurate and available, but we do not warrant that it is uninterrupted or free of error, and we are not liable for decisions taken on the basis of the website alone rather than a confirmed written specification. Nothing here limits liability that cannot lawfully be limited. We may update these terms; the date above shows when they last changed."
+        }
       ]
     }
   }
