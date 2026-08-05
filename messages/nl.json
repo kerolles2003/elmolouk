@@ -92,7 +92,10 @@
     "viewSpecifications": "Specificaties bekijken",
     "getMyQuote": "Vraag mijn exportofferte aan",
     "replyWithin": "Wij reageren binnen 4 uur",
-    "placeholderTag": "Op aanvraag"
+    "placeholderTag": "Op aanvraag",
+    "whatsappMessage": "Hallo El Molouk,\n\nIk ben geïnteresseerd in de import van Egyptische zoete aardappelen.\n\nLand van bestemming:\nHaven van bestemming:\nGeschatte hoeveelheid:\n\nGraag ontvang ik uw meest recente offerte en de productspecificaties.\n\nMet vriendelijke groet.",
+    "preferEmail": "Liever per e-mail? Neem contact op met ons exportteam",
+    "contactTeam": "Contact met ons exportteam"
   },
   "home": {
     "hero": {
@@ -367,13 +370,19 @@
     ],
     "email": "Zakelijk e-mailadres",
     "emailPlaceholder": "u@bedrijf.com",
+    "name": "Contactpersoon",
+    "namePlaceholder": "Jan de Vries",
+    "company": "Bedrijf",
+    "companyPlaceholder": "Acme Versproducten BV",
+    "phone": "Telefoon",
+    "phonePlaceholder": "+31 6 1234 5678",
     "message": "Bericht",
     "messagePlaceholder": "Timing, verpakkingsformaat, bestemming…",
     "submit": "Vraag mijn exportofferte aan",
     "trust": "GLOBALG.A.P · BRCGS · of via WhatsApp",
     "errorRequired": "Vul de verplichte velden in.",
-    "success": "Uw aanvraag is klaar om te versturen.",
-    "successNote": "Wij hebben uw aanvraag klaargezet en WhatsApp geopend zodat u die naar ons exportteam kunt sturen. Opende WhatsApp niet, gebruik dan de knop hieronder of mail ons dezelfde gegevens — wij reageren binnen 4 uur, zondag tot en met vrijdag.",
+    "success": "Bedankt! Uw aanvraag is succesvol verzonden.",
+    "successNote": "Ons exportteam neemt spoedig contact met u op.",
     "legendNeed": "Wat u nodig heeft",
     "legendReach": "Waar de offerte heen gaat",
     "optional": "optioneel",
@@ -385,7 +394,11 @@
     "moqNote": "Minimale afname 5 ton.",
     "legalNote": "Door deze aanvraag te versturen aanvaardt u onze",
     "openWhatsApp": "WhatsApp openen",
-    "sendEmail": "In plaats daarvan e-mailen"
+    "sendEmail": "In plaats daarvan e-mailen",
+    "errorName": "Laat ons weten aan wie wij mogen antwoorden.",
+    "sending": "Bezig met verzenden…",
+    "error": "We konden uw aanvraag nu niet verzenden.",
+    "errorNote": "Probeer het opnieuw of neem rechtstreeks contact met ons op."
   },
   "product": {
     "breadcrumb": "Zoete aardappelen",

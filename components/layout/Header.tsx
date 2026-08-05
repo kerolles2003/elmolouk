@@ -5,11 +5,13 @@ import {Brand} from './Brand';
 import {HeaderShell} from './HeaderShell';
 import {LanguageSwitcher} from './LanguageSwitcher';
 import {MobileMenu} from './MobileMenu';
+import {WhatsAppCta} from '@/components/WhatsAppCta';
 import {buttonVariants} from '@/components/ui/button';
 import {cn} from '@/lib/utils';
 
 export async function Header() {
   const t = await getTranslations('nav');
+  const tc = await getTranslations('common');
 
   return (
     <HeaderShell>
@@ -42,12 +44,15 @@ export async function Header() {
             of line with the burger. */}
         <div className="flex items-center gap-2.5">
           <LanguageSwitcher className="inline-flex" />
-          <Link
-            href="/contact"
+          {/* The bar's one conversion button opens a chat rather than a page.
+              Nothing about it changed except where it goes — the contact page
+              is still one click away, in the nav row to its left. */}
+          <WhatsAppCta
+            message={tc('whatsappMessage')}
             className={cn(buttonVariants({size: 'sm'}), 'hidden lg:inline-flex')}
           >
             {t('requestQuote')}
-          </Link>
+          </WhatsAppCta>
           <MobileMenu />
         </div>
       </div>

@@ -18,9 +18,10 @@ import {
   Ship,
   Anchor,
   Scale,
-  MessageCircle,
+  Mail,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { WhatsAppCta } from "@/components/WhatsAppCta";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Eyebrow } from "@/components/Eyebrow";
@@ -36,7 +37,6 @@ import {
 } from "@/components/motion/Reveal";
 import { CountUp } from "@/components/motion/CountUp";
 import { RISE, STAGGER } from "@/components/motion/config";
-import { siteConfig } from "@/lib/site";
 import { pageMetadata } from "@/lib/seo";
 
 /*
@@ -126,6 +126,10 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
+  /* The pre-filled chat text and the "prefer e-mail" fallback label — shared
+     with every other page, so the enquiry the export desk receives reads the
+     same however the buyer arrived at it. */
+  const tc = await getTranslations("common");
 
   const trust = t.raw("trust.items") as string[];
   const journey = t.raw("hero.journey") as { caption: string; alt: string }[];
@@ -301,9 +305,12 @@ export default async function HomePage({
                 className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center"
                 stagger={STAGGER.tight}
               >
+                {/* The shortest path on the site: the first button a visitor
+                    meets opens a chat with the enquiry already drafted, rather
+                    than sending them to a page to find a form. */}
                 <RevealItem as="span" className="flex w-full sm:w-auto">
-                  <Link
-                    href="/contact"
+                  <WhatsAppCta
+                    message={tc("whatsappMessage")}
                     className={cn(
                       buttonVariants({ size: "lg", block: true }),
                       "sm:w-auto",
@@ -314,7 +321,7 @@ export default async function HomePage({
                       className="h-4 w-4 rtl:-scale-x-100"
                       aria-hidden
                     />
-                  </Link>
+                  </WhatsAppCta>
                 </RevealItem>
                 <RevealItem as="span" className="flex w-full sm:w-auto">
                   <Link
@@ -331,6 +338,22 @@ export default async function HomePage({
                     {t("hero.ctaSecondary")}
                   </Link>
                 </RevealItem>
+              </RevealItem>
+              {/* One quiet line, not a third button: the buyers who want a
+                  written trail rather than a chat are the minority here, and
+                  the page should say where they go without competing with the
+                  button above it. */}
+              <RevealItem
+                as="p"
+                className="mt-4 text-[14px] text-ink-soft"
+                from="inline"
+              >
+                <Link
+                  href="/contact"
+                  className="inline-flex min-h-11 items-center font-semibold underline-offset-4 transition-colors hover:text-sweet-deep hover:underline"
+                >
+                  {tc("preferEmail")}
+                </Link>
               </RevealItem>
               {/*
                 Label above figure, spec-sheet fashion. One of these two is a
@@ -440,8 +463,12 @@ export default async function HomePage({
                     <dd className="font-bold">{p.origin}</dd>
                   </div>
                 </dl>
-                <Link
-                  href="/contact"
+                {/* Asking about a variety is the moment to start the
+                    conversation, so the card ends in one — the pre-filled
+                    message already carries the three things we would have to
+                    ask for anyway. */}
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className={cn(
                     buttonVariants({ size: "sm", block: true }),
                     "mt-5",
@@ -452,7 +479,7 @@ export default async function HomePage({
                     className="h-4 w-4 rtl:-scale-x-100"
                     aria-hidden
                   />
-                </Link>
+                </WhatsAppCta>
               </div>
             </RevealItem>
           ))}
@@ -794,9 +821,15 @@ export default async function HomePage({
               className="mt-8 flex flex-wrap justify-center gap-3"
               stagger={STAGGER.tight}
             >
+              {/*
+                The pair swapped jobs. The solid button — the one the eye lands
+                on — now opens the chat, and the ghost button beside it carries
+                what used to be the whole conversion path: the contact page,
+                with its form, its address and its e-mail.
+              */}
               <RevealItem as="span" className="inline-flex" lift>
-                <Link
-                  href="/contact"
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-bold text-sweet-deep shadow-sm transition-shadow duration-200 ease-expo hover:shadow-lift"
                 >
                   {t("cta.primary")}
@@ -804,16 +837,16 @@ export default async function HomePage({
                     className="h-4 w-4 rtl:-scale-x-100"
                     aria-hidden
                   />
-                </Link>
+                </WhatsAppCta>
               </RevealItem>
               <RevealItem as="span" className="inline-flex">
-                <a
-                  href={siteConfig.whatsapp}
+                <Link
+                  href="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-white/15 px-7 py-3.5 font-bold text-white ring-1 ring-white/40 transition-colors duration-200 hover:bg-white/25"
                 >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
-                  {t("cta.whatsapp")}
-                </a>
+                  <Mail className="h-5 w-5" aria-hidden />
+                  {tc("contactTeam")}
+                </Link>
               </RevealItem>
             </RevealItem>
           </RevealGroup>

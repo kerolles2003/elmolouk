@@ -92,7 +92,10 @@
     "viewSpecifications": "Spezifikationen ansehen",
     "getMyQuote": "Exportangebot erhalten",
     "replyWithin": "Wir antworten innerhalb von 4 Stunden",
-    "placeholderTag": "Auf Anfrage"
+    "placeholderTag": "Auf Anfrage",
+    "whatsappMessage": "Hallo El Molouk,\n\nich interessiere mich für den Import ägyptischer Süßkartoffeln.\n\nBestimmungsland:\nBestimmungshafen:\nGeschätzte Menge:\n\nBitte senden Sie mir Ihr aktuelles Angebot und die Produktspezifikationen.\n\nVielen Dank.",
+    "preferEmail": "Lieber per E-Mail? Kontaktieren Sie unser Exportteam",
+    "contactTeam": "Exportteam kontaktieren"
   },
   "home": {
     "hero": {
@@ -362,13 +365,19 @@
     "incotermOptions": ["CIF", "CFR", "FOB", "DAP"],
     "email": "Firmen-E-Mail",
     "emailPlaceholder": "name@firma.de",
+    "name": "Ansprechpartner",
+    "namePlaceholder": "Jana Vogel",
+    "company": "Unternehmen",
+    "companyPlaceholder": "Acme Frischeprodukte GmbH",
+    "phone": "Telefon",
+    "phonePlaceholder": "+49 151 12345678",
     "message": "Nachricht",
     "messagePlaceholder": "Zeitplan, Gebindegröße, Zielort…",
     "submit": "Exportangebot erhalten",
     "trust": "GLOBALG.A.P · BRCGS · oder per WhatsApp",
     "errorRequired": "Bitte füllen Sie die Pflichtfelder aus.",
-    "success": "Ihre Anfrage ist versandbereit.",
-    "successNote": "Wir haben Ihre Anfrage vorbereitet und WhatsApp geöffnet, damit Sie sie an unser Exportteam senden können. Falls WhatsApp nicht geöffnet wurde, nutzen Sie die Schaltfläche unten oder senden Sie uns dieselben Angaben per E-Mail — wir antworten innerhalb von 4 Stunden, Sonntag bis Freitag.",
+    "success": "Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet.",
+    "successNote": "Unser Exportteam meldet sich in Kürze bei Ihnen.",
     "legendNeed": "Was Sie benötigen",
     "legendReach": "Wohin das Angebot geht",
     "optional": "optional",
@@ -380,7 +389,11 @@
     "moqNote": "Mindestbestellmenge 5 Tonnen.",
     "legalNote": "Mit dem Senden dieser Anfrage akzeptieren Sie unsere",
     "openWhatsApp": "WhatsApp öffnen",
-    "sendEmail": "Stattdessen per E-Mail senden"
+    "sendEmail": "Stattdessen per E-Mail senden",
+    "errorName": "Sagen Sie uns, an wen wir uns wenden dürfen.",
+    "sending": "Wird gesendet…",
+    "error": "Ihre Anfrage konnte gerade nicht gesendet werden.",
+    "errorNote": "Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
   },
   "product": {
     "breadcrumb": "Süßkartoffeln",

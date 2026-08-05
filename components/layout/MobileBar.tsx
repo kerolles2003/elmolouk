@@ -1,7 +1,7 @@
 import {getTranslations} from 'next-intl/server';
-import {MessageCircle} from 'lucide-react';
+import {Mail} from 'lucide-react';
 import {Link} from '@/i18n/navigation';
-import {siteConfig} from '@/lib/site';
+import {WhatsAppCta} from '@/components/WhatsAppCta';
 import {buttonVariants} from '@/components/ui/button';
 import {cn} from '@/lib/utils';
 
@@ -16,16 +16,29 @@ export async function MobileBar() {
       reports. On everything else `env()` is 0 and this is just `py-2.5`.
     */
     <div className="sticky bottom-0 z-30 flex gap-2 border-t border-line bg-cream/95 px-4 pb-[max(0.625rem,env(safe-area-inset-bottom))] pt-2.5 backdrop-blur lg:hidden">
-      <Link href="/contact" className={cn(buttonVariants({block: true}), 'min-h-12')}>
-        {t('requestQuote')}
-      </Link>
-      <a
-        href={siteConfig.whatsapp}
-        aria-label={t('whatsapp')}
-        className={cn(buttonVariants({variant: 'wa'}), 'min-h-12 w-12 shrink-0 px-0')}
+      {/*
+        The wide button is the whole point of the bar, so it takes the shortest
+        route there is: one tap, straight into a chat with the enquiry already
+        written. The square beside it keeps the slower channel available —
+        it used to be a second WhatsApp target, which is a tap wasted now that
+        the wide button does that job.
+      */}
+      <WhatsAppCta
+        message={t('whatsappMessage')}
+        className={cn(buttonVariants({block: true}), 'min-h-12')}
       >
-        <MessageCircle className="h-5 w-5" aria-hidden />
-      </a>
+        {t('requestQuote')}
+      </WhatsAppCta>
+      <Link
+        href="/contact"
+        aria-label={t('contactTeam')}
+        className={cn(
+          buttonVariants({variant: 'outline'}),
+          'min-h-12 w-12 shrink-0 px-0',
+        )}
+      >
+        <Mail className="h-5 w-5" aria-hidden />
+      </Link>
     </div>
   );
 }

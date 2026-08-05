@@ -92,7 +92,10 @@
     "viewSpecifications": "Ver especificaciones",
     "getMyQuote": "Quiero mi presupuesto de exportación",
     "replyWithin": "Respondemos en menos de 4 horas",
-    "placeholderTag": "Bajo petición"
+    "placeholderTag": "Bajo petición",
+    "whatsappMessage": "Hola El Molouk,\n\nEstoy interesado en importar batata egipcia.\n\nPaís de destino:\nPuerto de destino:\nCantidad estimada:\n\nLes agradecería que me enviaran su última cotización y las especificaciones del producto.\n\nMuchas gracias.",
+    "preferEmail": "¿Prefiere el correo electrónico? Contacte con nuestro equipo de exportación",
+    "contactTeam": "Contactar con el equipo de exportación"
   },
   "home": {
     "hero": {
@@ -367,13 +370,19 @@
     ],
     "email": "Correo electrónico de empresa",
     "emailPlaceholder": "usted@empresa.com",
+    "name": "Persona de contacto",
+    "namePlaceholder": "Ana García",
+    "company": "Empresa",
+    "companyPlaceholder": "Acme Frescos S.L.",
+    "phone": "Teléfono",
+    "phonePlaceholder": "+34 612 345 678",
     "message": "Mensaje",
     "messagePlaceholder": "Calendario, formato de envase, destino…",
     "submit": "Quiero mi presupuesto de exportación",
     "trust": "GLOBALG.A.P · BRCGS · o por WhatsApp",
     "errorRequired": "Por favor, complete los campos obligatorios.",
-    "success": "Su solicitud está lista para enviar.",
-    "successNote": "Hemos preparado su solicitud y abierto WhatsApp para que la envíe a nuestro equipo de exportación. Si WhatsApp no se abrió, use el botón de abajo o envíenos los mismos datos por correo: respondemos en menos de 4 horas, de domingo a viernes.",
+    "success": "¡Gracias! Su solicitud se ha enviado correctamente.",
+    "successNote": "Nuestro equipo de exportación se pondrá en contacto con usted en breve.",
     "legendNeed": "Qué necesita",
     "legendReach": "Adónde enviamos el presupuesto",
     "optional": "opcional",
@@ -385,7 +394,11 @@
     "moqNote": "Pedido mínimo 5 toneladas.",
     "legalNote": "Al enviar esta consulta acepta nuestros",
     "openWhatsApp": "Abrir WhatsApp",
-    "sendEmail": "Enviar por correo electrónico"
+    "sendEmail": "Enviar por correo electrónico",
+    "errorName": "Díganos a quién debemos responder.",
+    "sending": "Enviando…",
+    "error": "No hemos podido enviar su solicitud en este momento.",
+    "errorNote": "Vuelva a intentarlo o contacte con nosotros directamente."
   },
   "product": {
     "breadcrumb": "Boniatos",

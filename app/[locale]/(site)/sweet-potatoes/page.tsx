@@ -5,6 +5,7 @@ import {
   BadgeCheck,
   Container,
   FileText,
+  Mail,
   MessageCircle,
   Package,
   Ruler,
@@ -12,6 +13,7 @@ import {
   Snowflake,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { WhatsAppCta } from "@/components/WhatsAppCta";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Eyebrow } from "@/components/Eyebrow";
@@ -157,9 +159,12 @@ export default async function SweetPotatoesPage({
               className="mt-7 flex flex-wrap gap-3"
               stagger={STAGGER.tight}
             >
+              {/* Both buttons used to end in a conversation eventually; now the
+                  first one *is* the conversation, and the outline beside it
+                  holds the written route open for anyone who prefers it. */}
               <RevealItem as="span" className="inline-flex">
-                <Link
-                  href="/contact"
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className={cn(buttonVariants({ size: "lg" }))}
                 >
                   {tc("requestQuote")}
@@ -167,18 +172,18 @@ export default async function SweetPotatoesPage({
                     className="h-4 w-4 rtl:-scale-x-100"
                     aria-hidden
                   />
-                </Link>
+                </WhatsAppCta>
               </RevealItem>
               <RevealItem as="span" className="inline-flex">
-                <a
-                  href={siteConfig.whatsapp}
+                <Link
+                  href="/contact"
                   className={cn(
                     buttonVariants({ variant: "outline", size: "lg" }),
                   )}
                 >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
-                  {tc("whatsapp")}
-                </a>
+                  <Mail className="h-5 w-5" aria-hidden />
+                  {tc("contactTeam")}
+                </Link>
               </RevealItem>
             </RevealItem>
             {/*
@@ -342,13 +347,15 @@ export default async function SweetPotatoesPage({
               <p className="mt-3 max-w-[60ch] text-[14.5px] leading-relaxed text-ink-soft">
                 {t("calibre.note")}
               </p>
-              <Link
-                href="/contact"
+              {/* The calibre table is the one thing a buyer always has to ask
+                  for by hand, so the ask is a message, not a page. */}
+              <WhatsAppCta
+                message={tc("whatsappMessage")}
                 className={cn(buttonVariants({ size: "sm" }), "mt-5")}
               >
                 {t("calibre.cta")}
                 <ArrowRight className="h-4 w-4 rtl:-scale-x-100" aria-hidden />
-              </Link>
+              </WhatsAppCta>
             </div>
           </RevealMedia>
         </div>
@@ -536,13 +543,13 @@ export default async function SweetPotatoesPage({
                 </RevealItem>
               </RevealItem>
               <RevealItem as="span" className="mt-7 inline-flex">
-                <a
-                  href={siteConfig.whatsapp}
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className="inline-flex min-h-11 items-center gap-2 rounded-full bg-white/15 px-6 py-3 font-bold text-white ring-1 ring-white/40 transition-colors duration-200 hover:bg-white/25"
                 >
                   <MessageCircle className="h-5 w-5" aria-hidden />
                   {tc("whatsapp")}
-                </a>
+                </WhatsAppCta>
               </RevealItem>
             </RevealGroup>
             <Reveal

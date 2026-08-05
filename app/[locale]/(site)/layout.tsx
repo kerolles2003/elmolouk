@@ -2,6 +2,7 @@ import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {Header} from '@/components/layout/Header';
 import {Footer} from '@/components/layout/Footer';
 import {MobileBar} from '@/components/layout/MobileBar';
+import {WhatsAppFab} from '@/components/layout/WhatsAppFab';
 
 export default async function SiteLayout({
   children,
@@ -27,7 +28,10 @@ export default async function SiteLayout({
         {children}
       </main>
       <Footer />
+      {/* Two halves of the same offer, and they never overlap: the bar owns the
+          foot of a phone screen, the disc owns the corner of a desktop one. */}
       <MobileBar />
+      <WhatsAppFab />
     </>
   );
 }

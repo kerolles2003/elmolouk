@@ -6,7 +6,7 @@ import {
   Check,
   Container,
   FlaskConical,
-  MessageCircle,
+  Mail,
   Package,
   Ruler,
   ShieldCheck,
@@ -16,6 +16,7 @@ import {
   Users,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { WhatsAppCta } from "@/components/WhatsAppCta";
 import { buttonVariants, textLinkClass } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Eyebrow } from "@/components/Eyebrow";
@@ -31,7 +32,6 @@ import {
 import { RISE, STAGGER } from "@/components/motion/config";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
-import { siteConfig } from "@/lib/site";
 import { pageMetadata } from "@/lib/seo";
 
 /*
@@ -160,8 +160,8 @@ export default async function QualityPage({
               stagger={STAGGER.tight}
             >
               <RevealItem as="span" className="inline-flex">
-                <Link
-                  href="/contact"
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className={cn(buttonVariants({ size: "lg" }))}
                 >
                   {tc("requestQuote")}
@@ -169,7 +169,7 @@ export default async function QualityPage({
                     className="h-4 w-4 rtl:-scale-x-100"
                     aria-hidden
                   />
-                </Link>
+                </WhatsAppCta>
               </RevealItem>
               <RevealItem as="span" className="inline-flex">
                 <Link
@@ -181,6 +181,14 @@ export default async function QualityPage({
                   {t("hero.ctaSecondary")}
                 </Link>
               </RevealItem>
+            </RevealItem>
+            <RevealItem as="p" className="mt-4 text-[14px] text-ink-soft" from="inline">
+              <Link
+                href="/contact"
+                className="inline-flex min-h-11 items-center font-semibold underline-offset-4 transition-colors hover:text-sweet-deep hover:underline"
+              >
+                {tc("preferEmail")}
+              </Link>
             </RevealItem>
             <RevealItem
               as="ul"
@@ -508,8 +516,10 @@ export default async function QualityPage({
                     </div>
                   ))}
                 </dl>
-                <Link
-                  href="/contact"
+                {/* A certificate request is a one-line message, so it goes
+                    straight to the desk that can attach the PDF. */}
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className={cn(textLinkClass, "mt-5 min-h-11 text-[14px]")}
                 >
                   {t("certs.request")}
@@ -517,7 +527,7 @@ export default async function QualityPage({
                     className="h-3.5 w-3.5 transition-transform duration-200 ease-expo group-hover:translate-x-0.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5"
                     aria-hidden
                   />
-                </Link>
+                </WhatsAppCta>
               </RevealItem>
             );
           })}
@@ -679,8 +689,8 @@ export default async function QualityPage({
               stagger={STAGGER.tight}
             >
               <RevealItem as="span" className="inline-flex" lift>
-                <Link
-                  href="/contact"
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-bold text-sweet-deep shadow-sm transition-shadow duration-200 ease-expo hover:shadow-lift"
                 >
                   {tc("requestQuote")}
@@ -688,16 +698,16 @@ export default async function QualityPage({
                     className="h-4 w-4 rtl:-scale-x-100"
                     aria-hidden
                   />
-                </Link>
+                </WhatsAppCta>
               </RevealItem>
               <RevealItem as="span" className="inline-flex">
-                <a
-                  href={siteConfig.whatsapp}
+                <Link
+                  href="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-white/15 px-7 py-3.5 font-bold text-white ring-1 ring-white/40 transition-colors duration-200 hover:bg-white/25"
                 >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
-                  {t("cta.whatsapp")}
-                </a>
+                  <Mail className="h-5 w-5" aria-hidden />
+                  {tc("contactTeam")}
+                </Link>
               </RevealItem>
             </RevealItem>
             <RevealItem

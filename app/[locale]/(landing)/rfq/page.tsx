@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Check, Mail, Phone} from 'lucide-react';
 import {Link} from '@/i18n/navigation';
+import {WhatsAppCta} from '@/components/WhatsAppCta';
 import {Brand} from '@/components/layout/Brand';
 import {Kicker} from '@/components/Kicker';
 import {StatBand} from '@/components/sections/StatBand';
@@ -119,13 +120,19 @@ export default async function RfqPage({
             <h2 className="font-display text-[clamp(1.3rem,5.4vw,1.5rem)] font-semibold tracking-tight">
               {t('finalTitle')}
             </h2>
+            {/* Paid traffic lands on this page with the form already beside the
+                headline, so the closing pair is for the visitor who scrolled
+                past it: a chat first, the contact page behind it. */}
             <div className="mt-4 flex flex-wrap justify-center gap-3">
-              <Link href="/contact" className={cn(buttonVariants())}>
-                {tc('requestQuote')}
-              </Link>
-              <a href={contact.whatsapp} className={cn(buttonVariants({variant: 'wa'}))}>
+              <WhatsAppCta
+                message={tc('whatsappMessage')}
+                className={cn(buttonVariants({variant: 'wa'}))}
+              >
                 {tc('whatsapp')}
-              </a>
+              </WhatsAppCta>
+              <Link href="/contact" className={cn(buttonVariants({variant: 'outline'}))}>
+                {tc('contactTeam')}
+              </Link>
             </div>
             {/*
               This landing page runs without the shared footer, so the phone and

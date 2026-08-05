@@ -19,6 +19,7 @@ import {
   Timer,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { WhatsAppCta } from "@/components/WhatsAppCta";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Photo } from "@/components/Photo";
@@ -38,6 +39,7 @@ import { RISE, STAGGER } from "@/components/motion/config";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { contact } from "@/lib/site";
+import { WHATSAPP_LINK_PROPS, whatsappHref } from "@/lib/whatsapp";
 import { pageMetadata } from "@/lib/seo";
 
 const IMG = {
@@ -49,6 +51,15 @@ const IMG = {
 /** Icons run in the order the dictionaries list their items. */
 const STRIP_ICONS = [Timer, CalendarDays, FileText, Ship];
 const CHANNEL_ICONS = [Mail, Phone, MessageCircle];
+/**
+ * The order the three cards are *shown* in, as indices into the dictionary's
+ * `channels.items` — WhatsApp, then e-mail, then phone.
+ *
+ * Kept here rather than by re-sorting seven translation files: the dictionaries
+ * stay in their original order, so a translator editing `items[0]` is still
+ * editing the e-mail card, and the page decides what a buyer meets first.
+ */
+const CHANNEL_ORDER = [2, 0, 1];
 const COMPANY_ICONS = [Building2, MapPin, Clock, Globe];
 const WHY_ICONS = [Timer, FileText, Handshake, Languages];
 
@@ -107,6 +118,7 @@ export default async function ContactPage({
      the footer, so it is never called two different things on one site. */
   const tf = await getTranslations("footer");
   const tr = await getTranslations("rfqForm");
+  const tc = await getTranslations("common");
 
   const strip = t.raw("strip.items") as string[];
   const channels = t.raw("channels.items") as {
@@ -130,10 +142,19 @@ export default async function ContactPage({
     translations carry the label only, so the number a buyer reads is the same
     in all seven locales and can never drift from the link under it.
   */
-  const channelContact = [
+  const channelContact: {
+    value: string;
+    href: string;
+    /** WhatsApp only — the chat leaves for its own tab. */
+    newTab?: boolean;
+  }[] = [
     { value: contact.email, href: contact.emailHref },
     { value: contact.phone, href: contact.phoneHref },
-    { value: contact.phone, href: contact.whatsapp },
+    {
+      value: contact.phone,
+      href: whatsappHref(tc("whatsappMessage")),
+      newTab: true,
+    },
   ];
 
   return (
@@ -193,27 +214,33 @@ export default async function ContactPage({
               className="mt-7 flex flex-wrap gap-3"
               stagger={STAGGER.tight}
             >
+              {/*
+                The page that still holds the form now opens with the channel
+                that skips it. The order is the honest one: the fastest way to
+                an answer first, the form immediately behind it — and the form
+                is a jump link, so nobody leaves this page to reach it.
+              */}
+              <RevealItem as="span" className="inline-flex">
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
+                  className={cn(buttonVariants({ variant: "wa", size: "lg" }))}
+                >
+                  <MessageCircle className="h-5 w-5" aria-hidden />
+                  {t("hero.ctaSecondary")}
+                </WhatsAppCta>
+              </RevealItem>
               <RevealItem as="span" className="inline-flex">
                 <a
                   href="#enquiry"
-                  className={cn(buttonVariants({ size: "lg" }))}
+                  className={cn(
+                    buttonVariants({ variant: "outline", size: "lg" }),
+                  )}
                 >
                   {t("hero.ctaPrimary")}
                   <ArrowRight
                     className="h-4 w-4 rtl:-scale-x-100"
                     aria-hidden
                   />
-                </a>
-              </RevealItem>
-              <RevealItem as="span" className="inline-flex">
-                <a
-                  href={contact.whatsapp}
-                  className={cn(
-                    buttonVariants({ variant: "outline", size: "lg" }),
-                  )}
-                >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
-                  {t("hero.ctaSecondary")}
                 </a>
               </RevealItem>
             </RevealItem>
@@ -291,9 +318,10 @@ export default async function ContactPage({
           sub={t("channels.sub")}
         />
         <RevealGroup className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {channels.map((c, i) => {
+          {CHANNEL_ORDER.map((i, position) => {
+            const c = channels[i];
             const Icon = CHANNEL_ICONS[i] ?? Mail;
-            const { value, href } = channelContact[i];
+            const { value, href, newTab } = channelContact[i];
             const body: ReactNode = (
               <>
                 <span
@@ -308,7 +336,9 @@ export default async function ContactPage({
                 </span>
                 <div className="mt-4 flex flex-wrap items-center gap-2">
                   <h3 className="text-[18px] font-bold">{c.name}</h3>
-                  {i === 0 && (
+                  {/* "Best for RFQs" follows the fastest channel, so it moved
+                      off the e-mail card with the reordering. */}
+                  {position === 0 && (
                     <span className="rounded-full bg-leaf/12 px-2.5 py-0.5 text-[11.5px] font-bold text-leaf-deep">
                       {t("channels.preferred")}
                     </span>
@@ -342,6 +372,7 @@ export default async function ContactPage({
               <RevealItem key={c.name} distance={RISE.card} lift>
                 <a
                   href={href}
+                  {...(newTab ? WHATSAPP_LINK_PROPS : {})}
                   className="group flex h-full flex-col rounded-3xl border border-line bg-card p-6 transition-[box-shadow,border-color] duration-300 ease-expo hover:border-sweet/40 hover:shadow-card"
                 >
                   {body}
@@ -433,8 +464,8 @@ export default async function ContactPage({
                 <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
                   {t("form.asideDesc")}
                 </p>
-                <a
-                  href={contact.whatsapp}
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
                   className={cn(
                     buttonVariants({ variant: "wa", block: true }),
                     "mt-5",
@@ -442,7 +473,7 @@ export default async function ContactPage({
                 >
                   <MessageCircle className="h-5 w-5" aria-hidden />
                   {t("form.asideCta")}
-                </a>
+                </WhatsAppCta>
               </RevealMedia>
 
               <Reveal
@@ -621,25 +652,28 @@ export default async function ContactPage({
               className="mt-8 flex flex-wrap justify-center gap-3"
               stagger={STAGGER.tight}
             >
+              {/* Same swap as the hero, so the page closes the way it opened:
+                  the chat takes the solid button, and the form keeps the ghost
+                  one — still a jump link, still on this page. */}
               <RevealItem as="span" className="inline-flex" lift>
+                <WhatsAppCta
+                  message={tc("whatsappMessage")}
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-bold text-sweet-deep shadow-sm transition-shadow duration-200 ease-expo hover:shadow-lift"
+                >
+                  <MessageCircle className="h-5 w-5" aria-hidden />
+                  {t("cta.whatsapp")}
+                </WhatsAppCta>
+              </RevealItem>
+              <RevealItem as="span" className="inline-flex">
                 <a
                   href="#enquiry"
-                  className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-bold text-sweet-deep shadow-sm transition-shadow duration-200 ease-expo hover:shadow-lift"
+                  className="inline-flex items-center gap-2 rounded-full bg-white/15 px-7 py-3.5 font-bold text-white ring-1 ring-white/40 transition-colors duration-200 hover:bg-white/25"
                 >
                   {t("cta.primary")}
                   <ArrowRight
                     className="h-4 w-4 rtl:-scale-x-100"
                     aria-hidden
                   />
-                </a>
-              </RevealItem>
-              <RevealItem as="span" className="inline-flex">
-                <a
-                  href={contact.whatsapp}
-                  className="inline-flex items-center gap-2 rounded-full bg-white/15 px-7 py-3.5 font-bold text-white ring-1 ring-white/40 transition-colors duration-200 hover:bg-white/25"
-                >
-                  <MessageCircle className="h-5 w-5" aria-hidden />
-                  {t("cta.whatsapp")}
                 </a>
               </RevealItem>
             </RevealItem>

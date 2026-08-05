@@ -92,7 +92,10 @@
     "viewSpecifications": "View specifications",
     "getMyQuote": "Get my export quote",
     "replyWithin": "We reply within 4 hours",
-    "placeholderTag": "On request"
+    "placeholderTag": "On request",
+    "whatsappMessage": "Hello El Molouk,\n\nI'm interested in importing Egyptian sweet potatoes.\n\nDestination country:\nDestination port:\nEstimated quantity:\n\nPlease send me your latest quotation and product specifications.\n\nThank you.",
+    "preferEmail": "Prefer e-mail? Contact our export team",
+    "contactTeam": "Contact our export team"
   },
   "home": {
     "hero": {
@@ -362,13 +365,19 @@
     "incotermOptions": ["CIF", "CFR", "FOB", "DAP"],
     "email": "Company e-mail",
     "emailPlaceholder": "you@company.com",
+    "name": "Contact name",
+    "namePlaceholder": "Jane de Vries",
+    "company": "Company",
+    "companyPlaceholder": "Acme Fresh Produce BV",
+    "phone": "Phone",
+    "phonePlaceholder": "+31 6 1234 5678",
     "message": "Message",
     "messagePlaceholder": "Timing, packaging format, destination…",
     "submit": "Get my export quote",
     "trust": "GLOBALG.A.P · BRCGS · or chat on WhatsApp",
     "errorRequired": "Please complete the required fields.",
-    "success": "Your request is ready to send.",
-    "successNote": "We have prepared your request and opened WhatsApp so you can send it to our export team. If WhatsApp did not open, use the button below or e-mail us the same details — we reply within 4 hours, Sunday to Friday.",
+    "success": "Thank you! Your enquiry has been sent successfully.",
+    "successNote": "Our export team will contact you shortly.",
     "legendNeed": "What you need",
     "legendReach": "Where to send the quote",
     "optional": "optional",
@@ -380,7 +389,11 @@
     "moqNote": "Minimum order 5 metric tons.",
     "legalNote": "By sending this enquiry you accept our",
     "openWhatsApp": "Open WhatsApp",
-    "sendEmail": "Send by e-mail instead"
+    "sendEmail": "Send by e-mail instead",
+    "errorName": "Tell us who we are replying to.",
+    "sending": "Sending…",
+    "error": "We couldn't send your enquiry right now.",
+    "errorNote": "Please try again or contact us directly."
   },
   "product": {
     "breadcrumb": "Sweet Potatoes",

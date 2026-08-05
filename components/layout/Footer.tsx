@@ -5,6 +5,7 @@ import {Link} from '@/i18n/navigation';
 import {Brand} from './Brand';
 import {LOCALES} from '@/lib/locales';
 import {contact, siteConfig} from '@/lib/site';
+import {WHATSAPP_LINK_PROPS, whatsappHref} from '@/lib/whatsapp';
 
 function Col({title, children}: {title: string; children: ReactNode}) {
   return (
@@ -39,17 +40,21 @@ function ContactLink({
   label,
   value,
   iconClass = 'text-amber',
+  newTab = false,
 }: {
   href: string;
   icon: ReactNode;
   label: string;
   value: string;
   iconClass?: string;
+  /** WhatsApp only: the chat opens in its own tab, so the page survives it. */
+  newTab?: boolean;
 }) {
   return (
     <a
       href={href}
       aria-label={`${label}: ${value}`}
+      {...(newTab ? WHATSAPP_LINK_PROPS : {})}
       className="flex min-h-11 items-center gap-2 text-[13.5px] text-cream/75 transition-colors hover:text-cream"
     >
       <span className={iconClass} aria-hidden>
@@ -100,11 +105,12 @@ export async function Footer() {
               value={contact.email}
             />
             <ContactLink
-              href={contact.whatsapp}
+              href={whatsappHref(tc('whatsappMessage'))}
               icon={<MessageCircle className="h-4 w-4" />}
               label={tc('whatsappShort')}
               value={contact.phone}
               iconClass="text-wa"
+              newTab
             />
           </div>
         </div>
@@ -115,8 +121,12 @@ export async function Footer() {
           <Link href="/quality" className="transition-colors hover:text-cream">
             {t('quality')}
           </Link>
+          {/* A sitemap row, not a conversion button — so it is named after the
+              page it opens. "Request a Quote" now belongs to the chat links
+              above it, and a footer that used the same words for a different
+              destination would be quietly lying about one of them. */}
           <Link href="/contact" className="transition-colors hover:text-cream">
-            {tn('requestQuote')}
+            {tn('contact')}
           </Link>
         </Col>
         <Col title={t('logistics')}>

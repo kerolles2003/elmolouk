@@ -92,7 +92,10 @@
     "viewSpecifications": "Voir les spécifications",
     "getMyQuote": "Obtenir mon devis export",
     "replyWithin": "Nous répondons sous 4 heures",
-    "placeholderTag": "Sur demande"
+    "placeholderTag": "Sur demande",
+    "whatsappMessage": "Bonjour El Molouk,\n\nJe suis intéressé par l'importation de patates douces égyptiennes.\n\nPays de destination :\nPort de destination :\nQuantité estimée :\n\nMerci de m'envoyer votre dernière offre de prix et les spécifications produit.\n\nCordialement.",
+    "preferEmail": "Vous préférez l'e-mail ? Contactez notre équipe export",
+    "contactTeam": "Contacter notre équipe export"
   },
   "home": {
     "hero": {
@@ -367,13 +370,19 @@
     ],
     "email": "E-mail professionnel",
     "emailPlaceholder": "vous@entreprise.com",
+    "name": "Personne à contacter",
+    "namePlaceholder": "Claire Dubois",
+    "company": "Société",
+    "companyPlaceholder": "Acme Produits Frais SAS",
+    "phone": "Téléphone",
+    "phonePlaceholder": "+33 6 12 34 56 78",
     "message": "Message",
     "messagePlaceholder": "Calendrier, format d'emballage, destination…",
     "submit": "Obtenir mon devis export",
     "trust": "GLOBALG.A.P · BRCGS · ou via WhatsApp",
     "errorRequired": "Merci de compléter les champs obligatoires.",
-    "success": "Votre demande est prête à être envoyée.",
-    "successNote": "Nous avons préparé votre demande et ouvert WhatsApp pour que vous puissiez l’envoyer à notre équipe export. Si WhatsApp ne s’est pas ouvert, utilisez le bouton ci-dessous ou envoyez-nous les mêmes informations par e-mail — nous répondons sous 4 heures, du dimanche au vendredi.",
+    "success": "Merci ! Votre demande a bien été envoyée.",
+    "successNote": "Notre équipe export vous contactera sous peu.",
     "legendNeed": "Ce qu'il vous faut",
     "legendReach": "Où envoyer le devis",
     "optional": "facultatif",
@@ -385,7 +394,11 @@
     "moqNote": "Commande minimum 5 tonnes.",
     "legalNote": "En envoyant cette demande, vous acceptez nos",
     "openWhatsApp": "Ouvrir WhatsApp",
-    "sendEmail": "Envoyer plutôt par e-mail"
+    "sendEmail": "Envoyer plutôt par e-mail",
+    "errorName": "Indiquez-nous à qui répondre.",
+    "sending": "Envoi en cours…",
+    "error": "Nous n'avons pas pu envoyer votre demande pour le moment.",
+    "errorNote": "Veuillez réessayer ou nous contacter directement."
   },
   "product": {
     "breadcrumb": "Patates douces",

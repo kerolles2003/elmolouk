@@ -6,6 +6,7 @@ import {Menu, X} from 'lucide-react';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {NAV} from '@/lib/site';
+import {WhatsAppCta} from '@/components/WhatsAppCta';
 import {buttonVariants} from '@/components/ui/button';
 import {cn} from '@/lib/utils';
 import {DUR, EASE_OUT, STAGGER} from '@/components/motion/config';
@@ -36,6 +37,7 @@ const row = {
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
   const t = useTranslations('nav');
+  const tc = useTranslations('common');
 
   // Escape closes the menu, matching the language switcher's behaviour.
   useEffect(() => {
@@ -113,13 +115,16 @@ export function MobileMenu() {
                 here. The quote button inherits the links' inset above it rather
                 than the end-alignment it needed when it shared this row. */}
             <m.div variants={row} className="mt-4 flex items-center gap-3 px-3">
-              <Link
-                href="/contact"
+              {/* Straight to a chat. The Contact row in the list above is
+                  untouched, so the form and the e-mail address stay one tap
+                  away for anyone who would rather write. */}
+              <WhatsAppCta
+                message={tc('whatsappMessage')}
                 onClick={() => setOpen(false)}
                 className={cn(buttonVariants({size: 'sm'}))}
               >
                 {t('requestQuote')}
-              </Link>
+              </WhatsAppCta>
             </m.div>
           </m.div>
         )}
