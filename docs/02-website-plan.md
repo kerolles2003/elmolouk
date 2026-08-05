@@ -27,7 +27,7 @@ Every page justifies itself by **Trust, Clarity, or Conversion** (`00` §5). Sus
 
 ## 2. Homepage — section-by-section (product is the hero)
 
-1. **Full-bleed hero — the cut-to-reveal shot.** Glowing orange cross-section on an earthy ground; headline/CTA sit in the negative space. Keyword-aware `H1` (*"Premium Egyptian Orange-Fleshed Sweet Potatoes"*) + credibility subline (*"Certified grower-exporter · Germany's #1 sweet-potato origin, 2025"* `[[CONFIRM]]`). CTAs: **[Request a Quote]** + **[WhatsApp]**. This image is the LCP element (eager-loaded, sized).
+1. **Full-bleed hero — the cut-to-reveal shot.** Glowing orange cross-section on an earthy ground; headline/CTA sit in the negative space. Keyword-aware `H1` (*"Premium Egyptian Orange-Fleshed Sweet Potatoes"*) + credibility subline (*"Certified grower-exporter · Germany's #1 sweet-potato origin, 2025"* ``). CTAs: **[Request a Quote]** + **[WhatsApp]**. This image is the LCP element (eager-loaded, sized).
 2. **Certification + metrics trust strip** — GLOBALG.A.P. · BRCGS/IFS · GRASP `[[CONFIRM CERTIFICATION]]` + concrete numbers (tonnes · hectares · countries · years) → links to `/quality`. *(The trust gate, above the fold.)*
 3. **Positioning line** — one sentence: premium Egyptian exporter, European standards.
 4. **Product card** — Beauregard/Bellevue/Covington, macro flesh photo → `/sweet-potatoes`.
@@ -36,7 +36,7 @@ Every page justifies itself by **Trust, Clarity, or Conversion** (`00` §5). Sus
 7. **Season calendar teaser** — 12-month strip → "year-round reliability."
 8. **Closing RFQ block** — *"Become a distribution partner"* + form entry + WhatsApp.
 
-*Lean check:* no section here exists for decoration — each is trust or conversion. Client logos/case studies are added *when real ones exist* (`[[CONFIRM]]`), not fabricated.
+*Lean check:* no section here exists for decoration — each is trust or conversion. Client logos/case studies are added *when real ones exist* (``), not fabricated.
 
 ---
 

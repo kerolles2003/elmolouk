@@ -3,7 +3,7 @@ import {ArrowRight} from 'lucide-react';
 import {textLinkClass} from '@/components/ui/button';
 import {cn} from '@/lib/utils';
 
-/** Certification card. Values stay [[confirm]] until the client verifies them. */
+/** Certification card. Values stay  until the client verifies them. */
 export function CertCard({
   code,
   name,

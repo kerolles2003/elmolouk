@@ -49,7 +49,7 @@ Three overlapping B2B personas — procurement-minded, risk-averse, and increasi
 1. **Certified & compliant** — GLOBALG.A.P. + GFSI food safety + social audits `[[CONFIRM CERTIFICATION]]`.
 2. **Origin credibility** — Egyptian orange-fleshed sweet potato; *Egypt is Germany's #1 supplier (2025)*.
 3. **Year-round reliability** — Aug–Jan harvest extended by curing + cold storage.
-4. **Grower-to-port control** — own farms + packhouse, traceability, cold chain `[[CONFIRM]]`.
+4. **Grower-to-port control** — own farms + packhouse, traceability, cold chain ``.
 5. **Best value vs USA/Spain** — competitive landed cost at comparable Class-I quality.
 
 **Tagline shortlist (finalise in `01`):** *"The Kings of Egyptian Sweet Potatoes."* · *"Grown in Egypt. Trusted across Europe."* · *"Royal roots. European standards."*
@@ -86,7 +86,7 @@ Launch with **six locales, all live at day one**: **English, German, Dutch, Fren
 
 ## 7. Assumptions & open items (confirm before Design sign-off / launch)
 
-Marked `[[CONFIRM]]` / `[[CONFIRM CERTIFICATION]]` throughout the docs:
+Marked `` / `[[CONFIRM CERTIFICATION]]` throughout the docs:
 
 - **Certifications:** *never displayed until client-verified.* Use `[[CONFIRM CERTIFICATION]]` placeholders; **never fabricate or assume** a certification on the live site. *(Assumed set for planning only: GLOBALG.A.P., GRASP, BRCGS/IFS, ISO 22000/HACCP, SMETA, phytosanitary.)*
 - **Company facts for the stat band / About:** year founded / "exporting since", hectares farmed, packhouse capacity, tonnes or containers/year, number of markets, team size.

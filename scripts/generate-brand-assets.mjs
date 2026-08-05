@@ -1,6 +1,6 @@
 /**
  * Generates every browser-identity and social-sharing asset from the two source
- * lockups in `public/images/`. Run with `pnpm brand:assets` after either source
+ * lockups in `public/images/`. Run with `npm run brand:assets` after either source
  * logo changes; the outputs are committed, so the build itself needs no image
  * pipeline and no runtime image generation.
  *
